@@ -5,6 +5,6 @@ title: "About"
 
 Ths site is made with [Astro](https://astro.build/) and [Tailwind](https://tailwindcss.com/).
 
-[![svg image](/assets/astro.svg)](https://astro.build/)
-
 Inspired by [AstroPaper](https://github.com/satnaing/astro-paper).
+
+[![svg image](/assets/astro.svg)](https://astro.build/)
