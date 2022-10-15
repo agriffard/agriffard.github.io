@@ -1,6 +1,6 @@
 # Antoine Griffard
 
-Ths site is made with:
+This site is made with:
 
 - [Astro](https://astro.build/)
 - [React](https://reactjs.org/)
