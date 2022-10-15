@@ -46,10 +46,7 @@ const categoryPosts = getPostsByCategory(posts, category);
 
 <Layout title={`Tag:${category} | ${SITE.title}`}>
   <Header activeNav="categories" />
-  <Main
-    pageTitle={`categories:${category}`}
-    pageDesc={`All the articles with the category "${category}".`}
-  >
+  <Main pageTitle={`categories:${category}`} pageDesc={`All the articles with the category "${category}".`}>
     <ul>
       {
         categoryPosts.map(({ frontmatter }) => (
