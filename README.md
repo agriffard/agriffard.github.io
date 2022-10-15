@@ -7,8 +7,6 @@ Ths site is made with:
 - [Tailwind](https://tailwindcss.com/)
 - [TypeScript](https://www.typescriptlang.org/)
 
-[![svg image](public/assets/astro.svg)](https://astro.build/)
-
 ## How to run locally
 
 Install
