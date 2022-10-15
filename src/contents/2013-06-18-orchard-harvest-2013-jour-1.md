@@ -10,6 +10,8 @@ La première conférence européenne organisée par la communauté [Orchard](htt
 
 80 participants de 17 pays différents ont pu assister aux sessions présentées par plusieurs speakers sur des sujets relatifs au développement de sites web avec le CMS ASP.NET MVC Orchard.
 
+## Table of contents
+
 ## 9h – 9h45 Keynote : State of Orchard
 
 La matinée a commencé avec une intervention d'[Ylan Kunstler](http://euro2013.orchardharvest.org/speaker/ylan-kunstler) qui a consacré beaucoup de temps à l'organisation de cet évènement et a ainsi rappelé à quel point il était important de se réunir pour échanger et rencontrer de nouvelles personnes afin de développer la communauté Orchard.
@@ -49,11 +51,11 @@ Il a détaillé l'architecture technique du projet et donner quelques conseils �
 
 ## 14h – 15h30 Module development – understanding concepts and advanced applications
 
-[Sipke Schoorstra](http://euro2013.orchardharvest.org/speaker/sipke-schoorstra) a tenu une session technique avancé sur le développement de module en détaillant toutes les étapes de création d'un Placeholder widget qui permet de réutiliser un contenu à différents endroits du site.
+[Sipke Schoorstra](http://euro2013.orchardharvest.org/speaker/sipke-schoorstra) a tenu une session technique avancée sur le développement de modules en détaillant toutes les étapes de création d'un Placeholder widget qui permet de réutiliser un contenu à différents endroits du site.
 
 Il a également créé des classes de test unitaires avec NUnit et Mock.
 
-Enfin, il a donner des exemples pratiques de Recipes (recette) et décrit comment packager son projet à l'aide lde l'outil en ligne de commande.
+Enfin, il a donné des exemples pratiques de Recipes (recette) et décrit comment packager son projet à l'aide de l'outil en ligne de commande.
 
 ## 15h45 – 16h15 Case study - Forums module: how it was constructed and how you can extend it
 

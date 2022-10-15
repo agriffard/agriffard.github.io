@@ -4,6 +4,7 @@ author: agriffard
 datetime: 2022-04-23T12:00:00Z
 categories: [Learn]
 tags: [Japanese]
+description: Kana (仮名) refer to syllabaries used to write Japanese phonological units.
 ---
 
 The term kana (仮名) may refer to a number of syllabaries used to write Japanese phonological units, morae.

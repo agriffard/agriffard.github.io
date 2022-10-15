@@ -4,6 +4,7 @@ author: agriffard
 datetime: 2022-06-01T12:00:00Z
 categories: [OrchardCore]
 tags: [Release]
+description: Orchard Core 1.4 Release is available.
 ---
 
 Orchard Core, the ASP.NET open-source modular application framework and content management system, is available in version 1.4.

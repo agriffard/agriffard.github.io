@@ -6,9 +6,11 @@ categories: [Orchard]
 tags: [Harvest]
 ---
 
-This Wednesday February 22nd was the second day of the [Orchard Harvest conference](http://orchardharvest.org/) 2017 in New York.
+This Wednesday February 22nd was the 2nd day of the [Orchard Harvest conference](http://orchardharvest.org/) 2017 in New York.
 
 We attended to many interesting sessions about Orchard Core and .NET Core.
+
+## Table of contents
 
 ## [Theming in Orchard Core](http://orchardharvest.org/sessions/building-themes-using-the-latest-client-side-technologies)
 
@@ -26,7 +28,7 @@ He also demonstrated how to build client side assets using the existing tooling 
 
 Benedek gave a sneak peek on the existing features available in Orchard CMS to handle Localization and Translations.
 
-You can retrieve the localization files here [http://orchardproject.net/localization](http://orchardproject.net/localization)and contribute to the translations on <https://crowdin.com/project/orchard-cms>
+You can retrieve the localization files here [http://orchardproject.net/localization](http://orchardproject.net/localization) and contribute to the translations on <https://crowdin.com/project/orchard-cms>
 
 ![BenedekFarkas](/assets/blog/Harvest/2017/BenedekFarkas.jpg)
 

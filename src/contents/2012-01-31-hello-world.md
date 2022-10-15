@@ -1,10 +1,11 @@
 ---
-title: Hello World
+title: Hello World!
 author: agriffard
 datetime: 2012-01-31T12:00:00Z
 categories: [Dev]
 tags: [Hello]
 featured: true
+description: « Hello, World! » programs are often the first a student learns to write in a given language.
 ---
 
 ## Table of contents
@@ -131,7 +132,7 @@ class HelloWorldApp{
 }
 ```
 
-<https://www.mycplus.com/featured-articles/hello-world-programs-in-300-programming-languages/>
+<https://en.wikipedia.org/wiki/%22Hello,_World!%22_program#Examples>
 
 ## Hello World C# tutorial
 

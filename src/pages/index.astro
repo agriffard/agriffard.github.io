@@ -45,7 +45,7 @@ const sortedPosts = getSortedPosts(posts);
         {
           sortedPosts.map(
             ({ frontmatter }, index) =>
-              index < 4 && (
+              index < 3 && (
                 <Card
                   href={`/posts/${slugify(frontmatter)}`}
                   post={frontmatter}

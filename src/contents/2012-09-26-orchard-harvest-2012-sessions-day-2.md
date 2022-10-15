@@ -6,13 +6,15 @@ categories: [Orchard]
 tags: [Harvest]
 ---
 
-Voici les résumés de quelques sessions qui se sont déroulées le Dimanche 9 Septembre 2012, lors du 2ème jour de la conférence[Orchard Harvest](http://harvest.orchardproject.fr/).
+Résumé des sessions qui se sont déroulées le Dimanche 9 Septembre 2012, lors du 2ème jour de la conférence [Orchard Harvest](http://harvest.orchardproject.fr/).
+
+## Table of contents
 
 ## Case Study - Media Garden
 
 11:00 am - 11:45 am : [Pete Hurst](http://www.codeplex.com/site/users/view/randompete)
 
-Pete nous a fait une démonstration d'un site utilisant le module Media Garden :[http://orchardmediagarden.codeplex.com/](http://orchardmediagarden.codeplex.com/)
+Pete nous a fait une démonstration d'un site utilisant le module Media Garden : [http://orchardmediagarden.codeplex.com/](http://orchardmediagarden.codeplex.com/)
 
 Il gère grâce à celui-ci différents type de médias (Vidéos, Audio, Images) et des fonctionnalités comme le redimensionnement de vignettes ou le streaming de vidéos.
 

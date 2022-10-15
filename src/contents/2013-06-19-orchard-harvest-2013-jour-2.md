@@ -6,7 +6,7 @@ categories: [Orchard]
 tags: [Harvest]
 ---
 
-Sebastien Ros a fait un tour d'horizon des évolutions et des nouveautés qu'amènera la prochaine version 1.7 d'Orchard.
+Sébastien Ros a fait un tour d'horizon des évolutions et des nouveautés qu'amènera la prochaine version 1.7 d'Orchard.
 
 Les performances seront améliorées grâce l'abandon de Clay pour charger des objets dynamiques. La quantité de mémoire nécessaire sera réduite et le temps de chargement sera accéléré.
 
