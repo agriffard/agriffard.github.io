@@ -1,11 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 36 36">
-	<g transform="matrix(1 0 0 1 0 0)">
-		<g clip-path="url(#1)" >
-			<g clip-path="url(#2)" >
-				<text transform="matrix(1 0 0 1 0 0)" x="2" y="24" style="fill:#000000" font-size="20" font-family="Arial">A G</text>
-			</g>
-		</g>
-	</g>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+	<text x="1" y="9" style="fill:#000000;font-size:10;font-family:Arial">.NET</text>
+	<text x="1" y="21" style="fill:#000000;font-size:10;font-family:Arial">DEV.</text>
 	<style>
     @media (prefers-color-scheme:dark){:root{filter:invert(100%)}}
   </style>

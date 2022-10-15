@@ -1,6 +1,5 @@
 ---
 import { SITE, PROJECTS } from "src/config";
-import { SOCIALS } from "src/config";
 import Breadcrumbs from "@components/Breadcrumbs.astro";
 import Layout from "@layouts/Layout.astro";
 import Header from "@components/Header.astro";
@@ -17,12 +16,7 @@ import LinkButton from "../components/LinkButton.astro";
       <ul>
       {
         PROJECTS.map((project) => (
-          <li><LinkButton
-            href={project.href}
-            className="link-button"
-            title={project.name}
-          >{project.name}
-          </LinkButton></li>
+          <li><LinkButton href={project.href} className="link-button">{project.name}</LinkButton></li>
         ))
       }
       </ul>

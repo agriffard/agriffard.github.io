@@ -7,7 +7,7 @@ export const SITE = {
   title: "Antoine Griffard",
   ogImage: "default-og.png",
   lightAndDarkMode: true,
-  postPerPage: 10,
+  postPerPage: 5,
 };
 
 export const LOGO_IMAGE = {
@@ -19,12 +19,44 @@ export const LOGO_IMAGE = {
 
 export const PROJECTS: Project = [
   {
-    name: "Orchard Core",
+    name: "Orchard Core website",
     href: "https://orchardcore.net"
   },
   {
-    name: "Try Orchard Core",
+    name: "Orchard Core Docs website",
+    href: "https://docs.orchardcore.net"
+  },
+  {
+    name: "Try Orchard Core website",
     href: "https://try.orchardcore.net"
+  },
+  {
+    name: "Orchard Core Admin theme",
+    href: "https://github.com/agriffard/TheAdminTheme"
+  },
+  {
+    name: "Orchard Core Bootstrap theme",
+    href: "https://github.com/agriffard/TheBootstrapTheme"
+  },
+  {
+    name: "Orchard Core ClassLess theme",
+    href: "https://github.com/agriffard/TheClassLessTheme"
+  },
+  {
+    name: "Orchard Core CookieConsent module",
+    href: "https://github.com/agriffard/CookieConsent.OrchardCore"
+  },
+  {
+    name: "Orchard Core Disqus.OrchardCore",
+    href: "https://github.com/agriffard/Disqus.OrchardCore"
+  },
+  {
+    name: "Orchard Core Prism module",
+    href: "https://github.com/agriffard/Prism.OrchardCore"
+  },
+  {
+    name: "Orchard Core Resume theme",
+    href: "https://github.com/agriffard/TheResumeTheme"
   }
 ];
 
