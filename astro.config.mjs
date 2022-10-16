@@ -9,7 +9,7 @@ import compress from "astro-compress";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://agriffard.pages.dev/",
+  site: "https://agriffard.github.io/",
   integrations: [tailwind({
     config: {
       applyBaseStyles: false

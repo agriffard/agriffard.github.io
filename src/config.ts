@@ -1,7 +1,7 @@
 import type { Project, SocialsObject } from "./types";
 
 export const SITE = {
-  website: "https://agriffard.pages.dev/",
+  website: "https://agriffard.github.io/",
   author: "Antoine Griffard",
   desc: "Adventures in .NET world.",
   title: "Antoine Griffard",
