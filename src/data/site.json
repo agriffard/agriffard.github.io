@@ -1,0 +1,28 @@
+{    
+    "skills": [
+        {"name": ".NET", "icon": "dotnetcore"},
+        {"name": "C#", "icon": "csharp"},
+        {"name": "Visual Studio", "icon": "visualstudio"},
+        {"name": "VS Code", "icon": "vscode"},
+        {"name": "HTML5", "icon": "html5"},
+        {"name": "Markdown", "icon": "markdown"},
+        {"name": "SQL", "icon": "microsoftsqlserver"},
+        {"name": "SQLite", "icon": "sqlite"},
+        {"name": "CSS3", "icon": "css3"},
+        {"name": "SASS", "icon": "sass"},
+        {"name": "Bootstrap", "icon": "bootstrap"},
+        {"name": "Tailwind", "icon": "tailwindcss"},
+        {"name": "JavaScript", "icon": "javascript"},
+        {"name": "JQuery", "icon": "jquery"},
+        {"name": "Angular", "icon": "angularjs"},
+        {"name": "React", "icon": "react"},
+        {"name": "Jira", "icon": "jira"},
+        {"name": "Confluence", "icon": "confluence"},
+        {"name": "Docker", "icon": "docker"},
+        {"name": "Kubernetes", "icon": "kubernetes"},
+        {"name": "Azure", "icon": "azure"},
+        {"name": "GitHub", "icon": "github"},
+        {"name": "Git", "icon": "git"},
+        {"name": "Nuget", "icon": "nuget", "type": "original"}
+    ]
+}

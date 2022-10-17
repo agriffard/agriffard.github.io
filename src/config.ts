@@ -19,12 +19,20 @@ export const LOGO_IMAGE = {
 
 export const PROJECTS: Project = [
   {
-    name: "Orchard Core website",
-    href: "https://orchardcore.net"
+    name: "Orchard Core",
+    href: "https://github.com/OrchardCMS/OrchardCore"
   },
   {
-    name: "Orchard Core Docs website",
+    name: "Orchard Core docs",
     href: "https://docs.orchardcore.net"
+  },
+  {
+    name: "Orchard Core translations",
+    href: "https://github.com/OrchardCMS/OrchardCore.Translations"
+  },
+  {
+    name: "Orchard Core website",
+    href: "https://orchardcore.net"
   },
   {
     name: "Try Orchard Core website",

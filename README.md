@@ -1,11 +1,35 @@
 # Antoine Griffard
 
-This site is made with:
+This site is made with [Astro](https://astro.build/).
 
-- [Astro](https://astro.build/)
-- [React](https://reactjs.org/)
-- [Tailwind](https://tailwindcss.com/)
-- [TypeScript](https://www.typescriptlang.org/)
+It is designed to be fast, light (12kb for the homepage) and content focused.
+
+## Features
+
+Below is a short list of features imlemented.
+
+- ✅ Posts with pagination
+- ✅ Featured posts
+- ✅ Recent posts
+- ✅ Draft posts
+- ✅ Categories and tags
+- ✅ Projects
+- ✅ Skills
+- ✅ Social links
+- ✅ Dark / Light theme
+- ✅ Responsive
+- ✅ Tailwind
+- ✅ Compress
+- ✅ 404
+- ✅ RSS
+- ✅ Search
+- ✅ Sitemap
+- ✅ SVG icons and favicon
+- ✅ Syntax highlighter
+- ✅ Table of Contents
+- ✅ Typescript
+- ✅ React integration
+- ✅ Astro components (Breadcrumbs, Datetime, ...)
 
 ## How to run locally
 
@@ -23,4 +47,5 @@ npm run dev
 
 ## Credits
 
-[AstroPaper](https://github.com/satnaing/astro-paper)
+[astro-paper](https://github.com/satnaing/astro-paper) for the main design and features.
+[astro-portfolio](https://github.com/rebelchris/astro-portfolio) for the Skills idea.
