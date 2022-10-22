@@ -71,23 +71,23 @@ export const PROJECTS: Project = [
 
 export const SOCIALS: SocialsObject = [
   {
-    name: "Microsoft",
+    name: "microsoft",
     href: "https://mvp.microsoft.com/en-us/PublicProfile/5000870?fullName=Antoine%20%20Griffard",
   },
   {
-    name: "Github",
+    name: "github",
     href: "https://github.com/agriffard",
   },
   {
-    name: "Linkedin",
+    name: "linkedin",
     href: "https://linkedin.com/in/agriffard",
   },
   {
-    name: "Twitter",
+    name: "twitter",
     href: "https://github.com/agriffard",
   },
   {
-    name: "Mail",
+    name: "email",
     href: "mailto:agriffard@hotmail.com",
   },
 ];

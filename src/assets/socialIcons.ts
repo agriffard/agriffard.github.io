@@ -1,7 +1,7 @@
 import type { SocialIcons } from "src/types";
 
 const socialIcons: SocialIcons = {
-  Github: `<svg
+  github: `<svg
     xmlns="http://www.w3.org/2000/svg"
     class="icon-tabler"
     stroke-linecap="round"
@@ -12,7 +12,7 @@ const socialIcons: SocialIcons = {
       d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
     ></path>
   </svg>`,
-  Linkedin: `<svg
+  linkedin: `<svg
     xmlns="http://www.w3.org/2000/svg"
     class="icon-tabler"
     stroke-linecap="round"
@@ -25,7 +25,7 @@ const socialIcons: SocialIcons = {
     <line x1="12" y1="16" x2="12" y2="11"></line>
     <path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
   </svg>`,
-  Mail: `<svg
+  email: `<svg
       xmlns="http://www.w3.org/2000/svg"
       class="icon-tabler"
       stroke-linecap="round"
@@ -35,14 +35,14 @@ const socialIcons: SocialIcons = {
       <rect x="3" y="5" width="18" height="14" rx="2"></rect>
       <polyline points="3 7 12 13 21 7"></polyline>
     </svg>`,
-  Microsoft: `<svg 
+  microsoft: `<svg 
       xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-windows" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
       <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
       <path d="M17.8 20l-12 -1.5c-1 -.1 -1.8 -.9 -1.8 -1.9v-9.2c0 -1 .8 -1.8 1.8 -1.9l12 -1.5c1.2 -.1 2.2 .8 2.2 1.9v12.1c0 1.2 -1.1 2.1 -2.2 1.9z" />
       <line x1="12" y1="5" x2="12" y2="19" />
       <line x1="4" y1="12" x2="20" y2="12" />
     </svg>`,
-  Twitter: `<svg
+  twitter: `<svg
       xmlns="http://www.w3.org/2000/svg"
       class="icon-tabler"
       stroke-linecap="round"

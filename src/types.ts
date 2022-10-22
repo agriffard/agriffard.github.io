@@ -26,8 +26,8 @@ export type SocialIcons = {
 };
 
 export type SocialMedia =
-  | "Microsoft"
-  | "Github"
-  | "Linkedin"
-  | "Mail"
-  | "Twitter";
+  | "microsoft"
+  | "github"
+  | "linkedin"
+  | "email"
+  | "twitter";
