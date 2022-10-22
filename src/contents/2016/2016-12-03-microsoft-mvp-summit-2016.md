@@ -19,7 +19,7 @@ Une des choses les plus intéressantes ces dernières années, c'est de pouvoir 
 La plupart des projets sont maintenant visibles publiquement sur [GitHub](https://github.com/dotnet) et acceptent les contributions externes.
 
 Le développement du framework .NET Core a bien sûr adopté cette nouvelle approche de l'Open Source.  
-On a pu ainsi constater une participation de plus en plus importante de contributeurs externes.  
+On a pu ainsi constater une participation de plus en plus importante de contributeurs externes.
 
 De nombreuses évolutions devraient encore améliorer les performances.  
 Par exemple, le serveur HTTP Kestrel pour ASP.NET Core 1.1 se place déjà dans le TOP 10 des frameworks les plus rapides pour renvoyer du plain text.

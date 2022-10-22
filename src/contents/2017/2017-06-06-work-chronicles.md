@@ -5,6 +5,7 @@ datetime: 2017-06-06T12:00:00Z
 categories: [Picture]
 tags: [Dev]
 ---
+
 ![Expertise](/assets/blog/WorkChronicles/Expertise.png)
 
 ![Hobbies](/assets/blog/WorkChronicles/Hobbies.png)

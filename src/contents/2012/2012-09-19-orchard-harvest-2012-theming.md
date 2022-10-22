@@ -14,33 +14,33 @@ Cette session avait pour objectif de présenter les bases de la création de th�
 
 ## Successful web sites = Design + Content + Performance
 
-Le premier principe a avoir à l'esprit est qu'un site efficace repose sur 3 ingrédients :  
+Le premier principe a avoir à l'esprit est qu'un site efficace repose sur 3 ingrédients :
 
-- Un Design convivial et ergonomique.  
-- Des Contenus pertinents et bien structurés.  
+- Un Design convivial et ergonomique.
+- Des Contenus pertinents et bien structurés.
 - Des Performances qui permettent de supporter la charge des visites.
 
 La philosophie de développement dans Orchard est d'essayer de respecter le plus possible ces prérogatives, notamment lorsqu'il s'agit de la gestion des thèmes et de l'interface utilisateur.
 
 Des captures d'écran de sites existants nous ont rappelé à quel point une interface graphique inadaptée (couleurs criardes, surcharge des contenus, gifs animés, …) peut desservir le contenu du site.
 
-Plusieurs sites se sont ainsi déjà lancés dans la création de thèmes Orchard, parmi lesquels :  
+Plusieurs sites se sont ainsi déjà lancés dans la création de thèmes Orchard, parmi lesquels :
 
-- [Bind Tuning](http://tuning.bind.pt/Orchard-Themes.aspx) (qui a été un des premiers à proposer des thèmes personnalisés pour Orchard)  
+- [Bind Tuning](http://tuning.bind.pt/Orchard-Themes.aspx) (qui a été un des premiers à proposer des thèmes personnalisés pour Orchard)
 - [Orchard Prime](http://www.orchardprime.com/) (qui a réalisé le design du site [http://harvest.orchardproject.net/](http://harvest.orchardproject.net/))
 
 ## Thèmes Orchard
 
-Parmi les avantages des thèmes développés pour Orchard, on peut voir qu'ils sont :  
+Parmi les avantages des thèmes développés pour Orchard, on peut voir qu'ils sont :
 
-- Tailored (adaptés sur mesure aux contenus)  
-- Framework based (reposent sur une plateforme solide)  
+- Tailored (adaptés sur mesure aux contenus)
+- Framework based (reposent sur une plateforme solide)
 - Platform oriented (utilisent de nombreux outils et aides pour personnaliser au mieux le design)
 
-Pour rappel, un thème se compose des éléments suivants :  
+Pour rappel, un thème se compose des éléments suivants :
 
-- Un fichier Manifest qui décrit ses informations globales.  
-- Des ressources graphiques (css, images, scripts)  
+- Un fichier Manifest qui décrit ses informations globales.
+- Des ressources graphiques (css, images, scripts)
 - Un fichier placement.info qui spécifie le positionnement des shapes.
 
 Il peut également hériter d'un thème parent pour bénéficier des éléments de base, tout en permettant de le personnaliser.

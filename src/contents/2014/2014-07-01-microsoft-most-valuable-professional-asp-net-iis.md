@@ -8,7 +8,7 @@ tags: [MVP]
 
 Ce 1er Juillet, j'ai reçu le mail du programme Microsoft MVP (Most Valuable Professional) m'annonçant que j'étais nommé MVP dans la catégorie ASP.NET/IIS.
 
-> *Félicitations! Nous sommes heureux de vous remettre la récompense MVP Microsoft® 2014! Cette récompense est accordée aux leaders d'exception de la communauté technique qui partagent activement leur expertise pratique de grande qualité. Nous apprécions vos remarquables contributions dans les communautés techniques ASP.NET/IIS lors de cette année passée.*
+> _Félicitations! Nous sommes heureux de vous remettre la récompense MVP Microsoft® 2014! Cette récompense est accordée aux leaders d'exception de la communauté technique qui partagent activement leur expertise pratique de grande qualité. Nous apprécions vos remarquables contributions dans les communautés techniques ASP.NET/IIS lors de cette année passée._
 
 [![MVP Logo](/assets/blog/Microsoft-Most-Valuable-Professional/MVP_Logo.png)](http://mvp.microsoft.com/)
 
@@ -22,6 +22,6 @@ En effet, depuis le mois d'Avril dernier, le programme MVP s'est ouvert aux cont
 
 [http://www.hanselman.com/blog/ChangesInTheMicrosoftMVPProgramMVPsForOpenSourceContributions.aspx](http://www.hanselman.com/blog/ChangesInTheMicrosoftMVPProgramMVPsForOpenSourceContributions.aspx "http://www.hanselman.com/blog/ChangesInTheMicrosoftMVPProgramMVPsForOpenSourceContributions.aspx")
 
-Je compte bien continuer à participer à promouvoir le Framework .NET.  
+Je compte bien continuer à participer à promouvoir le Framework .NET.
 
 La future version d'[ASP.NET](https://github.com/aspnet) annonce de nombreuses nouveautés très enthousiasmantes que j'essaierai de faire partager.

@@ -22,32 +22,30 @@ Quelques exemples d'Hello World dans différents langages que j'ai pu apprendre 
 
 ### HTML
 
-``` html
+```html
 <!DOCTYPE html>
 <html>
-    <body>
-        <h1>Hello, World!</h1>
-    </body>
+  <body>
+    <h1>Hello, World!</h1>
+  </body>
 </html>
 ```
 
 ### Javascript
 
-``` javascript
-<script>
-console.log('Hello, World!');
-</script>
+```javascript
+<script>console.log('Hello, World!');</script>
 ```
 
 ### Scheme
 
-``` scheme
+```scheme
 (display "Hello, World!")
 ```
 
 ### Ada
 
-``` ada
+```ada
 with TEXT_IO;
 procedure HELLO is
 begin
@@ -57,7 +55,7 @@ end HELLO;
 
 ### Java
 
-``` java
+```java
 public class HelloWorld
    {
         public static void main(String[] args)
@@ -69,7 +67,7 @@ public class HelloWorld
 
 ### C
 
-``` c
+```c
 #include <stdio.h>
 int main(void){
     printf("Hello, World!\n");
@@ -79,7 +77,7 @@ int main(void){
 
 ### PHP
 
-``` php
+```php
 <?php
  echo 'Hello, World!';
 ?>
@@ -87,10 +85,11 @@ int main(void){
 
 ### SQL
 
-``` sql
+```sql
 SELECT 'Hello, World!';
 ```
-<!-- 
+
+<!--
 ### ASP
 
 ``` plaintext
@@ -101,12 +100,12 @@ SELECT 'Hello, World!';
 
 ``` plaintext
 Response.Write("Hello, World!")
-``` 
+```
 -->
 
 ### Visual Basic
 
-``` vb
+```vb
 Sub Main()
  Print "Hello, World!"
 End Sub
@@ -114,7 +113,7 @@ End Sub
 
 ### VB.NET
 
-``` vb
+```vb
 Class HelloWorldApp
   Shared Sub Main()
     System.Console.WriteLine("Hello, World!")
@@ -124,7 +123,7 @@ End Class
 
 ### CSharp
 
-``` c#
+```c#
 class HelloWorldApp{
   static void Main(){
     System.Console.WriteLine("Hello, World!");

@@ -41,8 +41,8 @@ Here is a non-exhaustive list of what I have done in New York:
 - Saw a Trump Building but it was not the Trump tower.
 - Ate a Burrito at Chipotle's for the first time.
 - Visited the [Intrepid sea air &amp; space museum](https://en.wikipedia.org/wiki/Intrepid_Sea,_Air_%26_Space_Museum).
-- Visited the [USS Intrepid](https://en.wikipedia.org/wiki/USS_Intrepid_(CV-11)) aircraft carrier.
-- Visited the [Growler submarine](https://en.wikipedia.org/wiki/USS_Growler_(SSG-577)).
+- Visited the [USS Intrepid](<https://en.wikipedia.org/wiki/USS_Intrepid_(CV-11)>) aircraft carrier.
+- Visited the [Growler submarine](<https://en.wikipedia.org/wiki/USS_Growler_(SSG-577)>).
 - Visited the [space shuttle Enterprise pavilion](https://en.wikipedia.org/wiki/Space_Shuttle_Enterprise) on the flight deck.
 - Climbed to the captain's bridge at the top of the USS Intrepid.
 - Saw the British Airways Concorde and a lot of helicopters and planes like the Black Bird or the F-16.
@@ -89,7 +89,7 @@ Here is a non-exhaustive list of what I have done in New York:
 - Took an American citizenship test (multiple choice quiz) and scored 8/10. I didn't remember [the US constitution](https://en.wikipedia.org/wiki/United_States_Constitution) was written in 1787.
 - Talked to Benedek and tried to teach him how to speak backwards in French [Verlan](https://en.wikipedia.org/wiki/Verlan).
 - Visited the Chrysler building, but I could only access the lobby.
-- Watched a Star Trek episode in which [Captain Kirk created a robot to help exploring the universe](https://en.wikipedia.org/wiki/The_Changeling_(Star_Trek:_The_Original_Series)).
+- Watched a Star Trek episode in which [Captain Kirk created a robot to help exploring the universe](<https://en.wikipedia.org/wiki/The_Changeling_(Star_Trek:_The_Original_Series)>).
 
 ## Friday 24th
 

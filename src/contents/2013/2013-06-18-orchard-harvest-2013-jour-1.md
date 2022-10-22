@@ -17,10 +17,10 @@ La première conférence européenne organisée par la communauté [Orchard](htt
 La matinée a commencé avec une intervention d'[Ylan Kunstler](http://euro2013.orchardharvest.org/speaker/ylan-kunstler) qui a consacré beaucoup de temps à l'organisation de cet évènement et a ainsi rappelé à quel point il était important de se réunir pour échanger et rencontrer de nouvelles personnes afin de développer la communauté Orchard.
 
 [Bertrand Le Roy](http://euro2013.orchardharvest.org/speaker/bertrand-le-roy) a ensuite déroulé un historique des versions successives du CMS et des fonctinnalités implémentées au fur et à mesure.  
-Il a mis en avant les statistiques croissantes de ces derniers mois qui montrent l'intérêt des développeurs pour le projet :  
+Il a mis en avant les statistiques croissantes de ces derniers mois qui montrent l'intérêt des développeurs pour le projet :
 
-- Téléchargements sur Codeplex et la Web plateforme galerie.  
-- Nombre de discussions sur le forum et sur StackOverflow.  
+- Téléchargements sur Codeplex et la Web plateforme galerie.
+- Nombre de discussions sur le forum et sur StackOverflow.
 - Nombre de modules et de thèmes et de téléchargements de la Galerie Orchard.
 
 ## 10h – 10h45 Responsive Web Design &amp; Beyond
@@ -33,13 +33,13 @@ Le redimensionnement des images, du texte ou des tableaux peut aussi s'adapter �
 Les media queries sont bien sûr le meilleure moyen de définir l'affichage des éléments selon la résolution.  
 La navigation en particulier peut faire appel à des types de menus qui conviennent mieux à des écrans plus petits (Select menu, Toggle, Left nav Flyout, …).
 
-De nombreux frameworks CSS existent avec des styles prédéfinis qui répondent bien à ce type de design :  
+De nombreux frameworks CSS existent avec des styles prédéfinis qui répondent bien à ce type de design :
 
-- Bootstrap  
-- Foundation  
+- Bootstrap
+- Foundation
 - Pure Css
 
-## 11h – 11h45 The natural relationship of MV* JS Frameworks and the Orchard ecosystem
+## 11h – 11h45 The natural relationship of MV\* JS Frameworks and the Orchard ecosystem
 
 [Steve Taylor](http://euro2013.orchardharvest.org/speaker/steve-taylor) a fait une démonstration de plusieurs frameworks Javascript (Angular.js, Backbone) et de la façon de consommer des informations côté client et de les afficher sous Orchard avec des patterns de développement MVC, MVVM.
 

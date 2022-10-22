@@ -24,9 +24,9 @@ L'indicateur principal sur lequel se base le visiteur pour déterminer si la nav
 
 La scalabilité est justement le terme qui désigne la capacité de votre site à s'adapter à une augmentation du flux de visiteurs.
 
-Pour présenter les choses simplement, il y a 2 façons dont la charge peut être supportée :  
+Pour présenter les choses simplement, il y a 2 façons dont la charge peut être supportée :
 
-- La charge serveur (verticale) : on fait évoluer le serveur pour supporter la montée en charge (Mémoire, CPU, …).  
+- La charge serveur (verticale) : on fait évoluer le serveur pour supporter la montée en charge (Mémoire, CPU, …).
 - Le nombre de serveurs (horizontale) : on ajoute des serveurs (ex : ferme de serveurs, cloud computing) pour répartir la charge.
 
 L'augmentation de la charge a des impacts à plusieurs points clés :
@@ -39,11 +39,11 @@ Un élément important à ne pas négliger concerne le temps de démarrage du si
 
 ## Mesures des performances
 
-Il existe de nombreux outils qui peuvent vous aider à mesurer les performances :  
+Il existe de nombreux outils qui peuvent vous aider à mesurer les performances :
 
-- Visual Studio performance Tools  
-- [Mini profiler](http://gallery.orchardproject.net/List/Modules/Orchard.Module.Four2n.MiniProfiler) : un module qui vous liste les temps d'appels de chauqe méthode.  
-- [Web Capacity Analysis Tool](http://www.google.fr/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&ved=0CCUQFjAA&url=http%3A%2F%2Fwww.iis.net%2Fdownloads%2Fcommunity%2F2007%2F05%2Fwcat-63-(x86)&ei=NFFcUOuxJ4eb1AXbj4GwCQ&usg=AFQjCNGtBbRen-Fz_OaoisCAk5cBFivVSQ&sig2=VqSGKZrXXIQvTkSHkfeVmw) (WCAT) : un outil simple pour faire des requêtes Http (Voir Orchard.Profile et le fichier Go.cmd)
+- Visual Studio performance Tools
+- [Mini profiler](http://gallery.orchardproject.net/List/Modules/Orchard.Module.Four2n.MiniProfiler) : un module qui vous liste les temps d'appels de chauqe méthode.
+- [Web Capacity Analysis Tool](<http://www.google.fr/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&ved=0CCUQFjAA&url=http%3A%2F%2Fwww.iis.net%2Fdownloads%2Fcommunity%2F2007%2F05%2Fwcat-63-(x86)&ei=NFFcUOuxJ4eb1AXbj4GwCQ&usg=AFQjCNGtBbRen-Fz_OaoisCAk5cBFivVSQ&sig2=VqSGKZrXXIQvTkSHkfeVmw>) (WCAT) : un outil simple pour faire des requêtes Http (Voir Orchard.Profile et le fichier Go.cmd)
 
 Un test encore plus basique est d'utiliser l'outil de développement Web de votre navigateur qui fournit souvent un onglet pour afficher le temps de chargement de chaque fichier. En regardant les résultats renvoyés, on peut déterminer quelles ressources prennent le plus de temps en fonction de leur taille ou de leur délai de livraison. Il distingue aussi parfois le temps de chargement ressenti (zone rouge pour montrer à partir de quel moment la page est consultable).
 
@@ -61,10 +61,10 @@ Cela passe parfois par des optimisations de requêtes en base de données (ex : 
 
 La notion de mise en cache (Caching) est aussi un élément central pour diminuer le nombre de requêtes.
 
-Il existe plusieurs niveaux et mécanismes de cache :  
+Il existe plusieurs niveaux et mécanismes de cache :
 
-- Application Caching : En implémentant ICacheManager, on a ensuite la possibilité d'utiliser la classe Signal pour gérer des objets en cache.  
-- Static Caching : avec le module [Contrib.Cache](http://gallery.orchardproject.net/List/Modules/Orchard.Module.Contrib.Cache), il est assez simple d'activer et de mettre en mémoire des éléments de contenus.  
+- Application Caching : En implémentant ICacheManager, on a ensuite la possibilité d'utiliser la classe Signal pour gérer des objets en cache.
+- Static Caching : avec le module [Contrib.Cache](http://gallery.orchardproject.net/List/Modules/Orchard.Module.Contrib.Cache), il est assez simple d'activer et de mettre en mémoire des éléments de contenus.
 - Reverse proxy caching : avec IIS, [Application Request Routing](http://www.iis.net/downloads/microsoft/application-request-routing) (ARR) qui améliore les performances pour distribuer du contenu ou des ressources statiques.
 
 Comme vous le voyez, l'amélioration des performances peut se faire à plusieurs niveaux. Un site performant et qui supporte les montées en charge peut faire la différence dans la manière dont les visiteurs l'adoptent et le parcourent.

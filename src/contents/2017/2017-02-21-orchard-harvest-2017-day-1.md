@@ -18,7 +18,7 @@ Sebastien started this day by a keynote, introducing the organization of the eve
 
 ## [Using external data with Orchard](http://orchardharvest.org/sessions/external-data-with-orchard)
 
-### Jorge Agraz (OneStop Internet)  
+### Jorge Agraz (OneStop Internet)
 
 During this session, Jorge explained how Onestop has used their external commerce data and Orchard's Content Management system to make their product data display like any other Orchard content.
 
@@ -30,7 +30,7 @@ During this session, Jorge explained how Onestop has used their external commerc
 
 In this session Chris and Daniel created a website and came across several simple and common performance problems that the built-in output cache in Orchard cannot solve.
 
-Their IDeliverable.Donuts module is available here:  
+Their IDeliverable.Donuts module is available here:
 
 [www.ideliverable.com/products/premium-orchard-modules/ideliverable-donuts](http://www.ideliverable.com/products/premium-orchard-modules/ideliverable-donuts)
 
@@ -54,7 +54,7 @@ Rob presented how Bede Gaming is using Orchard CMS to build a multi-tenant solut
 
 ### [What is Orchard Core SaaS Framework?](http://orchardharvest.org/sessions/what-is-orchard-core-saas-framework)
 
-### Nicholas Mayne  
+### Nicholas Mayne
 
 Nick made multiple demos showing how to use the framework used in Orchard Core to create a modular application.
 

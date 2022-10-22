@@ -1,20 +1,23 @@
 ---
 const { item } = Astro.props;
 ---
+
 <div class="skills-item tooltip-container">
-    <i class={`devicon-${item.icon}-${(item.type?item.type:'plain')}`} title={item.name}></i>
+  <i
+    class={`devicon-${item.icon}-${item.type ? item.type : "plain"}`}
+    title={item.name}></i>
 </div>
 <style>
-.skills-item {
+  .skills-item {
     padding: 10px;
     margin: 5px;
     border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.skills-item i {
+  }
+  .skills-item i {
     color: teal;
     font-size: 2rem;
-}
+  }
 </style>

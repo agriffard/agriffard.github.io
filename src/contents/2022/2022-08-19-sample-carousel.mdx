@@ -1,0 +1,36 @@
+---
+title: Carousel
+author: agriffard
+datetime: 2022-08-19T12:00:00Z
+categories: [Picture]
+tags: [Carousel]
+description: Carousel
+draft: true
+extra: ["gallery"]
+---
+
+import Carousel from "../../components/Carousel.astro";
+export const carouselPages = [
+  {
+    name: "1",
+    image: "../images/astro/logomark-dark.png",
+    title: "Title",
+    description: "Description",
+  },
+  {
+    name: "2",
+    image: "../images/astro/introducing-astro.jpg",
+    title: "Title",
+    description: "Description",
+  },
+  {
+    name: "3",
+    image: "../images/astro/social.jpeg",
+    title: "Title",
+    description: "Description",
+  },
+];
+
+## Carousel
+
+<Carousel pages={carouselPages} />

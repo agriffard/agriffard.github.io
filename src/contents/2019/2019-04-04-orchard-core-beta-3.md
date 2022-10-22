@@ -12,7 +12,7 @@ Orchard Core is available in [Beta 3](https://github.com/OrchardCMS/OrchardCore/
 
 ### Flexible content management
 
-Define custom content types dynamically and reuse content fields. Define roles and permissions for all your users.  
+Define custom content types dynamically and reuse content fields. Define roles and permissions for all your users.
 
 ### Full, decoupled, or headless cms
 

@@ -37,22 +37,34 @@ const socialImageURL = new URL(
     <meta property="twitter:description" content={description} />
     <meta property="twitter:image" content={socialImageURL} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    {
+      SITE.extra?.includes("math") && (
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/katex@0.16.1/dist/katex.min.css"
+          integrity="sha384-pe7s+HmY6KvqRkrRRUr4alQJ0SkmzCft3RpK1ttGMa7qk8Abp/MEa/4wgceRHloO"
+          crossorigin="anonymous"
+        />
+      )
+    }
     <script is:inline>
       const primaryColorScheme = "none";
-      const darkModeMediaQuery = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      const darkModeMediaQuery = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      ).matches;
       const currentTheme = localStorage.getItem("theme");
       let theme;
       if (currentTheme) {
         theme = currentTheme === "dark" ? "theme-dark" : "";
-      } 
-      else {
-        if (primaryColorScheme === "dark" || (primaryColorScheme === "none" && darkModeMediaQuery)) {
+      } else {
+        if (
+          primaryColorScheme === "dark" ||
+          (primaryColorScheme === "none" && darkModeMediaQuery)
+        ) {
           theme = "theme-dark";
-        }
-        else if (primaryColorScheme === "light") {
+        } else if (primaryColorScheme === "light") {
           theme = "";
-        }
-        else {
+        } else {
           theme = darkModeMediaQuery ? "theme-dark" : "";
         }
       }

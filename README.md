@@ -20,10 +20,13 @@ Below is a short list of features imlemented.
 - ✅ Responsive
 - ✅ Tailwind
 - ✅ Compress
+- ✅ Carousel
+- ✅ Gallery
 - ✅ 404
 - ✅ RSS
 - ✅ Search
 - ✅ Sitemap
+- ✅ Support KaTeX for math equations
 - ✅ SVG icons and favicon
 - ✅ Syntax highlighter
 - ✅ Table of Contents
