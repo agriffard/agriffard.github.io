@@ -19,7 +19,7 @@ const { centered = false } = Astro.props;
         className="link-button"
         title={social.name}
       >
-        <Icon pack="mdi" name={social.name} />
+        <Fragment set:html={socialIcons[social.name]} />
       </LinkButton>
     ))
   }
