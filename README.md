@@ -21,7 +21,6 @@ Below is a short list of features imlemented.
 - ✅ Tailwind
 - ✅ Compress
 - ✅ Carousel
-- ✅ Gallery
 - ✅ 404
 - ✅ RSS
 - ✅ Search
