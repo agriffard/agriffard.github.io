@@ -26,7 +26,7 @@ export default defineConfig({
     react(),
     sitemap(),
     compress(),
-    image(),
+    //image(),
     robotsTxt(),
     mdx(),
   ],
