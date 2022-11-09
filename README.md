@@ -20,7 +20,6 @@ Below is a short list of features imlemented.
 - ✅ Responsive
 - ✅ Tailwind
 - ✅ Compress
-- ✅ Carousel
 - ✅ 404
 - ✅ RSS
 - ✅ Search
