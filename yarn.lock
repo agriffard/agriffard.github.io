@@ -33,7 +33,7 @@
   resolved "https://registry.yarnpkg.com/@astrojs/compiler/-/compiler-0.29.5.tgz#708db3e2632caf30480e4f502e7a0fd0f1c1d7d2"
   integrity sha512-XpSJyBO6ha5mGqsD71ie83SOcv3p7zKq6qzngyeLKhccCXtf9Zn/4tGbi/Iq4YmkRBNCjLEkF0wZMYWY+eJYAA==
 
-"@astrojs/image@^0.11.2":
+"@astrojs/image@^0.11.1":
   version "0.11.2"
   resolved "https://registry.yarnpkg.com/@astrojs/image/-/image-0.11.2.tgz#1aad6bab50815af005915b89380a739797292bb5"
   integrity sha512-M4V5b3eO+9vFu9gRPFCtzdzyWWmOEGxDhjY73kLUIxJt2LP8c4NzJtR9unETGOKAlfMFeSJdDQ2L0LTCVH/miw==
