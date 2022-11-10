@@ -15,7 +15,7 @@
     "@astrojs/rss": "^1.0.3",
     "@types/react": "^18.0.25",
     "astro": "^1.6.5",
-    "astro-compress": "^1.1.1",
+    "astro-compress": "^1.1.3",
     "astro-icon": "^0.8.0",
     "astro-robots-txt": "^0.3.10",
     "exifr": "^7.1.3",
