@@ -5,7 +5,6 @@ import sitemap from "@astrojs/sitemap";
 import compress from "astro-compress";
 //import image from "@astrojs/image";
 import robotsTxt from "astro-robots-txt";
-import mdx from "@astrojs/mdx";
 import remarkToc from "remark-toc";
 import remarkCollapse from "remark-collapse";
 import remarkMath from "remark-math";
@@ -28,7 +27,6 @@ export default defineConfig({
     compress(),
     //image(),
     robotsTxt(),
-    mdx(),
   ],
   markdown: {
     extendDefaultPlugins: true,
