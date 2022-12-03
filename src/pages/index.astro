@@ -12,6 +12,9 @@ import type { Frontmatter } from "src/types";
 const posts = await Astro.glob<Frontmatter>("../contents/**/*.md*");
 
 const sortedPosts = getSortedPosts(posts);
+const featuredPosts = sortedPosts.filter(
+  ({ frontmatter }) => frontmatter.featured
+);
 ---
 
 <Layout>
@@ -20,24 +23,26 @@ const sortedPosts = getSortedPosts(posts);
     <!-- <section id="hero">
       <h1>Welcome to my site</h1>
     </section>
-    <Hr /> -->
-    <section id="featured">
-      <h2>Featured posts</h2>
-      <ul>
-        {
-          sortedPosts.map(
-            ({ frontmatter }) =>
-              frontmatter.featured && (
+    <Hr /> -->    
+    {
+      featuredPosts.length > 0 && (
+        <>
+          <section id="featured">
+            <h2>Featured</h2>
+            <ul>
+              {featuredPosts.map(({ frontmatter }) => (
                 <Card
                   href={`/posts/${slugify(frontmatter)}`}
                   post={frontmatter}
                   secHeading={false}
                 />
-              )
-          )
-        }
-      </ul>
-    </section>
+              ))}
+            </ul>
+          </section>
+          <Hr />
+        </>
+      )
+    }
     <Hr />
     <section id="recent-posts">
       <h2>Recent posts</h2>
