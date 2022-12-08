@@ -47,29 +47,7 @@ const socialImageURL = new URL(
         />
       )
     }
-    <script is:inline>
-      const primaryColorScheme = "none";
-      const darkModeMediaQuery = window.matchMedia(
-        "(prefers-color-scheme: dark)"
-      ).matches;
-      const currentTheme = localStorage.getItem("theme");
-      let theme;
-      if (currentTheme) {
-        theme = currentTheme === "dark" ? "theme-dark" : "";
-      } else {
-        if (
-          primaryColorScheme === "dark" ||
-          (primaryColorScheme === "none" && darkModeMediaQuery)
-        ) {
-          theme = "theme-dark";
-        } else if (primaryColorScheme === "light") {
-          theme = "";
-        } else {
-          theme = darkModeMediaQuery ? "theme-dark" : "";
-        }
-      }
-      document.querySelector("html").className = theme;
-    </script>
+    <script is:inline src="/toggle-theme.js"></script>
   </head>
   <body>
     <slot />

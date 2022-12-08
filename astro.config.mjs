@@ -14,39 +14,27 @@ import { remarkReadingTime } from "./remark-plugins/remark-reading-time.mjs";
 import { remarkDiagram } from "./remark-plugins/remark-diagram.mjs";
 
 // https://astro.build/config
+import mdx from "@astrojs/mdx";
+
+// https://astro.build/config
 export default defineConfig({
   site: "https://agriffard.github.io/",
-  integrations: [
-    tailwind({
-      config: {
-        applyBaseStyles: false,
-      },
-    }),
-    react(),
-    sitemap(),
-    compress(),
-    //image(),
-    robotsTxt(),
-  ],
+  integrations: [tailwind({
+    config: {
+      applyBaseStyles: false
+    }
+  }), react(), sitemap(), compress(),
+  //image(),
+  robotsTxt(), mdx()],
   markdown: {
     extendDefaultPlugins: true,
-    remarkPlugins: [
-      remarkReadingTime,
-      remarkMath,
-      remarkPlantUML,
-      remarkDiagram,
-      remarkToc,
-      [
-        remarkCollapse,
-        {
-          test: "Table of contents",
-        },
-      ],
-    ],
+    remarkPlugins: [remarkReadingTime, remarkMath, remarkPlantUML, remarkDiagram, remarkToc, [remarkCollapse, {
+      test: "Table of contents"
+    }]],
     rehypePlugins: [rehypeKatex],
     shikiConfig: {
       theme: "one-dark-pro",
-      wrap: true,
-    },
-  },
+      wrap: true
+    }
+  }
 });
