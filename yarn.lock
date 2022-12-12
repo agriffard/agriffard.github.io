@@ -18,10 +18,15 @@
     "@jridgewell/gen-mapping" "^0.1.0"
     "@jridgewell/trace-mapping" "^0.3.9"
 
-"@astrojs/compiler@^0.29.15", "@astrojs/compiler@^0.29.3":
+"@astrojs/compiler@^0.29.3":
   version "0.29.17"
   resolved "https://registry.yarnpkg.com/@astrojs/compiler/-/compiler-0.29.17.tgz#5c65e18fd5dde9620dcc1794a858609b66408215"
   integrity sha512-6ZbRGVunUMHxROD9Cleqkrfrj/kM9o43nLVwycdxCexCB5G372evy2ZM46LhaG/k5B5yC0PByNHTaGny0ll3iQ==
+
+"@astrojs/compiler@^0.31.0":
+  version "0.31.0"
+  resolved "https://registry.yarnpkg.com/@astrojs/compiler/-/compiler-0.31.0.tgz#b026ec0e5ffa0eb4a99713530c74e05f50f9c29b"
+  integrity sha512-V8/Re/wXgXTZzpfWs4KZBLU5dRhnO6kSd4e3vObGuj+HFGHjaD11wws1zvaC9cXLQyQsM5CSrGagFGYlRZKvVQ==
 
 "@astrojs/language-server@^0.28.3":
   version "0.28.3"
@@ -71,10 +76,10 @@
     unist-util-visit "^4.1.0"
     vfile "^5.3.2"
 
-"@astrojs/mdx@^0.12.1":
-  version "0.12.1"
-  resolved "https://registry.yarnpkg.com/@astrojs/mdx/-/mdx-0.12.1.tgz#dda82694530c9dd8ed313d706dbf45342bcf9c52"
-  integrity sha512-d41ariAR7VMHb+4ALiXPbYXMPSqjpGqTAZBSp40sRam084r/4Vwr6F1mwRKWFDwbwgN6iLN+fczSQDvqoOD2JQ==
+"@astrojs/mdx@^0.12.2":
+  version "0.12.2"
+  resolved "https://registry.yarnpkg.com/@astrojs/mdx/-/mdx-0.12.2.tgz#106cbe802548d61cea046e30a9f5feaa6c45406d"
+  integrity sha512-rv4f2h0zdQVu+dA8mPfCs3zp0j8CECJ11a9DijxcIcSZusou6CZ1N4KWMLlQYVKl8bOA5h0VzL/IvToh9A+dnA==
   dependencies:
     "@astrojs/prism" "^1.0.2"
     "@mdx-js/mdx" "^2.1.2"
@@ -123,10 +128,10 @@
     "@babel/core" ">=7.0.0-0 <8.0.0"
     "@babel/plugin-transform-react-jsx" "^7.17.12"
 
-"@astrojs/rss@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@astrojs/rss/-/rss-1.0.3.tgz#80011a48a72b6750c33f71c75c7e5859adb9f447"
-  integrity sha512-SkAUMnp/LpryOR5B69rlF69AjKE3YlIPRmWad5WoRVeAH1CEEvSh8sC8/qhtG9haPFYa9JoX6zp5V5MkUOop3A==
+"@astrojs/rss@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@astrojs/rss/-/rss-1.1.0.tgz#1eb0c13ec35873b78879ad232e4d241b3983185c"
+  integrity sha512-kSOIwn7S94icOL4YBaRQ+BmeXkWufJCDEmnUdRzGtRCCBF0HHEQt5xOGkxj3LAF+7PPOJiIi7DZ/LE9sR9cfuQ==
   dependencies:
     fast-xml-parser "^4.0.8"
 
@@ -447,7 +452,7 @@
     "@jridgewell/gen-mapping" "^0.3.0"
     "@jridgewell/trace-mapping" "^0.3.9"
 
-"@jridgewell/sourcemap-codec@1.4.14", "@jridgewell/sourcemap-codec@^1.4.10":
+"@jridgewell/sourcemap-codec@1.4.14", "@jridgewell/sourcemap-codec@^1.4.10", "@jridgewell/sourcemap-codec@^1.4.13":
   version "1.4.14"
   resolved "https://registry.yarnpkg.com/@jridgewell/sourcemap-codec/-/sourcemap-codec-1.4.14.tgz#add4c98d341472a289190b424efbdb096991bb24"
   integrity sha512-XPSJHWmi394fuUuzDnGz1wiKqWfo1yXecHQMRf2l6hztTO+nPru658AyDngaBe7isIxEkRsPR3FZh+s7iVa4Uw==
@@ -498,10 +503,10 @@
     source-map "^0.7.0"
     vfile "^5.0.0"
 
-"@nikolarhristov/pipeline@0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@nikolarhristov/pipeline/-/pipeline-0.1.0.tgz#c8a31c319c4c92ef6d781a73758855fb1ecc1a2a"
-  integrity sha512-kxrVA9uXidzQIC1AUSWhnG8JskTiAXpRqBbovCR7zlSdexFm6qb5TtP1dXj+nW3zHwMKTHTt7b+G1MjLnHFniA==
+"@nikolarhristov/pipeline@0.1.6":
+  version "0.1.6"
+  resolved "https://registry.yarnpkg.com/@nikolarhristov/pipeline/-/pipeline-0.1.6.tgz#4f2a23f96c60142375065beb3782d55108ba072e"
+  integrity sha512-gqPvOQ61uRJOoHGy1l0pqBIfzSkJWXkoa8kIyiCGh0Z+LbGB3edQ1svDcDnPy2dTTR0nN60uO6NeIqXcb0+IVQ==
   dependencies:
     "@types/csso" "5.0.0"
     "@types/html-minifier-terser" "7.0.0"
@@ -907,12 +912,12 @@ astring@^1.8.0:
   resolved "https://registry.yarnpkg.com/astring/-/astring-1.8.3.tgz#1a0ae738c7cc558f8e5ddc8e3120636f5cebcb85"
   integrity sha512-sRpyiNrx2dEYIMmUXprS8nlpRg2Drs8m9ElX9vVEXaCB4XEAJhKfs7IcX0IwShjuOAjLR6wzIrgoptz1n19i1A==
 
-astro-compress@^1.1.18:
-  version "1.1.18"
-  resolved "https://registry.yarnpkg.com/astro-compress/-/astro-compress-1.1.18.tgz#71255cb80f08f51467f10e6cbb9a78561d8c1662"
-  integrity sha512-/691T3/hxPbaxoatsNG3JUuUA7jj6+qQqWyqU4kAaFBNEV6lms6pmv1DECM8qaOx47pLZe7VeuXGkb8tOS2x9g==
+astro-compress@^1.1.21:
+  version "1.1.21"
+  resolved "https://registry.yarnpkg.com/astro-compress/-/astro-compress-1.1.21.tgz#da4aaa6a4ae4b93f4533f894ddd182a9374df6d2"
+  integrity sha512-O9imSPw8zPqIYnbHpDy1FOt3xwNZ3/lXean4bc0gEdrJMObapitHVOwBYmrwPTSYirXAOyUoFqctCkPMThjWig==
   dependencies:
-    "@nikolarhristov/pipeline" "0.1.0"
+    "@nikolarhristov/pipeline" "0.1.6"
 
 astro-icon@^0.8.0:
   version "0.8.0"
@@ -932,12 +937,12 @@ astro-robots-txt@^0.3.10:
     valid-filename "^4.0.0"
     zod "^3.19.1"
 
-astro@^1.6.13:
-  version "1.6.13"
-  resolved "https://registry.yarnpkg.com/astro/-/astro-1.6.13.tgz#42f881022b8854150309d99e0491fc28e2d1d90a"
-  integrity sha512-26Ip+7iCdHiK4FQokEWNYTcVDkJ76KLwlzUsuzLck8QBiUFQQUm9fs5nITHDI06k1EYfODYPH81xqZavXlC3Hg==
+astro@^1.6.15:
+  version "1.6.15"
+  resolved "https://registry.yarnpkg.com/astro/-/astro-1.6.15.tgz#b0eb711bf2ae9ec57f6ccb8f018c8b448318ad70"
+  integrity sha512-FT60PalffV0bCNxqEHadRzb+Rd3g3lYxV3fR9+bZ2CRlbSfC3UdoaLDh5wC6gJiz91caH1R0XiYaV0WT2Zg91g==
   dependencies:
-    "@astrojs/compiler" "^0.29.15"
+    "@astrojs/compiler" "^0.31.0"
     "@astrojs/language-server" "^0.28.3"
     "@astrojs/markdown-remark" "^1.1.3"
     "@astrojs/telemetry" "^1.0.1"
@@ -969,7 +974,7 @@ astro@^1.6.13:
     html-escaper "^3.0.3"
     import-meta-resolve "^2.1.0"
     kleur "^4.1.4"
-    magic-string "^0.25.9"
+    magic-string "^0.27.0"
     mime "^3.0.0"
     ora "^6.1.0"
     path-browserify "^1.0.1"
@@ -2707,12 +2712,12 @@ lru-cache@^6.0.0:
   dependencies:
     yallist "^4.0.0"
 
-magic-string@^0.25.9:
-  version "0.25.9"
-  resolved "https://registry.yarnpkg.com/magic-string/-/magic-string-0.25.9.tgz#de7f9faf91ef8a1c91d02c2e5314c8277dbcdd1c"
-  integrity sha512-RmF0AsMzgt25qzqqLc1+MbHmhdx0ojF2Fvs4XnOqz2ZOBXzzkEwc/dJQZCYHAn7v1jbVOjAZfK8msRn4BxO4VQ==
+magic-string@^0.27.0:
+  version "0.27.0"
+  resolved "https://registry.yarnpkg.com/magic-string/-/magic-string-0.27.0.tgz#e4a3413b4bab6d98d2becffd48b4a257effdbbf3"
+  integrity sha512-8UnnX2PeRAPZuN12svgR9j7M1uWMovg/CEnIwIG0LFkXSJJe4PdfUGiTGl8V9bsBHFUtfVINcSyYxd7q+kx9fA==
   dependencies:
-    sourcemap-codec "^1.4.8"
+    "@jridgewell/sourcemap-codec" "^1.4.13"
 
 markdown-extensions@^1.0.0:
   version "1.1.1"
@@ -4339,11 +4344,6 @@ source-map@^0.7.0, source-map@^0.7.3:
   version "0.7.4"
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.7.4.tgz#a9bbe705c9d8846f4e08ff6765acf0f1b0898656"
   integrity sha512-l3BikUxvPOcn5E74dZiq5BGsTb5yEwhaTSzccU6t4sDOH8NWJCstKO5QT2CvtFoK6F0saL7p9xHAqHOlCPJygA==
-
-sourcemap-codec@^1.4.8:
-  version "1.4.8"
-  resolved "https://registry.yarnpkg.com/sourcemap-codec/-/sourcemap-codec-1.4.8.tgz#ea804bd94857402e6992d05a38ef1ae35a9ab4c4"
-  integrity sha512-9NykojV5Uih4lgo5So5dtw+f0JgJX30KCNI8gwhz2J9A15wD0Ml6tjHKwf6fTSa6fAdVBdZeNOs9eJ71qCk8vA==
 
 space-separated-tokens@^2.0.0:
   version "2.0.2"
