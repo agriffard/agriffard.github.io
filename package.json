@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@akebifiky/remark-simple-plantuml": "^1.0.2",
-    "@astrojs/mdx": "^0.15.0",
+    "@astrojs/mdx": "^0.16.0",
     "@astrojs/rss": "^2.1.0",
     "@types/react": "^18.0.27",
     "astro": "^2.0.1",
