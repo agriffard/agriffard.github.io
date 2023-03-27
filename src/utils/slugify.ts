@@ -1,5 +1,5 @@
 import { slug as slugger } from "github-slugger";
-import type { Frontmatter } from "src/types";
+import type { Frontmatter } from "@types";
 
 export const slugifyStr = (str: string) => slugger(str);
 
