@@ -11,10 +11,10 @@
   },
   "dependencies": {
     "@akebifiky/remark-simple-plantuml": "^1.0.2",
-    "@astrojs/mdx": "^0.18.2",
+    "@astrojs/mdx": "^0.18.3",
     "@astrojs/rss": "^2.3.2",
-    "@types/react": "^18.0.33",
-    "astro": "^2.2.0",
+    "@types/react": "^18.0.34",
+    "astro": "^2.2.2",
     "astro-compress": "^1.1.35",
     "astro-icon": "^0.8.0",
     "astro-robots-txt": "^0.4.1",
