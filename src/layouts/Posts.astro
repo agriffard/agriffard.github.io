@@ -7,13 +7,12 @@ import Footer from "@components/Footer.astro";
 import Card from "@components/Card";
 import LinkButton from "@components/LinkButton.astro";
 import slugify from "@utils/slugify";
-import type { MarkdownInstance } from "astro";
-import type { Frontmatter } from "@types";
+import type { CollectionEntry } from "astro:content";
 
 export interface Props {
   pageNum: number;
   totalPages: number;
-  posts: MarkdownInstance<Frontmatter>[];
+  posts: CollectionEntry<"blog">[];
 }
 
 const { pageNum, totalPages, posts } = Astro.props;
@@ -24,17 +23,16 @@ const next = pageNum < totalPages ? "" : "disabled";
 
 <Layout title={`Posts | ${SITE.title}`}>
   <Header activeNav="posts" />
-  <Main pageTitle="Posts" pageDesc="All the articles.">
+  <Main pageTitle="Posts" pageDesc="All the articles I've posted.">
     <ul>
       {
-        posts.map(({ frontmatter }) => {
-          return (
-            <Card href={`/posts/${slugify(frontmatter)}`} post={frontmatter} />
-          );
-        })
+        posts.map(({ data }) => (
+          <Card href={`/posts/${slugify(data)}`} frontmatter={data} />
+        ))
       }
     </ul>
   </Main>
+
   {
     totalPages > 1 && (
       <nav class="pagination-wrapper" aria-label="Pagination">
@@ -68,10 +66,10 @@ const next = pageNum < totalPages ? "" : "disabled";
 
 <style>
   .pagination-wrapper {
-    @apply flex justify-center mt-auto mb-8;
+    @apply mt-auto mb-8 flex justify-center;
   }
   .disabled {
-    @apply opacity-50 hover:text-skin-base group-hover:fill-skin-base pointer-events-none select-none;
+    @apply pointer-events-none select-none opacity-50 hover:text-skin-base group-hover:fill-skin-base;
   }
   .disabled-svg {
     @apply group-hover:!fill-skin-base;
