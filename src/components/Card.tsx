@@ -1,9 +1,9 @@
 import Datetime from "./Datetime";
-import type { Frontmatter } from "@types";
+import type { BlogFrontmatter } from "@content/_schemas";
 
 export interface Props {
   href?: string;
-  post: Frontmatter;
+  frontmatter: BlogFrontmatter;
   secHeading?: boolean;
 }
 
@@ -14,18 +14,22 @@ const styles = {
   titleHeading: "font-medium text-lg hover:underline",
 };
 
-export default function Card({ href, post, secHeading = true }: Props) {
+export default function Card({ href, frontmatter, secHeading = true }: Props) {
+  const { title, pubDatetime, description } = frontmatter;
   return (
-    <li className={styles.cardContainer}>
-      <a href={href} className={styles.titleLink}>
+    <li className="my-6">
+      <a
+        href={href}
+        className="inline-block text-lg font-medium text-skin-accent decoration-dashed underline-offset-4 focus-visible:no-underline focus-visible:underline-offset-0"
+      >
         {secHeading ? (
-          <h2 className={styles.titleHeading}>{post.title}</h2>
+          <h2 className={styles.titleHeading}>{title}</h2>
         ) : (
-          <h3 className={styles.titleHeading}>{post.title}</h3>
+          <h3 className={styles.titleHeading}>{title}</h3>
         )}
       </a>
-      <Datetime datetime={post.datetime} />
-      <p>{post.description}</p>
+      <Datetime datetime={pubDatetime} />
+      <p>{description}</p>
     </li>
   );
 }

@@ -3,7 +3,6 @@ import tailwind from "@astrojs/tailwind";
 import react from "@astrojs/react";
 import sitemap from "@astrojs/sitemap";
 import compress from "astro-compress";
-//import image from "@astrojs/image";
 import robotsTxt from "astro-robots-txt";
 import remarkToc from "remark-toc";
 import remarkCollapse from "remark-collapse";
@@ -12,11 +11,8 @@ import rehypeKatex from "rehype-katex";
 import remarkPlantUML from "@akebifiky/remark-simple-plantuml";
 import { remarkReadingTime } from "./remark-plugins/remark-reading-time.mjs";
 import { remarkDiagram } from "./remark-plugins/remark-diagram.mjs";
-
-// https://astro.build/config
 import mdx from "@astrojs/mdx";
 
-// https://astro.build/config
 export default defineConfig({
   site: "https://agriffard.github.io/",
   integrations: [tailwind({
@@ -24,7 +20,6 @@ export default defineConfig({
       applyBaseStyles: false
     }
   }), react(), sitemap(), compress(),
-  //image(),
   robotsTxt(), mdx()],
   markdown: {
     extendDefaultPlugins: true,

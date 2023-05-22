@@ -1,12 +1,11 @@
 import { slugifyStr } from "./slugify";
-import type { MarkdownInstance } from "astro";
-import type { Frontmatter } from "../types";
+import type { CollectionEntry } from "astro:content";
 
-const getUniqueCategories = (posts: MarkdownInstance<Frontmatter>[]) => {
+const getUniqueCategories = (posts: CollectionEntry<"blog">[]) => {
   let categories: string[] = [];
-  const filteredPosts = posts.filter(({ frontmatter }) => !frontmatter.draft);
+  const filteredPosts = posts.filter(({ data }) => !data.draft);
   filteredPosts.forEach((post) => {
-    categories = [...categories, ...post.frontmatter.categories]
+    categories = [...categories, ...post.data.categories]
       .map((category) => slugifyStr(category))
       .filter(
         (value: string, index: number, self: string[]) =>
