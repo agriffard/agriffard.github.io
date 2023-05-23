@@ -77,10 +77,10 @@
     unist-util-visit "^4.1.0"
     vfile "^5.3.2"
 
-"@astrojs/mdx@^0.19.2":
-  version "0.19.2"
-  resolved "https://registry.yarnpkg.com/@astrojs/mdx/-/mdx-0.19.2.tgz#995632d9104e48d05bd5a3887ce05aeb457bb8cb"
-  integrity sha512-xWI2TK2QvCFXhyadjVtidcOj7qHda2Fv3tUilhacFXF28vye/COluMirqgxEESMlUsV+8LI39f8P6ERxXADSmg==
+"@astrojs/mdx@^0.19.3":
+  version "0.19.3"
+  resolved "https://registry.yarnpkg.com/@astrojs/mdx/-/mdx-0.19.3.tgz#f5edd5f0e2dbe89135002763f5264fcefb10dee4"
+  integrity sha512-XiIQRO1OlJ19jqaZuttt6TSvnEIIiOVkHiNXPCOOsHnRpbLFuv0y0FoFuhYYRTHHm4rfSV2BRP5INiD5Aq9ByA==
   dependencies:
     "@astrojs/markdown-remark" "^2.2.1"
     "@astrojs/prism" "^2.1.2"
@@ -1254,10 +1254,10 @@ astro-robots-txt@^0.5.0:
     valid-filename "^4.0.0"
     zod "^3.21.4"
 
-astro@^2.5.2:
-  version "2.5.2"
-  resolved "https://registry.yarnpkg.com/astro/-/astro-2.5.2.tgz#1cedb05a37274fcdadb5388cba71984b84407d9c"
-  integrity sha512-d/t9w1//++BXDiqLByYj0Ko+7cMqBnSTsZH85EGn2/FmOQvNRKgDOOHILPoFlmA4+AzWrtyCg9UCZXdlCH6/og==
+astro@^2.5.3:
+  version "2.5.3"
+  resolved "https://registry.yarnpkg.com/astro/-/astro-2.5.3.tgz#0ccd954caddc30eef3b21d42b4daff8602889752"
+  integrity sha512-ZRk599V3f2dAW2+WIEi1eAhHaxqxYsp2VAAhcUp103OEw8UZIeEa7KU1xZ+cKDqaBszSnTs38EdLjwHWWXCqMw==
   dependencies:
     "@astrojs/compiler" "^1.4.0"
     "@astrojs/language-server" "^1.0.0"
