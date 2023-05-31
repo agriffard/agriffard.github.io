@@ -416,6 +416,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"2017/2017-02-28-orchard-harvest-in-new-york.md": {
+	id: "2017/2017-02-28-orchard-harvest-in-new-york.md";
+  slug: "2017/2017-02-28-orchard-harvest-in-new-york";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "2017/2017-11-21-orchard-core-beta.md": {
 	id: "2017/2017-11-21-orchard-core-beta.md";
   slug: "2017/2017-11-21-orchard-core-beta";
