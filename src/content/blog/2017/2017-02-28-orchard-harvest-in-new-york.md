@@ -41,10 +41,10 @@ Here is a non-exhaustive list of what I have done in New York:
 *   Walked to the 9/11 memorial, the One World Trade Center.
 *   Saw a Trump Building but it was not the Trump tower.
 *   Ate a Burrito at Chipotle's for the first time.
-*   Visited the [Intrepid sea air & space museum](https://web.archive.org/web/20180822051736/https://en.wikipedia.org/wiki/Intrepid_Sea,_Air_%26_Space_Museum).
-    *   Visited the [USS Intrepid](https://web.archive.org/web/20180822051736/https://en.wikipedia.org/wiki/USS_Intrepid_(CV-11)) aircraft carrier.
-    *   Visited the [Growler submarine](https://web.archive.org/web/20180822051736/https://en.wikipedia.org/wiki/USS_Growler_(SSG-577)).
-    *   Visited the [space shuttle Enterprise pavilion](https://web.archive.org/web/20180822051736/https://en.wikipedia.org/wiki/Space_Shuttle_Enterprise) on the flight deck.
+*   Visited the [Intrepid sea air & space museum](https://en.wikipedia.org/wiki/Intrepid_Sea,_Air_%26_Space_Museum).
+    *   Visited the [USS Intrepid](https://en.wikipedia.org/wiki/USS_Intrepid_(CV-11)) aircraft carrier.
+    *   Visited the [Growler submarine](https://en.wikipedia.org/wiki/USS_Growler_(SSG-577)).
+    *   Visited the [space shuttle Enterprise pavilion](https://en.wikipedia.org/wiki/Space_Shuttle_Enterprise) on the flight deck.
     *   Climbed to the captain's bridge at the top of the USS Intrepid.
     *   Saw the British Airways Concorde and a lot of helicopters and planes like the Black Bird or the F-16.
 *   Ate some astronaut food: dehydrated chocolate ice cream.
@@ -59,10 +59,10 @@ Here is a non-exhaustive list of what I have done in New York:
 *   Arrived early and helped Bertrand and Sebastien to set the camera recorder and the video projector.
 *   Said hello to the attendees while welcoming them and giving them their badge and T-shirt.
 *   Finally met some contributors who attended the Harvest for the first time: Daniel from IDeliverable, Matteo from Lazer, Stanley Goldman from GitHub.
-*   Attended the [day 1 sessions](https://web.archive.org/web/20180822051736/http://antoinegriffard.com/orchard-harvest-conference-2017-day-1).
+*   Attended the [day 1 sessions](http://antoinegriffard.com/orchard-harvest-conference-2017-day-1).
 *   Ate pizzas at John's pizzeria with other attendees and +1s.
 *   Walked into a bar. I drank an 'angry orchard cider'.
-*   Talked to [another French guy living in New York](https://web.archive.org/web/20180822051736/https://www.linkedin.com/in/sébastien-benoit-818b811b).
+*   Talked to [another French guy living in New York](https://www.linkedin.com/in/sébastien-benoit-818b811b).
 *   Watched Star Trek: The next generation. Jean Luc Picard saved the world once more, flying back through time.
 
 ## Wednesday 22nd
@@ -70,11 +70,11 @@ Here is a non-exhaustive list of what I have done in New York:
 *   Ate some bagels, cup cakes and muffins for breakfast.
 *   Got some Github OctoCat stickers from Stanley Goldman.
 *   Talked to Sergio Navarro who helped to organize the previous Harvest in Alicante (Spain).
-*   Attended the [day 2 sessions](https://web.archive.org/web/20180822051736/http://antoinegriffard.com/orchard-harvest-conference-2017-day-2).
+*   Attended the [day 2 sessions](http://antoinegriffard.com/orchard-harvest-conference-2017-day-2).
 *   Piotr showed up in the morning (11:59am is still in the morning, right?).
 *   Reviewed a PR from Sipke on OrchardCore about themes administration.
 *   Went to bar where there was a band playing music way too loud for me to be able to speak or hear myself talking.
-*   Explained to Laura that she should watch the YouTube channel 'What the fuck France' to know how to make '[la bise](https://web.archive.org/web/20180822051736/https://www.youtube.com/watch?v=T-VWbV6TJxU)'.
+*   Explained to Laura that she should watch the YouTube channel 'What the fuck France' to know how to make '[la bise](https://www.youtube.com/watch?v=T-VWbV6TJxU)'.
 
 ## Thursday 23rd
 
@@ -87,24 +87,24 @@ Here is a non-exhaustive list of what I have done in New York:
 *   Ate a Beast burger with Liberty fries.
 *   Went to Ellis Island on the Miss Ellis Island ship.
     *   Visited the Ellis Island museum and learned a lot about the history of immigration in United States.
-    *   Took an American citizenship test (multiple choice quiz) and scored 8/10. I didn't remember [the US constitution](https://web.archive.org/web/20180822051736/https://en.wikipedia.org/wiki/United_States_Constitution) was written in 1787.
-*   Talked to Benedek and tried to teach him how to speak backwards in French [Verlan](https://web.archive.org/web/20180822051736/https://en.wikipedia.org/wiki/Verlan).
+    *   Took an American citizenship test (multiple choice quiz) and scored 8/10. I didn't remember [the US constitution](https://en.wikipedia.org/wiki/United_States_Constitution) was written in 1787.
+*   Talked to Benedek and tried to teach him how to speak backwards in French [Verlan](https://en.wikipedia.org/wiki/Verlan).
 *   Visited the Chrysler building, but I could only access the lobby.
-*   Watched a Star Trek episode in which [Captain Kirk created a robot to help exploring the universe](https://web.archive.org/web/20180822051736/https://en.wikipedia.org/wiki/The_Changeling_(Star_Trek:_The_Original_Series)).
+*   Watched a Star Trek episode in which [Captain Kirk created a robot to help exploring the universe](https://en.wikipedia.org/wiki/The_Changeling_(Star_Trek:_The_Original_Series)).
 
 ## Friday 24th
 
 *   Visited the Rockefeller center and the Top of the Rock observation deck where there is a magnificent 360° panorama of New York.
-    *   Saw the picture [Lunch atop a Skyscraper](https://web.archive.org/web/20180822051736/https://en.wikipedia.org/wiki/Lunch_atop_a_Skyscraper) everywhere.
+    *   Saw the picture [Lunch atop a Skyscraper](https://en.wikipedia.org/wiki/Lunch_atop_a_Skyscraper) everywhere.
 *   Took the subway to Upper West Side but it turned out it was an Express, not a locale so it only stopped on 125th street.
-*   Visited the [American Natural History Museum](https://web.archive.org/web/20180822051736/https://en.wikipedia.org/wiki/American_Museum_of_Natural_History).
-    *   Felt like in the movie '[A night at museum](https://web.archive.org/web/20180822051736/https://en.wikipedia.org/wiki/Night_at_the_Museum)'.
+*   Visited the [American Natural History Museum](https://en.wikipedia.org/wiki/American_Museum_of_Natural_History).
+    *   Felt like in the movie '[A night at museum](https://en.wikipedia.org/wiki/Night_at_the_Museum)'.
     *   Learned many things about Animals, Environment, Human Origins, Galaxies, ...
     *   Saw a blue whale hanged on the ceiling.
     *   Saw mammals for many continents.
     *   Saw dinosaurs skeletons.
     *   Touched some meteorites, one in iron, of the size of a car, weighing multiple tons.
-    *   Watched the movie '[Dark Universe](https://web.archive.org/web/20180822051736/http://www.amnh.org/exhibitions/space-show/dark-universe/)' commented by Neil DeGrasse Tyson.
+    *   Watched the movie '[Dark Universe](http://www.amnh.org/exhibitions/space-show/dark-universe/)' commented by Neil DeGrasse Tyson.
 *   Walked in Central Park near 81st street in the Upper West side.
 *   Watched an episode of Star Trek: voyager.
 
