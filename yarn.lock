@@ -46,6 +46,11 @@
   resolved "https://registry.yarnpkg.com/@astrojs/compiler/-/compiler-1.5.0.tgz#e84afaf624c9b8c00df3a00e1fbcdf926dc4ade0"
   integrity sha512-k04X/7nlMklU0HQUScxbCTf5n8/Vr+0U0bawb9QWulWxd6qJf3FmBrNATgTYiltjB4pc5HBqmmttAfFi7m4lLg==
 
+"@astrojs/compiler@^1.5.3":
+  version "1.5.3"
+  resolved "https://registry.yarnpkg.com/@astrojs/compiler/-/compiler-1.5.3.tgz#eac68920f3403fe6292fca91ff2bd14b8c10ad95"
+  integrity sha512-/HSFkJ+Yv+WUWSq0QVsIlhBKam5VUpGV+s8MvPguC/krHmw4Ww9TIgmfJSvV8/BN0sHJB7pCgf7yInae1zb+TQ==
+
 "@astrojs/internal-helpers@^0.1.1":
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/@astrojs/internal-helpers/-/internal-helpers-0.1.1.tgz#97fbe1d845753ab492ee2c967d44c8add34f1f9c"
@@ -1275,10 +1280,10 @@ astring@^1.8.0:
   resolved "https://registry.yarnpkg.com/astring/-/astring-1.8.3.tgz#1a0ae738c7cc558f8e5ddc8e3120636f5cebcb85"
   integrity sha512-sRpyiNrx2dEYIMmUXprS8nlpRg2Drs8m9ElX9vVEXaCB4XEAJhKfs7IcX0IwShjuOAjLR6wzIrgoptz1n19i1A==
 
-astro-compress@^1.1.47:
-  version "1.1.47"
-  resolved "https://registry.yarnpkg.com/astro-compress/-/astro-compress-1.1.47.tgz#8c6be42c3bc069a04e4787aed52637f2440d8f2b"
-  integrity sha512-UBhhDfZffcPVdDFA4v42G68BdcNL6ZlYoXZdHTappiLWDvZPlhRmK6iuwya3SAGl4La4kqKCfNSqwKbG3agdBQ==
+astro-compress@^1.1.49:
+  version "1.1.49"
+  resolved "https://registry.yarnpkg.com/astro-compress/-/astro-compress-1.1.49.tgz#2796ade45c2527c8a83bbd09ecc998f0efb3ecbe"
+  integrity sha512-AesUqim8kYslKmZqacAo3W422eVT7hWDrVaA4tXdWH8fpBI3qRbukl7+OO0dWmLIf6ubukMZiqg3THmSCEl5ow==
   dependencies:
     "@types/csso" "5.0.0"
     "@types/html-minifier-terser" "7.0.0"
@@ -1287,7 +1292,7 @@ astro-compress@^1.1.47:
     html-minifier-terser "7.2.0"
     sharp "0.32.1"
     svgo "3.0.2"
-    terser "5.17.7"
+    terser "5.18.2"
 
 astro-icon@^0.8.1:
   version "0.8.1"
@@ -1306,12 +1311,12 @@ astro-robots-txt@^0.5.0:
     valid-filename "^4.0.0"
     zod "^3.21.4"
 
-astro@^2.7.1:
-  version "2.7.1"
-  resolved "https://registry.yarnpkg.com/astro/-/astro-2.7.1.tgz#fbb9b20bd27bc1b4af232c8e58ca13ecda8b54d3"
-  integrity sha512-W7KbiHPIWM9tmjAUza8iQtalbNnpRcbtKgEZ7zc/+vOpuvcmSHxkYVar+VhLf2ZuwBIDjgaF9M8ScQ2B1oobAA==
+astro@^2.7.4:
+  version "2.7.4"
+  resolved "https://registry.yarnpkg.com/astro/-/astro-2.7.4.tgz#d1c67f4f4e47ac7155aedf511862af7c08783024"
+  integrity sha512-LDALXeMfD4U6jkM6ZywtKuBkGMxMZjSCFqbNXEKtD3OWZr3hiLNhE3YDgUScCBkQJSROWrS0W9/UVPpsS36+ow==
   dependencies:
-    "@astrojs/compiler" "^1.5.0"
+    "@astrojs/compiler" "^1.5.3"
     "@astrojs/internal-helpers" "^0.1.1"
     "@astrojs/language-server" "^1.0.0"
     "@astrojs/markdown-remark" "^2.2.1"
@@ -3945,10 +3950,10 @@ photoswipe-dynamic-caption-plugin@^1.2.7:
   resolved "https://registry.yarnpkg.com/photoswipe-dynamic-caption-plugin/-/photoswipe-dynamic-caption-plugin-1.2.7.tgz#53aa5059f1c4dccc8aa36196ff3e09baa5e537c2"
   integrity sha512-5XXdXLf2381nwe7KqQvcyStiUBi9TitYXppUQTrzPwYAi4lZsmWNnNKMclM7I4QGlX6fXo42v3bgb6rlK9pY1Q==
 
-photoswipe@^5.3.7:
-  version "5.3.7"
-  resolved "https://registry.yarnpkg.com/photoswipe/-/photoswipe-5.3.7.tgz#c67df67aaddb5705bcf8ff265bd2086f57805756"
-  integrity sha512-zsyLsTTLFrj0XR1m4/hO7qNooboFKUrDy+Zt5i2d6qjFPAtBjzaj/Xtydso4uxzcXpcqbTmyxDibb3BcSISseg==
+photoswipe@^5.3.8:
+  version "5.3.8"
+  resolved "https://registry.yarnpkg.com/photoswipe/-/photoswipe-5.3.8.tgz#bea7db18e79383833f85c005b833da2029f0daee"
+  integrity sha512-4vTzOQt8GP4Chsm0s+8j2xDtVHAEN252PxrU12A1zXauNn0zD5HRHgjALKO2GKTyBnTnOrJUOxbV8LTrFIMrYw==
 
 picocolors@^1.0.0:
   version "1.0.0"
@@ -4854,10 +4859,10 @@ tar-stream@^2.1.4:
     inherits "^2.0.3"
     readable-stream "^3.1.1"
 
-terser@5.17.7:
-  version "5.17.7"
-  resolved "https://registry.yarnpkg.com/terser/-/terser-5.17.7.tgz#2a8b134826fe179b711969fd9d9a0c2479b2a8c3"
-  integrity sha512-/bi0Zm2C6VAexlGgLlVxA0P2lru/sdLyfCVaRMfKVo9nWxbmz7f/sD8VPybPeSUJaJcwmCJis9pBIhcVcG1QcQ==
+terser@5.18.2:
+  version "5.18.2"
+  resolved "https://registry.yarnpkg.com/terser/-/terser-5.18.2.tgz#ff3072a0faf21ffd38f99acc9a0ddf7b5f07b948"
+  integrity sha512-Ah19JS86ypbJzTzvUCX7KOsEIhDaRONungA4aYBjEP3JZRf4ocuDzTg4QWZnPn9DEMiMYGJPiSOy7aykoCc70w==
   dependencies:
     "@jridgewell/source-map" "^0.3.3"
     acorn "^8.8.2"
