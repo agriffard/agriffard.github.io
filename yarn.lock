@@ -1316,10 +1316,10 @@ astro-robots-txt@^0.5.0:
     valid-filename "^4.0.0"
     zod "^3.21.4"
 
-astro@^2.9.5:
-  version "2.9.5"
-  resolved "https://registry.yarnpkg.com/astro/-/astro-2.9.5.tgz#fe33248821fab4eacb578cb7887e1baf2b412068"
-  integrity sha512-F9qi3TzNfnl4wN3ufVRz13lX30krUd6FcEmP5gxFR3pjxk2a6+CghOZP/AgZ077Ws0RSpow29xtMhTSP7J6auQ==
+astro@^2.9.6:
+  version "2.9.6"
+  resolved "https://registry.yarnpkg.com/astro/-/astro-2.9.6.tgz#3f70a11c96ce465f465a41bcd6c6d4c099edc7c9"
+  integrity sha512-yvbZQ6YOWYLejyQ4nAcgZLDYQ34enQJ5/LWlXKtUzXzpsUHB75vJMj+XmEq5Q2eVlZOlQrp0lU+nhSRGaOsOUQ==
   dependencies:
     "@astrojs/compiler" "^1.6.3"
     "@astrojs/internal-helpers" "^0.1.1"
