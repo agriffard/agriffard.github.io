@@ -118,13 +118,14 @@
   dependencies:
     prismjs "^1.28.0"
 
-"@astrojs/react@^2.2.2":
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/@astrojs/react/-/react-2.2.2.tgz#5189e6511c634f80a71a209dd3bbecf19533cdac"
-  integrity sha512-fq0hbujQNi+rCh5TgO9h8drYwK0tn5Ad10nZjTSrw8e8aky/R6oMf9yuJwG5jOrzlCmJ/2r9stltSzA0xn0cHQ==
+"@astrojs/react@^2.3.0":
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@astrojs/react/-/react-2.3.0.tgz#5f629730f06a83f35a9df7a8039ed340522c269e"
+  integrity sha512-XnxAkqfgBy750kJiaep/zJQnKP50tmt2d+hM1bw1xtv12eVUD5n6jY9HWWWPB00vplAbcCgIvuwovN+smKyS1g==
   dependencies:
     "@babel/core" "^7.22.5"
     "@babel/plugin-transform-react-jsx" "^7.22.5"
+    ultrahtml "^1.2.0"
 
 "@astrojs/rss@^2.4.4":
   version "2.4.4"
@@ -1125,10 +1126,10 @@ astro-robots-txt@^0.5.0:
     valid-filename "^4.0.0"
     zod "^3.21.4"
 
-astro@^2.10.9:
-  version "2.10.9"
-  resolved "https://registry.yarnpkg.com/astro/-/astro-2.10.9.tgz#93020502f6354430b389fc3dc12df12adb7a4be0"
-  integrity sha512-rtm/RHeJdAIAsziQaAGvbv2ALylNNOF1SUQ0zJaugu/ABUU62tNGNSxIR0LO5l4+dHhLbzRNo5uEnIPkmSRw+w==
+astro@^2.10.10:
+  version "2.10.10"
+  resolved "https://registry.yarnpkg.com/astro/-/astro-2.10.10.tgz#6ece40cbb54b76085aa17c829358378245e4f02a"
+  integrity sha512-HwsRam0CXlO6WXOsWX7VT5hNlCd/JPiXI32Vhm7siyRspKjFfJH+1jqf9hNkROdjQIZz3MPLaIvm9UQCPEXxxA==
   dependencies:
     "@astrojs/compiler" "^1.8.0"
     "@astrojs/internal-helpers" "^0.1.2"
@@ -1162,6 +1163,7 @@ astro@^2.10.9:
     github-slugger "^2.0.0"
     gray-matter "^4.0.3"
     html-escaper "^3.0.3"
+    http-cache-semantics "^4.1.1"
     js-yaml "^4.1.0"
     kleur "^4.1.4"
     magic-string "^0.30.2"
@@ -2460,6 +2462,11 @@ html-void-elements@^2.0.0:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/html-void-elements/-/html-void-elements-2.0.1.tgz#29459b8b05c200b6c5ee98743c41b979d577549f"
   integrity sha512-0quDb7s97CfemeJAnW9wC0hw78MtW7NU3hqtCD75g2vFlDLt36llsYD7uB7SUzojLMP24N5IatXf7ylGXiGG9A==
+
+http-cache-semantics@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/http-cache-semantics/-/http-cache-semantics-4.1.1.tgz#abe02fcb2985460bf0323be664436ec3476a6d5a"
+  integrity sha512-er295DKPVsV82j5kw1Gjt+ADA/XYHsajl82cGNQG2eyoPkvgUhX+nDIyelzhIWbbsXP39EHcI6l5tYs2FYqYXQ==
 
 human-signals@^3.0.1:
   version "3.0.1"
@@ -4853,6 +4860,11 @@ typescript@*:
   version "4.9.3"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.9.3.tgz#3aea307c1746b8c384435d8ac36b8a2e580d85db"
   integrity sha512-CIfGzTelbKNEnLpLdGFgdyKhG23CKdKgQPOBc+OUNrkJ2vr+KSzsSV5kq5iWhEQbok+quxgGzrAtGWCyU7tHnA==
+
+ultrahtml@^1.2.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/ultrahtml/-/ultrahtml-1.3.0.tgz#0298a6c0864999940868d18e63789ff537be171d"
+  integrity sha512-xmXvE8tC8t4PVqy0/g1fe7H9USY/Brr425q4dD/0QbQMQit7siCtb06+SCqE4GfU24nwsZz8Th1g7L7mm1lL5g==
 
 undici@^5.22.0:
   version "5.22.0"
