@@ -1019,10 +1019,10 @@ astro-robots-txt@^0.5.0:
     valid-filename "^4.0.0"
     zod "^3.21.4"
 
-astro@^3.0.2:
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/astro/-/astro-3.0.2.tgz#853f65def9a283bcef46bca8139c6981b255c53e"
-  integrity sha512-7ytwERK1CN7LBA/BgUrA9/ktbn0WDRwvkpxZZkIPlbjp3Ojlp6e12L2ZkNIYyIsGzFqXAZZz58pFwy7KG2Qz5g==
+astro@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/astro/-/astro-3.0.3.tgz#33eef6a793e65932de9b76c00020df9e393bf381"
+  integrity sha512-bugdGn9wIniVFbfyAHYtF9bc9pZpPaEs3gJAnK/XWROxCBAI2UQjR6lQuWM20iCc3snqu7GDgoW2MdzO7WFZZw==
   dependencies:
     "@astrojs/compiler" "^2.0.1"
     "@astrojs/internal-helpers" "0.2.0"
