@@ -14,6 +14,7 @@ import tailwind from "@astrojs/tailwind";
 
 export default defineConfig({
   site: "https://agriffard.github.io/",
+  compressHTML: true,
   integrations: [tailwind({
     config: {
       applyBaseStyles: false
