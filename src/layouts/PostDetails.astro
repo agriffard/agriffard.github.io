@@ -2,6 +2,7 @@
 import Layout from "@layouts/Layout.astro";
 import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
+import Category from "@components/Category.astro";
 import Tag from "@components/Tag.astro";
 import Datetime from "@components/Datetime";
 import type { CollectionEntry } from "astro:content";
@@ -13,7 +14,7 @@ export interface Props {
 
 const { post } = Astro.props;
 
-const { title, author, description, ogImage, pubDatetime, tags } = post.data;
+const { title, author, description, ogImage, pubDatetime, categories, tags } = post.data;
 
 const { Content } = await post.render();
 
@@ -44,6 +45,9 @@ const ogUrl = new URL(ogImage ? ogImage : `${title}.png`, Astro.url.origin)
 
     <ul class="tags-container">
       {tags.map(tag => <Tag name={slugifyStr(tag)} />)}
+    </ul>
+    <ul class="categories-container">
+      {categories.map(category => <Category name={slugifyStr(category)} />)}
     </ul>
   </main>
   <Footer />
