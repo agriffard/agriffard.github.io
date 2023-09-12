@@ -28,10 +28,10 @@
   resolved "https://registry.npmjs.org/@astrojs/compiler/-/compiler-1.5.7.tgz"
   integrity sha512-dFU7GAMbpTUGPkRoCoMQrGFlTe3qIiQMSOxIXp/nB1Do4My9uogjEmBHdR5Cwr4i6rc5/1R3Od9v8kU/pkHXGQ==
 
-"@astrojs/compiler@^2.0.1":
-  version "2.0.1"
-  resolved "https://registry.npmjs.org/@astrojs/compiler/-/compiler-2.0.1.tgz"
-  integrity sha512-DfBR7Cf+tOgQ4n7TIgTtU5x5SEA/08DNshpEPcT+91A0KbBlmUOYMBM/O6qAaHkmVo1KIoXQYhAmfdTT1zx9PQ==
+"@astrojs/compiler@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@astrojs/compiler/-/compiler-2.1.0.tgz#ebc9e648d606709e6f03be9e6ced3777b09e7936"
+  integrity sha512-Mp+qrNhly+27bL/Zq8lGeUY+YrdoU0eDfIlAeGIPrzt0PnI/jGpvPUdCaugv4zbCrDkOUScFfcbeEiYumrdJnw==
 
 "@astrojs/internal-helpers@0.2.0":
   version "0.2.0"
@@ -1007,20 +1007,20 @@ astro-icon@^0.8.1:
     resolve-pkg "^2.0.0"
     svgo "^2.8.0"
 
-astro-robots-txt@^0.5.0:
-  version "0.5.0"
-  resolved "https://registry.npmjs.org/astro-robots-txt/-/astro-robots-txt-0.5.0.tgz"
-  integrity sha512-MJDcxBDjEKSp7Uvw32cnmkPHlmjQ/pW5JwzMhKEegFRoGaiSh2i1kkh1QEhk1UpGnAsSondWCoIt2xpG8qjSgA==
+astro-robots-txt@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/astro-robots-txt/-/astro-robots-txt-1.0.0.tgz#d5e47c03e7b3d6b070d75eb470dd3661fa19fe96"
+  integrity sha512-6JQSLid4gMhoWjOm85UHLkgrw0+hHIjnJVIUqxjU2D6feKlVyYukMNYjH44ZDZBK1P8hNxd33PgWlHzCASvedA==
   dependencies:
     valid-filename "^4.0.0"
-    zod "^3.21.4"
+    zod "^3.22.2"
 
-astro@^3.0.11:
-  version "3.0.11"
-  resolved "https://registry.yarnpkg.com/astro/-/astro-3.0.11.tgz#0d3c636b2d309a33b2ac5d18ed1ee99c94b16d43"
-  integrity sha512-ImS5P2z/RgP1vF/FQn0kFYNVT5jhQ5oWeh1r3VL0biZfFceuuWtvmxa+bipQl7CXslanFhgGwlWkY0hfF0R+Bg==
+astro@^3.0.13:
+  version "3.0.13"
+  resolved "https://registry.yarnpkg.com/astro/-/astro-3.0.13.tgz#08db5b06d6f61ccd8fd51bd81520fee4c87522ed"
+  integrity sha512-oZcDcoLsWG7SeltkJ33T/L5tcrsDDe5FLW9FxG1Z1NIwqOE321URLJVuse1WADGwBpMIVkWNibqv4wK2rxEnjw==
   dependencies:
-    "@astrojs/compiler" "^2.0.1"
+    "@astrojs/compiler" "^2.1.0"
     "@astrojs/internal-helpers" "0.2.0"
     "@astrojs/markdown-remark" "3.1.0"
     "@astrojs/telemetry" "3.0.1"
@@ -4754,10 +4754,10 @@ zod@3.21.1:
   resolved "https://registry.npmjs.org/zod/-/zod-3.21.1.tgz"
   integrity sha512-+dTu2m6gmCbO9Ahm4ZBDapx2O6ZY9QSPXst2WXjcznPMwf2YNpn3RevLx4KkZp1OPW/ouFcoBtBzFz/LeY69oA==
 
-zod@^3.21.4:
-  version "3.21.4"
-  resolved "https://registry.npmjs.org/zod/-/zod-3.21.4.tgz"
-  integrity sha512-m46AKbrzKVzOzs/DZgVnG5H55N1sv1M8qZU3A8RIKbs3mrACDNeIOeilDymVb2HdmP8uwshOCF4uJ8uM9rCqJw==
+zod@^3.22.2:
+  version "3.22.2"
+  resolved "https://registry.yarnpkg.com/zod/-/zod-3.22.2.tgz#3add8c682b7077c05ac6f979fea6998b573e157b"
+  integrity sha512-wvWkphh5WQsJbVk1tbx1l1Ly4yg+XecD+Mq280uBGt9wa5BKSWf4Mhp6GmrkPixhMxmabYY7RbzlwVP32pbGCg==
 
 zwitch@^2.0.0, zwitch@^2.0.4:
   version "2.0.4"
