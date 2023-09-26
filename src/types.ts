@@ -3,7 +3,7 @@ export type Site = {
   author: string;
   desc: string;
   title: string;
-  ogImage: string;
+  ogImage?: string;
   lightAndDarkMode: boolean;
   postPerPage: number;
 };
@@ -13,7 +13,7 @@ export type Project = {
   href: string;
 }[];
 
-export type SocialsObject = {
+export type SocialObjects = {
   name: SocialMedia;
   href: string;
   active: boolean;
@@ -25,8 +25,25 @@ export type SocialIcons = {
 };
 
 export type SocialMedia =
-  | "microsoft"
-  | "github"
-  | "linkedin"
-  | "email"
-  | "twitter";
+  | "Github"
+  | "Facebook"
+  | "Instagram"
+  | "LinkedIn"
+  | "Mail"
+  | "Twitter"
+  | "Twitch"
+  | "YouTube"
+  | "WhatsApp"
+  | "Snapchat"
+  | "Pinterest"
+  | "TikTok"
+  | "CodePen"
+  | "Discord"
+  | "GitLab"
+  | "Reddit"
+  | "Skype"
+  | "Steam"
+  | "Telegram"
+  | "Mastodon"
+  | "Microsoft"
+  | "Email";

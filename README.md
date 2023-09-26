@@ -2,17 +2,17 @@
 
 This site is made with [Astro](https://astro.build/).
 
-It is designed to be fast, light (12kb for the homepage) and content focused.
+It is designed to be fast, light and content focused.
 
 ## Features
 
-Below is a short list of features imlemented.
+Below is a short list of features implemented.
 
 - ✅ Posts with pagination
 - ✅ Featured posts
 - ✅ Recent posts
 - ✅ Draft posts
-- ✅ Categories and tags
+- ✅ Tags
 - ✅ Projects
 - ✅ Skills
 - ✅ Social links
@@ -23,8 +23,6 @@ Below is a short list of features imlemented.
 - ✅ 404
 - ✅ RSS
 - ✅ Search
-- ✅ Sitemap
-- ✅ Support KaTeX for math equations
 - ✅ SVG icons and favicon
 - ✅ Syntax highlighter
 - ✅ Table of Contents

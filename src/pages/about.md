@@ -3,8 +3,6 @@ layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
 
-import { Icon } from 'astro-icon';
-
 This site is made with [Astro](https://astro.build/) and [Tailwind](https://tailwindcss.com/).
 
 Inspired by [AstroPaper](https://github.com/satnaing/astro-paper).

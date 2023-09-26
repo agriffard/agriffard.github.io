@@ -1,21 +1,21 @@
+import { slugifyStr } from "@utils/slugify";
 import Datetime from "./Datetime";
-import type { BlogFrontmatter } from "@content/_schemas";
+import type { CollectionEntry } from "astro:content";
 
 export interface Props {
   href?: string;
-  frontmatter: BlogFrontmatter;
+  frontmatter: CollectionEntry<"blog">["data"];
   secHeading?: boolean;
 }
 
-const styles = {
-  cardContainer: "my-6",
-  titleLink:
-    "text-skin-accent font-medium text-lg underline-offset-4 focus-visible:no-underline focus-visible:underline-offset-0 inline-block",
-  titleHeading: "font-medium text-lg hover:underline",
-};
-
 export default function Card({ href, frontmatter, secHeading = true }: Props) {
   const { title, pubDatetime, description } = frontmatter;
+
+  const headerProps = {
+    style: { viewTransitionName: slugifyStr(title) },
+    className: "text-lg font-medium decoration-dashed hover:underline",
+  };
+
   return (
     <li className="my-6">
       <a
@@ -23,9 +23,9 @@ export default function Card({ href, frontmatter, secHeading = true }: Props) {
         className="inline-block text-lg font-medium text-skin-accent decoration-dashed underline-offset-4 focus-visible:no-underline focus-visible:underline-offset-0"
       >
         {secHeading ? (
-          <h2 className={styles.titleHeading}>{title}</h2>
+          <h2 {...headerProps}>{title}</h2>
         ) : (
-          <h3 className={styles.titleHeading}>{title}</h3>
+          <h3 {...headerProps}>{title}</h3>
         )}
       </a>
       <Datetime datetime={pubDatetime} />

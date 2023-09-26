@@ -4,21 +4,19 @@ export interface Props {
   className?: string;
   ariaLabel?: string;
   title?: string;
-  tabindex?: string;
-  target?: string;
+  disabled?: boolean;
 }
 
-const { href, className, ariaLabel, title, tabindex, target } = Astro.props;
+const { href, className, ariaLabel, title, disabled = false } = Astro.props;
 ---
 
 <a
-  type="button"
-  href={href}
-  class={`group ${className}`}
+  href={disabled ? "#" : href}
+  tabindex={disabled ? "-1" : "0"}
+  class={`group inline-block ${className}`}
   aria-label={ariaLabel}
-  tabindex={tabindex}
-  target={target}
   title={title}
+  aria-disabled={disabled}
 >
   <slot />
 </a>

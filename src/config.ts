@@ -1,22 +1,21 @@
-import type { Site, Project, SocialsObject } from "./types";
+import type { Site, SocialObjects } from "./types";
 
-export const SITE = {
+export const SITE: Site = {
   website: "https://agriffard.github.io/",
   author: "Antoine Griffard",
   desc: "Adventures in .NET world.",
   title: "Antoine Griffard",
-  ogImage: "default-og.png",
+  ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
   postPerPage: 5,
-  extra: ["math"],
 };
 
 export const LOCALE = ["en-EN"]; // set to [] to use the environment default
 
 export const LOGO_IMAGE = {
   enable: false,
-  svg: false,
-  width: 46,
+  svg: true,
+  width: 216,
   height: 46,
 };
 
@@ -71,33 +70,33 @@ export const PROJECTS: Project = [
   },
 ];
 
-export const SOCIALS: SocialsObject = [
+export const SOCIALS: SocialObjects = [
   {
-    name: "microsoft",
+    name: "Microsoft",
     href: "https://mvp.microsoft.com/en-us/PublicProfile/5000870?fullName=Antoine%20%20Griffard",
     linkTitle: `${SITE.title} on Microsoft MVP`,
     active: true,
   },
   {
-    name: "github",
+    name: "Github",
     href: "https://github.com/agriffard",
     linkTitle: `${SITE.title} on GitHub`,
     active: true,
   },
   {
-    name: "linkedin",
+    name: "LinkedIn",
     href: "https://linkedin.com/in/agriffard",
     linkTitle: `${SITE.title} on LinkedIn`,
     active: true,
   },
   {
-    name: "twitter",
+    name: "Twitter",
     href: "https://github.com/agriffard",
     linkTitle: `${SITE.title} on Twitter`,
     active: true,
   },
   {
-    name: "email",
+    name: "Email",
     href: "mailto:agriffard@hotmail.com",
     linkTitle: `${SITE.title} by email`,
     active: true,

@@ -1,34 +1,40 @@
 import { defineConfig } from "astro/config";
-import mdx from "@astrojs/mdx";
-import react from "@astrojs/react";
-import rehypeKatex from "rehype-katex";
-import { remarkDiagram } from "./remark-plugins/remark-diagram.mjs";
-import { remarkReadingTime } from "./remark-plugins/remark-reading-time.mjs";
-import remarkCollapse from "remark-collapse";
-import remarkPlantUML from "@akebifiky/remark-simple-plantuml";
-import remarkToc from "remark-toc";
-import remarkMath from "remark-math";
-import robotsTxt from "astro-robots-txt";
-import sitemap from "@astrojs/sitemap";
 import tailwind from "@astrojs/tailwind";
+import react from "@astrojs/react";
+import remarkToc from "remark-toc";
+import remarkCollapse from "remark-collapse";
+import sitemap from "@astrojs/sitemap";
 
+// https://astro.build/config
 export default defineConfig({
-  site: "https://agriffard.github.io/",
-  compressHTML: true,
-  integrations: [tailwind({
-    config: {
-      applyBaseStyles: false
-    }
-  }), mdx(), react(), robotsTxt(), sitemap()],
+  site: "https://astro-paper.pages.dev/", // replace this with your deployed domain
+  integrations: [
+    tailwind({
+      applyBaseStyles: false,
+    }),
+    react(),
+    sitemap(),
+  ],
   markdown: {
-    extendDefaultPlugins: true,
-    remarkPlugins: [remarkReadingTime, remarkMath, remarkPlantUML, remarkDiagram, remarkToc, [remarkCollapse, {
-      test: "Table of contents"
-    }]],
-    rehypePlugins: [rehypeKatex],
+    remarkPlugins: [
+      remarkToc,
+      [
+        remarkCollapse,
+        {
+          test: "Table of contents",
+        },
+      ],
+    ],
     shikiConfig: {
       theme: "one-dark-pro",
-      wrap: true
-    }
-  }
+      wrap: true,
+    },
+    extendDefaultPlugins: true,
+  },
+  vite: {
+    optimizeDeps: {
+      exclude: ["@resvg/resvg-js"],
+    },
+  },
+  scopedStyleStrategy: "where",
 });
