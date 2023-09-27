@@ -1,0 +1,58 @@
+---
+import { type CollectionEntry, getCollection } from "astro:content";
+import Layout from "@layouts/Layout.astro";
+import Main from "@layouts/Main.astro";
+import Header from "@components/Header.astro";
+import Footer from "@components/Footer.astro";
+import Card from "@components/Card";
+import getUniqueCategories from "@utils/getUniqueCategories";
+import getPostsByCategory from "@utils/getPostsByCategory";
+import slugify from "@utils/slugify";
+import { SITE } from "@config";
+import getSortedPosts from "@utils/getSortedPosts";
+
+export interface Props {
+  post: CollectionEntry<"blog">;
+  category: string;
+}
+
+export async function getStaticPaths() {
+  const posts = await getCollection("blog");
+
+  const categories = getUniqueCategories(posts);
+
+  return categories.map(category => {
+    return {
+      params: { category },
+      props: { category },
+    };
+  });
+}
+
+const { category } = Astro.props;
+
+const posts = await getCollection("blog", ({ data }) => !data.draft);
+
+const categoryPosts = getPostsByCategory(posts, category);
+
+const sortCategoriesPost = getSortedPosts(categoryPosts);
+---
+
+<Layout title={`Category:${category} | ${SITE.title}`}>
+  <Header activeNav="categories" />
+  <Main
+    pageTitle={[`Category:`, `${category}`]}
+    titleTransition={category}
+    pageDesc={`All the articles with the category "${category}".`}
+  >
+    <h1 slot="title" transition:name={category}>{`Category:${category}`}</h1>
+    <ul>
+      {
+        sortCategoriesPost.map(({ data }) => (
+          <Card href={`/posts/${slugify(data)}`} frontmatter={data} />
+        ))
+      }
+    </ul>
+  </Main>
+  <Footer />
+</Layout>
