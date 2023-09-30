@@ -131,8 +131,6 @@ class HelloWorldApp{
 }
 ```
 
-<https://en.wikipedia.org/wiki/%22Hello,_World!%22_program#Examples>
-
 ## Hello World C# tutorial
 
 <https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/tutorials/hello-world>
