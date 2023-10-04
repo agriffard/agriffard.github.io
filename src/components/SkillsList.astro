@@ -4,10 +4,6 @@ import SkillItem from "./SkillItem.astro";
 const { skills } = site;
 ---
 
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
-/>
 <section id="skills">
   <div class="skills">
     {skills.map((item) => <SkillItem item={item} />)}
