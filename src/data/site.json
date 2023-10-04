@@ -1,7 +1,7 @@
 {
   "skills": [
     { "name": ".NET", "icon": "skills/dotnet" },
-    { "name": "CSharp", "icon": "skills/cs" },
+    { "name": "CSharp", "icon": "skills/csharp" },
     { "name": "Blazor", "icon": "skills/blazor" },
     { "name": "Visual Studio", "icon": "skills/visual-studio" },
     { "name": "Visual Studio Code", "icon": "skills/visual-studio-code" },
