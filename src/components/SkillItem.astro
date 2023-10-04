@@ -1,11 +1,13 @@
 ---
+import { Icon } from "astro-icon";
 const { item } = Astro.props;
 ---
 
 <div class="skills-item tooltip-container">
-  <i
+  <Icon class="h-16 w-16" name={item.icon} title={item.name} />
+  <!-- <i
     class={`devicon-${item.icon}-${item.type ? item.type : "plain"}`}
-    title={item.name}></i>
+    title={item.name}></i> -->
 </div>
 <style>
   .skills-item {
