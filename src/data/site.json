@@ -14,6 +14,7 @@
     { "name": "Typescript", "icon": "skills/typescript" },
     { "name": "Angular", "icon": "skills/angular" },
     { "name": "React", "icon": "skills/react" },
+    { "name": "Markdown", "icon": "skills/markdown" },
     { "name": "Astro", "icon": "skills/astro" },
     { "name": "GraphQL", "icon": "skills/graphql" },
     { "name": "NodeJS", "icon": "skills/nodejs" },
@@ -22,7 +23,6 @@
     { "name": "GitHub", "icon": "skills/github" },
     { "name": "Git", "icon": "skills/git" },
     { "name": "Jira", "icon": "skills/jira" },
-    { "name": "Postman", "icon": "skills/postman" },
-    { "name": "Markdown", "icon": "skills/markdown" }
+    { "name": "Postman", "icon": "skills/postman" }
   ]
 }
