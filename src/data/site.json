@@ -1,8 +1,7 @@
 {
   "skills": [
     { "name": ".NET", "icon": "skills/dotnet" },
-    { "name": "C#", "icon": "skills/csharp" },
-    { "name": "VB.NET", "icon": "skills/vbnet" },
+    { "name": "CSharp", "icon": "skills/cs" },
     { "name": "Blazor", "icon": "skills/blazor" },
     { "name": "Visual Studio", "icon": "skills/visual-studio" },
     { "name": "Visual Studio Code", "icon": "skills/visual-studio-code" },
@@ -23,6 +22,7 @@
     { "name": "GitHub", "icon": "skills/github" },
     { "name": "Git", "icon": "skills/git" },
     { "name": "Jira", "icon": "skills/jira" },
-    { "name": "Postman", "icon": "skills/postman" }
+    { "name": "Postman", "icon": "skills/postman" },
+    { "name": "Markdown", "icon": "skills/markdown" }
   ]
 }
