@@ -632,13 +632,6 @@ declare module 'astro:content' {
 } & { render(): Render[".md"] };
 };
 "news": {
-"2023-10-05-test.md": {
-	id: "2023-10-05-test.md";
-  slug: "2023-10-05-test";
-  body: string;
-  collection: "news";
-  data: any
-} & { render(): Render[".md"] };
 };
 
 	};
