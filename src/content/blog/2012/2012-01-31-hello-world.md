@@ -4,7 +4,6 @@ author: agriffard
 pubDatetime: 2012-01-31T12:00:00Z
 categories: [Dev]
 tags: [Hello]
-featured: true
 description: « Hello, World! » programs are often the first a student learns to write in a given language.
 ---
 
@@ -23,7 +22,7 @@ Quelques exemples d'Hello World dans différents langages que j'ai pu apprendre 
 ### HTML
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <body>
     <h1>Hello, World!</h1>
