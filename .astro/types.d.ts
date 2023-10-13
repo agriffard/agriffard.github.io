@@ -623,6 +623,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"2023/2023-10-13-orchard-core-1.7.1.md": {
+	id: "2023/2023-10-13-orchard-core-1.7.1.md";
+  slug: "2023/2023-10-13-orchard-core-171";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 };
 
 	};
