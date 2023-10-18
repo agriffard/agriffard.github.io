@@ -7,7 +7,7 @@ tags: [Release]
 description: Orchard Core 1.7.1 Release is available.
 ---
 
-Orchard Core, the ASP.NET open-source modular application framework and content management system, is available in version 1.7.
+Orchard Core, the ASP.NET open-source modular application framework and content management system, is available in version 1.7.1.
 
 [![Orchard Core 1.7.1](https://opengraph.githubassets.com/31fc53454fa0d5c5ddef2a0083a71ea7776e96f96638df5b5c81e83bf2256f9a/OrchardCMS/OrchardCore/releases/tag/v1.7.1)](https://github.com/OrchardCMS/OrchardCore/releases/tag/v1.7.1)
 
