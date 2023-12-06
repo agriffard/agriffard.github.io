@@ -1,34 +1,34 @@
 {
   "skills": [
-    { "name": ".NET", "icon": "assets/icons/skills/dotnet.svg" },
-    { "name": "CSharp", "icon": "assets/icons/skills/csharp.svg" },
-    { "name": "Blazor", "icon": "assets/icons/skills/blazor.svg" },
+    { "name": ".NET", "icon": "/assets/icons/skills/dotnet.svg" },
+    { "name": "CSharp", "icon": "/assets/icons/skills/csharp.svg" },
+    { "name": "Blazor", "icon": "/assets/icons/skills/blazor.svg" },
     {
       "name": "Visual Studio",
-      "icon": "assets/icons/skills/visual-studio.svg"
+      "icon": "/assets/icons/skills/visual-studio.svg"
     },
     {
       "name": "Visual Studio Code",
-      "icon": "assets/icons/skills/visual-studio-code.svg"
+      "icon": "/assets/icons/skills/visual-studio-code.svg"
     },
-    { "name": "CSS3", "icon": "assets/icons/skills/css3.svg" },
-    { "name": "HTML5", "icon": "assets/icons/skills/html5.svg" },
-    { "name": "SQL", "icon": "assets/icons/skills/sql.svg" },
-    { "name": "Bootstrap", "icon": "assets/icons/skills/bootstrap.svg" },
-    { "name": "Tailwind", "icon": "assets/icons/skills/tailwind.svg" },
-    { "name": "jQuery", "icon": "assets/icons/skills/jquery.svg" },
-    { "name": "Typescript", "icon": "assets/icons/skills/typescript.svg" },
-    { "name": "Angular", "icon": "assets/icons/skills/angular.svg" },
-    { "name": "React", "icon": "assets/icons/skills/react.svg" },
-    { "name": "Markdown", "icon": "assets/icons/skills/markdown.svg" },
-    { "name": "Astro", "icon": "assets/icons/skills/astro.svg" },
-    { "name": "GraphQL", "icon": "assets/icons/skills/graphql.svg" },
-    { "name": "NodeJS", "icon": "assets/icons/skills/nodejs.svg" },
-    { "name": "npm", "icon": "assets/icons/skills/npm.svg" },
-    { "name": "Azure", "icon": "assets/icons/skills/azure.svg" },
-    { "name": "GitHub", "icon": "assets/icons/skills/github.svg" },
-    { "name": "Git", "icon": "assets/icons/skills/git.svg" },
-    { "name": "Jira", "icon": "assets/icons/skills/jira.svg" },
-    { "name": "Postman", "icon": "assets/icons/skills/postman.svg" }
+    { "name": "CSS3", "icon": "/assets/icons/skills/css3.svg" },
+    { "name": "HTML5", "icon": "/assets/icons/skills/html5.svg" },
+    { "name": "SQL", "icon": "/assets/icons/skills/sql.svg" },
+    { "name": "Bootstrap", "icon": "/assets/icons/skills/bootstrap.svg" },
+    { "name": "Tailwind", "icon": "/assets/icons/skills/tailwind.svg" },
+    { "name": "jQuery", "icon": "/assets/icons/skills/jquery.svg" },
+    { "name": "Typescript", "icon": "/assets/icons/skills/typescript.svg" },
+    { "name": "Angular", "icon": "/assets/icons/skills/angular.svg" },
+    { "name": "React", "icon": "/assets/icons/skills/react.svg" },
+    { "name": "Markdown", "icon": "/assets/icons/skills/markdown.svg" },
+    { "name": "Astro", "icon": "/assets/icons/skills/astro.svg" },
+    { "name": "GraphQL", "icon": "/assets/icons/skills/graphql.svg" },
+    { "name": "NodeJS", "icon": "/assets/icons/skills/nodejs.svg" },
+    { "name": "npm", "icon": "/assets/icons/skills/npm.svg" },
+    { "name": "Azure", "icon": "/assets/icons/skills/azure.svg" },
+    { "name": "GitHub", "icon": "/assets/icons/skills/github.svg" },
+    { "name": "Git", "icon": "/assets/icons/skills/git.svg" },
+    { "name": "Jira", "icon": "/assets/icons/skills/jira.svg" },
+    { "name": "Postman", "icon": "/assets/icons/skills/postman.svg" }
   ]
 }
