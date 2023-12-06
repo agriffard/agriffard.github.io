@@ -1,10 +1,11 @@
 ---
-import { Icon } from "astro-icon";
+//import { Icon } from "astro-icon";
+import SvgIcon from "./SvgIcon.astro";
 const { item } = Astro.props;
 ---
 
 <div class="skills-item tooltip-container">
-  <Icon class="h-16 w-16" name={item.icon} title={item.name} />
+  <SvgIcon icon={item.icon} name={item.name} />
 </div>
 <style>
   .skills-item {

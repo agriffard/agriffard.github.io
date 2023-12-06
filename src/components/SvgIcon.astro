@@ -1,0 +1,10 @@
+---
+export interface Icon {
+  icon: string;
+  name: string;
+}
+
+const { icon, name } = Astro.props;
+---
+
+<img src={icon} class="h-16 w-16" alt={name} title={name} />
