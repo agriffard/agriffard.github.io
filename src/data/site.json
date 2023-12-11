@@ -13,14 +13,13 @@
     },
     { "name": "CSS3", "icon": "/assets/icons/skills/css3.svg" },
     { "name": "HTML5", "icon": "/assets/icons/skills/html5.svg" },
-    { "name": "SQL", "icon": "/assets/icons/skills/sql.svg" },
+    { "name": "SQL Server", "icon": "/assets/icons/skills/sqlserver.svg" },
     { "name": "Bootstrap", "icon": "/assets/icons/skills/bootstrap.svg" },
     { "name": "Tailwind", "icon": "/assets/icons/skills/tailwind.svg" },
-    { "name": "jQuery", "icon": "/assets/icons/skills/jquery.svg" },
+    { "name": "Docker", "icon": "/assets/icons/skills/docker.svg" },
     { "name": "Typescript", "icon": "/assets/icons/skills/typescript.svg" },
     { "name": "Angular", "icon": "/assets/icons/skills/angular.svg" },
-    { "name": "React", "icon": "/assets/icons/skills/react.svg" },
-    { "name": "Markdown", "icon": "/assets/icons/skills/markdown.svg" },
+    { "name": "Open AI", "icon": "/assets/icons/skills/openai.svg" },
     { "name": "Astro", "icon": "/assets/icons/skills/astro.svg" },
     { "name": "GraphQL", "icon": "/assets/icons/skills/graphql.svg" },
     { "name": "NodeJS", "icon": "/assets/icons/skills/nodejs.svg" },
@@ -29,6 +28,7 @@
     { "name": "GitHub", "icon": "/assets/icons/skills/github.svg" },
     { "name": "Git", "icon": "/assets/icons/skills/git.svg" },
     { "name": "Jira", "icon": "/assets/icons/skills/jira.svg" },
-    { "name": "Postman", "icon": "/assets/icons/skills/postman.svg" }
+    { "name": "Postman", "icon": "/assets/icons/skills/postman.svg" },
+    { "name": "Windows", "icon": "/assets/icons/skills/windows.svg" }
   ]
 }
