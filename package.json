@@ -16,10 +16,10 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@astrojs/check": "^0.3.2",
+    "@astrojs/check": "^0.3.3",
     "@astrojs/rss": "^4.0.1",
     "@resvg/resvg-js": "^2.6.0",
-    "astro": "^4.0.5",
+    "astro": "^4.0.6",
     "astro-icon": "^0.8.2",
     "fuse.js": "^7.0.0",
     "github-slugger": "^2.0.0",
@@ -42,8 +42,8 @@
     "astro-eslint-parser": "^0.16.0",
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
-    "eslint": "^8.55.0",
-    "eslint-plugin-astro": "^0.30.0",
+    "eslint": "^8.56.0",
+    "eslint-plugin-astro": "^0.31.0",
     "husky": "^8.0.3",
     "lint-staged": "^15.2.0",
     "prettier": "^3.1.1",
