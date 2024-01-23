@@ -19,7 +19,7 @@
     "@astrojs/check": "^0.4.1",
     "@astrojs/rss": "^4.0.3",
     "@resvg/resvg-js": "^2.6.0",
-    "astro": "^4.2.2",
+    "astro": "^4.2.3",
     "astro-icon": "^1.0.2",
     "fuse.js": "^7.0.0",
     "github-slugger": "^2.0.0",
