@@ -19,7 +19,7 @@
     "@astrojs/check": "^0.4.1",
     "@astrojs/rss": "^4.0.5",
     "@resvg/resvg-js": "^2.6.0",
-    "astro": "^4.3.4",
+    "astro": "^4.3.5",
     "astro-icon": "^1.1.0",
     "fuse.js": "^7.0.0",
     "github-slugger": "^2.0.0",
@@ -31,7 +31,7 @@
     "vanilla-cookieconsent": "^3.0.0"
   },
   "devDependencies": {
-    "@astrojs/react": "^3.0.9",
+    "@astrojs/react": "^3.0.10",
     "@astrojs/sitemap": "^3.0.5",
     "@astrojs/tailwind": "^5.1.0",
     "@divriots/jampack": "^0.23.3",
