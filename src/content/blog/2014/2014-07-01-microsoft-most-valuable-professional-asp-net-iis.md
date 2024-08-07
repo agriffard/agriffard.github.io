@@ -1,5 +1,6 @@
 ---
 title: Microsoft Most Valuable Professional ASP.NET/IIS
+slug: microsoft-most-valuable-professional-asp-net-iis
 author: agriffard
 pubDatetime: 2014-07-01T12:00:00Z
 categories: [Microsoft]

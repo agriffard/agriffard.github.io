@@ -1,5 +1,6 @@
 ---
 title: Conférence Orchard Harvest 2013 à Amsterdam Jour 1
+slug: orchard-harvest-2013-jour-1
 author: agriffard
 pubDatetime: 2013-06-18T12:00:00Z
 categories: [Orchard]

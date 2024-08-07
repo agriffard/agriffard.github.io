@@ -1,5 +1,6 @@
 ---
 title: Orchard Harvest 2012 Keynote
+slug: orchard-harvest-2012-keynote
 author: agriffard
 pubDatetime: 2012-09-09T12:00:00Z
 categories: [Orchard]

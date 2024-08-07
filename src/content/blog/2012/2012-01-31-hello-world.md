@@ -1,5 +1,6 @@
 ---
 title: Hello World!
+slug: hello-world
 author: agriffard
 pubDatetime: 2012-01-31T12:00:00Z
 categories: [Dev]

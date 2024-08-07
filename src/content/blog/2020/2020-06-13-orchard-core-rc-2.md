@@ -1,5 +1,6 @@
 ---
 title: Orchard Core RC 2
+slug: orchard-core-rc-2
 author: agriffard
 pubDatetime: 2020-06-13T12:00:00Z
 categories: [OrchardCore]

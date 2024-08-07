@@ -1,5 +1,6 @@
 ---
 title: How to fix a bug?
+slug: how-to-fix-a-bug
 author: agriffard
 pubDatetime: 2020-01-31T12:00:00Z
 categories: [Dev]

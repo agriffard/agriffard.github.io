@@ -1,16 +1,22 @@
-import type { Site, Project, SocialObjects } from "./types";
+import type { Project, Site, SocialObjects } from "./types";
 
 export const SITE: Site = {
   website: "https://antoinegriffard.com/",
   author: "Antoine Griffard",
+  profile: "https://antoinegriffard.com/",
   desc: "Adventures in .NET world.",
   title: "Antoine Griffard",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
+  postPerIndex: 4,
   postPerPage: 5,
+  scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
 };
 
-export const LOCALE = ["en-EN"]; // set to [] to use the environment default
+export const LOCALE = {
+  lang: "en", // html lang code. Set this empty and default will be "en"
+  langTag: ["en-EN"], // BCP 47 Language Tags. Set this empty [] to use the environment default
+} as const;
 
 export const LOGO_IMAGE = {
   enable: false,

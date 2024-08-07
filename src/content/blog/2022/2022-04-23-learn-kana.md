@@ -1,5 +1,6 @@
 ---
 title: Learn Kana
+slug: learn-kana
 author: agriffard
 pubDatetime: 2022-04-23T12:00:00Z
 categories: [Learn]

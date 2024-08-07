@@ -1,5 +1,6 @@
 ---
 title: Conférence Orchard Harvest 2017
+slug: orchard-harvest-2017
 author: agriffard
 pubDatetime: 2016-12-28T12:00:00Z
 categories: [Orchard]

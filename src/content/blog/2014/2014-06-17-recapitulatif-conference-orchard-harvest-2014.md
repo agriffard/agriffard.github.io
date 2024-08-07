@@ -1,5 +1,6 @@
 ---
 title: Récapitulatif conférence Orchard Harvest 2014
+slug: recapitulatif-conference-orchard-harvest-2014
 author: agriffard
 pubDatetime: 2014-06-17T12:00:00Z
 categories: [Orchard]

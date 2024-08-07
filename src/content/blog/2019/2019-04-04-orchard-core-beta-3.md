@@ -1,5 +1,6 @@
 ---
 title: Orchard Core Beta 3
+slug: orchard-core-beta-3
 author: agriffard
 pubDatetime: 2019-04-04T12:00:00Z
 categories: [OrchardCore]

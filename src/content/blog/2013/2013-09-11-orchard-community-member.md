@@ -1,5 +1,6 @@
 ---
 title: Orchard community member
+slug: orchard-community-member
 author: agriffard
 pubDatetime: 2013-09-11T12:00:00Z
 categories: [Orchard]

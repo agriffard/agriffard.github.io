@@ -1,5 +1,6 @@
 ---
 title: Orchard Core 1.7 Release
+slug: orchard-core-1.7
 author: agriffard
 pubDatetime: 2023-09-05T12:00:00Z
 categories: [OrchardCore]

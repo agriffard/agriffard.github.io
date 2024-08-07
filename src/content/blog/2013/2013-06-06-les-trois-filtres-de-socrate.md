@@ -1,5 +1,6 @@
 ---
 title: Les trois filtres de Socrate
+slug: les-trois-filtres-de-socrate
 author: agriffard
 pubDatetime: 2013-06-06T12:00:00Z
 categories: [Philosophie]

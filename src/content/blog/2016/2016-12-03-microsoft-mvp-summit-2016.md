@@ -1,5 +1,6 @@
 ---
 title: Microsoft MVP Summit 2016
+slug: microsoft-mvp-summit-2016.
 author: agriffard
 pubDatetime: 2016-12-03T12:00:00Z
 categories: [Microsoft]

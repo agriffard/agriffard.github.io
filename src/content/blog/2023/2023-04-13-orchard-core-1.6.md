@@ -1,5 +1,6 @@
 ---
 title: Orchard Core 1.6 Release
+slug: orchard-core-1.6
 author: agriffard
 pubDatetime: 2023-04-13T12:00:00Z
 categories: [OrchardCore]

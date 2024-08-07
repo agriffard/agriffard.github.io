@@ -1,5 +1,6 @@
 ---
 title: Orchard Harvest 2012 Sessions The future of Orchard
+slug: orchard-harvest-2012-sessions-the-future-of-orchard
 author: agriffard
 pubDatetime: 2012-09-15T12:00:00Z
 categories: [Orchard]

@@ -1,5 +1,6 @@
 ---
 title: Orchard Core 1.8.3 Release
+slug: orchard-core-1.8.3
 author: agriffard
 pubDatetime: 2024-04-25T12:00:00Z
 categories: [OrchardCore]

@@ -1,5 +1,6 @@
 ---
 title: Orchard Harvest 2012 Theming
+slug: orchard-harvest-2012-theming
 author: agriffard
 pubDatetime: 2012-09-19T12:00:00Z
 categories: [Orchard]

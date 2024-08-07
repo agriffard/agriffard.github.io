@@ -1,5 +1,6 @@
 ---
 title: Orchard Harvest in New York
+slug: orchard-harvest-in-new-york
 author: agriffard
 pubDatetime: 2017-02-28T12:00:00Z
 categories: [OrchardCore]

@@ -1,5 +1,6 @@
 ---
 title: Dunning-Kruger effect
+slug: dunning-kruger-effect
 author: agriffard
 pubDatetime: 2019-01-31T12:00:00Z
 categories: [Concept]

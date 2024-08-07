@@ -1,5 +1,6 @@
 ---
 title: Orchard Harvest 2014
+slug: orchard-harvest-2014
 author: agriffard
 pubDatetime: 2014-05-09T12:00:00Z
 categories: [Orchard]

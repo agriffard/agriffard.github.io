@@ -1,5 +1,6 @@
 ---
 title: Orchard Harvest 2012 Sessions Day 1
+slug: orchard-harvest-2012-sessions-day-1
 author: agriffard
 pubDatetime: 2012-09-17T12:00:00Z
 categories: [Orchard]

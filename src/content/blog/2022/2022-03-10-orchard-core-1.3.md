@@ -1,5 +1,6 @@
 ---
 title: Orchard Core 1.3 Release
+slug: orchard-core-1.3
 author: agriffard
 pubDatetime: 2022-03-10T12:00:00Z
 categories: [OrchardCore]

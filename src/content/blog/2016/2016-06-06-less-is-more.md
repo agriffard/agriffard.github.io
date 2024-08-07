@@ -1,5 +1,6 @@
 ---
 title: Less is more
+slug: less-is-more
 author: agriffard
 pubDatetime: 2016-06-06T12:00:00Z
 categories: [Picture]

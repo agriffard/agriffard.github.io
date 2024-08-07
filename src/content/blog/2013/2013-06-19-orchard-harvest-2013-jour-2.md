@@ -1,5 +1,6 @@
 ---
 title: Orchard Harvest 2013 Keynote Jour 2
+slug: orchard-harvest-2013-jour-2
 author: agriffard
 pubDatetime: 2013-06-19T12:00:00Z
 categories: [Orchard]

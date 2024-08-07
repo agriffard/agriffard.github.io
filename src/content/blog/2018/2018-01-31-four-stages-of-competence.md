@@ -1,5 +1,6 @@
 ---
 title: Four stages of competence
+slug: four-stages-of-competence
 author: agriffard
 pubDatetime: 2018-01-31T12:00:00Z
 categories: [Concept]

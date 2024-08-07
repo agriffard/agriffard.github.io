@@ -1,0 +1,44 @@
+---
+import { type CollectionEntry, getCollection } from "astro:content";
+import CategoryPosts from "@layouts/CategoryPosts.astro";
+import getUniqueCategories from "@utils/getUniqueCategories";
+import getPostsByCategory from "@utils/getPostsByCategory";
+import getPageNumbers from "@utils/getPageNumbers";
+import getPagination from "@utils/getPagination";
+
+export interface Props {
+  post: CollectionEntry<"blog">;
+  category: string;
+  categoryName: string;
+}
+
+export async function getStaticPaths() {
+  const posts = await getCollection("blog");
+
+  const categories = getUniqueCategories(posts);
+
+  return categories.flatMap(({ category, categoryName }) => {
+    const categoryPosts = getPostsByCategory(posts, category);
+    const totalPages = getPageNumbers(categoryPosts.length);
+
+    return totalPages.map(page => ({
+      params: { category, page },
+      props: { category, categoryName },
+    }));
+  });
+}
+
+const { page } = Astro.params;
+const { category, categoryName } = Astro.props;
+
+const posts = await getCollection("blog", ({ data }) => !data.draft);
+
+const postsByCategory = getPostsByCategory(posts, category);
+
+const pagination = getPagination({
+  posts: postsByCategory,
+  page,
+});
+---
+
+<CategoryPosts {...pagination} {category} {categoryName} />

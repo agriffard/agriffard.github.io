@@ -1,5 +1,6 @@
 ---
 title: Orchard Core 1.8.1 Release
+slug: orchard-core-1.8.1
 author: agriffard
 pubDatetime: 2024-01-09T12:00:00Z
 categories: [OrchardCore]

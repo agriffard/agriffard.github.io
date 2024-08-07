@@ -1,5 +1,6 @@
 ---
 title: Orchard Core Beta
+slug: orchard-core-beta
 author: agriffard
 pubDatetime: 2017-11-21T12:00:00Z
 categories: [OrchardCore]
