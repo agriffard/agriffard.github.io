@@ -6,9 +6,9 @@ import Footer from "@components/Footer.astro";
 import LinkButton from "@components/LinkButton.astro";
 import Hr from "@components/Hr.astro";
 import Card from "@components/Card";
-//import Socials from "@components/Socials.astro";
+import Socials from "@components/Socials.astro";
 import getSortedPosts from "@utils/getSortedPosts";
-//import { SITE, SOCIALS } from "@config";
+import { SITE, SOCIALS } from "@config";
 
 const posts = await getCollection("blog");
 

@@ -1,18 +1,22 @@
 import { slugifyStr } from "./slugify";
 import type { CollectionEntry } from "astro:content";
+import postFilter from "./postFilter";
+
+interface Category {
+  category: string;
+  categoryName: string;
+}
 
 const getUniqueCategories = (posts: CollectionEntry<"blog">[]) => {
-  const filteredPosts = posts.filter(({ data }) => !data.draft);
-  const categories: string[] = filteredPosts
+  const categories: Category[] = posts
+    .filter(postFilter)
     .flatMap(post => post.data.categories)
-    .map(category => slugifyStr(category))
+    .map(category => ({ category: slugifyStr(category), categoryName: category }))
     .filter(
-      (value: string, index: number, self: string[]) =>
-        self.indexOf(value) === index
+      (value, index, self) =>
+        self.findIndex(category => category.category === value.category) === index
     )
-    .sort((categoryA: string, categoryB: string) =>
-      categoryA.localeCompare(categoryB)
-    );
+    .sort((categoryA, categoryB) => categoryA.category.localeCompare(categoryB.category));
   return categories;
 };
 
