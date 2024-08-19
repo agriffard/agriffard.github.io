@@ -79,7 +79,7 @@ export const PROJECTS: Project = [
 export const SOCIALS: SocialObjects = [
   {
     name: "Microsoft",
-    href: "https://mvp.microsoft.com/en-us/PublicProfile/5000870?fullName=Antoine%20%20Griffard",
+    href: "https://mvp.microsoft.com/en-US/MVP/profile/000ce4ed-409a-e411-b4b5-6c3be5a84f98",
     linkTitle: `${SITE.title} on Microsoft MVP`,
     active: true,
   },
