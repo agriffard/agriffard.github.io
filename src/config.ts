@@ -4,7 +4,7 @@ export const SITE: Site = {
   website: "https://antoinegriffard.com/",
   author: "Antoine Griffard",
   profile: "https://antoinegriffard.com/",
-  desc: "Adventures in .NET world.",
+  desc: "Have you tried turning it off and on again?",
   title: "Antoine Griffard",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
