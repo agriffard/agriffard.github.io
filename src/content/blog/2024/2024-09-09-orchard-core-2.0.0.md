@@ -2,7 +2,7 @@
 title: Orchard Core 2.0.0 Release
 slug: orchard-core-2.0.0
 author: agriffard
-pubDatetime: 2024-09-04T12:00:00Z
+pubDatetime: 2024-09-09T12:00:00Z
 categories: [OrchardCore]
 tags: [Release]
 description: Orchard Core 2.0.0 Release is available.
