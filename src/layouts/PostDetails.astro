@@ -8,6 +8,7 @@ import type { CollectionEntry } from "astro:content";
 import { slugifyStr } from "@utils/slugify";
 import ShareLinks from "@components/ShareLinks.astro";
 import { SITE } from "@config";
+import PageViews from "@components/page-views.astro";
 
 export interface Props {
   post: CollectionEntry<"blog">;
@@ -58,6 +59,8 @@ const currentPostIndex = allPosts.findIndex(a => a.slug === post.slug);
 const prevPost = currentPostIndex !== 0 ? allPosts[currentPostIndex - 1] : null;
 const nextPost =
   currentPostIndex !== allPosts.length ? allPosts[currentPostIndex + 1] : null;
+
+const pageUrl = new URL(Astro.url.pathname, Astro.url.origin).href;
 ---
 
 <Layout {...layoutProps}>
@@ -77,12 +80,15 @@ const nextPost =
   </div>
   <main id="main-content">
     <h1 transition:name={slugifyStr(title)} class="post-title">{title}</h1>
-    <Datetime
-      pubDatetime={pubDatetime}
-      modDatetime={modDatetime}
-      size="lg"
-      className="my-2"
-    />
+    <div class="flex flex-row flex-wrap items-end my-3">
+      <Datetime
+        pubDatetime={pubDatetime}
+        modDatetime={modDatetime}
+        size="lg"
+        className="mr-2"
+      />
+      <PageViews url={pageUrl} />
+    </div>
     <article id="article" class="prose mx-auto mt-8 max-w-3xl">
       <Content />
     </article>
