@@ -2,7 +2,7 @@
 title: Orchard Core 2.1.5 Release
 slug: orchard-core-2.1.5
 author: agriffard
-pubDatetime: 2025-01-17T12:00:00Z
+pubDatetime: 2025-02-04T12:00:00Z
 categories: [OrchardCore]
 tags: [Release]
 description: Orchard Core 2.1.5 Release is available.
