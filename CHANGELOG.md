@@ -2,6 +2,119 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## v5.0.0 (2025-03-08)
+
+### Feat
+
+- add pagefind for static search (#458)
+- update back button logic
+
+### Fix
+
+- ignore  in eslint
+- update blog table padding
+- remove unused back url in the card url
+- show light/dark button according to site setting
+- add author url in Google JSON-LD conditionally
+
+### Refactor
+
+- remove react dependency for UI interactions (#457)
+- separate config and constants
+- update import alias in files
+- update blog directory to `src/data/blog`
+
+
+- upgrade to Tailwind CSS v4
+- update import alias to `@/*`
+- upgrade Astro to v5 and related packages
+
+## v4.8.0 (2025-02-08)
+
+### Feat
+
+- add pencil icon before suggestion changes text (#405)
+
+### Fix
+
+- use tag name for display in tags page (#438)
+- exclude `/archives` from sitemap if it is disabled (#425)
+- add inline-block class to post title for improved view transition animation (#420)
+- sort archive posts by pubDatetime (#415)
+- focus search input on mount (#414)
+- replace twitter with x (#407)
+
+## v4.7.0 (2024-10-15)
+
+### Feat
+
+- add archives page with configurable menu (#386)
+
+## v4.6.0 (2024-10-13)
+
+### Feat
+
+- add edit post feature in blog posts (#384)
+
+### Refactor
+
+- remove duplicate [page].astro (#389)
+
+## v4.5.1 (2024-10-02)
+
+### Fix
+
+- **docs**: update giscus blog post (#392)
+- add missing posts sorting (#383)
+
+## v4.5.0 (2024-09-16)
+
+### Feat
+
+- add prev/next links at the bottom of blog post (#372)
+
+### Fix
+
+- **og**: add the missing SITE.website to loadGoogleFonts  (#360)
+- **blog**: correct file reference in reading time guide (#359)
+
+### Refactor
+
+- replace pagination logic with Astro built-in pagination (#376)
+
+### Perf
+
+- preload font and load theme script asynchronously (#380)
+
+## v4.4.0 (2024-08-19)
+
+### Content Layer API
+
+- upgrade Astro and use Content Layer API (#355)
+
+### Others
+
+- upgrade ESLint to v9 and update configurations (#356)
+- replace github-slugger with lodash.kebabcase (#357)
+
+## v4.3.2 (2024-08-17)
+
+### Fix
+
+- **a11y**: remove aria-labels from non-interactive elements (#346)
+
+### Refactor
+
+- update tailwind classes to v3 syntax (#345)
+- remove commented codes
+
+### Others
+
+- docs: update estimated reading time blog post (#354)
+- docs: add instructions for Google Site Verification in AstroPaper (#353)
+- docs: update pre-commit hook blog post (#344)
+- ci: add CI workflow (#340)
+
 ## v4.3.1 (2024-07-27)
 
 ### Fix
