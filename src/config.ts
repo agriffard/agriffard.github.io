@@ -7,12 +7,12 @@ export const SITE = {
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
   postPerIndex: 4,
-  postPerPage: 4,
+  postPerPage: 5,
   scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
   showArchives: false,
   showBackButton: true, // show back button in post detail
   editPost: {
-    url: "https://github.com/satnaing/astro-paper/edit/main/src/content/blog",
+    url: "https://github.com/agriffard/agriffard.github.io/edit/main/src/data/blog",
     text: "Suggest Changes",
     appendFilePath: true,
   },
