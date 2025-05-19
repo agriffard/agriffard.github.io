@@ -4,7 +4,7 @@ slug: mnemoniques
 author: agriffard
 pubDatetime: 2025-03-15T12:00:00Z
 categories: [Astuces]
-tags: ["Mémoire", "Mnémoniques"]
+tags: [AI, "Mémoire", "Mnémoniques"]
 description: Découvrez comment les mnémoniques facilitent la mémorisation et comment créer les vôtres.
 ---
 
