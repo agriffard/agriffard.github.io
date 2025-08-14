@@ -14,7 +14,14 @@ export async function getStaticPaths() {
   }));
 }
 
-export const GET: APIRoute = async ({ props }) =>
-  new Response(await generateOgImageForPost(props as CollectionEntry<"blog">), {
-    headers: { "Content-Type": "image/png" },
+export const GET: APIRoute = async ({ props }) => {
+  const pngBuffer = await generateOgImageForPost(props as CollectionEntry<"blog">);
+  const uint8 = new Uint8Array(pngBuffer);
+  const body = new Blob([uint8], { type: "image/png" });
+  return new Response(body, {
+    headers: {
+      "Content-Type": "image/png",
+      "Cache-Control": "public, max-age=3600"
+    }
   });
+};
