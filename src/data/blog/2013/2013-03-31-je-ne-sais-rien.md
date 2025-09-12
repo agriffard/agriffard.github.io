@@ -3,8 +3,8 @@ title: Je ne sais rien
 slug: je-ne-sais-rien
 author: agriffard
 pubDatetime: 2013-03-31T12:00:00Z
-categories: [Learn]
-tags: [AI, Philosophie, Informatique]
+categories: [Philosophie]
+tags: [AI, Informatique]
 description: Ce que je sais, c'est que je ne sais rien.
 ---
 
