@@ -2,7 +2,7 @@
 title: "Blazor Server vs Blazor WebAssembly: How to Choose in 2025"
 slug: blazor-server-vs-webassembly-guide
 author: agriffard
-pubDatetime: 2024-10-19T14:00:00Z
+pubDatetime: 2024-10-19T12:00:00Z
 categories: [DotNet]
 tags: [AI, Blazor, WebAssembly]
 description: "Complete guide to choosing between Blazor Server and Blazor WebAssembly for your next project. Compare performance, deployment, and use cases."
