@@ -2,7 +2,7 @@
 title: Les approximations remarquables du nombre Pi
 slug: approximations-nombre-pi
 author: agriffard
-pubDatetime: 2025-03-14T12:00:00Z
+pubDatetime: 2024-03-14T12:00:00Z
 categories: [Maths]
 tags: [AI, Pi]
 description: Exploration des meilleures approximations fractionnaires du nombre π, de l'antique 22/7 aux fractions continues modernes.

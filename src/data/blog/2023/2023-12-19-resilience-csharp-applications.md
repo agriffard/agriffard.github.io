@@ -2,7 +2,7 @@
 title: Building Resilient C# Applications
 slug: resilience
 author: agriffard
-pubDatetime: 2025-09-19T12:00:00Z
+pubDatetime: 2023-12-19T12:00:00Z
 categories: [DotNet]
 tags: [AI, Resilience]
 description: Learn how to build resilient C# applications.
