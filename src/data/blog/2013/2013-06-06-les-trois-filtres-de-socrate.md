@@ -3,8 +3,8 @@ title: Les trois filtres de Socrate
 slug: les-trois-filtres-de-socrate
 author: agriffard
 pubDatetime: 2013-06-06T12:00:00Z
-categories: [Philosophie]
-tags: [Vérité]
+categories: [Concept]
+tags: [Philosophie]
 description: Les trois filtres de Socrate
 ---
 
