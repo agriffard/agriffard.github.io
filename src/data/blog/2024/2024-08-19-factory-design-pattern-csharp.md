@@ -6,7 +6,6 @@ pubDatetime: 2024-08-19T12:00:00Z
 categories: [DotNet]
 tags: [AI, DesignPatterns, CSharp]
 description: "Master the Factory design pattern in C# with practical examples, best practices, and real-world implementations. Learn Simple Factory, Factory Method, and Abstract Factory patterns."
-featured: true
 ---
 
 The **Factory design pattern** is one of the most widely used creational patterns in software development. It provides a way to create objects without specifying their exact classes, promoting loose coupling and making your code more maintainable and testable.

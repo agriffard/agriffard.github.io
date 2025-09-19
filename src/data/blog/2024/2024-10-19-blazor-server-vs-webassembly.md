@@ -1,12 +1,11 @@
 ---
-title: "Blazor Server vs Blazor WebAssembly: How to Choose in 2025"
+title: "Blazor Server vs Blazor WebAssembly: How to Choose"
 slug: blazor-server-vs-webassembly-guide
 author: agriffard
 pubDatetime: 2024-10-19T12:00:00Z
 categories: [DotNet]
 tags: [AI, Blazor, WebAssembly]
 description: "Complete guide to choosing between Blazor Server and Blazor WebAssembly for your next project. Compare performance, deployment, and use cases."
-featured: true
 ---
 
 Choosing between **Blazor Server** and **Blazor WebAssembly** is one of the most critical architectural decisions when building modern web applications with .NET. Both approaches allow you to write C# instead of JavaScript, but they have fundamentally different execution models that impact performance, user experience, and deployment complexity.
