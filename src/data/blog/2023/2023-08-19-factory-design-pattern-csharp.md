@@ -2,7 +2,7 @@
 title: "Factory Design Pattern in C#: Complete Guide with Examples"
 slug: factory-design-pattern-csharp
 author: agriffard
-pubDatetime: 2024-08-19T12:00:00Z
+pubDatetime: 2023-08-19T12:00:00Z
 categories: [DotNet]
 tags: [AI, DesignPatterns, CSharp]
 description: "Master the Factory design pattern in C# with practical examples, best practices, and real-world implementations. Learn Simple Factory, Factory Method, and Abstract Factory patterns."
