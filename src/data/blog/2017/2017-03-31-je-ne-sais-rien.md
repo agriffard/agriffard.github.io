@@ -2,7 +2,7 @@
 title: Je ne sais rien
 slug: je-ne-sais-rien
 author: agriffard
-pubDatetime: 2013-03-31T12:00:00Z
+pubDatetime: 2017-03-31T12:00:00Z
 categories: [Concept]
 tags: [Philosophie]
 description: Ce que je sais, c'est que je ne sais rien.
