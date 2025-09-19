@@ -9,7 +9,7 @@ export const SITE = {
   postPerIndex: 4,
   postPerPage: 5,
   scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
-  showArchives: false,
+  showArchives: true,
   showBackButton: true, // show back button in post detail
   editPost: {
     url: "https://github.com/agriffard/agriffard.github.io/edit/main/src/data/blog",
