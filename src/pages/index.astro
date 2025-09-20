@@ -23,9 +23,9 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
 <Layout>
   <Header />
   <main id="main-content" data-layout="index">
-    <section id="hero" class="pt-8 pb-6">
-      <!-- <h1 class="my-4 inline-block text-4xl font-bold sm:my-8 sm:text-5xl">
-        Mingalaba
+    <section id="hero" class="pt- pb-6">
+      <h1 class="my-4 inline-block text-4xl font-bold sm:my-8 sm:text-5xl">
+        Senior Software Developer
       </h1>
       <a
         target="_blank"
@@ -43,12 +43,28 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
       </a>
 
       <p>
-        AstroPaper is a minimal, responsive, accessible and SEO-friendly Astro
-        blog theme. This theme follows best practices and provides accessibility
-        out of the box. Light and dark mode are supported by default. Moreover,
-        additional color schemes can also be configured.
+        Passionate about web development and .NET technologies in particular. <br />
+        Contributor to various OSS projects (
+        <LinkButton
+          class="underline decoration-dashed underline-offset-4 hover:text-accent"
+          href="https://orchardcore.net"
+        >
+          Orchard Core
+        </LinkButton>
+        , <LinkButton
+          class="underline decoration-dashed underline-offset-4 hover:text-accent"
+          href="https://github.com/microsoft/fluentui-blazor"
+        >Fluent UI Blazor
+        </LinkButton>
+        ) and  
+        <LinkButton
+          class="underline decoration-dashed underline-offset-4 hover:text-accent"
+          href="https://mvp.microsoft.com/en-US/MVP/profile/000ce4ed-409a-e411-b4b5-6c3be5a84f98"
+        >
+        Microsoft Most Valuable Professional (MVP)
+        </LinkButton>.
       </p>
-      <p class="mt-2">
+      <!-- <p class="mt-2">
         Read the blog posts or check
         <LinkButton
           class="underline decoration-dashed underline-offset-4 hover:text-accent"
