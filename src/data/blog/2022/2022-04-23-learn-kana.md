@@ -3,8 +3,8 @@ title: Learn Kana
 slug: learn-kana
 author: agriffard
 pubDatetime: 2022-04-23T12:00:00Z
-categories: [Language]
-tags: [Japanese]
+categories: [Learn]
+tags: [Language, Japanese]
 description: Kana (仮名) refer to syllabaries used to write Japanese phonological units.
 ---
 
