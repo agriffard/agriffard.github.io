@@ -2,7 +2,7 @@
 title: "Builder Design Pattern in C#: Constructing Complex Objects Step by Step"
 slug: builder-design-pattern-csharp
 author: agriffard
-pubDatetime: 2023-07-19T12:00:00Z
+pubDatetime: 2017-09-19T12:00:00Z
 categories: [DotNet]
 tags: [AI, DesignPatterns, CSharp, FluentAPI]
 description: "Master the Builder design pattern in C# with fluent interfaces, method chaining, and practical examples. Learn to construct complex objects elegantly and maintainably."

@@ -2,7 +2,7 @@
 title: "Singleton Design Pattern in C#: Thread-Safe Implementation and Modern Alternatives"
 slug: singleton-design-pattern-csharp
 author: agriffard
-pubDatetime: 2023-01-19T16:00:00Z
+pubDatetime: 2017-01-19T16:00:00Z
 categories: [DotNet]
 tags: [AI, DesignPatterns, CSharp]
 description: "Master the Singleton design pattern in C# with thread-safe implementations, performance considerations, and modern dependency injection alternatives."
