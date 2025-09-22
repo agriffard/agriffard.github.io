@@ -2,7 +2,7 @@
 title: "Mastering Mermaid.js: The Complete Guide to Creating Stunning Diagrams with Code"
 slug: mermaid-js-comprehensive-guide
 author: agriffard
-pubDatetime: 2025-02-12T14:00:00Z
+pubDatetime: 2025-09-06T12:00:00Z
 categories: [Development]
 tags: [AI, Mermaid, Diagrams]
 description: "Master the art of creating beautiful diagrams with Mermaid.js! From flowcharts to sequence diagrams, learn how to visualize complex concepts using simple text-based syntax that integrates seamlessly into your documentation workflow."

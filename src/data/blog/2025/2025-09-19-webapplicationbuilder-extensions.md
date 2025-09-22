@@ -2,7 +2,7 @@
 title: Organizing ASP.NET Configuration with WebApplicationBuilder Extensions
 slug: webapplicationbuilder-extensions
 author: agriffard
-pubDatetime: 2025-09-19T14:00:00Z
+pubDatetime: 2025-09-19T12:00:00Z
 categories: [DotNet]
 tags: [BestPractices, ExtensionMethods]
 description: Learn how to organize your ASP.NET application configuration using extension methods for better maintainability and separation of concerns.

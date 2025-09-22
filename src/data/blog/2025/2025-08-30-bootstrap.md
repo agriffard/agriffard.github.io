@@ -2,7 +2,7 @@
 title: Bootstrap
 slug: bootstrap
 author: agriffard
-pubDatetime: 2025-05-31T12:00:00Z
+pubDatetime: 2025-08-30T12:00:00Z
 categories: [Bootstrap]
 tags: [AI]
 description: De la botte à l'amorçage, l'étonnante histoire du mot Bootstrap en informatique.

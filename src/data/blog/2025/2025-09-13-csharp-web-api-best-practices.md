@@ -2,7 +2,7 @@
 title: "Good Practices in C# Web APIs: Avoiding Common Pitfalls"
 slug: csharp-web-api-best-practices
 author: agriffard
-pubDatetime: 2025-03-22T12:00:00Z
+pubDatetime: 2025-09-13T12:00:00Z
 categories: [Development]
 tags: [AI, CSharp, WebAPI, BestPractices]
 description: "Web APIs drive modern applications, but small mistakes can cause big problems. Learn about 20 common pitfalls in C# Web API development and how to avoid them for better performance, security, and maintainability."
