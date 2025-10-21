@@ -11,9 +11,9 @@
     { "name": "CSS3", "icon": "/assets/icons/skills/css3-colored.svg" },
     { "name": "HTML5", "icon": "/assets/icons/skills/html5-colored.svg" },
     { "name": "Bootstrap", "icon": "/assets/icons/skills/bootstrap-colored.svg" },
-    { "name": "Tailwind", "icon": "/assets/icons/skills/tailwindcss-colored.svg" },
     { "name": "Orchard Core", "icon": "/assets/icons/skills/orchardcore.webp" },
-    { "name": "Microsoft Entra", "icon": "/assets/icons/skills/microsoft-entra.svg" },
+    { "name": "Fluent UI Blazor", "icon": "/assets/icons/skills/fluentuiblazor.svg" },
+    { "name": "Windows", "icon": "/assets/icons/skills/windows.svg" },
     { "name": "React", "icon": "/assets/icons/skills/react-colored.svg" },
     { "name": "Angular", "icon": "/assets/icons/skills/angular.svg" },
     { "name": "SQL Server", "icon": "/assets/icons/skills/sqlserver2025.png" },
@@ -22,7 +22,7 @@
     { "name": "GitHub", "icon": "/assets/icons/skills/github-color.svg" },
     { "name": "Git", "icon": "/assets/icons/skills/git.svg" },
     { "name": "Azure DevOps", "icon": "/assets/icons/skills/azure-devops.svg" },
-    { "name": "Windows", "icon": "/assets/icons/skills/windows.svg" },
+    { "name": "Microsoft Entra", "icon": "/assets/icons/skills/microsoft-entra.svg" },
     { "name": "Azure", "icon": "/assets/icons/skills/azure.svg" }
   ]
 }
