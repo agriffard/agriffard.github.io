@@ -19,9 +19,9 @@
     { "name": "SQL Server", "icon": "/assets/icons/skills/sqlserver2025.png" },
     { "name": "GraphQL", "icon": "/assets/icons/skills/graphql.svg" },
     { "name": "Docker", "icon": "/assets/icons/skills/docker.svg" },
-    { "name": "Swagger", "icon": "/assets/icons/skills/swagger.svg" },
-    { "name": "Postman", "icon": "/assets/icons/skills/postman.svg" },
-    { "name": "Office", "icon": "/assets/icons/skills/office.svg" },
+    { "name": "GitHub", "icon": "/assets/icons/skills/github-color.svg" },
+    { "name": "Git", "icon": "/assets/icons/skills/git.svg" },
+    { "name": "Azure DevOps", "icon": "/assets/icons/skills/azure-devops.svg" },
     { "name": "Windows", "icon": "/assets/icons/skills/windows.svg" },
     { "name": "Azure", "icon": "/assets/icons/skills/azure.svg" }
   ]
