@@ -1,6 +1,6 @@
 ---
 title: 'JWT JSON Web Tokens: A Comprehensive Guide'
-slug: orchard-core-2.2.1
+slug: jwt-json-web-tokens
 author: agriffard
 pubDatetime: 2025-10-21T12:00:00Z
 categories: [Web]
