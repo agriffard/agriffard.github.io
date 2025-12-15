@@ -2,10 +2,10 @@
   "name": "astro-paper",
   "type": "module",
   "version": "5.0.0",
-  "packageManager": "pnpm@10.24.0",
+  "packageManager": "pnpm@10.26.0+sha512.3b3f6c725ebe712506c0ab1ad4133cf86b1f4b687effce62a9b38b4d72e3954242e643190fc51fa1642949c735f403debd44f5cb0edd657abe63a8b6a7e1e402",
   "scripts": {
     "dev": "astro dev",
-  "build": "astro check && astro build && pagefind --site dist && node scripts/copy-pagefind.mjs",
+    "build": "astro check && astro build && pagefind --site dist && node scripts/copy-pagefind.mjs",
     "preview": "astro preview",
     "sync": "astro sync",
     "astro": "astro",
@@ -17,22 +17,22 @@
     "@astrojs/rss": "^4.0.14",
     "@astrojs/sitemap": "^3.6.0",
     "@resvg/resvg-js": "^2.6.2",
-    "@tailwindcss/vite": "^4.1.17",
-    "astro": "^5.16.4",
+    "@tailwindcss/vite": "^4.1.18",
+    "astro": "^5.16.5",
     "lodash.kebabcase": "^4.1.1",
     "remark-collapse": "^0.1.2",
     "remark-toc": "^9.0.0",
     "satori": "^0.18.3",
     "sharp": "^0.34.5",
-    "tailwindcss": "^4.1.17"
+    "tailwindcss": "^4.1.18"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.6",
     "@pagefind/default-ui": "^1.4.0",
     "@tailwindcss/typography": "^0.5.19",
     "@types/lodash.kebabcase": "^4.1.9",
-    "@typescript-eslint/parser": "^8.48.1",
-    "eslint": "^9.39.1",
+    "@typescript-eslint/parser": "^8.49.0",
+    "eslint": "^9.39.2",
     "eslint-plugin-astro": "^1.5.0",
     "globals": "^16.5.0",
     "pagefind": "^1.4.0",
@@ -40,6 +40,6 @@
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.7.2",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.48.1"
+    "typescript-eslint": "^8.49.0"
   }
 }

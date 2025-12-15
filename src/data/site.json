@@ -16,7 +16,7 @@
     { "name": "Windows", "icon": "/assets/icons/skills/windows.svg" },
     { "name": "React", "icon": "/assets/icons/skills/react-colored.svg" },
     { "name": "Angular", "icon": "/assets/icons/skills/angular.svg" },
-    { "name": "SQL Server", "icon": "/assets/icons/skills/sqlserver2025.png" },
+    { "name": "SQL Server", "icon": "/assets/icons/skills/SQL_Server_2025.svg" },
     { "name": "Aspire", "icon": "/assets/icons/skills/aspire.png" },
     { "name": "Docker", "icon": "/assets/icons/skills/docker.svg" },
     { "name": "GitHub", "icon": "/assets/icons/skills/github-color.svg" },
