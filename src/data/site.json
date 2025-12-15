@@ -2,7 +2,7 @@
   "skills": [
     { "name": ".NET", "icon": "/assets/icons/skills/dotnet.svg" },
     { "name": "CSharp", "icon": "/assets/icons/skills/csharp-colored.svg" },
-    { "name": "Visual Studio", "icon": "/assets/icons/skills/visualstudio.svg" },
+    { "name": "Visual Studio", "icon": "/assets/icons/skills/visual_studio_2026.svg" },
     { "name": "VS Code", "icon": "/assets/icons/skills/vscode.svg" },
     { "name": "Blazor", "icon": "/assets/icons/skills/blazor.svg" },
     { "name": "Markdown", "icon": "/assets/icons/skills/markdown.svg" },
