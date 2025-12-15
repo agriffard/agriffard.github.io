@@ -11,7 +11,7 @@
     { "name": "CSS3", "icon": "/assets/icons/skills/css3-colored.svg" },
     { "name": "HTML5", "icon": "/assets/icons/skills/html5-colored.svg" },
     { "name": "Bootstrap", "icon": "/assets/icons/skills/bootstrap-colored.svg" },
-    { "name": "Orchard Core", "icon": "/assets/icons/skills/orchardcore.webp" },
+    { "name": "Orchard Core", "icon": "/assets/icons/skills/orchard-core.svg" },
     { "name": "Fluent UI Blazor", "icon": "/assets/icons/skills/fluentuiblazor.svg" },
     { "name": "Windows", "icon": "/assets/icons/skills/windows.svg" },
     { "name": "React", "icon": "/assets/icons/skills/react-colored.svg" },
