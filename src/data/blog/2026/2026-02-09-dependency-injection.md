@@ -3,8 +3,8 @@ title: 'Dependency Injection: Lifetimes, Composition Root, Decorators, and Anti-
 slug: dependency-injection
 author: agriffard
 pubDatetime: 2026-02-09T12:00:00Z
-categories: [AI, .NET, Architecture]
-tags: [DependencyInjection, Design Patterns, SOLID]
+categories: [.NET, Architecture]
+tags: [AI, DependencyInjection, Design Patterns, SOLID]
 description: Master Dependency Injection in .NET with comprehensive coverage of lifetimes, composition root patterns, decorators, and common anti-patterns to avoid.
 ---
 
