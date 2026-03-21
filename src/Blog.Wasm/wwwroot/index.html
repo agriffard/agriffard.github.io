@@ -21,7 +21,16 @@
   <meta name="description" content="Have you tried turning it off and on again?" />
 </head>
 <body>
-  <div id="app"><div class="loading">Chargement…</div></div>
+  <div id="app">
+    <div class="splash">
+      <svg class="splash-spinner" viewBox="0 0 50 50" width="48" height="48">
+        <circle cx="25" cy="25" r="20" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-dasharray="90 150" stroke-dashoffset="0">
+          <animateTransform attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.8s" repeatCount="indefinite"/>
+        </circle>
+      </svg>
+      <p>Chargement&hellip;</p>
+    </div>
+  </div>
   <script>
     (function () {
       var redirect = sessionStorage.getItem('spa-redirect');
