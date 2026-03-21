@@ -39,8 +39,7 @@ jobs:
           dotnet publish src/Blog.Wasm/Blog.Wasm.csproj \
             --configuration Release \
             --output publish \
-            /p:SiteBaseUrl=https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }} \
-            /p:GHPagesBase=/${{ github.event.repository.name }}
+            /p:SiteBaseUrl=https://antoinegriffard.com
 
       - name: Fix SPA routing
         run: cp publish/wwwroot/index.html publish/wwwroot/404.html

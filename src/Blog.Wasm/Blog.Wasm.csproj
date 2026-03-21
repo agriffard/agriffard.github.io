@@ -43,16 +43,16 @@
   <!-- Étape 3 : injecter le base href dans index.html au publish -->
   <!-- index.html uses <base href="/" /> for local dev.
        At publish, we replace "/" with the GHPagesBase subpath (e.g. "/repo/"). -->
-  <Target Name="PatchBaseHref" AfterTargets="Publish">
+  <!-- Patch base href only when deploying to a subpath (e.g. /repo/).
+       For root deployments (user sites, custom domains), omit GHPagesBase. -->
+  <Target Name="PatchBaseHref" AfterTargets="Publish" Condition="'$(GHPagesBase)' != ''">
     <PropertyGroup>
       <_IndexHtml Condition=" $([MSBuild]::IsOSPlatform('Windows'))">$(PublishDir)wwwroot\index.html</_IndexHtml>
       <_IndexHtml Condition="!$([MSBuild]::IsOSPlatform('Windows'))">$(PublishDir)wwwroot/index.html</_IndexHtml>
-      <_GHPagesBase Condition="'$(GHPagesBase)' != ''">$(GHPagesBase)</_GHPagesBase>
-      <_GHPagesBase Condition="'$(GHPagesBase)' == ''">/.</_GHPagesBase>
     </PropertyGroup>
-    <Exec Command="sed -i 's|&lt;base href=&quot;/&quot;|&lt;base href=&quot;$(_GHPagesBase)/&quot;|g' &quot;$(_IndexHtml)&quot;"
+    <Exec Command="sed -i 's|&lt;base href=&quot;/&quot;|&lt;base href=&quot;$(GHPagesBase)/&quot;|g' &quot;$(_IndexHtml)&quot;"
           Condition="!$([MSBuild]::IsOSPlatform('Windows'))" />
-    <Exec Command="powershell -NoProfile -Command &quot;(Get-Content '$(_IndexHtml)') -replace '&lt;base href=&quot;/&quot;', '&lt;base href=&quot;$(_GHPagesBase)/&quot;' | Set-Content '$(_IndexHtml)'&quot;"
+    <Exec Command="powershell -NoProfile -Command &quot;(Get-Content '$(_IndexHtml)') -replace '&lt;base href=&quot;/&quot;', '&lt;base href=&quot;$(GHPagesBase)/&quot;' | Set-Content '$(_IndexHtml)'&quot;"
           Condition=" $([MSBuild]::IsOSPlatform('Windows'))" />
   </Target>
 
