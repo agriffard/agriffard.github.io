@@ -5,7 +5,9 @@
       "Bash(dotnet build:*)",
       "WebFetch(domain:raw.githubusercontent.com)",
       "WebFetch(domain:antoinegriffard.com)",
-      "Bash(gh api:*)"
+      "Bash(gh api:*)",
+      "Bash(gh run:*)",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(fbuild_type: {d[''''build_type'''']}\\\\nsource: {d[''''source'''']}\\\\ncname: {d.get\\(''''cname''''\\)}\\\\nstatus: {d[''''status'''']}\\)\")"
     ]
   }
 }
