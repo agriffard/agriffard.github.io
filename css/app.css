@@ -61,6 +61,19 @@ body {
     padding: 2rem 1rem;
 }
 
+/* ── Splash / loading screen ─────────────────────────────────────── */
+.splash {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 1rem;
+    color: var(--text-secondary);
+}
+.splash-spinner { opacity: 0.6; }
+.splash p { font-size: 0.95rem; }
+
 /* ── Scroll offset for sticky header ─────────────────────────────── */
 #posts-list { scroll-margin-top: 4rem; }
 
