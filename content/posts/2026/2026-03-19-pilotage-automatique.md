@@ -5,6 +5,7 @@ author: agriffard
 pubDatetime: 2026-03-19T12:00:00Z
 categories: [Development]
 tags: [AI, .NET, Visual Studio, Copilot]
+cover: og/pilotage-automatique.svg
 description: "Un parallèle entre l'évolution de l'automobile et celle du développement informatique ces 25 dernières années. De la boîte manuelle sans direction assistée à la voiture électrique autonome, du code sans IntelliSense aux agents IA."
 ---
 
