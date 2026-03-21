@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#fefbfb"/>
+  <!-- Shadow card -->
+  <rect x="58" y="38" width="1084" height="554" rx="4" fill="#ecebeb"/>
+  <!-- Main card -->
+  <rect x="50" y="30" width="1084" height="554" rx="4" fill="#fefbfb" stroke="#1a1a2e" stroke-width="4"/>
+  <!-- Accent bar -->
+  <rect x="50" y="30" width="1084" height="8" rx="4" fill="#0d6efd"/>
+  <!-- Title -->
+  <text x="100" y="200" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="60" font-weight="700" fill="#1a1a2e">Pi animation</text>
+  <!-- Date -->
+  <text x="100" y="292" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" fill="#6c757d">14 mars 2019</text>
+  <!-- Site name -->
+  <text x="1084" y="540" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="28" fill="#6c757d" text-anchor="end">Antoine Griffard</text>
+  <!-- Code icon -->
+  <text x="100" y="540" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="28" fill="#0d6efd">&lt;/&gt;</text>
+</svg>

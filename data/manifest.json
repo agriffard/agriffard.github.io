@@ -1,0 +1,1859 @@
+{
+  "generatedAt": "2026-03-21T13:50:52.8729131Z",
+  "posts": [
+    {
+      "slug": "pilotage-automatique",
+      "title": "D\u00E9veloppement : De la bo\u00EEte manuelle au pilote automatique",
+      "pubDatetime": "2026-03-19T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "AI",
+        ".NET",
+        "Visual Studio",
+        "Copilot"
+      ],
+      "description": "Un parall\u00E8le entre l\u0027\u00E9volution de l\u0027automobile et celle du d\u00E9veloppement informatique ces 25 derni\u00E8res ann\u00E9es. De la bo\u00EEte manuelle sans direction assist\u00E9e \u00E0 la voiture \u00E9lectrique autonome, du code sans IntelliSense aux agents IA.",
+      "cover": "og/pilotage-automatique.svg",
+      "readingTime": 6,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2026/2026-03-19-pilotage-automatique.md"
+    },
+    {
+      "slug": "ioptions",
+      "title": "Understanding IOptions\u003CT\u003E in .NET",
+      "pubDatetime": "2026-02-14T10:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "AI",
+        "Configuration",
+        "Best Practices",
+        "ASP.NET Core"
+      ],
+      "description": "Master strongly-typed configuration in .NET with IOptions\u003CT\u003E, IOptionsSnapshot\u003CT\u003E, and IOptionsMonitor\u003CT\u003E. Learn validation, named options, reloadable config, and production best practices.",
+      "cover": "og/ioptions.svg",
+      "readingTime": 5,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2026/2026-02-14-ioptions.md"
+    },
+    {
+      "slug": "dependency-injection",
+      "title": "Dependency Injection: Lifetimes, Composition Root, Decorators, and Anti-Patterns",
+      "pubDatetime": "2026-02-09T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "AI",
+        "DependencyInjection",
+        "Design Patterns",
+        "SOLID"
+      ],
+      "description": "Master Dependency Injection in .NET with comprehensive coverage of lifetimes, composition root patterns, decorators, and common anti-patterns to avoid.",
+      "cover": "og/dependency-injection.svg",
+      "readingTime": 4,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2026/2026-02-09-dependency-injection.md"
+    },
+    {
+      "slug": "cercle-360-degres",
+      "title": "Pourquoi un cercle est-il divis\u00E9 en 360 degr\u00E9s ?",
+      "pubDatetime": "2026-01-31T12:00:00Z",
+      "author": "agriffard",
+      "category": "Math\u00E9matiques",
+      "tags": [
+        "AI",
+        "Histoire",
+        "G\u00E9om\u00E9trie",
+        "Degr\u00E9s"
+      ],
+      "description": "D\u00E9couvrez les origines historiques et math\u00E9matiques du choix des 360 degr\u00E9s pour diviser un cercle.",
+      "cover": "og/cercle-360-degres.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2026/2026-01-31-cercle-360-degres.md"
+    },
+    {
+      "slug": "darwins-incident",
+      "title": "The Darwin Incident",
+      "pubDatetime": "2026-01-08T00:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Manga"
+      ],
+      "description": "Premier \u00E9pisode de l\u0027anime The Darwin Incident bas\u00E9 sur le manga de Shun Umezawa.",
+      "cover": "og/darwins-incident.svg",
+      "readingTime": 3,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2026/2026-01-08-the-darwin-incident.md"
+    },
+    {
+      "slug": "prototyping-with-ai-agents",
+      "title": "Prototyping with AI Agents",
+      "pubDatetime": "2025-12-31T10:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "AI",
+        "Copilot",
+        "CSharp",
+        "DotNet",
+        "GitHub"
+      ],
+      "description": "Exploring how AI agents like GitHub Copilot can accelerate development - creating multiple C# .NET libraries and samples during holiday break.",
+      "cover": "og/prototyping-with-ai-agents.svg",
+      "readingTime": 6,
+      "draft": false,
+      "featured": true,
+      "path": "content/posts/2025/2025-12-31-holiday-projects-ai-collaboration.md"
+    },
+    {
+      "slug": "orchard-harvest-2025",
+      "title": "Orchard Harvest 2025",
+      "pubDatetime": "2025-11-15T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Harvest"
+      ],
+      "description": "Orchard Harvest 2025 in Prague.",
+      "cover": "og/orchard-harvest-2025.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2025/2025-11-15-orchard-harvest-2025.md"
+    },
+    {
+      "slug": "jwt-json-web-tokens",
+      "title": "JWT JSON Web Tokens: A Comprehensive Guide",
+      "pubDatetime": "2025-10-21T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "AI",
+        "Jwt"
+      ],
+      "description": "JSON Web Tokens explained.",
+      "cover": "og/jwt-json-web-tokens.svg",
+      "readingTime": 2,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2025/2025-10-21-jwt-json-web-tokens.md"
+    },
+    {
+      "slug": "orchard-core-2.2.1",
+      "title": "Orchard Core 2.2.1 Release",
+      "pubDatetime": "2025-10-10T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Release"
+      ],
+      "description": "Orchard Core 2.2.1 Release is available.",
+      "cover": "og/orchard-core-2.2.1.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2025/2025-10-10-orchard-core-2.2.1.md"
+    },
+    {
+      "slug": "webapplicationbuilder-extensions",
+      "title": "Organizing ASP.NET Configuration with WebApplicationBuilder Extensions",
+      "pubDatetime": "2025-09-19T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "BestPractices",
+        "ExtensionMethods"
+      ],
+      "description": "Learn how to organize your ASP.NET application configuration using extension methods for better maintainability and separation of concerns.",
+      "cover": "og/webapplicationbuilder-extensions.svg",
+      "readingTime": 3,
+      "draft": false,
+      "featured": true,
+      "path": "content/posts/2025/2025-09-19-webapplicationbuilder-extensions.md"
+    },
+    {
+      "slug": "csharp-web-api-best-practices",
+      "title": "Good Practices in C# Web APIs: Avoiding Common Pitfalls",
+      "pubDatetime": "2025-09-13T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "AI",
+        "CSharp",
+        "WebAPI",
+        "BestPractices"
+      ],
+      "description": "Web APIs drive modern applications, but small mistakes can cause big problems. Learn about 20 common pitfalls in C# Web API development and how to avoid them for better performance, security, and maintainability.",
+      "cover": "og/csharp-web-api-best-practices.svg",
+      "readingTime": 3,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2025/2025-09-13-csharp-web-api-best-practices.md"
+    },
+    {
+      "slug": "mermaid-js-comprehensive-guide",
+      "title": "Mastering Mermaid.js: The Complete Guide to Creating Stunning Diagrams with Code",
+      "pubDatetime": "2025-09-06T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "AI",
+        "Mermaid",
+        "Diagrams"
+      ],
+      "description": "Master the art of creating beautiful diagrams with Mermaid.js! From flowcharts to sequence diagrams, learn how to visualize complex concepts using simple text-based syntax that integrates seamlessly into your documentation workflow.",
+      "cover": "og/mermaid-js-comprehensive-guide.svg",
+      "readingTime": 7,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2025/2025-09-06-mermaid-js-comprehensive-guide.md"
+    },
+    {
+      "slug": "bootstrap",
+      "title": "Bootstrap",
+      "pubDatetime": "2025-08-30T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "AI"
+      ],
+      "description": "De la botte \u00E0 l\u0027amor\u00E7age, l\u0027\u00E9tonnante histoire du mot Bootstrap en informatique.",
+      "cover": "og/bootstrap.svg",
+      "readingTime": 3,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2025/2025-08-30-bootstrap.md"
+    },
+    {
+      "slug": "mnemoniques",
+      "title": "Mn\u00E9moniques",
+      "pubDatetime": "2025-08-23T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "AI",
+        "M\u00E9moire"
+      ],
+      "description": "D\u00E9couvrez comment les mn\u00E9moniques facilitent la m\u00E9morisation et comment cr\u00E9er les v\u00F4tres.",
+      "cover": "og/mnemoniques.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2025/2025-08-23-mnemoniques.md"
+    },
+    {
+      "slug": "orchard-core-2.2.0",
+      "title": "Orchard Core 2.2.0 Release",
+      "pubDatetime": "2025-08-19T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Release"
+      ],
+      "description": "Orchard Core 2.2.0 Release is available.",
+      "cover": "og/orchard-core-2.2.0.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2025/2025-08-19-orchard-core-2.2.0.md"
+    },
+    {
+      "slug": "orchard-core-2.1.9",
+      "title": "Orchard Core 2.1.9 Release",
+      "pubDatetime": "2025-08-19T11:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Release"
+      ],
+      "description": "Orchard Core 2.1.9 Release is available.",
+      "cover": "og/orchard-core-2.1.9.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2025/2025-08-19-orchard-core-2.1.9.md"
+    },
+    {
+      "slug": "orchard-core-2.1.8",
+      "title": "Orchard Core 2.1.8 Release",
+      "pubDatetime": "2025-08-14T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Release"
+      ],
+      "description": "Orchard Core 2.1.8 Release is available.",
+      "cover": "og/orchard-core-2.1.8.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2025/2025-08-14-orchard-core-2.1.8.md"
+    },
+    {
+      "slug": "microsoft-mvp-2025-2026",
+      "title": "Microsoft MVP 2025-2026",
+      "pubDatetime": "2025-07-10T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "MVP"
+      ],
+      "description": "Renewed as Microsoft MVP for 2025-2026.",
+      "cover": "og/microsoft-mvp-2025-2026.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2025/2025-07-10-microsoft-mvp-2025-2026.md"
+    },
+    {
+      "slug": "orchard-core-2.1.7",
+      "title": "Orchard Core 2.1.7 Release",
+      "pubDatetime": "2025-04-16T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Release"
+      ],
+      "description": "Orchard Core 2.1.7 Release is available.",
+      "cover": "og/orchard-core-2.1.7.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2025/2025-04-16-orchard-core-2.1.7.md"
+    },
+    {
+      "slug": "orchard-core-2.1.6",
+      "title": "Orchard Core 2.1.6 Release",
+      "pubDatetime": "2025-02-19T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Release"
+      ],
+      "description": "Orchard Core 2.1.6 Release is available.",
+      "cover": "og/orchard-core-2.1.6.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2025/2025-02-19-orchard-core-2.1.6.md"
+    },
+    {
+      "slug": "orchard-core-2.1.5",
+      "title": "Orchard Core 2.1.5 Release",
+      "pubDatetime": "2025-02-04T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Release"
+      ],
+      "description": "Orchard Core 2.1.5 Release is available.",
+      "cover": "og/orchard-core-2.1.5.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2025/2025-02-04-orchard-core-2.1.5.md"
+    },
+    {
+      "slug": "orchard-core-2.1.4",
+      "title": "Orchard Core 2.1.4 Release",
+      "pubDatetime": "2025-01-17T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Release"
+      ],
+      "description": "Orchard Core 2.1.4 Release is available.",
+      "cover": "og/orchard-core-2.1.4.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2025/2025-01-17-orchard-core-2.1.4.md"
+    },
+    {
+      "slug": "the-pitt",
+      "title": "The Pitt",
+      "pubDatetime": "2025-01-10T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Serie"
+      ],
+      "description": "Ce que j\u0027ai aim\u00E9 dans les 2 premiers \u00E9pisodes de la s\u00E9rie The Pitt.",
+      "cover": "og/the-pitt.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2025/2025-01-10-the-pitt.md"
+    },
+    {
+      "slug": "orchard-core-2.1.3",
+      "title": "Orchard Core 2.1.3 Release",
+      "pubDatetime": "2024-12-12T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Release"
+      ],
+      "description": "Orchard Core 2.1.3 Release is available.",
+      "cover": "og/orchard-core-2.1.3.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2024/2024-12-12-orchard-core-2.1.3.md"
+    },
+    {
+      "slug": "orchard-core-2.1.2",
+      "title": "Orchard Core 2.1.2 Release",
+      "pubDatetime": "2024-11-28T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Release"
+      ],
+      "description": "Orchard Core 2.1.2 Release is available.",
+      "cover": "og/orchard-core-2.1.2.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2024/2024-11-28-orchard-core-2.1.2.md"
+    },
+    {
+      "slug": "orchard-core-2.1.1",
+      "title": "Orchard Core 2.1.1 Release",
+      "pubDatetime": "2024-11-25T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Release"
+      ],
+      "description": "Orchard Core 2.1.1 Release is available.",
+      "cover": "og/orchard-core-2.1.1.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2024/2024-11-25-orchard-core-2.1.1.md"
+    },
+    {
+      "slug": "orchard-core-2.1.0",
+      "title": "Orchard Core 2.1.0 Release",
+      "pubDatetime": "2024-11-21T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Release"
+      ],
+      "description": "Orchard Core 2.1.0 Release is available.",
+      "cover": "og/orchard-core-2.1.0.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2024/2024-11-21-orchard-core-2.1.0.md"
+    },
+    {
+      "slug": "orchard-core-2.0.2",
+      "title": "Orchard Core 2.0.2 Release",
+      "pubDatetime": "2024-09-26T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Release"
+      ],
+      "description": "Orchard Core 2.0.2 Release is available.",
+      "cover": "og/orchard-core-2.0.2.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2024/2024-09-26-orchard-core-2.0.2.md"
+    },
+    {
+      "slug": "orchard-core-2.0.1",
+      "title": "Orchard Core 2.0.1 Release",
+      "pubDatetime": "2024-09-25T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Release"
+      ],
+      "description": "Orchard Core 2.0.1 Release is available.",
+      "cover": "og/orchard-core-2.0.1.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2024/2024-09-25-orchard-core-2.0.1.md"
+    },
+    {
+      "slug": "orchard-harvest-2024",
+      "title": "Orchard Harvest 2024",
+      "pubDatetime": "2024-09-12T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Harvest"
+      ],
+      "description": "Orchard Harvest 2024 in Las Vegas.",
+      "cover": "og/orchard-harvest-2024.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2024/2024-09-12-orchard-harvest-2024.md"
+    },
+    {
+      "slug": "orchard-core-2.0.0",
+      "title": "Orchard Core 2.0.0 Release",
+      "pubDatetime": "2024-09-09T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Release"
+      ],
+      "description": "Orchard Core 2.0.0 Release is available.",
+      "cover": "og/orchard-core-2.0.0.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2024/2024-09-09-orchard-core-2.0.0.md"
+    },
+    {
+      "slug": "orchard-core-1.8.4",
+      "title": "Orchard Core 1.8.4 Release",
+      "pubDatetime": "2024-09-04T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Release"
+      ],
+      "description": "Orchard Core 1.8.4 Release is available.",
+      "cover": "og/orchard-core-1.8.4.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2024/2024-09-04-orchard-core-1.8.4.md"
+    },
+    {
+      "slug": "orchard-core-1.8.3",
+      "title": "Orchard Core 1.8.3 Release",
+      "pubDatetime": "2024-04-25T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Release"
+      ],
+      "description": "Orchard Core 1.8.3 Release is available.",
+      "cover": "og/orchard-core-1.8.3.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2024/2024-04-25-orchard-core-1.8.3.md"
+    },
+    {
+      "slug": "approximations-nombre-pi",
+      "title": "Les approximations remarquables du nombre Pi",
+      "pubDatetime": "2024-03-14T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "AI",
+        "Pi"
+      ],
+      "description": "Exploration des meilleures approximations fractionnaires du nombre \u03C0, de l\u0027antique 22/7 aux fractions continues modernes.",
+      "cover": "og/approximations-nombre-pi.svg",
+      "readingTime": 2,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2024/2024-03-14-approximations-nombre-pi.md"
+    },
+    {
+      "slug": "orchard-core-1.8.2",
+      "title": "Orchard Core 1.8.2 Release",
+      "pubDatetime": "2024-01-17T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Release"
+      ],
+      "description": "Orchard Core 1.8.2 Release is available.",
+      "cover": "og/orchard-core-1.8.2.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2024/2024-01-17-orchard-core-1.8.2.md"
+    },
+    {
+      "slug": "orchard-core-1.8.1",
+      "title": "Orchard Core 1.8.1 Release",
+      "pubDatetime": "2024-01-09T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Release"
+      ],
+      "description": "Orchard Core 1.8.1 Release is available.",
+      "cover": "og/orchard-core-1.8.1.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2024/2024-01-09-orchard-core-1.8.1.md"
+    },
+    {
+      "slug": "orchard-core-1.8",
+      "title": "Orchard Core 1.8 Release",
+      "pubDatetime": "2024-01-02T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Release"
+      ],
+      "description": "Orchard Core 1.8 Release is available.",
+      "cover": "og/orchard-core-1.8.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2024/2024-01-02-orchard-core-1.8.md"
+    },
+    {
+      "slug": "resilience",
+      "title": "Building Resilient C# Applications",
+      "pubDatetime": "2023-12-19T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "AI",
+        "Resilience"
+      ],
+      "description": "Learn how to build resilient C# applications.",
+      "cover": "og/resilience.svg",
+      "readingTime": 4,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2023/2023-12-19-resilience-csharp-applications.md"
+    },
+    {
+      "slug": "blazor-server-vs-webassembly-guide",
+      "title": "Blazor Server vs Blazor WebAssembly: How to Choose",
+      "pubDatetime": "2023-11-19T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "AI",
+        "Blazor",
+        "WebAssembly"
+      ],
+      "description": "Complete guide to choosing between Blazor Server and Blazor WebAssembly for your next project. Compare performance, deployment, and use cases.",
+      "cover": "og/blazor-server-vs-webassembly-guide.svg",
+      "readingTime": 5,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2023/2023-11-19-blazor-server-vs-webassembly.md"
+    },
+    {
+      "slug": "orchard-core-1.7.2",
+      "title": "Orchard Core 1.7.2 Release",
+      "pubDatetime": "2023-10-18T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Release"
+      ],
+      "description": "Orchard Core 1.7.2 Release is available.",
+      "cover": "og/orchard-core-1.7.2.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2023/2023-10-18-orchard-core-1.7.2.md"
+    },
+    {
+      "slug": "orchard-core-1.7.1",
+      "title": "Orchard Core 1.7.1 Release",
+      "pubDatetime": "2023-10-13T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Release"
+      ],
+      "description": "Orchard Core 1.7.1 Release is available.",
+      "cover": "og/orchard-core-1.7.1.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2023/2023-10-13-orchard-core-1.7.1.md"
+    },
+    {
+      "slug": "orchard-core-1.7",
+      "title": "Orchard Core 1.7 Release",
+      "pubDatetime": "2023-09-05T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Release"
+      ],
+      "description": "Orchard Core 1.7 Release is available.",
+      "cover": "og/orchard-core-1.7.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2023/2023-09-05-orchard-core-1.7.md"
+    },
+    {
+      "slug": "orchard-core-1.6",
+      "title": "Orchard Core 1.6 Release",
+      "pubDatetime": "2023-04-13T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Release"
+      ],
+      "description": "Orchard Core 1.6 Release is available.",
+      "cover": "og/orchard-core-1.6.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2023/2023-04-13-orchard-core-1.6.md"
+    },
+    {
+      "slug": "orchard-core-1.5",
+      "title": "Orchard Core 1.5 Release",
+      "pubDatetime": "2022-11-04T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Release"
+      ],
+      "description": "Orchard Core 1.5 Release is available.",
+      "cover": "og/orchard-core-1.5.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2022/2022-11-04-orchard-core-1.5.md"
+    },
+    {
+      "slug": "mvp-award-2022",
+      "title": "MVP award 2022",
+      "pubDatetime": "2022-08-01T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "MVP"
+      ],
+      "description": "This year, my Microsoft MVP title has been renewed for the 10th time.",
+      "cover": "og/mvp-award-2022.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2022/2022-08-01-mvp-award-2022.md"
+    },
+    {
+      "slug": "orchard-core-1.4",
+      "title": "Orchard Core 1.4 Release",
+      "pubDatetime": "2022-06-01T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Release"
+      ],
+      "description": "Orchard Core 1.4 Release is available.",
+      "cover": "og/orchard-core-1.4.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2022/2022-06-01-orchard-core-1.4.md"
+    },
+    {
+      "slug": "learn-kana",
+      "title": "Learn Kana",
+      "pubDatetime": "2022-04-23T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Language",
+        "Japanese"
+      ],
+      "description": "Kana (\u4EEE\u540D) refer to syllabaries used to write Japanese phonological units.",
+      "cover": "og/learn-kana.svg",
+      "readingTime": 2,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2022/2022-04-23-learn-kana.md"
+    },
+    {
+      "slug": "orchard-core-1.3",
+      "title": "Orchard Core 1.3 Release",
+      "pubDatetime": "2022-03-10T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Release"
+      ],
+      "description": "Orchard Core 1.3 Release",
+      "cover": "og/orchard-core-1.3.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2022/2022-03-10-orchard-core-1.3.md"
+    },
+    {
+      "slug": "orchard-core-1.2",
+      "title": "Orchard Core 1.2 Release",
+      "pubDatetime": "2022-01-06T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Release"
+      ],
+      "description": "Orchard Core 1.2 Release",
+      "cover": "og/orchard-core-1.2.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2022/2022-01-06-orchard-core-1.2.md"
+    },
+    {
+      "slug": "orchard-core-1.1",
+      "title": "Orchard Core 1.1 Release",
+      "pubDatetime": "2021-11-02T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Release"
+      ],
+      "description": "Orchard Core 1.1 Release",
+      "cover": "og/orchard-core-1.1.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2021/2021-11-02-orchard-core-1.1.md"
+    },
+    {
+      "slug": "mvp-award-2021",
+      "title": "MVP award 2021",
+      "pubDatetime": "2021-08-01T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "MVP"
+      ],
+      "description": "MVP award 2021",
+      "cover": "og/mvp-award-2021.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2021/2021-08-01-mvp-award-2021.md"
+    },
+    {
+      "slug": "orchard-core-1.0",
+      "title": "Orchard Core 1.0 Release",
+      "pubDatetime": "2021-07-22T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Release"
+      ],
+      "description": "Orchard Core 1.0 Release",
+      "cover": "og/orchard-core-1.0.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2021/2021-07-22-orchard-core-1.0.md"
+    },
+    {
+      "slug": "morse",
+      "title": "Morse",
+      "pubDatetime": "2021-06-06T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Language"
+      ],
+      "description": "Morse",
+      "cover": "og/morse.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2021/2021-06-06-morse.md"
+    },
+    {
+      "slug": "winget",
+      "title": "winget",
+      "pubDatetime": "2021-03-14T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Tool"
+      ],
+      "description": "WinGet",
+      "cover": "og/winget.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2021/2021-03-14-winget.md"
+    },
+    {
+      "slug": "3d",
+      "title": "3d",
+      "pubDatetime": "2021-01-31T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "3d"
+      ],
+      "description": "3d",
+      "cover": "og/3d.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2021/2021-01-31-3d.md"
+    },
+    {
+      "slug": "bonjour",
+      "title": "Bonjour",
+      "pubDatetime": "2020-10-31T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Language"
+      ],
+      "description": "Bonjour",
+      "cover": "og/bonjour.svg",
+      "readingTime": 8,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2020/2020-10-31-bonjour.md"
+    },
+    {
+      "slug": "mvp-award-2020",
+      "title": "MVP award 2020",
+      "pubDatetime": "2020-08-01T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "MVP"
+      ],
+      "description": "MVP award 2020",
+      "cover": "og/mvp-award-2020.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2020/2020-08-01-mvp-award-2020.md"
+    },
+    {
+      "slug": "orchard-core-rc-2",
+      "title": "Orchard Core RC 2",
+      "pubDatetime": "2020-06-13T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Release"
+      ],
+      "description": "Orchard Core RC 2",
+      "cover": "og/orchard-core-rc-2.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2020/2020-06-13-orchard-core-rc-2.md"
+    },
+    {
+      "slug": "fibonacci-sequence",
+      "title": "Fibonacci sequence",
+      "pubDatetime": "2020-05-06T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Maths"
+      ],
+      "description": "Fibonacci sequence",
+      "cover": "og/fibonacci-sequence.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2020/2020-05-06-fibonacci-sequence.md"
+    },
+    {
+      "slug": "linq",
+      "title": "LINQ",
+      "pubDatetime": "2020-03-14T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        ".NET"
+      ],
+      "description": "LINQ",
+      "cover": "og/linq.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2020/2020-03-14-linq.md"
+    },
+    {
+      "slug": "how-to-fix-a-bug",
+      "title": "How to fix a bug?",
+      "pubDatetime": "2020-01-31T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Howto"
+      ],
+      "description": "How to fix a bug?",
+      "cover": "og/how-to-fix-a-bug.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2020/2020-01-31-how-to-fix-a-bug.md"
+    },
+    {
+      "slug": "orchard-core-rc-1",
+      "title": "Orchard Core RC 1",
+      "pubDatetime": "2019-09-24T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Release"
+      ],
+      "description": "Orchard Core RC 1",
+      "cover": "og/orchard-core-rc-1.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2019/2019-09-24-orchard-core-rc-1.md"
+    },
+    {
+      "slug": "mvp-award-2019",
+      "title": "MVP award 2019",
+      "pubDatetime": "2019-08-01T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "MVP"
+      ],
+      "description": "MVP award 2019",
+      "cover": "og/mvp-award-2019.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2019/2019-08-01-mvp-award-2019.md"
+    },
+    {
+      "slug": "nato-phonetic-alphabet",
+      "title": "NATO phonetic alphabet",
+      "pubDatetime": "2019-06-06T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Alphabet"
+      ],
+      "description": "NATO phonetic alphabet",
+      "cover": "og/nato-phonetic-alphabet.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2019/2019-06-06-nato-phonetic-alphabet.md"
+    },
+    {
+      "slug": "orchard-core-beta-3",
+      "title": "Orchard Core Beta 3",
+      "pubDatetime": "2019-04-04T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Release"
+      ],
+      "description": "Orchard Core Beta 3",
+      "cover": "og/orchard-core-beta-3.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2019/2019-04-04-orchard-core-beta-3.md"
+    },
+    {
+      "slug": "pi-animation",
+      "title": "Pi animation",
+      "pubDatetime": "2019-03-14T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Pi"
+      ],
+      "description": "Pi animation",
+      "cover": "og/pi-animation.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2019/2019-03-14-pi-animation.md"
+    },
+    {
+      "slug": "dunning-kruger-effect",
+      "title": "Dunning-Kruger effect",
+      "pubDatetime": "2019-01-31T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Psychology"
+      ],
+      "description": "Dunning-Kruger effect",
+      "cover": "og/dunning-kruger-effect.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2019/2019-01-31-dunning-kruger-effect.md"
+    },
+    {
+      "slug": "strategy-design-pattern-csharp",
+      "title": "Strategy Design Pattern",
+      "pubDatetime": "2018-12-21T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "AI",
+        "DesignPatterns",
+        "CSharp"
+      ],
+      "description": "Master the Strategy design pattern in C# with practical examples, best practices, and real-world implementations. Learn to create flexible, maintainable algorithms that can be swapped at runtime.",
+      "cover": "og/strategy-design-pattern-csharp.svg",
+      "readingTime": 4,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2018/2018-12-21-strategy-design-pattern-csharp.md"
+    },
+    {
+      "slug": "factory-design-pattern-csharp",
+      "title": "Factory Design Pattern in C#: Complete Guide with Examples",
+      "pubDatetime": "2018-10-19T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "AI",
+        "DesignPatterns",
+        "CSharp"
+      ],
+      "description": "Master the Factory design pattern in C# with practical examples, best practices, and real-world implementations. Learn Simple Factory, Factory Method, and Abstract Factory patterns.",
+      "cover": "og/factory-design-pattern-csharp.svg",
+      "readingTime": 3,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2018/2018-10-19-factory-design-pattern-csharp.md"
+    },
+    {
+      "slug": "mvp-award-2018",
+      "title": "MVP award 2018",
+      "pubDatetime": "2018-08-01T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "MVP"
+      ],
+      "description": "MVP award 2018",
+      "cover": "og/mvp-award-2018.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2018/2018-08-01-mvp-award-2018.md"
+    },
+    {
+      "slug": "orchard-core-beta-2",
+      "title": "Orchard Core Beta 2",
+      "pubDatetime": "2018-06-23T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Release"
+      ],
+      "description": "Orchard Core Beta 2",
+      "cover": "og/orchard-core-beta-2.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2018/2018-06-23-orchard-core-beta-2.md"
+    },
+    {
+      "slug": "pi",
+      "title": "Pi",
+      "pubDatetime": "2018-03-14T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Pi"
+      ],
+      "description": "Pi",
+      "cover": "og/pi.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2018/2018-03-14-pi.md"
+    },
+    {
+      "slug": "four-stages-of-competence",
+      "title": "Four stages of competence",
+      "pubDatetime": "2018-01-31T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Psychology"
+      ],
+      "description": "Four stages of competence",
+      "cover": "og/four-stages-of-competence.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2018/2018-01-31-four-stages-of-competence.md"
+    },
+    {
+      "slug": "orchard-core-beta",
+      "title": "Orchard Core Beta",
+      "pubDatetime": "2017-11-21T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Release"
+      ],
+      "description": "Orchard Core Beta",
+      "cover": "og/orchard-core-beta.svg",
+      "readingTime": 2,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2017/2017-11-21-orchard-core-beta.md"
+    },
+    {
+      "slug": "builder-design-pattern-csharp",
+      "title": "Builder Design Pattern in C#: Constructing Complex Objects Step by Step",
+      "pubDatetime": "2017-09-19T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "AI",
+        "DesignPatterns",
+        "CSharp",
+        "FluentAPI"
+      ],
+      "description": "Master the Builder design pattern in C# with fluent interfaces, method chaining, and practical examples. Learn to construct complex objects elegantly and maintainably.",
+      "cover": "og/builder-design-pattern-csharp.svg",
+      "readingTime": 3,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2017/2017-09-19-builder-design-pattern-csharp.md"
+    },
+    {
+      "slug": "dots",
+      "title": "Dots",
+      "pubDatetime": "2017-06-06T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Illusion"
+      ],
+      "description": "Dots",
+      "cover": "og/dots.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2017/2017-06-06-dots.md"
+    },
+    {
+      "slug": "je-ne-sais-rien",
+      "title": "Je ne sais rien",
+      "pubDatetime": "2017-03-31T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Philosophie"
+      ],
+      "description": "Ce que je sais, c\u0027est que je ne sais rien.",
+      "cover": "og/je-ne-sais-rien.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2017/2017-03-31-je-ne-sais-rien.md"
+    },
+    {
+      "slug": "orchard-harvest-in-new-york",
+      "title": "Orchard Harvest in New York",
+      "pubDatetime": "2017-02-28T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Harvest"
+      ],
+      "description": "Orchard Harvest in New York",
+      "cover": "og/orchard-harvest-in-new-york.svg",
+      "readingTime": 6,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2017/2017-02-28-orchard-harvest-in-new-york.md"
+    },
+    {
+      "slug": "singleton-design-pattern-csharp",
+      "title": "Singleton Design Pattern in C#: Thread-Safe Implementation and Modern Alternatives",
+      "pubDatetime": "2017-01-19T16:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "AI",
+        "DesignPatterns",
+        "CSharp"
+      ],
+      "description": "Master the Singleton design pattern in C# with thread-safe implementations, performance considerations, and modern dependency injection alternatives.",
+      "cover": "og/singleton-design-pattern-csharp.svg",
+      "readingTime": 4,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2017/2017-01-19-singleton-design-pattern-csharp.md"
+    },
+    {
+      "slug": "orchard-harvest-2017",
+      "title": "Conf\u00E9rence Orchard Harvest 2017",
+      "pubDatetime": "2016-12-28T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Harvest"
+      ],
+      "description": "Orchard Harvest 2017 \u00E0 New York",
+      "cover": "og/orchard-harvest-2017.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2016/2016-12-28-orchard-harvest-2017.md"
+    },
+    {
+      "slug": "microsoft-mvp-summit-2016.",
+      "title": "Microsoft MVP Summit 2016",
+      "pubDatetime": "2016-12-03T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "MVP"
+      ],
+      "description": "Microsoft MVP Summit 2016",
+      "cover": "og/microsoft-mvp-summit-2016..svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2016/2016-12-03-microsoft-mvp-summit-2016.md"
+    },
+    {
+      "slug": "mvp-award-2016",
+      "title": "MVP award 2016",
+      "pubDatetime": "2016-08-01T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "MVP"
+      ],
+      "description": "MVP award 2016",
+      "cover": "og/mvp-award-2016.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2016/2016-08-01-mvp-award-2016.md"
+    },
+    {
+      "slug": "less-is-more",
+      "title": "Less is more",
+      "pubDatetime": "2016-06-06T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Minimal"
+      ],
+      "description": "Less is more",
+      "cover": "og/less-is-more.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2016/2016-06-06-less-is-more.md"
+    },
+    {
+      "slug": "\u01A7IHT-\uA4F7A\u018E\u042F-UOY-\u0418A\u0186",
+      "title": "\u2E2E \u01A7IHT \uA4F7A\u018E\u042F UOY \u0418A\u0186",
+      "pubDatetime": "2016-03-31T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Language"
+      ],
+      "description": "Seriously, can you read this?",
+      "cover": "og/\u01A7IHT-\uA4F7A\u018E\u042F-UOY-\u0418A\u0186.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2016/2016-03-31-\u01A7IHT-\uA4F7A\u018E\u042F-UOY-\u0418A\u0186.md"
+    },
+    {
+      "slug": "solid",
+      "title": "SOLID",
+      "pubDatetime": "2016-01-31T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Acronym"
+      ],
+      "description": "SOLID",
+      "cover": "og/solid.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2016/2016-01-31-solid.md"
+    },
+    {
+      "slug": "orchard-harvest-2015-summary",
+      "title": "Orchard Harvest 2015 summary",
+      "pubDatetime": "2015-10-08T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Harvest"
+      ],
+      "description": "Orchard Harvest 2015 summary",
+      "cover": "og/orchard-harvest-2015-summary.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2015/2015-10-08-orchard-harvest-2015-summary.md"
+    },
+    {
+      "slug": "orchard-harvest-2015",
+      "title": "Orchard Harvest 2015",
+      "pubDatetime": "2015-09-13T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Harvest"
+      ],
+      "description": "Orchard Harvest 2015",
+      "cover": "og/orchard-harvest-2015.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2015/2015-09-13-orchard-harvest-2015.md"
+    },
+    {
+      "slug": "mvp-award-2015",
+      "title": "MVP award 2015",
+      "pubDatetime": "2015-08-01T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "MVP"
+      ],
+      "description": "MVP award 2015",
+      "cover": "og/mvp-award-2015.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2015/2015-08-01-mvp-award-2015.md"
+    },
+    {
+      "slug": "look-to-your-left",
+      "title": "Look to your left",
+      "pubDatetime": "2015-06-06T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Fun"
+      ],
+      "description": "Look to your left",
+      "cover": "og/look-to-your-left.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2015/2015-06-06-look-to-your-left.md"
+    },
+    {
+      "slug": "pangrams",
+      "title": "Pangrams - When Every Letter Counts",
+      "pubDatetime": "2015-03-21T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Language"
+      ],
+      "description": "Explore the fascinating world of pangrams - sentences that contain every letter of the alphabet, from the classic \u0022quick brown fox\u0022 to modern variations.",
+      "cover": "og/pangrams.svg",
+      "readingTime": 4,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2015/2015-03-21-pangrams.md"
+    },
+    {
+      "slug": "regle-d-or",
+      "title": "R\u00E8gle d\u0027or",
+      "pubDatetime": "2015-01-31T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Philosophie"
+      ],
+      "description": "R\u00E8gle d\u0027or",
+      "cover": "og/regle-d-or.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2015/2015-01-31-regle-d-or.md"
+    },
+    {
+      "slug": "pebkac",
+      "title": "PEBKAC",
+      "pubDatetime": "2014-12-06T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Dev"
+      ],
+      "description": "PEBKAC",
+      "cover": "og/pebkac.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2014/2014-12-06-pebkac.md"
+    },
+    {
+      "slug": "mvp-award-2014",
+      "title": "MVP award 2014",
+      "pubDatetime": "2014-08-01T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "MVP"
+      ],
+      "description": "MVP award 2014",
+      "cover": "og/mvp-award-2014.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2014/2014-08-01-mvp-award-2014.md"
+    },
+    {
+      "slug": "microsoft-most-valuable-professional-asp-net-iis",
+      "title": "Microsoft Most Valuable Professional ASP.NET/IIS",
+      "pubDatetime": "2014-07-01T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "MVP"
+      ],
+      "description": "Microsoft Most Valuable Professional 2014",
+      "cover": "og/microsoft-most-valuable-professional-asp-net-iis.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2014/2014-07-01-microsoft-most-valuable-professional-asp-net-iis.md"
+    },
+    {
+      "slug": "recapitulatif-conference-orchard-harvest-2014",
+      "title": "R\u00E9capitulatif conf\u00E9rence Orchard Harvest 2014",
+      "pubDatetime": "2014-06-17T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Harvest"
+      ],
+      "description": "R\u00E9capitulatif Orchard Harvest 2014",
+      "cover": "og/recapitulatif-conference-orchard-harvest-2014.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2014/2014-06-17-recapitulatif-conference-orchard-harvest-2014.md"
+    },
+    {
+      "slug": "orchard-harvest-2014",
+      "title": "Orchard Harvest 2014",
+      "pubDatetime": "2014-05-09T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Harvest"
+      ],
+      "description": "Orchard Harvest 2014 in Redmond",
+      "cover": "og/orchard-harvest-2014.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2014/2014-05-09-orchard-harvest-2014.md"
+    },
+    {
+      "slug": "kiss",
+      "title": "KISS",
+      "pubDatetime": "2014-01-31T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Acronym"
+      ],
+      "description": "KISS",
+      "cover": "og/kiss.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2014/2014-01-31-kiss.md"
+    },
+    {
+      "slug": "software-craftsmanship-principles",
+      "title": "The Principles of Software Craftsmanship - Building Excellence in Code",
+      "pubDatetime": "2013-11-21T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "SoftwareCraftsmanship"
+      ],
+      "description": "Explore the fundamental principles of Software Craftsmanship that elevate programming from mere coding to an art form focused on quality, continuous learning, and professional excellence.",
+      "cover": "og/software-craftsmanship-principles.svg",
+      "readingTime": 8,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2013/2013-11-21-software-craftsmanship-principles.md"
+    },
+    {
+      "slug": "orchard-community-member",
+      "title": "Orchard community member",
+      "pubDatetime": "2013-09-11T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Community"
+      ],
+      "description": "Orchard community member",
+      "cover": "og/orchard-community-member.svg",
+      "readingTime": 3,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2013/2013-09-11-orchard-community-member.md"
+    },
+    {
+      "slug": "orchard-harvest-2013-jour-2",
+      "title": "Orchard Harvest 2013 Keynote Jour 2",
+      "pubDatetime": "2013-06-19T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Harvest"
+      ],
+      "description": "Keynote Jour 2",
+      "cover": "og/orchard-harvest-2013-jour-2.svg",
+      "readingTime": 2,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2013/2013-06-19-orchard-harvest-2013-jour-2.md"
+    },
+    {
+      "slug": "orchard-harvest-2013-jour-1",
+      "title": "Conf\u00E9rence Orchard Harvest 2013 \u00E0 Amsterdam Jour 1",
+      "pubDatetime": "2013-06-18T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Harvest"
+      ],
+      "description": "Jour 1",
+      "cover": "og/orchard-harvest-2013-jour-1.svg",
+      "readingTime": 3,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2013/2013-06-18-orchard-harvest-2013-jour-1.md"
+    },
+    {
+      "slug": "les-trois-filtres-de-socrate",
+      "title": "Les trois filtres de Socrate",
+      "pubDatetime": "2013-03-06T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Philosophie"
+      ],
+      "description": "Les trois filtres de Socrate",
+      "cover": "og/les-trois-filtres-de-socrate.svg",
+      "readingTime": 2,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2013/2013-03-06-les-trois-filtres-de-socrate.md"
+    },
+    {
+      "slug": "rtfm",
+      "title": "RTFM",
+      "pubDatetime": "2013-01-31T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Acronym"
+      ],
+      "description": "RTFM",
+      "cover": "og/rtfm.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2013/2013-01-31-rtfm.md"
+    },
+    {
+      "slug": "orchard-harvest-2012-sessions-day-2",
+      "title": "Orchard Harvest 2012 Sessions Day 2",
+      "pubDatetime": "2012-09-26T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Harvest"
+      ],
+      "description": "Sessions Day 2",
+      "cover": "og/orchard-harvest-2012-sessions-day-2.svg",
+      "readingTime": 3,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2012/2012-09-26-orchard-harvest-2012-sessions-day-2.md"
+    },
+    {
+      "slug": "orchard-harvest-2012-performance",
+      "title": "Orchard Harvest 2012 Performance",
+      "pubDatetime": "2012-09-21T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Harvest"
+      ],
+      "description": "Performance",
+      "cover": "og/orchard-harvest-2012-performance.svg",
+      "readingTime": 4,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2012/2012-09-21-orchard-harvest-2012-performance.md"
+    },
+    {
+      "slug": "orchard-harvest-2012-theming",
+      "title": "Orchard Harvest 2012 Theming",
+      "pubDatetime": "2012-09-19T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Harvest"
+      ],
+      "description": "Theming",
+      "cover": "og/orchard-harvest-2012-theming.svg",
+      "readingTime": 3,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2012/2012-09-19-orchard-harvest-2012-theming.md"
+    },
+    {
+      "slug": "orchard-harvest-2012-managing-a-community",
+      "title": "Orchard Harvest 2012 Managing a community",
+      "pubDatetime": "2012-09-18T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Harvest"
+      ],
+      "description": "Managing a community",
+      "cover": "og/orchard-harvest-2012-managing-a-community.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2012/2012-09-18-orchard-harvest-2012-managing-a-community.md"
+    },
+    {
+      "slug": "orchard-harvest-2012-sessions-day-1",
+      "title": "Orchard Harvest 2012 Sessions Day 1",
+      "pubDatetime": "2012-09-17T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Harvest"
+      ],
+      "description": "Sessions Day 1",
+      "cover": "og/orchard-harvest-2012-sessions-day-1.svg",
+      "readingTime": 2,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2012/2012-09-17-orchard-harvest-2012-sessions-day-1.md"
+    },
+    {
+      "slug": "orchard-harvest-2012-sessions-ecommerce",
+      "title": "Orchard Harvest 2012 Sessions Ecommerce",
+      "pubDatetime": "2012-09-16T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Harvest"
+      ],
+      "description": "Ecommerce",
+      "cover": "og/orchard-harvest-2012-sessions-ecommerce.svg",
+      "readingTime": 2,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2012/2012-09-16-orchard-harvest-2012-sessions-ecommerce.md"
+    },
+    {
+      "slug": "orchard-harvest-2012-sessions-the-future-of-orchard",
+      "title": "Orchard Harvest 2012 Sessions The future of Orchard",
+      "pubDatetime": "2012-09-15T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Harvest"
+      ],
+      "description": "The future of Orchard",
+      "cover": "og/orchard-harvest-2012-sessions-the-future-of-orchard.svg",
+      "readingTime": 3,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2012/2012-09-15-orchard-harvest-2012-sessions-the-future-of-orchard.md"
+    },
+    {
+      "slug": "orchard-harvest-2012-keynote",
+      "title": "Orchard Harvest 2012 Keynote",
+      "pubDatetime": "2012-09-09T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Harvest"
+      ],
+      "description": "Ce week end (8 et 9 Septembre 2012), j\u0027ai eu la chance de participer \u00E0 la premi\u00E8re conf\u00E9rence organis\u00E9e autour d\u0027Orchard.",
+      "cover": "og/orchard-harvest-2012-keynote.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2012/2012-09-09-orchard-harvest-2012-keynote.md"
+    },
+    {
+      "slug": "the-it-crowd",
+      "title": "The IT Crowd",
+      "pubDatetime": "2012-06-06T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Meme"
+      ],
+      "description": "The IT crowd",
+      "cover": "og/the-it-crowd.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2012/2012-06-06-the-IT-crowd.md"
+    },
+    {
+      "slug": "hello-world",
+      "title": "Hello World!",
+      "pubDatetime": "2012-01-31T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "Hello"
+      ],
+      "description": "\u00AB Hello, World! \u00BB programs are often the first a student learns to write in a given language.",
+      "cover": "og/hello-world.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2012/2012-01-31-hello-world.md"
+    }
+  ],
+  "pages": [
+    {
+      "slug": "about",
+      "title": "About",
+      "layout": "default",
+      "path": "content/pages/about.md"
+    }
+  ]
+}
