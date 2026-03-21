@@ -5,7 +5,7 @@
     @if (!string.IsNullOrEmpty(Meta.Cover) && !Meta.Cover.StartsWith("og/"))
     {
         <a href="/posts/@Meta.Slug" class="article-card-cover">
-            <img src="@Meta.Cover" alt="@Meta.Title" loading="lazy" />
+            <img src="@Meta.Cover" alt="@Meta.Title" loading="lazy" width="800" height="200" />
         </a>
     }
     <div class="article-card-body">
