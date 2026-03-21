@@ -1,0 +1,13 @@
+@inject ThemeService Theme
+
+<button class="theme-toggle" @onclick="Toggle" aria-label="Changer le thème" title="Changer le thème">
+    @(Theme.IsDark ? "☀️" : "🌙")
+</button>
+
+@code {
+    private async Task Toggle()
+    {
+        await Theme.ToggleAsync();
+        StateHasChanged();
+    }
+}

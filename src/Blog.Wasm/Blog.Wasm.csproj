@@ -1,0 +1,64 @@
+<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>Blog.Wasm</RootNamespace>
+    <SiteBaseUrl>https://antoinegriffard.com</SiteBaseUrl>
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Blog.Shared\Blog.Shared.csproj" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly"           Version="10.*-*" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="10.*-*" PrivateAssets="all" />
+    <PackageReference Include="YamlDotNet"            Version="16.*" />
+    <PackageReference Include="Markdig"               Version="1.*" />
+    <PackageReference Include="Blazored.LocalStorage"  Version="4.*" />
+  </ItemGroup>
+
+  <!-- Étape 1 : compiler le générateur -->
+  <Target Name="BuildManifestGenerator" BeforeTargets="GenerateContentManifest">
+    <MSBuild
+      Projects="$(MSBuildThisFileDirectory)..\..\tools\Blog.ManifestGenerator\Blog.ManifestGenerator.csproj"
+      Targets="Build"
+      Properties="Configuration=$(Configuration)" />
+  </Target>
+
+  <!-- Étape 2 : générer manifest.json + search-index.json + rss.xml -->
+  <Target Name="GenerateContentManifest"
+          BeforeTargets="BeforeBuild"
+          DependsOnTargets="BuildManifestGenerator">
+    <PropertyGroup>
+      <_GenDir>$(MSBuildThisFileDirectory)..\..\tools\Blog.ManifestGenerator\bin\$(Configuration)\net10.0\</_GenDir>
+      <_GenExe Condition=" $([MSBuild]::IsOSPlatform('Windows'))">$(_GenDir)Blog.ManifestGenerator.exe</_GenExe>
+      <_GenExe Condition="!$([MSBuild]::IsOSPlatform('Windows'))">$(_GenDir)Blog.ManifestGenerator</_GenExe>
+    </PropertyGroup>
+    <Exec Command="&quot;$(_GenExe)&quot; &quot;$(MSBuildThisFileDirectory)wwwroot&quot; &quot;$(SiteBaseUrl)&quot;"
+          ConsoleToMSBuild="true" />
+    <Message Text="[Blog] manifest.json + search-index.json + rss.xml générés" Importance="high" />
+  </Target>
+
+  <!-- Étape 3 : injecter le base href dans index.html au publish -->
+  <!-- index.html uses <base href="/" /> for local dev.
+       At publish, we replace "/" with the GHPagesBase subpath (e.g. "/repo/"). -->
+  <Target Name="PatchBaseHref" AfterTargets="Publish">
+    <PropertyGroup>
+      <_IndexHtml Condition=" $([MSBuild]::IsOSPlatform('Windows'))">$(PublishDir)wwwroot\index.html</_IndexHtml>
+      <_IndexHtml Condition="!$([MSBuild]::IsOSPlatform('Windows'))">$(PublishDir)wwwroot/index.html</_IndexHtml>
+      <_GHPagesBase Condition="'$(GHPagesBase)' != ''">$(GHPagesBase)</_GHPagesBase>
+      <_GHPagesBase Condition="'$(GHPagesBase)' == ''">/.</_GHPagesBase>
+    </PropertyGroup>
+    <Exec Command="sed -i 's|&lt;base href=&quot;/&quot;|&lt;base href=&quot;$(_GHPagesBase)/&quot;|g' &quot;$(_IndexHtml)&quot;"
+          Condition="!$([MSBuild]::IsOSPlatform('Windows'))" />
+    <Exec Command="powershell -NoProfile -Command &quot;(Get-Content '$(_IndexHtml)') -replace '&lt;base href=&quot;/&quot;', '&lt;base href=&quot;$(_GHPagesBase)/&quot;' | Set-Content '$(_IndexHtml)'&quot;"
+          Condition=" $([MSBuild]::IsOSPlatform('Windows'))" />
+  </Target>
+
+  <ItemGroup>
+    <None Update="wwwroot\data\manifest.json"     CopyToOutputDirectory="PreserveNewest" />
+    <None Update="wwwroot\data\search-index.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Update="wwwroot\rss.xml"                 CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

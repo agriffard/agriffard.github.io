@@ -1,0 +1,13 @@
+<Router AppAssembly="typeof(App).Assembly">
+    <Found Context="routeData">
+        <RouteView RouteData="routeData" DefaultLayout="typeof(Components.Layout.MainLayout)" />
+        <FocusOnNavigate RouteData="routeData" Selector="h1" />
+    </Found>
+    <NotFound>
+        <PageTitle>Page introuvable</PageTitle>
+        <LayoutView Layout="typeof(Components.Layout.MainLayout)">
+            <h1>Page introuvable</h1>
+            <p>Désolé, cette page n'existe pas.</p>
+        </LayoutView>
+    </NotFound>
+</Router>

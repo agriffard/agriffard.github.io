@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="src/Blog.Shared/Blog.Shared.csproj" />
+  <Project Path="src/Blog.Wasm/Blog.Wasm.csproj" />
+  <Project Path="tools/Blog.ManifestGenerator/Blog.ManifestGenerator.csproj" />
+</Solution>

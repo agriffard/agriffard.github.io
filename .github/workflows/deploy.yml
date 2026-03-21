@@ -1,42 +1,59 @@
 name: Deploy to GitHub Pages
 
 on:
-  # Trigger the workflow every time you push to the `main` branch
-  # Using a different branch name? Replace `main` with your branch’s name
   push:
     branches: [main]
-  # Allows you to run this workflow manually from the Actions tab on GitHub.
   workflow_dispatch:
 
-# Allow this job to clone the repo and create a page deployment
 permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-# Allow one concurrent deployment
-concurrency:
-  group: "pages"
-  cancel-in-progress: true
+  contents: write
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
-    steps:
-      - name: Checkout your repository using git
-        uses: actions/checkout@v4
-      - name: Install, build, and upload your site output
-        uses: withastro/action@v3
-        with:
-          node-version: 22
+    timeout-minutes: 15
 
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup .NET 10
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.x'
+
+      - name: Cache NuGet
+        uses: actions/cache@v4
+        with:
+          path: ~/.nuget/packages
+          key: nuget-${{ runner.os }}-${{ hashFiles('**/*.csproj') }}
+          restore-keys: nuget-${{ runner.os }}-
+
+      - name: Restore
+        run: dotnet restore Blog.slnx
+
+      # MSBuild déclenche GenerateContentManifest (BeforeTargets="BeforeBuild")
+      # puis PatchBaseHref (AfterTargets="Publish")
+      - name: Publish
+        run: |
+          dotnet publish src/Blog.Wasm/Blog.Wasm.csproj \
+            --configuration Release \
+            --output publish \
+            /p:SiteBaseUrl=https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }} \
+            /p:GHPagesBase=/${{ github.event.repository.name }}
+
+      - name: Fix SPA routing
+        run: cp publish/wwwroot/index.html publish/wwwroot/404.html
+
+      - name: Verify manifest.json
+        run: |
+          [ -f publish/wwwroot/data/manifest.json ] || { echo "::error::manifest.json absent"; exit 1; }
+          echo "manifest.json OK — $(jq '.posts | length' publish/wwwroot/data/manifest.json) articles"
+
       - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: publish/wwwroot
+          force_orphan: false
+          commit_message: "deploy: ${{ github.sha }} — ${{ github.event.head_commit.message }}"

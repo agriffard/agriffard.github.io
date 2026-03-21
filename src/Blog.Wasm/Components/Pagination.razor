@@ -1,0 +1,31 @@
+@inject IOptions<ContentSettings> ContentOptions
+
+@if (TotalPages > 1)
+{
+    <nav class="pagination" aria-label="Pagination">
+        @if (CurrentPage > 1)
+        {
+            <a href="@BuildUrl(CurrentPage - 1)" class="pagination-prev">←</a>
+        }
+        <span class="pagination-info">Page @CurrentPage / @TotalPages</span>
+        @if (CurrentPage < TotalPages)
+        {
+            <a href="@BuildUrl(CurrentPage + 1)" class="pagination-next">→</a>
+        }
+    </nav>
+}
+
+@code {
+    [Parameter] public int CurrentPage { get; set; } = 1;
+    [Parameter] public int TotalItems { get; set; }
+    [Parameter] public int ItemsPerPage { get; set; }
+    [Parameter] public string? BaseUrl { get; set; }
+
+    private int TotalPages => ItemsPerPage > 0 ? (int)Math.Ceiling((double)TotalItems / ItemsPerPage) : 1;
+
+    private string BuildUrl(int page)
+    {
+        var baseUrl = string.IsNullOrEmpty(BaseUrl) ? "/" : BaseUrl;
+        return page <= 1 ? baseUrl : $"{baseUrl}?page={page}";
+    }
+}

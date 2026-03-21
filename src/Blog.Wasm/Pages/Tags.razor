@@ -1,0 +1,59 @@
+@page "/tags"
+@layout MainLayout
+@inject IContentService Content
+@inject IOptions<SiteSettings> SiteOptions
+
+<OgMeta Title="Tags"
+        Description="Tous les tags"
+        Url="/tags" />
+
+<PageTitle>Tags — @SiteOptions.Value.Title</PageTitle>
+
+<section class="tags-page">
+    <h1 class="page-title">Tags</h1>
+
+    @if (_tags is null)
+    {
+        <p class="loading">Chargement…</p>
+    }
+    else if (_tags.Count == 0)
+    {
+        <p>Aucun tag trouvé.</p>
+    }
+    else
+    {
+        <div class="tag-cloud">
+            @foreach (var (tag, count) in _tags)
+            {
+                <a href="/tags/@tag" class="tag tag-size-@GetSize(count)">
+                    @tag <span class="tag-count">(@count)</span>
+                </a>
+            }
+        </div>
+    }
+</section>
+
+@code {
+    private IReadOnlyDictionary<string, int>? _tags;
+    private int _maxCount = 1;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _tags = await Content.GetTagsAsync();
+        if (_tags.Count > 0)
+            _maxCount = _tags.Values.Max();
+    }
+
+    private int GetSize(int count)
+    {
+        if (_maxCount <= 1) return 1;
+        var ratio = (double)count / _maxCount;
+        return ratio switch
+        {
+            >= 0.8 => 4,
+            >= 0.5 => 3,
+            >= 0.2 => 2,
+            _      => 1
+        };
+    }
+}

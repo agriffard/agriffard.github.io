@@ -1,0 +1,95 @@
+@page "/"
+@page "/tags/{Tag}"
+@layout MainLayout
+@inject IContentService Content
+@inject IOptions<ContentSettings> ContentOptions
+@inject IOptions<SiteSettings> SiteOptions
+
+<OgMeta Title="@SiteOptions.Value.Title"
+        Description="@SiteOptions.Value.Description"
+        Url="/"
+        Type="website" />
+
+<PageTitle>@GetPageTitle()</PageTitle>
+
+@if (string.IsNullOrEmpty(Tag) && _page == 1 && _featured is { Count: > 0 })
+{
+    <section class="featured-section">
+        <h2 class="section-title">Featured</h2>
+        <div class="featured-grid">
+            @foreach (var post in _featured)
+            {
+                <ArticleCard Meta="post" />
+            }
+        </div>
+    </section>
+}
+
+<section class="posts-list">
+    @if (!string.IsNullOrEmpty(Tag))
+    {
+        <h1 class="page-title">Articles tagués « @Tag »</h1>
+    }
+
+    @if (_posts is null)
+    {
+        <p class="loading">Chargement des articles…</p>
+    }
+    else if (_posts.Count == 0)
+    {
+        <p>Aucun article trouvé.</p>
+    }
+    else
+    {
+        @foreach (var post in _posts)
+        {
+            <ArticleCard Meta="post" />
+        }
+
+        <Pagination CurrentPage="_page"
+                    TotalItems="_total"
+                    ItemsPerPage="ContentOptions.Value.PostsPerPage"
+                    BaseUrl="@GetBaseUrl()" />
+    }
+</section>
+
+@code {
+    [Parameter] public string? Tag { get; set; }
+    [SupplyParameterFromQuery] public int? Page { get; set; }
+
+    private IReadOnlyList<PostMeta>? _posts;
+    private IReadOnlyList<PostMeta>? _featured;
+    private int _total;
+    private int _page = 1;
+
+    protected override async Task OnParametersSetAsync()
+    {
+        _page = Page ?? 1;
+        if (_page < 1) _page = 1;
+
+        var (items, total) = await Content.GetPostsAsync(tag: Tag, page: _page);
+        _posts = items;
+        _total = total;
+
+        if (string.IsNullOrEmpty(Tag) && _page == 1)
+        {
+            _featured = await Content.GetFeaturedPostsAsync();
+        }
+        else
+        {
+            _featured = null;
+        }
+    }
+
+    private string GetPageTitle()
+    {
+        if (!string.IsNullOrEmpty(Tag))
+            return $"{Tag} — {SiteOptions.Value.Title}";
+        return SiteOptions.Value.Title;
+    }
+
+    private string GetBaseUrl()
+    {
+        return !string.IsNullOrEmpty(Tag) ? $"/tags/{Tag}" : "/";
+    }
+}

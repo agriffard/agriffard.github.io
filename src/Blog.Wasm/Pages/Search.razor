@@ -1,0 +1,141 @@
+@page "/search"
+@layout MainLayout
+@inject ISearchService SearchService
+@inject IOptions<SiteSettings> SiteOptions
+@inject IOptions<FeatureFlags> Features
+@implements IDisposable
+
+<OgMeta Title="Recherche"
+        Description="Rechercher dans les articles"
+        Url="/search" />
+
+<PageTitle>Recherche — @SiteOptions.Value.Title</PageTitle>
+
+@if (!Features.Value.Search)
+{
+    <p>La recherche n'est pas activée.</p>
+    return;
+}
+
+<section class="search-page">
+    <h1 class="page-title">Recherche</h1>
+
+    <div class="search-input-wrapper">
+        <input type="search"
+               value="@_query"
+               @oninput="OnInput"
+               placeholder="Rechercher…"
+               class="search-input"
+               autofocus />
+    </div>
+
+    @if (!string.IsNullOrWhiteSpace(_query) || !string.IsNullOrWhiteSpace(Tag))
+    {
+        @if (_results is null)
+        {
+            <p class="loading">Recherche en cours…</p>
+        }
+        else if (_results.Count == 0)
+        {
+            <p>Aucun résultat trouvé.</p>
+        }
+        else
+        {
+            <p class="search-count">@_results.Count résultat(s)</p>
+            <ul class="search-results">
+                @foreach (var entry in _results)
+                {
+                    <li class="search-result-item">
+                        <a href="/posts/@entry.Slug">
+                            <h3>@HighlightMatch(entry.Title)</h3>
+                        </a>
+                        <p>@HighlightMatch(GetExcerpt(entry.Content))</p>
+                        @if (!string.IsNullOrEmpty(entry.Tags))
+                        {
+                            <div class="search-result-tags">
+                                @foreach (var tag in entry.Tags.Split(' ', StringSplitOptions.RemoveEmptyEntries))
+                                {
+                                    <a href="/tags/@tag" class="tag">@tag</a>
+                                }
+                            </div>
+                        }
+                    </li>
+                }
+            </ul>
+        }
+    }
+</section>
+
+@code {
+    [SupplyParameterFromQuery] public string? Q { get; set; }
+    [SupplyParameterFromQuery] public string? Tag { get; set; }
+    [SupplyParameterFromQuery] public string? Cat { get; set; }
+
+    private string _query = string.Empty;
+    private IReadOnlyList<Blog.Shared.Models.SearchEntry>? _results;
+    private System.Timers.Timer? _debounceTimer;
+
+    protected override async Task OnParametersSetAsync()
+    {
+        if (!string.IsNullOrWhiteSpace(Q))
+        {
+            _query = Q;
+            await DoSearch();
+        }
+        else if (!string.IsNullOrWhiteSpace(Tag))
+        {
+            await DoSearch();
+        }
+    }
+
+    private void OnInput(ChangeEventArgs e)
+    {
+        _query = e.Value?.ToString() ?? string.Empty;
+        _debounceTimer?.Dispose();
+        _debounceTimer = new System.Timers.Timer(300);
+        _debounceTimer.Elapsed += async (_, _) =>
+        {
+            _debounceTimer?.Dispose();
+            await InvokeAsync(async () =>
+            {
+                await DoSearch();
+                StateHasChanged();
+            });
+        };
+        _debounceTimer.AutoReset = false;
+        _debounceTimer.Start();
+    }
+
+    private async Task DoSearch()
+    {
+        _results = await SearchService.SearchAsync(_query, Tag, Cat);
+    }
+
+    private MarkupString HighlightMatch(string text)
+    {
+        if (string.IsNullOrWhiteSpace(_query) || string.IsNullOrWhiteSpace(text))
+            return new MarkupString(System.Net.WebUtility.HtmlEncode(text));
+
+        var encoded = System.Net.WebUtility.HtmlEncode(text);
+        var encodedQuery = System.Net.WebUtility.HtmlEncode(_query);
+
+        var highlighted = System.Text.RegularExpressions.Regex.Replace(
+            encoded,
+            System.Text.RegularExpressions.Regex.Escape(encodedQuery),
+            m => $"<mark>{m.Value}</mark>",
+            System.Text.RegularExpressions.RegexOptions.IgnoreCase);
+
+        return new MarkupString(highlighted);
+    }
+
+    private static string GetExcerpt(string content, int maxLength = 200)
+    {
+        if (string.IsNullOrEmpty(content)) return string.Empty;
+        return content.Length <= maxLength ? content : content[..maxLength] + "…";
+    }
+
+    public void Dispose()
+    {
+        _debounceTimer?.Dispose();
+    }
+}

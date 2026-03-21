@@ -1,0 +1,54 @@
+@page "/pages/{Slug}"
+@layout MainLayout
+@inject IContentService Content
+@inject IOptions<SiteSettings> SiteOptions
+@inject IJSRuntime JS
+
+@if (_page is null)
+{
+    @if (_notFound)
+    {
+        <h1>Page introuvable</h1>
+        <p>La page demandée n'existe pas.</p>
+    }
+    else
+    {
+        <p class="loading">Chargement…</p>
+    }
+}
+else
+{
+    <OgMeta Title="@_page.Meta.Title"
+            Description=""
+            Url="@($"/pages/{Slug}")" />
+
+    <PageTitle>@_page.Meta.Title — @SiteOptions.Value.Title</PageTitle>
+
+    <article class="custom-page">
+        <h1 class="page-title">@_page.Meta.Title</h1>
+        <div class="prose">
+            @((MarkupString)_page.Html)
+        </div>
+    </article>
+}
+
+@code {
+    [Parameter] public string Slug { get; set; } = string.Empty;
+
+    private Post? _page;
+    private bool _notFound;
+
+    protected override async Task OnParametersSetAsync()
+    {
+        _page = await Content.GetPageAsync(Slug);
+        _notFound = _page is null;
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (_page is not null)
+        {
+            await JS.InvokeVoidAsync("highlightAndAddCopyButtons");
+        }
+    }
+}

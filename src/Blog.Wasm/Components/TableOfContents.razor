@@ -1,0 +1,60 @@
+@inject IOptions<FeatureFlags> Features
+@inject NavigationManager Nav
+@inject IJSRuntime JS
+
+@if (Features.Value.TableOfContents && Headings.Count > 0)
+{
+    <aside class="toc">
+        <h3>Sommaire</h3>
+        <ul>
+            @foreach (var h in Headings)
+            {
+                <li class="toc-@h.Level">
+                    <a href="@($"{CurrentPath}#{h.Id}")" @onclick="() => ScrollTo(h.Id)" @onclick:preventDefault>@h.Text</a>
+                </li>
+            }
+        </ul>
+    </aside>
+}
+
+@code {
+    [Parameter] public string Html { get; set; } = string.Empty;
+
+    private List<TocEntry> Headings { get; set; } = [];
+    private string CurrentPath => new Uri(Nav.Uri).AbsolutePath;
+
+    protected override void OnParametersSet()
+    {
+        Headings = ParseHeadings(Html);
+    }
+
+    private async Task ScrollTo(string id)
+    {
+        await JS.InvokeVoidAsync("eval",
+            $"document.getElementById('{id}')?.scrollIntoView({{behavior:'smooth'}})");
+    }
+
+    private static List<TocEntry> ParseHeadings(string html)
+    {
+        var result = new List<TocEntry>();
+        var regex = new System.Text.RegularExpressions.Regex(
+            @"<h([23])\s*(?:id=""([^""]*)"")?\s*>([^<]+)</h[23]>",
+            System.Text.RegularExpressions.RegexOptions.IgnoreCase);
+
+        foreach (System.Text.RegularExpressions.Match match in regex.Matches(html))
+        {
+            var level = int.Parse(match.Groups[1].Value);
+            var id = match.Groups[2].Value;
+            var text = match.Groups[3].Value.Trim();
+
+            if (string.IsNullOrEmpty(id))
+                id = text.ToLowerInvariant().Replace(' ', '-');
+
+            result.Add(new TocEntry(level, id, text));
+        }
+
+        return result;
+    }
+
+    private record TocEntry(int Level, string Id, string Text);
+}

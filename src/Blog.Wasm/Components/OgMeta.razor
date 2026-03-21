@@ -1,0 +1,35 @@
+@inject IOptions<SiteSettings> SiteOptions
+@inject IOptions<SeoSettings> SeoOptions
+
+<HeadContent>
+    <meta property="og:title" content="@Title" />
+    <meta property="og:description" content="@Description" />
+    <meta property="og:type" content="@(Type ?? "article")" />
+    <meta property="og:url" content="@($"{SiteOptions.Value.BaseUrl}{Url}")" />
+    <meta property="og:image" content="@OgImageUrl" />
+    <meta property="og:image:width" content="@SeoOptions.Value.OgImageWidth" />
+    <meta property="og:image:height" content="@SeoOptions.Value.OgImageHeight" />
+    <meta property="og:locale" content="@SiteOptions.Value.Language" />
+    <meta property="og:site_name" content="@SiteOptions.Value.Title" />
+
+    <link rel="canonical" href="@($"{SiteOptions.Value.BaseUrl}{Url}")" />
+</HeadContent>
+
+@code {
+    [Parameter] public string Title { get; set; } = string.Empty;
+    [Parameter] public string Description { get; set; } = string.Empty;
+    [Parameter] public string? Url { get; set; }
+    [Parameter] public string? Image { get; set; }
+    [Parameter] public string? Type { get; set; }
+
+    private string OgImageUrl
+    {
+        get
+        {
+            var img = Image ?? SeoOptions.Value.OgImage;
+            if (string.IsNullOrEmpty(img)) return string.Empty;
+            if (img.StartsWith("http")) return img;
+            return $"{SiteOptions.Value.BaseUrl}/{img.TrimStart('/')}";
+        }
+    }
+}
