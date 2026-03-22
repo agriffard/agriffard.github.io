@@ -124,7 +124,7 @@ if (!string.IsNullOrEmpty(baseUrl))
 {
     await File.WriteAllTextAsync(Path.Combine(wwwroot, "rss.xml"),
         BuildRss(manifest.Posts.ToList(), baseUrl));
-    Console.WriteLine($"✓ rss.xml             — {Math.Min(20, posts.Count)} entrées");
+    Console.WriteLine($"✓ rss.xml             — {posts.Count} entrées");
 }
 
 // ── Generate OG images ───────────────────────────────────────────────────────

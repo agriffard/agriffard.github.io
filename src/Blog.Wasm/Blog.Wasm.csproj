@@ -7,6 +7,11 @@
     <SiteBaseUrl>https://antoinegriffard.com</SiteBaseUrl>
     <DebugType>none</DebugType>
     <DebugSymbols>false</DebugSymbols>
+    <!-- Reduce WASM payload size -->
+    <PublishTrimmed>true</PublishTrimmed>
+    <TrimMode>full</TrimMode>
+    <BlazorEnableCompression>true</BlazorEnableCompression>
+    <HybridGlobalization>true</HybridGlobalization>
   </PropertyGroup>
 
   <ItemGroup>
