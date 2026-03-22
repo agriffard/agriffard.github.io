@@ -123,7 +123,7 @@ Console.WriteLine($"✓ search-index.json   — {searchIndex.Count} entrées");
 if (!string.IsNullOrEmpty(baseUrl))
 {
     await File.WriteAllTextAsync(Path.Combine(wwwroot, "rss.xml"),
-        BuildRss(manifest.Posts.Take(20).ToList(), baseUrl));
+        BuildRss(manifest.Posts.ToList(), baseUrl));
     Console.WriteLine($"✓ rss.xml             — {Math.Min(20, posts.Count)} entrées");
 }
 
