@@ -9,7 +9,7 @@
     <DebugSymbols>false</DebugSymbols>
     <!-- Reduce WASM payload size -->
     <PublishTrimmed>true</PublishTrimmed>
-    <TrimMode>full</TrimMode>
+    <TrimMode>partial</TrimMode>
     <BlazorEnableCompression>true</BlazorEnableCompression>
     <HybridGlobalization>true</HybridGlobalization>
   </PropertyGroup>
