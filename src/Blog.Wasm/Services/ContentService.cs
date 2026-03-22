@@ -7,7 +7,6 @@ namespace Blog.Wasm.Services;
 
 public sealed class ContentService(
     HttpClient http,
-    IMarkdownService markdown,
     IOptions<ContentSettings> options) : IContentService
 {
     private readonly ContentSettings          _settings = options.Value;
@@ -86,9 +85,10 @@ public sealed class ContentService(
 
     private async Task<Post> LoadAndCacheAsync(PostMeta meta, string cacheKey)
     {
-        var raw  = await http.GetStringAsync(meta.Path);
-        var html = markdown.ToHtml(raw);
-        var post = new Post { Meta = meta, RawMarkdown = raw, Html = html };
+        // Fetch pre-rendered HTML (generated at build time)
+        var htmlPath = System.IO.Path.ChangeExtension(meta.Path, ".html");
+        var html = await http.GetStringAsync(htmlPath);
+        var post = new Post { Meta = meta, RawMarkdown = string.Empty, Html = html };
         _cache[cacheKey] = post;
         return post;
     }

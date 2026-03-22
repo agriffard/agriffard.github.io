@@ -80,6 +80,10 @@ if (Directory.Exists(postsDir))
             Tags    = string.Join(' ', meta.Tags),
         });
 
+        // Write pre-rendered HTML alongside the .md file
+        var htmlPath = Path.ChangeExtension(file, ".html");
+        await File.WriteAllTextAsync(htmlPath, html);
+
         Console.WriteLine($"  ✓ {relativePath}");
     }
 }
@@ -91,9 +95,9 @@ if (Directory.Exists(pagesDir))
 {
     foreach (var file in Directory.EnumerateFiles(pagesDir, "*.md", SearchOption.AllDirectories))
     {
-        var raw     = await File.ReadAllTextAsync(file);
-        var (fm, _) = ParseFrontMatter(raw);
-        var slug    = GetString(fm, "slug") ?? Path.GetFileNameWithoutExtension(file);
+        var raw         = await File.ReadAllTextAsync(file);
+        var (fm, body)  = ParseFrontMatter(raw);
+        var slug        = GetString(fm, "slug") ?? Path.GetFileNameWithoutExtension(file);
 
         pages.Add(new PageMeta
         {
@@ -102,6 +106,11 @@ if (Directory.Exists(pagesDir))
             Layout = GetString(fm, "layout") ?? "default",
             Path   = "content/pages/" + Path.GetRelativePath(pagesDir, file).Replace('\\', '/'),
         });
+
+        // Write pre-rendered HTML alongside the .md file
+        var pageHtml = Markdown.ToHtml(body, mdPipeline);
+        var htmlPath = Path.ChangeExtension(file, ".html");
+        await File.WriteAllTextAsync(htmlPath, pageHtml);
 
         Console.WriteLine($"  ✓ page/{slug}");
     }

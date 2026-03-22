@@ -7,10 +7,6 @@
     <SiteBaseUrl>https://antoinegriffard.com</SiteBaseUrl>
     <DebugType>none</DebugType>
     <DebugSymbols>false</DebugSymbols>
-    <!-- Reduce WASM payload size -->
-    <PublishTrimmed>true</PublishTrimmed>
-    <TrimMode>partial</TrimMode>
-    <BlazorEnableCompression>true</BlazorEnableCompression>
     <HybridGlobalization>true</HybridGlobalization>
   </PropertyGroup>
 
@@ -18,8 +14,6 @@
     <ProjectReference Include="..\..\src\Blog.Shared\Blog.Shared.csproj" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly"           Version="10.*-*" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="10.*-*" PrivateAssets="all" />
-    <PackageReference Include="YamlDotNet"            Version="16.*" />
-    <PackageReference Include="Markdig"               Version="1.*" />
     <PackageReference Include="Blazored.LocalStorage"  Version="4.*" />
   </ItemGroup>
 

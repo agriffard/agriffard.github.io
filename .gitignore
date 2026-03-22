@@ -424,6 +424,7 @@ src/Blog.Wasm/wwwroot/data/search-index.json
 src/Blog.Wasm/wwwroot/rss.xml
 src/Blog.Wasm/wwwroot/og/
 src/Blog.Wasm/wwwroot/posts/
+src/Blog.Wasm/wwwroot/content/**/*.html
 
 # skills.json is hand-authored, keep it
 !src/Blog.Wasm/wwwroot/data/skills.json

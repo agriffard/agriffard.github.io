@@ -21,7 +21,6 @@ builder.Services
 
 builder.Services
     .AddScoped<IContentService,  ContentService>()
-    .AddScoped<IMarkdownService, MarkdownService>()
     .AddScoped<ISearchService,   SearchService>()
     .AddScoped<ThemeService>()
     .AddBlazoredLocalStorage();
