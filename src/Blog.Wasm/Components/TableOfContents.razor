@@ -5,15 +5,17 @@
 @if (Features.Value.TableOfContents && Headings.Count > 0)
 {
     <aside class="toc">
-        <h3>Sommaire</h3>
-        <ul>
-            @foreach (var h in Headings)
-            {
-                <li class="toc-@h.Level">
-                    <a href="@($"{CurrentPath}#{h.Id}")" @onclick="() => ScrollTo(h.Id)" @onclick:preventDefault>@h.Text</a>
-                </li>
-            }
-        </ul>
+        <details open>
+            <summary>Sommaire</summary>
+            <ul>
+                @foreach (var h in Headings)
+                {
+                    <li class="toc-@h.Level">
+                        <a href="@($"{CurrentPath}#{h.Id}")" @onclick="() => ScrollTo(h.Id)" @onclick:preventDefault>@h.Text</a>
+                    </li>
+                }
+            </ul>
+        </details>
     </aside>
 }
 
@@ -45,7 +47,7 @@
         {
             var level = int.Parse(match.Groups[1].Value);
             var id = match.Groups[2].Value;
-            var text = match.Groups[3].Value.Trim();
+            var text = System.Net.WebUtility.HtmlDecode(match.Groups[3].Value.Trim());
 
             if (string.IsNullOrEmpty(id))
                 id = text.ToLowerInvariant().Replace(' ', '-');
