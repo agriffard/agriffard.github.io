@@ -1,0 +1,126 @@
+<p>In cinema, there is a fundamental concept: the <strong>willing suspension of disbelief</strong>. It is the mental mechanism by which the viewer voluntarily accepts the impossible — a man who flies, time travel, a robot that feels emotions — in order to fully enjoy the story. They know it is not real. They choose to believe anyway, temporarily, because it is worth it.</p>
+<p>As a developer who uses AI agents daily, I find exactly the same mechanism at work. Accepting that a machine writes code on my behalf requires the same leap of faith. And just like at the movies, it is neither blind nor passive: it is a <strong>conscious choice</strong>, with boundaries, and a critical mind that never fully shuts off.</p>
+<h2 id="act-i-denial-im-not-buying-it">Act I: Denial — &quot;I'm not buying it&quot;</h2>
+<p>It all starts with skepticism. Like sitting in front of a movie whose trailer did not convince you.</p>
+<pre><code>&gt; &quot;Generate a notification service for me&quot;
+</code></pre>
+<p>The agent produces 80 lines of code. You read them. You frown. You notice a pattern you would not have chosen, a naming convention that does not fit, a dependency that is not used in the project. You think:</p>
+<ul>
+<li><em>&quot;That's not how we do things here.&quot;</em></li>
+<li><em>&quot;It doesn't know our architecture.&quot;</em></li>
+<li><em>&quot;I would have been faster writing it myself.&quot;</em></li>
+</ul>
+<p>And sometimes, that is true. Like a movie with glaring inconsistencies, you disengage. You close the suggestion panel and take back the keyboard.</p>
+<p><strong>That is healthy.</strong> This critical reflex is exactly what makes us developers, not prompt operators.</p>
+<h2 id="act-ii-curiosity-lets-see">Act II: Curiosity — &quot;Let's see...&quot;</h2>
+<p>Then one day, pressed by a deadline or tired of writing yet another DTO mapper, you let the agent have a go. Not because you believe in it, but because you have nothing to lose.</p>
+<pre><code>&gt; &quot;Implement the mapping between OrderRequest and OrderEntity
+&gt;  following the conventions in the /Mappers folder&quot;
+</code></pre>
+<p>And then, surprise. The generated code is... correct. Not perfect, but correct. The names match. The structure follows the existing pattern. There is even the <code>null</code> handling you would have forgotten.</p>
+<p>You start to understand that the quality of the result depends on <strong>the quality of the request</strong>. Like a director who has to brief their actors, you learn to:</p>
+<ul>
+<li><strong>Provide context</strong>: &quot;in this project, we use Mediator, not directly injected services.&quot;</li>
+<li><strong>Show by example</strong>: &quot;do it like <code>UserMapper.cs</code>.&quot;</li>
+<li><strong>Set constraints</strong>: &quot;no external library, no reflection, no runtime code generation.&quot;</li>
+</ul>
+<p>The suspension of disbelief begins here: you <strong>accept not being in full control</strong> to see what comes out.</p>
+<h2 id="act-iii-negotiation-ok-but-on-my-terms">Act III: Negotiation — &quot;OK, but on my terms&quot;</h2>
+<p>This is the most productive phase. You have found the rhythm. You know what the agent does well and what it does poorly. You do not trust it blindly, but you no longer reject it on principle.</p>
+<p>The workflow looks like a <strong>choreography</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Developer</th>
+<th>Agent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Intent</td>
+<td>Describes the need, context, constraints</td>
+<td>—</td>
+</tr>
+<tr>
+<td>2. Generation</td>
+<td>—</td>
+<td>Proposes an implementation</td>
+</tr>
+<tr>
+<td>3. Review</td>
+<td>Reads, questions, identifies gaps</td>
+<td>—</td>
+</tr>
+<tr>
+<td>4. Guidance</td>
+<td>&quot;Use <code>IAsyncEnumerable</code> instead&quot;, &quot;Separate the validation&quot;</td>
+<td>Adjusts</td>
+</tr>
+<tr>
+<td>5. Validation</td>
+<td>Checks tests, consistency, maintainability</td>
+<td>—</td>
+</tr>
+<tr>
+<td>6. Acceptance</td>
+<td>Integrates the code into the project</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p>You discover that <strong>prompting is a skill in its own right</strong>. It is not &quot;ask for something and see&quot;. It is:</p>
+<ul>
+<li><strong>Orchestrating</strong>: breaking a problem into subtasks the agent can handle.</li>
+<li><strong>Guiding</strong>: correcting the trajectory rather than rewriting from scratch.</li>
+<li><strong>Filtering</strong>: distinguishing what is acceptable, what needs adjustment, and what must be rejected.</li>
+</ul>
+<p>Like a director who gets the best out of their actors by giving the right cues, not by playing the scene themselves.</p>
+<h2 id="act-iv-lucid-acceptance-i-know-its-a-machine-and-thats-ok">Act IV: Lucid acceptance — &quot;I know it's a machine, and that's OK&quot;</h2>
+<p>The suspension of disbelief is now complete. You <strong>know</strong> the agent does not truly understand the code. You <strong>know</strong> it can hallucinate an API that does not exist, invent a parameter, or suggest an obsolete pattern. You know it — and you work with it anyway.</p>
+<p>Because you have learned to put <strong>guardrails</strong> in place:</p>
+<pre><code>✅ The code compiles       → automatic verification
+✅ The tests pass          → safety net
+✅ The diff is readable    → human review
+✅ The architecture holds  → developer judgment
+✅ No regressions          → CI/CD
+</code></pre>
+<p>You do not ask the agent to be infallible. You ask it to be <strong>useful</strong>. The difference is immense.</p>
+<p>It is exactly like at the movies: you do not ask the film to be realistic. You ask it to be <strong>consistent within its own rules</strong>. A superhero can fly, but they cannot forget they can fly in the middle of the movie without explanation.</p>
+<p>Likewise, an agent can propose code you would not have written yourself, but it cannot ignore the project's architecture, the team's conventions, or the performance constraints.</p>
+<h2 id="what-never-gets-suspended">What never gets suspended</h2>
+<p>The suspension of disbelief has its limits. At the movies, you accept dragons, not plot holes. In development, you accept generation, not the abandonment of your standards.</p>
+<p><strong>What remains non-negotiable:</strong></p>
+<ul>
+<li><strong>Maintainability</strong> — If the generated code is unreadable in six months, it does not pass. A human will have to maintain it, debug it, evolve it. The agent will not be there to explain its choices.</li>
+<li><strong>Understanding</strong> — Every line that enters the project must be understood by the developer who accepts it. &quot;The agent wrote it&quot; is not a justification in code review.</li>
+<li><strong>Responsibility</strong> — The bug in production is the developer's to fix, not the agent's. Accepting code you do not understand is signing a blank check.</li>
+<li><strong>Security</strong> — The agent does not think about SQL injections, exposed secrets, or deserialization vulnerabilities. It is the developer's role to track them down.</li>
+<li><strong>Intent</strong> — The agent does not know <em>why</em> you are building this feature. It knows neither the users, nor the business context, nor the past trade-offs. The &quot;why&quot; remains human.</li>
+</ul>
+<h2 id="the-right-balance">The right balance</h2>
+<p>After months of practice, here is the equilibrium I have found:</p>
+<p><strong>Let the agent handle:</strong></p>
+<ul>
+<li>Boilerplate, repetitive code, well-known patterns.</li>
+<li>The first draft of an implementation.</li>
+<li>Unit tests based on existing code.</li>
+<li>Technical documentation.</li>
+</ul>
+<p><strong>Keep control of:</strong></p>
+<ul>
+<li>Architecture decisions.</li>
+<li>Domain modeling.</li>
+<li>Trade-off choices (performance vs readability, flexibility vs simplicity).</li>
+<li>Naming — because naming things remains the hardest problem in computer science, and agents are no exception.</li>
+</ul>
+<p><strong>Collaborate on:</strong></p>
+<ul>
+<li>Refactoring: the agent proposes, the developer validates the direction.</li>
+<li>Debugging: the agent analyzes, the developer confirms the hypothesis.</li>
+<li>Exploration: the agent generates options, the developer chooses.</li>
+</ul>
+<h2 id="conclusion">Conclusion</h2>
+<p>The willing suspension of disbelief is what separates the passive viewer from the engaged one. One endures the movie, the other actively participates while keeping their lucidity.</p>
+<p>In development, it is the same. The developer who effectively uses AI agents is neither the one who rejects everything outright (&quot;that's not real code&quot;), nor the one who accepts everything without reading (&quot;the AI knows better than me&quot;). It is the one who has learned to <strong>suspend their disbelief just enough</strong> — enough to extract value, not enough to lose control.</p>
+<p>Because in the end, what matters is not who wrote the code. It is <strong>who answers for it</strong>.</p>

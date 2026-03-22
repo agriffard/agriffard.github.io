@@ -1,0 +1,126 @@
+<p>Au cinéma, il existe un concept fondamental : la <strong>suspension consentie d'incrédulité</strong> (<em>willing suspension of disbelief</em>). C'est ce mécanisme mental par lequel le spectateur accepte volontairement l'impossible — un homme qui vole, un voyage dans le temps, un robot qui ressent des émotions — pour profiter pleinement de l'histoire. Il sait que c'est faux. Il choisit d'y croire quand même, temporairement, parce que ça en vaut la peine.</p>
+<p>En tant que développeur qui utilise des agents IA au quotidien, je peux retrouver un mécanisme semblable. Accepter qu'une machine écrive du code à ma place demande le même saut de foi. Et comme au cinéma, ce n'est ni aveugle ni passif : c'est un <strong>choix conscient</strong>, avec des limites, et un esprit critique qui ne s'éteint jamais complètement.</p>
+<h2 id="acte-i-le-refus-je-ne-marche-pas">Acte I : Le refus — &quot;Je ne marche pas&quot;</h2>
+<p>Tout commence par le scepticisme. Comme devant un film dont la bande-annonce ne convainc pas.</p>
+<pre><code>&gt; &quot;Génère-moi un service de notification&quot;
+</code></pre>
+<p>L'agent produit 80 lignes de code. On les lit. On fronce les sourcils. On remarque un pattern qu'on n'aurait pas choisi, une convention de nommage qui ne colle pas, une dépendance qu'on n'utilise pas dans le projet. On se dit :</p>
+<ul>
+<li><em>&quot;C'est pas comme ça qu'on fait ici.&quot;</em></li>
+<li><em>&quot;Il ne connaît pas notre architecture.&quot;</em></li>
+<li><em>&quot;J'aurais été plus rapide à l'écrire moi-même.&quot;</em></li>
+</ul>
+<p>Et parfois, c'est vrai. Comme un film avec des incohérences trop grosses, on décroche. On ferme le panneau de suggestion et on reprend le clavier.</p>
+<p><strong>C'est sain.</strong> Ce réflexe critique est exactement ce qui fait de nous des développeurs, pas des opérateurs de prompt.</p>
+<h2 id="acte-ii-la-curiosite-voyons-voir">Acte II : La curiosité — &quot;Voyons voir...&quot;</h2>
+<p>Puis un jour, pressé par un deadline ou fatigué d'écrire un énième mapper DTO, on laisse l'agent tenter sa chance. Non pas parce qu'on y croit, mais parce qu'on n'a rien à perdre.</p>
+<pre><code>&gt; &quot;Implémente le mapping entre OrderRequest et OrderEntity
+&gt;  en suivant les conventions du dossier /Mappers&quot;
+</code></pre>
+<p>Et là, surprise. Le code généré est... correct. Pas parfait, mais correct. Les noms correspondent. La structure suit le pattern existant. Il y a même la gestion du <code>null</code> qu'on aurait oubliée.</p>
+<p>On commence à comprendre que la qualité du résultat dépend de <strong>la qualité de la demande</strong>. Comme un metteur en scène qui doit briefer ses acteurs, on apprend à :</p>
+<ul>
+<li><strong>Donner du contexte</strong> : &quot;dans ce projet, on utilise Mediator, pas des services injectés directement.&quot;</li>
+<li><strong>Montrer l'exemple</strong> : &quot;fais comme dans <code>UserMapper.cs</code>.&quot;</li>
+<li><strong>Poser des contraintes</strong> : &quot;pas de bibliothèque externe, pas de réflexion, pas de code généré à l'exécution.&quot;</li>
+</ul>
+<p>La suspension d'incrédulité commence ici : on <strong>accepte de ne pas tout contrôler</strong> pour voir ce que ça donne.</p>
+<h2 id="acte-iii-la-negociation-ok-mais-a-mes-conditions">Acte III : La négociation — &quot;OK, mais à mes conditions&quot;</h2>
+<p>C'est la phase la plus productive. On a trouvé le rythme. On sait ce que l'agent fait bien et ce qu'il fait mal. On ne lui fait pas confiance aveuglément, mais on ne le rejette plus par principe.</p>
+<p>Le workflow ressemble à une <strong>chorégraphie</strong> :</p>
+<table>
+<thead>
+<tr>
+<th>Étape</th>
+<th>Développeur</th>
+<th>Agent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Intention</td>
+<td>Décrit le besoin, le contexte, les contraintes</td>
+<td>—</td>
+</tr>
+<tr>
+<td>2. Génération</td>
+<td>—</td>
+<td>Propose une implémentation</td>
+</tr>
+<tr>
+<td>3. Review</td>
+<td>Lit, questionne, identifie les écarts</td>
+<td>—</td>
+</tr>
+<tr>
+<td>4. Guidage</td>
+<td>&quot;Utilise plutôt <code>IAsyncEnumerable</code>&quot;, &quot;Sépare la validation&quot;</td>
+<td>Ajuste</td>
+</tr>
+<tr>
+<td>5. Validation</td>
+<td>Vérifie les tests, la cohérence, la maintenabilité</td>
+<td>—</td>
+</tr>
+<tr>
+<td>6. Acceptation</td>
+<td>Intègre le code dans le projet</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p>On découvre que <strong>prompter est une compétence en soi</strong>. Ce n'est pas &quot;demander un truc et voir&quot;. C'est :</p>
+<ul>
+<li><strong>Orchestrer</strong> : découper un problème en sous-tâches que l'agent peut traiter.</li>
+<li><strong>Guider</strong> : corriger la trajectoire plutôt que réécrire depuis zéro.</li>
+<li><strong>Filtrer</strong> : distinguer ce qui est acceptable, ce qui doit être ajusté, et ce qui doit être refusé.</li>
+</ul>
+<p>Comme un réalisateur qui tire le meilleur de ses acteurs en leur donnant les bonnes indications, pas en jouant la scène à leur place.</p>
+<h2 id="acte-iv-lacceptation-lucide-je-sais-que-cest-une-machine-et-cest-ok">Acte IV : L'acceptation lucide — &quot;Je sais que c'est une machine, et c'est OK&quot;</h2>
+<p>La suspension d'incrédulité est maintenant complète. On <strong>sait</strong> que l'agent ne comprend pas réellement le code. On <strong>sait</strong> qu'il peut halluciner une API qui n'existe pas, inventer un paramètre, ou proposer un pattern obsolète. On le sait — et on travaille avec quand même.</p>
+<p>Parce qu'on a appris à mettre en place des <strong>garde-fous</strong> :</p>
+<pre><code>✅ Le code compile       → vérification automatique
+✅ Les tests passent     → filet de sécurité
+✅ Le diff est lisible   → review humaine
+✅ L'architecture tient  → jugement du développeur
+✅ Pas de régression     → CI/CD
+</code></pre>
+<p>On ne demande pas à l'agent d'être infaillible. On lui demande d'être <strong>utile</strong>. La différence est immense.</p>
+<p>C'est exactement comme au cinéma : on ne demande pas au film d'être réaliste. On lui demande d'être <strong>cohérent dans ses propres règles</strong>. Un superhéros peut voler, mais il ne peut pas oublier qu'il sait voler au milieu du film sans explication.</p>
+<p>De même, un agent peut proposer du code qu'on n'aurait pas écrit soi-même, mais il ne peut pas ignorer l'architecture du projet, les conventions de l'équipe, ou les contraintes de performance.</p>
+<h2 id="ce-qui-ne-se-suspend-jamais">Ce qui ne se suspend jamais</h2>
+<p>La suspension d'incrédulité a ses limites. Au cinéma, on accepte les dragons, pas les fautes de scénario. En développement, on accepte la génération, pas l'abandon de nos standards.</p>
+<p><strong>Ce qui reste non négociable :</strong></p>
+<ul>
+<li><strong>La maintenabilité</strong> — Si le code généré est illisible dans six mois, il ne passe pas. Un humain devra le maintenir, le déboguer, le faire évoluer. L'agent ne sera pas là pour expliquer ses choix.</li>
+<li><strong>La compréhension</strong> — Chaque ligne qui entre dans le projet doit être comprise par le développeur qui l'accepte. &quot;L'agent l'a écrit&quot; n'est pas une justification en code review.</li>
+<li><strong>La responsabilité</strong> — Le bug en production, c'est le développeur qui le corrige, pas l'agent. Accepter du code qu'on ne comprend pas, c'est signer un chèque en blanc.</li>
+<li><strong>La sécurité</strong> — L'agent ne pense pas aux injections SQL, aux secrets exposés, aux failles de désérialisation. C'est le rôle du développeur de les traquer.</li>
+<li><strong>L'intention</strong> — L'agent ne sait pas <em>pourquoi</em> on construit cette fonctionnalité. Il ne connaît ni les utilisateurs, ni le contexte métier, ni les arbitrages passés. Le &quot;pourquoi&quot; reste humain.</li>
+</ul>
+<h2 id="le-bon-compromis">Le bon compromis</h2>
+<p>Après des mois de pratique, voici l'équilibre que j'ai trouvé :</p>
+<p><strong>Laisser faire l'agent :</strong></p>
+<ul>
+<li>Le boilerplate, le code répétitif, les patterns connus.</li>
+<li>La première ébauche d'une implémentation.</li>
+<li>Les tests unitaires basés sur du code existant.</li>
+<li>La documentation technique.</li>
+</ul>
+<p><strong>Garder la main :</strong></p>
+<ul>
+<li>Les décisions d'architecture.</li>
+<li>La modélisation du domaine.</li>
+<li>Les choix de compromis (performance vs lisibilité, flexibilité vs simplicité).</li>
+<li>Le nommage — parce que nommer les choses reste le problème le plus difficile en informatique, et les agents ne font pas exception.</li>
+</ul>
+<p><strong>Collaborer :</strong></p>
+<ul>
+<li>Le refactoring : l'agent propose, le développeur valide la direction.</li>
+<li>Le débogage : l'agent analyse, le développeur confirme l'hypothèse.</li>
+<li>L'exploration : l'agent génère des options, le développeur choisit.</li>
+</ul>
+<h2 id="conclusion">Conclusion</h2>
+<p>La suspension consentie d'incrédulité, c'est ce qui sépare le spectateur passif du spectateur engagé. L'un subit le film, l'autre y participe activement tout en gardant sa lucidité.</p>
+<p>En développement, c'est pareil. Le développeur qui utilise efficacement les agents IA n'est ni celui qui refuse tout en bloc (&quot;ce n'est pas du vrai code&quot;), ni celui qui accepte tout sans lire (&quot;l'IA sait mieux que moi&quot;). C'est celui qui a appris à <strong>suspendre son incrédulité juste assez</strong> — assez pour en tirer de la valeur, pas assez pour perdre le contrôle.</p>
+<p>Parce qu'à la fin, ce qui compte, ce n'est pas qui a écrit le code. C'est <strong>qui en répond</strong>.</p>
