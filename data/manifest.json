@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-21T15:10:47.5528146Z",
+  "generatedAt": "2026-03-22T11:07:17.630773Z",
   "posts": [
     {
       "slug": "pilotage-automatique",
@@ -111,7 +111,7 @@
       "readingTime": 6,
       "draft": false,
       "featured": true,
-      "path": "content/posts/2025/2025-12-31-holiday-projects-ai-collaboration.md"
+      "path": "content/posts/2025/2025-12-31-prototyping-with-ai-agents.md"
     },
     {
       "slug": "orchard-harvest-2025",
