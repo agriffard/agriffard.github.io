@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <link>https://antoinegriffard.com</link>
+    <atom:link href="https://antoinegriffard.com/rss.xml" rel="self" type="application/rss+xml"/>
+          <item>
+        <title><![CDATA[Développement : De la boîte manuelle au pilote automatique]]></title>
+        <link>https://antoinegriffard.com/posts/pilotage-automatique</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/pilotage-automatique</guid>
+        <pubDate>Thu, 19 Mar 2026 12:00:00 GMT</pubDate>
+        <description><![CDATA[Un parallèle entre l'évolution de l'automobile et celle du développement informatique ces 25 dernières années. De la boîte manuelle sans direction assistée à la voiture électrique autonome, du code sans IntelliSense aux agents IA.]]></description>
+        <category>AI</category><category>.NET</category><category>Visual Studio</category><category>Copilot</category>
+      </item>      <item>
+        <title><![CDATA[Understanding IOptions<T> in .NET]]></title>
+        <link>https://antoinegriffard.com/posts/ioptions</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/ioptions</guid>
+        <pubDate>Sat, 14 Feb 2026 10:00:00 GMT</pubDate>
+        <description><![CDATA[Master strongly-typed configuration in .NET with IOptions<T>, IOptionsSnapshot<T>, and IOptionsMonitor<T>. Learn validation, named options, reloadable config, and production best practices.]]></description>
+        <category>AI</category><category>Configuration</category><category>Best Practices</category><category>ASP.NET Core</category>
+      </item>      <item>
+        <title><![CDATA[Dependency Injection: Lifetimes, Composition Root, Decorators, and Anti-Patterns]]></title>
+        <link>https://antoinegriffard.com/posts/dependency-injection</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/dependency-injection</guid>
+        <pubDate>Mon, 09 Feb 2026 12:00:00 GMT</pubDate>
+        <description><![CDATA[Master Dependency Injection in .NET with comprehensive coverage of lifetimes, composition root patterns, decorators, and common anti-patterns to avoid.]]></description>
+        <category>AI</category><category>DependencyInjection</category><category>Design Patterns</category><category>SOLID</category>
+      </item>      <item>
+        <title><![CDATA[Pourquoi un cercle est-il divisé en 360 degrés ?]]></title>
+        <link>https://antoinegriffard.com/posts/cercle-360-degres</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/cercle-360-degres</guid>
+        <pubDate>Sat, 31 Jan 2026 12:00:00 GMT</pubDate>
+        <description><![CDATA[Découvrez les origines historiques et mathématiques du choix des 360 degrés pour diviser un cercle.]]></description>
+        <category>AI</category><category>Histoire</category><category>Géométrie</category><category>Degrés</category>
+      </item>      <item>
+        <title><![CDATA[The Darwin Incident]]></title>
+        <link>https://antoinegriffard.com/posts/darwins-incident</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/darwins-incident</guid>
+        <pubDate>Thu, 08 Jan 2026 00:00:00 GMT</pubDate>
+        <description><![CDATA[Premier épisode de l'anime The Darwin Incident basé sur le manga de Shun Umezawa.]]></description>
+        <category>Manga</category>
+      </item>      <item>
+        <title><![CDATA[Prototyping with AI Agents]]></title>
+        <link>https://antoinegriffard.com/posts/prototyping-with-ai-agents</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/prototyping-with-ai-agents</guid>
+        <pubDate>Wed, 31 Dec 2025 10:00:00 GMT</pubDate>
+        <description><![CDATA[Exploring how AI agents like GitHub Copilot can accelerate development - creating multiple C# .NET libraries and samples during holiday break.]]></description>
+        <category>AI</category><category>Copilot</category><category>CSharp</category><category>DotNet</category><category>GitHub</category>
+      </item>      <item>
+        <title><![CDATA[Orchard Harvest 2025]]></title>
+        <link>https://antoinegriffard.com/posts/orchard-harvest-2025</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/orchard-harvest-2025</guid>
+        <pubDate>Sat, 15 Nov 2025 12:00:00 GMT</pubDate>
+        <description><![CDATA[Orchard Harvest 2025 in Prague.]]></description>
+        <category>Harvest</category>
+      </item>      <item>
+        <title><![CDATA[JWT JSON Web Tokens: A Comprehensive Guide]]></title>
+        <link>https://antoinegriffard.com/posts/jwt-json-web-tokens</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/jwt-json-web-tokens</guid>
+        <pubDate>Tue, 21 Oct 2025 12:00:00 GMT</pubDate>
+        <description><![CDATA[JSON Web Tokens explained.]]></description>
+        <category>AI</category><category>Jwt</category>
+      </item>      <item>
+        <title><![CDATA[Orchard Core 2.2.1 Release]]></title>
+        <link>https://antoinegriffard.com/posts/orchard-core-2.2.1</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/orchard-core-2.2.1</guid>
+        <pubDate>Fri, 10 Oct 2025 12:00:00 GMT</pubDate>
+        <description><![CDATA[Orchard Core 2.2.1 Release is available.]]></description>
+        <category>Release</category>
+      </item>      <item>
+        <title><![CDATA[Organizing ASP.NET Configuration with WebApplicationBuilder Extensions]]></title>
+        <link>https://antoinegriffard.com/posts/webapplicationbuilder-extensions</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/webapplicationbuilder-extensions</guid>
+        <pubDate>Fri, 19 Sep 2025 12:00:00 GMT</pubDate>
+        <description><![CDATA[Learn how to organize your ASP.NET application configuration using extension methods for better maintainability and separation of concerns.]]></description>
+        <category>BestPractices</category><category>ExtensionMethods</category>
+      </item>      <item>
+        <title><![CDATA[Good Practices in C# Web APIs: Avoiding Common Pitfalls]]></title>
+        <link>https://antoinegriffard.com/posts/csharp-web-api-best-practices</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/csharp-web-api-best-practices</guid>
+        <pubDate>Sat, 13 Sep 2025 12:00:00 GMT</pubDate>
+        <description><![CDATA[Web APIs drive modern applications, but small mistakes can cause big problems. Learn about 20 common pitfalls in C# Web API development and how to avoid them for better performance, security, and maintainability.]]></description>
+        <category>AI</category><category>CSharp</category><category>WebAPI</category><category>BestPractices</category>
+      </item>      <item>
+        <title><![CDATA[Mastering Mermaid.js: The Complete Guide to Creating Stunning Diagrams with Code]]></title>
+        <link>https://antoinegriffard.com/posts/mermaid-js-comprehensive-guide</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/mermaid-js-comprehensive-guide</guid>
+        <pubDate>Sat, 06 Sep 2025 12:00:00 GMT</pubDate>
+        <description><![CDATA[Master the art of creating beautiful diagrams with Mermaid.js! From flowcharts to sequence diagrams, learn how to visualize complex concepts using simple text-based syntax that integrates seamlessly into your documentation workflow.]]></description>
+        <category>AI</category><category>Mermaid</category><category>Diagrams</category>
+      </item>      <item>
+        <title><![CDATA[Bootstrap]]></title>
+        <link>https://antoinegriffard.com/posts/bootstrap</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/bootstrap</guid>
+        <pubDate>Sat, 30 Aug 2025 12:00:00 GMT</pubDate>
+        <description><![CDATA[De la botte à l'amorçage, l'étonnante histoire du mot Bootstrap en informatique.]]></description>
+        <category>AI</category>
+      </item>      <item>
+        <title><![CDATA[Mnémoniques]]></title>
+        <link>https://antoinegriffard.com/posts/mnemoniques</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/mnemoniques</guid>
+        <pubDate>Sat, 23 Aug 2025 12:00:00 GMT</pubDate>
+        <description><![CDATA[Découvrez comment les mnémoniques facilitent la mémorisation et comment créer les vôtres.]]></description>
+        <category>AI</category><category>Mémoire</category>
+      </item>      <item>
+        <title><![CDATA[Orchard Core 2.2.0 Release]]></title>
+        <link>https://antoinegriffard.com/posts/orchard-core-2.2.0</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/orchard-core-2.2.0</guid>
+        <pubDate>Tue, 19 Aug 2025 12:00:00 GMT</pubDate>
+        <description><![CDATA[Orchard Core 2.2.0 Release is available.]]></description>
+        <category>Release</category>
+      </item>      <item>
+        <title><![CDATA[Orchard Core 2.1.9 Release]]></title>
+        <link>https://antoinegriffard.com/posts/orchard-core-2.1.9</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/orchard-core-2.1.9</guid>
+        <pubDate>Tue, 19 Aug 2025 11:00:00 GMT</pubDate>
+        <description><![CDATA[Orchard Core 2.1.9 Release is available.]]></description>
+        <category>Release</category>
+      </item>      <item>
+        <title><![CDATA[Orchard Core 2.1.8 Release]]></title>
+        <link>https://antoinegriffard.com/posts/orchard-core-2.1.8</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/orchard-core-2.1.8</guid>
+        <pubDate>Thu, 14 Aug 2025 12:00:00 GMT</pubDate>
+        <description><![CDATA[Orchard Core 2.1.8 Release is available.]]></description>
+        <category>Release</category>
+      </item>      <item>
+        <title><![CDATA[Microsoft MVP 2025-2026]]></title>
+        <link>https://antoinegriffard.com/posts/microsoft-mvp-2025-2026</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/microsoft-mvp-2025-2026</guid>
+        <pubDate>Thu, 10 Jul 2025 12:00:00 GMT</pubDate>
+        <description><![CDATA[Renewed as Microsoft MVP for 2025-2026.]]></description>
+        <category>MVP</category>
+      </item>      <item>
+        <title><![CDATA[Orchard Core 2.1.7 Release]]></title>
+        <link>https://antoinegriffard.com/posts/orchard-core-2.1.7</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/orchard-core-2.1.7</guid>
+        <pubDate>Wed, 16 Apr 2025 12:00:00 GMT</pubDate>
+        <description><![CDATA[Orchard Core 2.1.7 Release is available.]]></description>
+        <category>Release</category>
+      </item>      <item>
+        <title><![CDATA[Orchard Core 2.1.6 Release]]></title>
+        <link>https://antoinegriffard.com/posts/orchard-core-2.1.6</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/orchard-core-2.1.6</guid>
+        <pubDate>Wed, 19 Feb 2025 12:00:00 GMT</pubDate>
+        <description><![CDATA[Orchard Core 2.1.6 Release is available.]]></description>
+        <category>Release</category>
+      </item>      <item>
+        <title><![CDATA[Orchard Core 2.1.5 Release]]></title>
+        <link>https://antoinegriffard.com/posts/orchard-core-2.1.5</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/orchard-core-2.1.5</guid>
+        <pubDate>Tue, 04 Feb 2025 12:00:00 GMT</pubDate>
+        <description><![CDATA[Orchard Core 2.1.5 Release is available.]]></description>
+        <category>Release</category>
+      </item>      <item>
+        <title><![CDATA[Orchard Core 2.1.4 Release]]></title>
+        <link>https://antoinegriffard.com/posts/orchard-core-2.1.4</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/orchard-core-2.1.4</guid>
+        <pubDate>Fri, 17 Jan 2025 12:00:00 GMT</pubDate>
+        <description><![CDATA[Orchard Core 2.1.4 Release is available.]]></description>
+        <category>Release</category>
+      </item>      <item>
+        <title><![CDATA[The Pitt]]></title>
+        <link>https://antoinegriffard.com/posts/the-pitt</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/the-pitt</guid>
+        <pubDate>Fri, 10 Jan 2025 12:00:00 GMT</pubDate>
+        <description><![CDATA[Ce que j'ai aimé dans les 2 premiers épisodes de la série The Pitt.]]></description>
+        <category>Serie</category>
+      </item>      <item>
+        <title><![CDATA[Orchard Core 2.1.3 Release]]></title>
+        <link>https://antoinegriffard.com/posts/orchard-core-2.1.3</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/orchard-core-2.1.3</guid>
+        <pubDate>Thu, 12 Dec 2024 12:00:00 GMT</pubDate>
+        <description><![CDATA[Orchard Core 2.1.3 Release is available.]]></description>
+        <category>Release</category>
+      </item>      <item>
+        <title><![CDATA[Orchard Core 2.1.2 Release]]></title>
+        <link>https://antoinegriffard.com/posts/orchard-core-2.1.2</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/orchard-core-2.1.2</guid>
+        <pubDate>Thu, 28 Nov 2024 12:00:00 GMT</pubDate>
+        <description><![CDATA[Orchard Core 2.1.2 Release is available.]]></description>
+        <category>Release</category>
+      </item>      <item>
+        <title><![CDATA[Orchard Core 2.1.1 Release]]></title>
+        <link>https://antoinegriffard.com/posts/orchard-core-2.1.1</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/orchard-core-2.1.1</guid>
+        <pubDate>Mon, 25 Nov 2024 12:00:00 GMT</pubDate>
+        <description><![CDATA[Orchard Core 2.1.1 Release is available.]]></description>
+        <category>Release</category>
+      </item>      <item>
+        <title><![CDATA[Orchard Core 2.1.0 Release]]></title>
+        <link>https://antoinegriffard.com/posts/orchard-core-2.1.0</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/orchard-core-2.1.0</guid>
+        <pubDate>Thu, 21 Nov 2024 12:00:00 GMT</pubDate>
+        <description><![CDATA[Orchard Core 2.1.0 Release is available.]]></description>
+        <category>Release</category>
+      </item>      <item>
+        <title><![CDATA[Orchard Core 2.0.2 Release]]></title>
+        <link>https://antoinegriffard.com/posts/orchard-core-2.0.2</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/orchard-core-2.0.2</guid>
+        <pubDate>Thu, 26 Sep 2024 12:00:00 GMT</pubDate>
+        <description><![CDATA[Orchard Core 2.0.2 Release is available.]]></description>
+        <category>Release</category>
+      </item>      <item>
+        <title><![CDATA[Orchard Core 2.0.1 Release]]></title>
+        <link>https://antoinegriffard.com/posts/orchard-core-2.0.1</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/orchard-core-2.0.1</guid>
+        <pubDate>Wed, 25 Sep 2024 12:00:00 GMT</pubDate>
+        <description><![CDATA[Orchard Core 2.0.1 Release is available.]]></description>
+        <category>Release</category>
+      </item>      <item>
+        <title><![CDATA[Orchard Harvest 2024]]></title>
+        <link>https://antoinegriffard.com/posts/orchard-harvest-2024</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/orchard-harvest-2024</guid>
+        <pubDate>Thu, 12 Sep 2024 12:00:00 GMT</pubDate>
+        <description><![CDATA[Orchard Harvest 2024 in Las Vegas.]]></description>
+        <category>Harvest</category>
+      </item>      <item>
+        <title><![CDATA[Orchard Core 2.0.0 Release]]></title>
+        <link>https://antoinegriffard.com/posts/orchard-core-2.0.0</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/orchard-core-2.0.0</guid>
+        <pubDate>Mon, 09 Sep 2024 12:00:00 GMT</pubDate>
+        <description><![CDATA[Orchard Core 2.0.0 Release is available.]]></description>
+        <category>Release</category>
+      </item>      <item>
+        <title><![CDATA[Orchard Core 1.8.4 Release]]></title>
+        <link>https://antoinegriffard.com/posts/orchard-core-1.8.4</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/orchard-core-1.8.4</guid>
+        <pubDate>Wed, 04 Sep 2024 12:00:00 GMT</pubDate>
+        <description><![CDATA[Orchard Core 1.8.4 Release is available.]]></description>
+        <category>Release</category>
+      </item>      <item>
+        <title><![CDATA[Orchard Core 1.8.3 Release]]></title>
+        <link>https://antoinegriffard.com/posts/orchard-core-1.8.3</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/orchard-core-1.8.3</guid>
+        <pubDate>Thu, 25 Apr 2024 12:00:00 GMT</pubDate>
+        <description><![CDATA[Orchard Core 1.8.3 Release is available.]]></description>
+        <category>Release</category>
+      </item>      <item>
+        <title><![CDATA[Les approximations remarquables du nombre Pi]]></title>
+        <link>https://antoinegriffard.com/posts/approximations-nombre-pi</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/approximations-nombre-pi</guid>
+        <pubDate>Thu, 14 Mar 2024 12:00:00 GMT</pubDate>
+        <description><![CDATA[Exploration des meilleures approximations fractionnaires du nombre π, de l'antique 22/7 aux fractions continues modernes.]]></description>
+        <category>AI</category><category>Pi</category>
+      </item>      <item>
+        <title><![CDATA[Orchard Core 1.8.2 Release]]></title>
+        <link>https://antoinegriffard.com/posts/orchard-core-1.8.2</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/orchard-core-1.8.2</guid>
+        <pubDate>Wed, 17 Jan 2024 12:00:00 GMT</pubDate>
+        <description><![CDATA[Orchard Core 1.8.2 Release is available.]]></description>
+        <category>Release</category>
+      </item>      <item>
+        <title><![CDATA[Orchard Core 1.8.1 Release]]></title>
+        <link>https://antoinegriffard.com/posts/orchard-core-1.8.1</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/orchard-core-1.8.1</guid>
+        <pubDate>Tue, 09 Jan 2024 12:00:00 GMT</pubDate>
+        <description><![CDATA[Orchard Core 1.8.1 Release is available.]]></description>
+        <category>Release</category>
+      </item>      <item>
+        <title><![CDATA[Orchard Core 1.8 Release]]></title>
+        <link>https://antoinegriffard.com/posts/orchard-core-1.8</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/orchard-core-1.8</guid>
+        <pubDate>Tue, 02 Jan 2024 12:00:00 GMT</pubDate>
+        <description><![CDATA[Orchard Core 1.8 Release is available.]]></description>
+        <category>Release</category>
+      </item>      <item>
+        <title><![CDATA[Building Resilient C# Applications]]></title>
+        <link>https://antoinegriffard.com/posts/resilience</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/resilience</guid>
+        <pubDate>Tue, 19 Dec 2023 12:00:00 GMT</pubDate>
+        <description><![CDATA[Learn how to build resilient C# applications.]]></description>
+        <category>AI</category><category>Resilience</category>
+      </item>      <item>
+        <title><![CDATA[Blazor Server vs Blazor WebAssembly: How to Choose]]></title>
+        <link>https://antoinegriffard.com/posts/blazor-server-vs-webassembly-guide</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/blazor-server-vs-webassembly-guide</guid>
+        <pubDate>Sun, 19 Nov 2023 12:00:00 GMT</pubDate>
+        <description><![CDATA[Complete guide to choosing between Blazor Server and Blazor WebAssembly for your next project. Compare performance, deployment, and use cases.]]></description>
+        <category>AI</category><category>Blazor</category><category>WebAssembly</category>
+      </item>      <item>
+        <title><![CDATA[Orchard Core 1.7.2 Release]]></title>
+        <link>https://antoinegriffard.com/posts/orchard-core-1.7.2</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/orchard-core-1.7.2</guid>
+        <pubDate>Wed, 18 Oct 2023 12:00:00 GMT</pubDate>
+        <description><![CDATA[Orchard Core 1.7.2 Release is available.]]></description>
+        <category>Release</category>
+      </item>      <item>
+        <title><![CDATA[Orchard Core 1.7.1 Release]]></title>
+        <link>https://antoinegriffard.com/posts/orchard-core-1.7.1</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/orchard-core-1.7.1</guid>
+        <pubDate>Fri, 13 Oct 2023 12:00:00 GMT</pubDate>
+        <description><![CDATA[Orchard Core 1.7.1 Release is available.]]></description>
+        <category>Release</category>
+      </item>      <item>
+        <title><![CDATA[Orchard Core 1.7 Release]]></title>
+        <link>https://antoinegriffard.com/posts/orchard-core-1.7</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/orchard-core-1.7</guid>
+        <pubDate>Tue, 05 Sep 2023 12:00:00 GMT</pubDate>
+        <description><![CDATA[Orchard Core 1.7 Release is available.]]></description>
+        <category>Release</category>
+      </item>      <item>
+        <title><![CDATA[Orchard Core 1.6 Release]]></title>
+        <link>https://antoinegriffard.com/posts/orchard-core-1.6</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/orchard-core-1.6</guid>
+        <pubDate>Thu, 13 Apr 2023 12:00:00 GMT</pubDate>
+        <description><![CDATA[Orchard Core 1.6 Release is available.]]></description>
+        <category>Release</category>
+      </item>      <item>
+        <title><![CDATA[Orchard Core 1.5 Release]]></title>
+        <link>https://antoinegriffard.com/posts/orchard-core-1.5</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/orchard-core-1.5</guid>
+        <pubDate>Fri, 04 Nov 2022 12:00:00 GMT</pubDate>
+        <description><![CDATA[Orchard Core 1.5 Release is available.]]></description>
+        <category>Release</category>
+      </item>      <item>
+        <title><![CDATA[MVP award 2022]]></title>
+        <link>https://antoinegriffard.com/posts/mvp-award-2022</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/mvp-award-2022</guid>
+        <pubDate>Mon, 01 Aug 2022 12:00:00 GMT</pubDate>
+        <description><![CDATA[This year, my Microsoft MVP title has been renewed for the 10th time.]]></description>
+        <category>MVP</category>
+      </item>      <item>
+        <title><![CDATA[Orchard Core 1.4 Release]]></title>
+        <link>https://antoinegriffard.com/posts/orchard-core-1.4</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/orchard-core-1.4</guid>
+        <pubDate>Wed, 01 Jun 2022 12:00:00 GMT</pubDate>
+        <description><![CDATA[Orchard Core 1.4 Release is available.]]></description>
+        <category>Release</category>
+      </item>      <item>
+        <title><![CDATA[Learn Kana]]></title>
+        <link>https://antoinegriffard.com/posts/learn-kana</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/learn-kana</guid>
+        <pubDate>Sat, 23 Apr 2022 12:00:00 GMT</pubDate>
+        <description><![CDATA[Kana (仮名) refer to syllabaries used to write Japanese phonological units.]]></description>
+        <category>Language</category><category>Japanese</category>
+      </item>      <item>
+        <title><![CDATA[Orchard Core 1.3 Release]]></title>
+        <link>https://antoinegriffard.com/posts/orchard-core-1.3</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/orchard-core-1.3</guid>
+        <pubDate>Thu, 10 Mar 2022 12:00:00 GMT</pubDate>
+        <description><![CDATA[Orchard Core 1.3 Release]]></description>
+        <category>Release</category>
+      </item>      <item>
+        <title><![CDATA[Orchard Core 1.2 Release]]></title>
+        <link>https://antoinegriffard.com/posts/orchard-core-1.2</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/orchard-core-1.2</guid>
+        <pubDate>Thu, 06 Jan 2022 12:00:00 GMT</pubDate>
+        <description><![CDATA[Orchard Core 1.2 Release]]></description>
+        <category>Release</category>
+      </item>      <item>
+        <title><![CDATA[Orchard Core 1.1 Release]]></title>
+        <link>https://antoinegriffard.com/posts/orchard-core-1.1</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/orchard-core-1.1</guid>
+        <pubDate>Tue, 02 Nov 2021 12:00:00 GMT</pubDate>
+        <description><![CDATA[Orchard Core 1.1 Release]]></description>
+        <category>Release</category>
+      </item>      <item>
+        <title><![CDATA[MVP award 2021]]></title>
+        <link>https://antoinegriffard.com/posts/mvp-award-2021</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/mvp-award-2021</guid>
+        <pubDate>Sun, 01 Aug 2021 12:00:00 GMT</pubDate>
+        <description><![CDATA[MVP award 2021]]></description>
+        <category>MVP</category>
+      </item>      <item>
+        <title><![CDATA[Orchard Core 1.0 Release]]></title>
+        <link>https://antoinegriffard.com/posts/orchard-core-1.0</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/orchard-core-1.0</guid>
+        <pubDate>Thu, 22 Jul 2021 12:00:00 GMT</pubDate>
+        <description><![CDATA[Orchard Core 1.0 Release]]></description>
+        <category>Release</category>
+      </item>      <item>
+        <title><![CDATA[Morse]]></title>
+        <link>https://antoinegriffard.com/posts/morse</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/morse</guid>
+        <pubDate>Sun, 06 Jun 2021 12:00:00 GMT</pubDate>
+        <description><![CDATA[Morse]]></description>
+        <category>Language</category>
+      </item>      <item>
+        <title><![CDATA[winget]]></title>
+        <link>https://antoinegriffard.com/posts/winget</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/winget</guid>
+        <pubDate>Sun, 14 Mar 2021 12:00:00 GMT</pubDate>
+        <description><![CDATA[WinGet]]></description>
+        <category>Tool</category>
+      </item>      <item>
+        <title><![CDATA[3d]]></title>
+        <link>https://antoinegriffard.com/posts/3d</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/3d</guid>
+        <pubDate>Sun, 31 Jan 2021 12:00:00 GMT</pubDate>
+        <description><![CDATA[3d]]></description>
+        <category>3d</category>
+      </item>      <item>
+        <title><![CDATA[Bonjour]]></title>
+        <link>https://antoinegriffard.com/posts/bonjour</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/bonjour</guid>
+        <pubDate>Sat, 31 Oct 2020 12:00:00 GMT</pubDate>
+        <description><![CDATA[Bonjour]]></description>
+        <category>Language</category>
+      </item>      <item>
+        <title><![CDATA[MVP award 2020]]></title>
+        <link>https://antoinegriffard.com/posts/mvp-award-2020</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/mvp-award-2020</guid>
+        <pubDate>Sat, 01 Aug 2020 12:00:00 GMT</pubDate>
+        <description><![CDATA[MVP award 2020]]></description>
+        <category>MVP</category>
+      </item>      <item>
+        <title><![CDATA[Orchard Core RC 2]]></title>
+        <link>https://antoinegriffard.com/posts/orchard-core-rc-2</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/orchard-core-rc-2</guid>
+        <pubDate>Sat, 13 Jun 2020 12:00:00 GMT</pubDate>
+        <description><![CDATA[Orchard Core RC 2]]></description>
+        <category>Release</category>
+      </item>      <item>
+        <title><![CDATA[Fibonacci sequence]]></title>
+        <link>https://antoinegriffard.com/posts/fibonacci-sequence</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/fibonacci-sequence</guid>
+        <pubDate>Wed, 06 May 2020 12:00:00 GMT</pubDate>
+        <description><![CDATA[Fibonacci sequence]]></description>
+        <category>Maths</category>
+      </item>      <item>
+        <title><![CDATA[LINQ]]></title>
+        <link>https://antoinegriffard.com/posts/linq</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/linq</guid>
+        <pubDate>Sat, 14 Mar 2020 12:00:00 GMT</pubDate>
+        <description><![CDATA[LINQ]]></description>
+        <category>.NET</category>
+      </item>      <item>
+        <title><![CDATA[How to fix a bug?]]></title>
+        <link>https://antoinegriffard.com/posts/how-to-fix-a-bug</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/how-to-fix-a-bug</guid>
+        <pubDate>Fri, 31 Jan 2020 12:00:00 GMT</pubDate>
+        <description><![CDATA[How to fix a bug?]]></description>
+        <category>Howto</category>
+      </item>      <item>
+        <title><![CDATA[Orchard Core RC 1]]></title>
+        <link>https://antoinegriffard.com/posts/orchard-core-rc-1</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/orchard-core-rc-1</guid>
+        <pubDate>Tue, 24 Sep 2019 12:00:00 GMT</pubDate>
+        <description><![CDATA[Orchard Core RC 1]]></description>
+        <category>Release</category>
+      </item>      <item>
+        <title><![CDATA[MVP award 2019]]></title>
+        <link>https://antoinegriffard.com/posts/mvp-award-2019</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/mvp-award-2019</guid>
+        <pubDate>Thu, 01 Aug 2019 12:00:00 GMT</pubDate>
+        <description><![CDATA[MVP award 2019]]></description>
+        <category>MVP</category>
+      </item>      <item>
+        <title><![CDATA[NATO phonetic alphabet]]></title>
+        <link>https://antoinegriffard.com/posts/nato-phonetic-alphabet</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/nato-phonetic-alphabet</guid>
+        <pubDate>Thu, 06 Jun 2019 12:00:00 GMT</pubDate>
+        <description><![CDATA[NATO phonetic alphabet]]></description>
+        <category>Alphabet</category>
+      </item>      <item>
+        <title><![CDATA[Orchard Core Beta 3]]></title>
+        <link>https://antoinegriffard.com/posts/orchard-core-beta-3</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/orchard-core-beta-3</guid>
+        <pubDate>Thu, 04 Apr 2019 12:00:00 GMT</pubDate>
+        <description><![CDATA[Orchard Core Beta 3]]></description>
+        <category>Release</category>
+      </item>      <item>
+        <title><![CDATA[Pi animation]]></title>
+        <link>https://antoinegriffard.com/posts/pi-animation</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/pi-animation</guid>
+        <pubDate>Thu, 14 Mar 2019 12:00:00 GMT</pubDate>
+        <description><![CDATA[Pi animation]]></description>
+        <category>Pi</category>
+      </item>      <item>
+        <title><![CDATA[Dunning-Kruger effect]]></title>
+        <link>https://antoinegriffard.com/posts/dunning-kruger-effect</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/dunning-kruger-effect</guid>
+        <pubDate>Thu, 31 Jan 2019 12:00:00 GMT</pubDate>
+        <description><![CDATA[Dunning-Kruger effect]]></description>
+        <category>Psychology</category>
+      </item>      <item>
+        <title><![CDATA[Strategy Design Pattern]]></title>
+        <link>https://antoinegriffard.com/posts/strategy-design-pattern-csharp</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/strategy-design-pattern-csharp</guid>
+        <pubDate>Fri, 21 Dec 2018 12:00:00 GMT</pubDate>
+        <description><![CDATA[Master the Strategy design pattern in C# with practical examples, best practices, and real-world implementations. Learn to create flexible, maintainable algorithms that can be swapped at runtime.]]></description>
+        <category>AI</category><category>DesignPatterns</category><category>CSharp</category>
+      </item>      <item>
+        <title><![CDATA[Factory Design Pattern in C#: Complete Guide with Examples]]></title>
+        <link>https://antoinegriffard.com/posts/factory-design-pattern-csharp</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/factory-design-pattern-csharp</guid>
+        <pubDate>Fri, 19 Oct 2018 12:00:00 GMT</pubDate>
+        <description><![CDATA[Master the Factory design pattern in C# with practical examples, best practices, and real-world implementations. Learn Simple Factory, Factory Method, and Abstract Factory patterns.]]></description>
+        <category>AI</category><category>DesignPatterns</category><category>CSharp</category>
+      </item>      <item>
+        <title><![CDATA[MVP award 2018]]></title>
+        <link>https://antoinegriffard.com/posts/mvp-award-2018</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/mvp-award-2018</guid>
+        <pubDate>Wed, 01 Aug 2018 12:00:00 GMT</pubDate>
+        <description><![CDATA[MVP award 2018]]></description>
+        <category>MVP</category>
+      </item>      <item>
+        <title><![CDATA[Orchard Core Beta 2]]></title>
+        <link>https://antoinegriffard.com/posts/orchard-core-beta-2</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/orchard-core-beta-2</guid>
+        <pubDate>Sat, 23 Jun 2018 12:00:00 GMT</pubDate>
+        <description><![CDATA[Orchard Core Beta 2]]></description>
+        <category>Release</category>
+      </item>      <item>
+        <title><![CDATA[Pi]]></title>
+        <link>https://antoinegriffard.com/posts/pi</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/pi</guid>
+        <pubDate>Wed, 14 Mar 2018 12:00:00 GMT</pubDate>
+        <description><![CDATA[Pi]]></description>
+        <category>Pi</category>
+      </item>      <item>
+        <title><![CDATA[Four stages of competence]]></title>
+        <link>https://antoinegriffard.com/posts/four-stages-of-competence</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/four-stages-of-competence</guid>
+        <pubDate>Wed, 31 Jan 2018 12:00:00 GMT</pubDate>
+        <description><![CDATA[Four stages of competence]]></description>
+        <category>Psychology</category>
+      </item>      <item>
+        <title><![CDATA[Orchard Core Beta]]></title>
+        <link>https://antoinegriffard.com/posts/orchard-core-beta</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/orchard-core-beta</guid>
+        <pubDate>Tue, 21 Nov 2017 12:00:00 GMT</pubDate>
+        <description><![CDATA[Orchard Core Beta]]></description>
+        <category>Release</category>
+      </item>      <item>
+        <title><![CDATA[Builder Design Pattern in C#: Constructing Complex Objects Step by Step]]></title>
+        <link>https://antoinegriffard.com/posts/builder-design-pattern-csharp</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/builder-design-pattern-csharp</guid>
+        <pubDate>Tue, 19 Sep 2017 12:00:00 GMT</pubDate>
+        <description><![CDATA[Master the Builder design pattern in C# with fluent interfaces, method chaining, and practical examples. Learn to construct complex objects elegantly and maintainably.]]></description>
+        <category>AI</category><category>DesignPatterns</category><category>CSharp</category><category>FluentAPI</category>
+      </item>      <item>
+        <title><![CDATA[Dots]]></title>
+        <link>https://antoinegriffard.com/posts/dots</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/dots</guid>
+        <pubDate>Tue, 06 Jun 2017 12:00:00 GMT</pubDate>
+        <description><![CDATA[Dots]]></description>
+        <category>Illusion</category>
+      </item>      <item>
+        <title><![CDATA[Je ne sais rien]]></title>
+        <link>https://antoinegriffard.com/posts/je-ne-sais-rien</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/je-ne-sais-rien</guid>
+        <pubDate>Fri, 31 Mar 2017 12:00:00 GMT</pubDate>
+        <description><![CDATA[Ce que je sais, c'est que je ne sais rien.]]></description>
+        <category>Philosophie</category>
+      </item>      <item>
+        <title><![CDATA[Orchard Harvest in New York]]></title>
+        <link>https://antoinegriffard.com/posts/orchard-harvest-in-new-york</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/orchard-harvest-in-new-york</guid>
+        <pubDate>Tue, 28 Feb 2017 12:00:00 GMT</pubDate>
+        <description><![CDATA[Orchard Harvest in New York]]></description>
+        <category>Harvest</category>
+      </item>      <item>
+        <title><![CDATA[Singleton Design Pattern in C#: Thread-Safe Implementation and Modern Alternatives]]></title>
+        <link>https://antoinegriffard.com/posts/singleton-design-pattern-csharp</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/singleton-design-pattern-csharp</guid>
+        <pubDate>Thu, 19 Jan 2017 16:00:00 GMT</pubDate>
+        <description><![CDATA[Master the Singleton design pattern in C# with thread-safe implementations, performance considerations, and modern dependency injection alternatives.]]></description>
+        <category>AI</category><category>DesignPatterns</category><category>CSharp</category>
+      </item>      <item>
+        <title><![CDATA[Conférence Orchard Harvest 2017]]></title>
+        <link>https://antoinegriffard.com/posts/orchard-harvest-2017</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/orchard-harvest-2017</guid>
+        <pubDate>Wed, 28 Dec 2016 12:00:00 GMT</pubDate>
+        <description><![CDATA[Orchard Harvest 2017 à New York]]></description>
+        <category>Harvest</category>
+      </item>      <item>
+        <title><![CDATA[Microsoft MVP Summit 2016]]></title>
+        <link>https://antoinegriffard.com/posts/microsoft-mvp-summit-2016.</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/microsoft-mvp-summit-2016.</guid>
+        <pubDate>Sat, 03 Dec 2016 12:00:00 GMT</pubDate>
+        <description><![CDATA[Microsoft MVP Summit 2016]]></description>
+        <category>MVP</category>
+      </item>      <item>
+        <title><![CDATA[MVP award 2016]]></title>
+        <link>https://antoinegriffard.com/posts/mvp-award-2016</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/mvp-award-2016</guid>
+        <pubDate>Mon, 01 Aug 2016 12:00:00 GMT</pubDate>
+        <description><![CDATA[MVP award 2016]]></description>
+        <category>MVP</category>
+      </item>      <item>
+        <title><![CDATA[Less is more]]></title>
+        <link>https://antoinegriffard.com/posts/less-is-more</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/less-is-more</guid>
+        <pubDate>Mon, 06 Jun 2016 12:00:00 GMT</pubDate>
+        <description><![CDATA[Less is more]]></description>
+        <category>Minimal</category>
+      </item>      <item>
+        <title><![CDATA[⸮ ƧIHT ꓷAƎЯ UOY ИAƆ]]></title>
+        <link>https://antoinegriffard.com/posts/ƧIHT-ꓷAƎЯ-UOY-ИAƆ</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/ƧIHT-ꓷAƎЯ-UOY-ИAƆ</guid>
+        <pubDate>Thu, 31 Mar 2016 12:00:00 GMT</pubDate>
+        <description><![CDATA[Seriously, can you read this?]]></description>
+        <category>Language</category>
+      </item>      <item>
+        <title><![CDATA[SOLID]]></title>
+        <link>https://antoinegriffard.com/posts/solid</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/solid</guid>
+        <pubDate>Sun, 31 Jan 2016 12:00:00 GMT</pubDate>
+        <description><![CDATA[SOLID]]></description>
+        <category>Acronym</category>
+      </item>      <item>
+        <title><![CDATA[Orchard Harvest 2015 summary]]></title>
+        <link>https://antoinegriffard.com/posts/orchard-harvest-2015-summary</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/orchard-harvest-2015-summary</guid>
+        <pubDate>Thu, 08 Oct 2015 12:00:00 GMT</pubDate>
+        <description><![CDATA[Orchard Harvest 2015 summary]]></description>
+        <category>Harvest</category>
+      </item>      <item>
+        <title><![CDATA[Orchard Harvest 2015]]></title>
+        <link>https://antoinegriffard.com/posts/orchard-harvest-2015</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/orchard-harvest-2015</guid>
+        <pubDate>Sun, 13 Sep 2015 12:00:00 GMT</pubDate>
+        <description><![CDATA[Orchard Harvest 2015]]></description>
+        <category>Harvest</category>
+      </item>      <item>
+        <title><![CDATA[MVP award 2015]]></title>
+        <link>https://antoinegriffard.com/posts/mvp-award-2015</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/mvp-award-2015</guid>
+        <pubDate>Sat, 01 Aug 2015 12:00:00 GMT</pubDate>
+        <description><![CDATA[MVP award 2015]]></description>
+        <category>MVP</category>
+      </item>      <item>
+        <title><![CDATA[Look to your left]]></title>
+        <link>https://antoinegriffard.com/posts/look-to-your-left</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/look-to-your-left</guid>
+        <pubDate>Sat, 06 Jun 2015 12:00:00 GMT</pubDate>
+        <description><![CDATA[Look to your left]]></description>
+        <category>Fun</category>
+      </item>      <item>
+        <title><![CDATA[Pangrams - When Every Letter Counts]]></title>
+        <link>https://antoinegriffard.com/posts/pangrams</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/pangrams</guid>
+        <pubDate>Sat, 21 Mar 2015 12:00:00 GMT</pubDate>
+        <description><![CDATA[Explore the fascinating world of pangrams - sentences that contain every letter of the alphabet, from the classic "quick brown fox" to modern variations.]]></description>
+        <category>Language</category>
+      </item>      <item>
+        <title><![CDATA[Règle d'or]]></title>
+        <link>https://antoinegriffard.com/posts/regle-d-or</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/regle-d-or</guid>
+        <pubDate>Sat, 31 Jan 2015 12:00:00 GMT</pubDate>
+        <description><![CDATA[Règle d'or]]></description>
+        <category>Philosophie</category>
+      </item>      <item>
+        <title><![CDATA[PEBKAC]]></title>
+        <link>https://antoinegriffard.com/posts/pebkac</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/pebkac</guid>
+        <pubDate>Sat, 06 Dec 2014 12:00:00 GMT</pubDate>
+        <description><![CDATA[PEBKAC]]></description>
+        <category>Dev</category>
+      </item>      <item>
+        <title><![CDATA[MVP award 2014]]></title>
+        <link>https://antoinegriffard.com/posts/mvp-award-2014</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/mvp-award-2014</guid>
+        <pubDate>Fri, 01 Aug 2014 12:00:00 GMT</pubDate>
+        <description><![CDATA[MVP award 2014]]></description>
+        <category>MVP</category>
+      </item>      <item>
+        <title><![CDATA[Microsoft Most Valuable Professional ASP.NET/IIS]]></title>
+        <link>https://antoinegriffard.com/posts/microsoft-most-valuable-professional-asp-net-iis</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/microsoft-most-valuable-professional-asp-net-iis</guid>
+        <pubDate>Tue, 01 Jul 2014 12:00:00 GMT</pubDate>
+        <description><![CDATA[Microsoft Most Valuable Professional 2014]]></description>
+        <category>MVP</category>
+      </item>      <item>
+        <title><![CDATA[Récapitulatif conférence Orchard Harvest 2014]]></title>
+        <link>https://antoinegriffard.com/posts/recapitulatif-conference-orchard-harvest-2014</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/recapitulatif-conference-orchard-harvest-2014</guid>
+        <pubDate>Tue, 17 Jun 2014 12:00:00 GMT</pubDate>
+        <description><![CDATA[Récapitulatif Orchard Harvest 2014]]></description>
+        <category>Harvest</category>
+      </item>      <item>
+        <title><![CDATA[Orchard Harvest 2014]]></title>
+        <link>https://antoinegriffard.com/posts/orchard-harvest-2014</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/orchard-harvest-2014</guid>
+        <pubDate>Fri, 09 May 2014 12:00:00 GMT</pubDate>
+        <description><![CDATA[Orchard Harvest 2014 in Redmond]]></description>
+        <category>Harvest</category>
+      </item>      <item>
+        <title><![CDATA[KISS]]></title>
+        <link>https://antoinegriffard.com/posts/kiss</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/kiss</guid>
+        <pubDate>Fri, 31 Jan 2014 12:00:00 GMT</pubDate>
+        <description><![CDATA[KISS]]></description>
+        <category>Acronym</category>
+      </item>      <item>
+        <title><![CDATA[The Principles of Software Craftsmanship - Building Excellence in Code]]></title>
+        <link>https://antoinegriffard.com/posts/software-craftsmanship-principles</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/software-craftsmanship-principles</guid>
+        <pubDate>Thu, 21 Nov 2013 12:00:00 GMT</pubDate>
+        <description><![CDATA[Explore the fundamental principles of Software Craftsmanship that elevate programming from mere coding to an art form focused on quality, continuous learning, and professional excellence.]]></description>
+        <category>SoftwareCraftsmanship</category>
+      </item>      <item>
+        <title><![CDATA[Orchard community member]]></title>
+        <link>https://antoinegriffard.com/posts/orchard-community-member</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/orchard-community-member</guid>
+        <pubDate>Wed, 11 Sep 2013 12:00:00 GMT</pubDate>
+        <description><![CDATA[Orchard community member]]></description>
+        <category>Community</category>
+      </item>      <item>
+        <title><![CDATA[Orchard Harvest 2013 Keynote Jour 2]]></title>
+        <link>https://antoinegriffard.com/posts/orchard-harvest-2013-jour-2</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/orchard-harvest-2013-jour-2</guid>
+        <pubDate>Wed, 19 Jun 2013 12:00:00 GMT</pubDate>
+        <description><![CDATA[Keynote Jour 2]]></description>
+        <category>Harvest</category>
+      </item>      <item>
+        <title><![CDATA[Conférence Orchard Harvest 2013 à Amsterdam Jour 1]]></title>
+        <link>https://antoinegriffard.com/posts/orchard-harvest-2013-jour-1</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/orchard-harvest-2013-jour-1</guid>
+        <pubDate>Tue, 18 Jun 2013 12:00:00 GMT</pubDate>
+        <description><![CDATA[Jour 1]]></description>
+        <category>Harvest</category>
+      </item>      <item>
+        <title><![CDATA[Les trois filtres de Socrate]]></title>
+        <link>https://antoinegriffard.com/posts/les-trois-filtres-de-socrate</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/les-trois-filtres-de-socrate</guid>
+        <pubDate>Wed, 06 Mar 2013 12:00:00 GMT</pubDate>
+        <description><![CDATA[Les trois filtres de Socrate]]></description>
+        <category>Philosophie</category>
+      </item>      <item>
+        <title><![CDATA[RTFM]]></title>
+        <link>https://antoinegriffard.com/posts/rtfm</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/rtfm</guid>
+        <pubDate>Thu, 31 Jan 2013 12:00:00 GMT</pubDate>
+        <description><![CDATA[RTFM]]></description>
+        <category>Acronym</category>
+      </item>      <item>
+        <title><![CDATA[Orchard Harvest 2012 Sessions Day 2]]></title>
+        <link>https://antoinegriffard.com/posts/orchard-harvest-2012-sessions-day-2</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/orchard-harvest-2012-sessions-day-2</guid>
+        <pubDate>Wed, 26 Sep 2012 12:00:00 GMT</pubDate>
+        <description><![CDATA[Sessions Day 2]]></description>
+        <category>Harvest</category>
+      </item>      <item>
+        <title><![CDATA[Orchard Harvest 2012 Performance]]></title>
+        <link>https://antoinegriffard.com/posts/orchard-harvest-2012-performance</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/orchard-harvest-2012-performance</guid>
+        <pubDate>Fri, 21 Sep 2012 12:00:00 GMT</pubDate>
+        <description><![CDATA[Performance]]></description>
+        <category>Harvest</category>
+      </item>      <item>
+        <title><![CDATA[Orchard Harvest 2012 Theming]]></title>
+        <link>https://antoinegriffard.com/posts/orchard-harvest-2012-theming</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/orchard-harvest-2012-theming</guid>
+        <pubDate>Wed, 19 Sep 2012 12:00:00 GMT</pubDate>
+        <description><![CDATA[Theming]]></description>
+        <category>Harvest</category>
+      </item>      <item>
+        <title><![CDATA[Orchard Harvest 2012 Managing a community]]></title>
+        <link>https://antoinegriffard.com/posts/orchard-harvest-2012-managing-a-community</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/orchard-harvest-2012-managing-a-community</guid>
+        <pubDate>Tue, 18 Sep 2012 12:00:00 GMT</pubDate>
+        <description><![CDATA[Managing a community]]></description>
+        <category>Harvest</category>
+      </item>      <item>
+        <title><![CDATA[Orchard Harvest 2012 Sessions Day 1]]></title>
+        <link>https://antoinegriffard.com/posts/orchard-harvest-2012-sessions-day-1</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/orchard-harvest-2012-sessions-day-1</guid>
+        <pubDate>Mon, 17 Sep 2012 12:00:00 GMT</pubDate>
+        <description><![CDATA[Sessions Day 1]]></description>
+        <category>Harvest</category>
+      </item>      <item>
+        <title><![CDATA[Orchard Harvest 2012 Sessions Ecommerce]]></title>
+        <link>https://antoinegriffard.com/posts/orchard-harvest-2012-sessions-ecommerce</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/orchard-harvest-2012-sessions-ecommerce</guid>
+        <pubDate>Sun, 16 Sep 2012 12:00:00 GMT</pubDate>
+        <description><![CDATA[Ecommerce]]></description>
+        <category>Harvest</category>
+      </item>      <item>
+        <title><![CDATA[Orchard Harvest 2012 Sessions The future of Orchard]]></title>
+        <link>https://antoinegriffard.com/posts/orchard-harvest-2012-sessions-the-future-of-orchard</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/orchard-harvest-2012-sessions-the-future-of-orchard</guid>
+        <pubDate>Sat, 15 Sep 2012 12:00:00 GMT</pubDate>
+        <description><![CDATA[The future of Orchard]]></description>
+        <category>Harvest</category>
+      </item>      <item>
+        <title><![CDATA[Orchard Harvest 2012 Keynote]]></title>
+        <link>https://antoinegriffard.com/posts/orchard-harvest-2012-keynote</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/orchard-harvest-2012-keynote</guid>
+        <pubDate>Sun, 09 Sep 2012 12:00:00 GMT</pubDate>
+        <description><![CDATA[Ce week end (8 et 9 Septembre 2012), j'ai eu la chance de participer à la première conférence organisée autour d'Orchard.]]></description>
+        <category>Harvest</category>
+      </item>      <item>
+        <title><![CDATA[The IT Crowd]]></title>
+        <link>https://antoinegriffard.com/posts/the-it-crowd</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/the-it-crowd</guid>
+        <pubDate>Wed, 06 Jun 2012 12:00:00 GMT</pubDate>
+        <description><![CDATA[The IT crowd]]></description>
+        <category>Meme</category>
+      </item>      <item>
+        <title><![CDATA[Hello World!]]></title>
+        <link>https://antoinegriffard.com/posts/hello-world</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/hello-world</guid>
+        <pubDate>Tue, 31 Jan 2012 12:00:00 GMT</pubDate>
+        <description><![CDATA[« Hello, World! » programs are often the first a student learns to write in a given language.]]></description>
+        <category>Hello</category>
+      </item>
+  </channel>
+</rss>
