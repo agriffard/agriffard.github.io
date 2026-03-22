@@ -1,0 +1,1200 @@
+<p>The <strong>Builder design pattern</strong> is a creational pattern that provides a flexible solution for constructing complex objects step by step. Unlike other creational patterns that create objects in one go, the Builder pattern allows you to produce different types and representations of an object using the same construction code.</p>
+<p>In this comprehensive guide, we'll explore various implementations of the Builder pattern in C#, from basic builders to fluent interfaces, and discover how modern C# features can make this pattern even more powerful.</p>
+<h2 id="table-of-contents">Table of Contents</h2>
+<h2 id="what-is-the-builder-design-pattern">What is the Builder Design Pattern?</h2>
+<p>The Builder pattern separates the construction of complex objects from their representation, allowing the same construction process to create various representations. It's particularly useful when:</p>
+<ul>
+<li>Creating objects with many optional parameters</li>
+<li>The construction process must allow different representations</li>
+<li>You want to avoid telescoping constructors (constructors with many parameters)</li>
+<li>The object creation process is complex and involves multiple steps</li>
+</ul>
+<h3 id="key-components">Key Components</h3>
+<ol>
+<li><strong>Builder Interface</strong>: Defines the construction steps</li>
+<li><strong>Concrete Builder</strong>: Implements the construction steps and builds the product</li>
+<li><strong>Director</strong>: Orchestrates the construction process (optional)</li>
+<li><strong>Product</strong>: The complex object being constructed</li>
+</ol>
+<h3 id="benefits">Benefits</h3>
+<ul>
+<li><strong>Immutable Objects</strong>: Can create immutable objects step by step</li>
+<li><strong>Readable Code</strong>: Fluent interfaces make code more readable</li>
+<li><strong>Flexible Construction</strong>: Same builder can create different representations</li>
+<li><strong>Parameter Validation</strong>: Validate parameters during construction</li>
+<li><strong>Default Values</strong>: Easy to handle optional parameters with defaults</li>
+</ul>
+<h2 id="classic-builder-pattern">1. Classic Builder Pattern</h2>
+<p>Let's start with the traditional implementation of the Builder pattern:</p>
+<h3 id="example-computer-builder">Example: Computer Builder</h3>
+<pre><code class="language-csharp">// Product class
+public class Computer
+{
+    public string CPU { get; set; }
+    public string RAM { get; set; }
+    public string Storage { get; set; }
+    public string GPU { get; set; }
+    public string Motherboard { get; set; }
+    public string PowerSupply { get; set; }
+    public bool HasWiFi { get; set; }
+    public bool HasBluetooth { get; set; }
+
+    public override string ToString()
+    {
+        return $&quot;Computer: CPU={CPU}, RAM={RAM}, Storage={Storage}, &quot; +
+               $&quot;GPU={GPU}, Motherboard={Motherboard}, PSU={PowerSupply}, &quot; +
+               $&quot;WiFi={HasWiFi}, Bluetooth={HasBluetooth}&quot;;
+    }
+}
+
+// Builder interface
+public interface IComputerBuilder
+{
+    IComputerBuilder SetCPU(string cpu);
+    IComputerBuilder SetRAM(string ram);
+    IComputerBuilder SetStorage(string storage);
+    IComputerBuilder SetGPU(string gpu);
+    IComputerBuilder SetMotherboard(string motherboard);
+    IComputerBuilder SetPowerSupply(string powerSupply);
+    IComputerBuilder AddWiFi();
+    IComputerBuilder AddBluetooth();
+    Computer Build();
+}
+
+// Concrete builder
+public class ComputerBuilder : IComputerBuilder
+{
+    private Computer _computer;
+
+    public ComputerBuilder()
+    {
+        Reset();
+    }
+
+    public void Reset()
+    {
+        _computer = new Computer();
+    }
+
+    public IComputerBuilder SetCPU(string cpu)
+    {
+        _computer.CPU = cpu;
+        return this;
+    }
+
+    public IComputerBuilder SetRAM(string ram)
+    {
+        _computer.RAM = ram;
+        return this;
+    }
+
+    public IComputerBuilder SetStorage(string storage)
+    {
+        _computer.Storage = storage;
+        return this;
+    }
+
+    public IComputerBuilder SetGPU(string gpu)
+    {
+        _computer.GPU = gpu;
+        return this;
+    }
+
+    public IComputerBuilder SetMotherboard(string motherboard)
+    {
+        _computer.Motherboard = motherboard;
+        return this;
+    }
+
+    public IComputerBuilder SetPowerSupply(string powerSupply)
+    {
+        _computer.PowerSupply = powerSupply;
+        return this;
+    }
+
+    public IComputerBuilder AddWiFi()
+    {
+        _computer.HasWiFi = true;
+        return this;
+    }
+
+    public IComputerBuilder AddBluetooth()
+    {
+        _computer.HasBluetooth = true;
+        return this;
+    }
+
+    public Computer Build()
+    {
+        var result = _computer;
+        Reset(); // Prepare for next build
+        return result;
+    }
+}
+
+// Director (optional)
+public class ComputerDirector
+{
+    public Computer BuildGamingComputer(IComputerBuilder builder)
+    {
+        return builder
+            .SetCPU(&quot;Intel i9-13900K&quot;)
+            .SetRAM(&quot;32GB DDR5&quot;)
+            .SetStorage(&quot;1TB NVMe SSD&quot;)
+            .SetGPU(&quot;RTX 4080&quot;)
+            .SetMotherboard(&quot;ASUS ROG Strix&quot;)
+            .SetPowerSupply(&quot;850W Gold&quot;)
+            .AddWiFi()
+            .AddBluetooth()
+            .Build();
+    }
+
+    public Computer BuildOfficeComputer(IComputerBuilder builder)
+    {
+        return builder
+            .SetCPU(&quot;Intel i5-13400&quot;)
+            .SetRAM(&quot;16GB DDR4&quot;)
+            .SetStorage(&quot;512GB SSD&quot;)
+            .SetMotherboard(&quot;MSI Pro B660&quot;)
+            .SetPowerSupply(&quot;500W Bronze&quot;)
+            .AddWiFi()
+            .Build();
+    }
+}
+
+// Usage
+var builder = new ComputerBuilder();
+var director = new ComputerDirector();
+
+// Using director
+var gamingPC = director.BuildGamingComputer(builder);
+Console.WriteLine(gamingPC);
+
+// Direct builder usage
+var customPC = new ComputerBuilder()
+    .SetCPU(&quot;AMD Ryzen 7 7700X&quot;)
+    .SetRAM(&quot;16GB DDR5&quot;)
+    .SetStorage(&quot;1TB SSD&quot;)
+    .SetGPU(&quot;RTX 4070&quot;)
+    .AddWiFi()
+    .Build();
+
+Console.WriteLine(customPC);
+</code></pre>
+<h2 id="fluent-builder-pattern">2. Fluent Builder Pattern</h2>
+<p>The fluent builder creates a more readable and intuitive API:</p>
+<h3 id="example-sql-query-builder">Example: SQL Query Builder</h3>
+<pre><code class="language-csharp">public class SqlQuery
+{
+    public string SelectClause { get; set; } = &quot;&quot;;
+    public string FromClause { get; set; } = &quot;&quot;;
+    public string WhereClause { get; set; } = &quot;&quot;;
+    public string OrderByClause { get; set; } = &quot;&quot;;
+    public string GroupByClause { get; set; } = &quot;&quot;;
+    public string HavingClause { get; set; } = &quot;&quot;;
+    public int? LimitValue { get; set; }
+
+    public override string ToString()
+    {
+        var query = new StringBuilder();
+        
+        if (!string.IsNullOrEmpty(SelectClause))
+            query.AppendLine($&quot;SELECT {SelectClause}&quot;);
+        
+        if (!string.IsNullOrEmpty(FromClause))
+            query.AppendLine($&quot;FROM {FromClause}&quot;);
+        
+        if (!string.IsNullOrEmpty(WhereClause))
+            query.AppendLine($&quot;WHERE {WhereClause}&quot;);
+        
+        if (!string.IsNullOrEmpty(GroupByClause))
+            query.AppendLine($&quot;GROUP BY {GroupByClause}&quot;);
+        
+        if (!string.IsNullOrEmpty(HavingClause))
+            query.AppendLine($&quot;HAVING {HavingClause}&quot;);
+        
+        if (!string.IsNullOrEmpty(OrderByClause))
+            query.AppendLine($&quot;ORDER BY {OrderByClause}&quot;);
+        
+        if (LimitValue.HasValue)
+            query.AppendLine($&quot;LIMIT {LimitValue}&quot;);
+
+        return query.ToString().Trim();
+    }
+}
+
+public class SqlQueryBuilder
+{
+    private readonly SqlQuery _query;
+
+    public SqlQueryBuilder()
+    {
+        _query = new SqlQuery();
+    }
+
+    public SqlQueryBuilder Select(params string[] columns)
+    {
+        _query.SelectClause = string.Join(&quot;, &quot;, columns);
+        return this;
+    }
+
+    public SqlQueryBuilder SelectAll()
+    {
+        _query.SelectClause = &quot;*&quot;;
+        return this;
+    }
+
+    public SqlQueryBuilder From(string table)
+    {
+        _query.FromClause = table;
+        return this;
+    }
+
+    public SqlQueryBuilder Where(string condition)
+    {
+        if (string.IsNullOrEmpty(_query.WhereClause))
+            _query.WhereClause = condition;
+        else
+            _query.WhereClause += $&quot; AND {condition}&quot;;
+        return this;
+    }
+
+    public SqlQueryBuilder Or(string condition)
+    {
+        if (!string.IsNullOrEmpty(_query.WhereClause))
+            _query.WhereClause += $&quot; OR {condition}&quot;;
+        return this;
+    }
+
+    public SqlQueryBuilder OrderBy(string column, bool ascending = true)
+    {
+        var direction = ascending ? &quot;ASC&quot; : &quot;DESC&quot;;
+        if (string.IsNullOrEmpty(_query.OrderByClause))
+            _query.OrderByClause = $&quot;{column} {direction}&quot;;
+        else
+            _query.OrderByClause += $&quot;, {column} {direction}&quot;;
+        return this;
+    }
+
+    public SqlQueryBuilder GroupBy(params string[] columns)
+    {
+        _query.GroupByClause = string.Join(&quot;, &quot;, columns);
+        return this;
+    }
+
+    public SqlQueryBuilder Having(string condition)
+    {
+        _query.HavingClause = condition;
+        return this;
+    }
+
+    public SqlQueryBuilder Limit(int count)
+    {
+        _query.LimitValue = count;
+        return this;
+    }
+
+    public SqlQuery Build() =&gt; _query;
+
+    public string ToSql() =&gt; _query.ToString();
+
+    // Implicit conversion for convenience
+    public static implicit operator string(SqlQueryBuilder builder) =&gt; builder.ToSql();
+}
+
+// Usage
+var query = new SqlQueryBuilder()
+    .Select(&quot;u.Name&quot;, &quot;u.Email&quot;, &quot;COUNT(o.Id) as OrderCount&quot;)
+    .From(&quot;Users u&quot;)
+    .From(&quot;LEFT JOIN Orders o ON u.Id = o.UserId&quot;) // Could be enhanced for proper joins
+    .Where(&quot;u.IsActive = 1&quot;)
+    .Where(&quot;u.CreatedDate &gt;= '2023-01-01'&quot;)
+    .GroupBy(&quot;u.Id&quot;, &quot;u.Name&quot;, &quot;u.Email&quot;)
+    .Having(&quot;COUNT(o.Id) &gt; 5&quot;)
+    .OrderBy(&quot;OrderCount&quot;, false)
+    .Limit(10);
+
+Console.WriteLine(query); // Implicit conversion to string
+
+// Or explicit build
+var sqlQuery = query.Build();
+Console.WriteLine(sqlQuery.ToString());
+</code></pre>
+<h2 id="immutable-builder-pattern">3. Immutable Builder Pattern</h2>
+<p>Creating immutable objects with the Builder pattern provides thread safety and prevents accidental modifications:</p>
+<h3 id="example-configuration-builder">Example: Configuration Builder</h3>
+<pre><code class="language-csharp">public sealed class DatabaseConfiguration
+{
+    public string ConnectionString { get; }
+    public int CommandTimeout { get; }
+    public int MaxRetries { get; }
+    public bool EnableLogging { get; }
+    public string LogLevel { get; }
+    public int PoolSize { get; }
+
+    internal DatabaseConfiguration(
+        string connectionString,
+        int commandTimeout,
+        int maxRetries,
+        bool enableLogging,
+        string logLevel,
+        int poolSize)
+    {
+        ConnectionString = connectionString;
+        CommandTimeout = commandTimeout;
+        MaxRetries = maxRetries;
+        EnableLogging = enableLogging;
+        LogLevel = logLevel;
+        PoolSize = poolSize;
+    }
+
+    public override string ToString()
+    {
+        return $&quot;DB Config: Timeout={CommandTimeout}s, Retries={MaxRetries}, &quot; +
+               $&quot;Logging={EnableLogging} ({LogLevel}), Pool={PoolSize}&quot;;
+    }
+}
+
+public class DatabaseConfigurationBuilder
+{
+    private string _connectionString = &quot;&quot;;
+    private int _commandTimeout = 30;
+    private int _maxRetries = 3;
+    private bool _enableLogging = false;
+    private string _logLevel = &quot;Info&quot;;
+    private int _poolSize = 10;
+
+    public DatabaseConfigurationBuilder WithConnectionString(string connectionString)
+    {
+        if (string.IsNullOrWhiteSpace(connectionString))
+            throw new ArgumentException(&quot;Connection string cannot be null or empty&quot;);
+        
+        _connectionString = connectionString;
+        return this;
+    }
+
+    public DatabaseConfigurationBuilder WithCommandTimeout(int seconds)
+    {
+        if (seconds &lt;= 0)
+            throw new ArgumentException(&quot;Command timeout must be positive&quot;);
+        
+        _commandTimeout = seconds;
+        return this;
+    }
+
+    public DatabaseConfigurationBuilder WithMaxRetries(int retries)
+    {
+        if (retries &lt; 0)
+            throw new ArgumentException(&quot;Max retries cannot be negative&quot;);
+        
+        _maxRetries = retries;
+        return this;
+    }
+
+    public DatabaseConfigurationBuilder EnableLogging(string logLevel = &quot;Info&quot;)
+    {
+        var validLevels = new[] { &quot;Debug&quot;, &quot;Info&quot;, &quot;Warning&quot;, &quot;Error&quot; };
+        if (!validLevels.Contains(logLevel))
+            throw new ArgumentException($&quot;Invalid log level. Valid levels: {string.Join(&quot;, &quot;, validLevels)}&quot;);
+        
+        _enableLogging = true;
+        _logLevel = logLevel;
+        return this;
+    }
+
+    public DatabaseConfigurationBuilder DisableLogging()
+    {
+        _enableLogging = false;
+        return this;
+    }
+
+    public DatabaseConfigurationBuilder WithPoolSize(int size)
+    {
+        if (size &lt;= 0)
+            throw new ArgumentException(&quot;Pool size must be positive&quot;);
+        
+        _poolSize = size;
+        return this;
+    }
+
+    public DatabaseConfiguration Build()
+    {
+        if (string.IsNullOrWhiteSpace(_connectionString))
+            throw new InvalidOperationException(&quot;Connection string is required&quot;);
+
+        return new DatabaseConfiguration(
+            _connectionString,
+            _commandTimeout,
+            _maxRetries,
+            _enableLogging,
+            _logLevel,
+            _poolSize);
+    }
+}
+
+// Usage
+var config = new DatabaseConfigurationBuilder()
+    .WithConnectionString(&quot;Server=localhost;Database=MyApp;Trusted_Connection=true&quot;)
+    .WithCommandTimeout(60)
+    .WithMaxRetries(5)
+    .EnableLogging(&quot;Debug&quot;)
+    .WithPoolSize(20)
+    .Build();
+
+Console.WriteLine(config);
+
+// The configuration object is immutable
+// config.CommandTimeout = 90; // This would cause a compile error
+</code></pre>
+<h2 id="generic-builder-pattern">4. Generic Builder Pattern</h2>
+<p>A generic builder can be used for multiple types:</p>
+<h3 id="example-generic-object-builder">Example: Generic Object Builder</h3>
+<pre><code class="language-csharp">public class GenericBuilder&lt;T&gt; where T : new()
+{
+    private readonly T _instance;
+
+    public GenericBuilder()
+    {
+        _instance = new T();
+    }
+
+    public GenericBuilder&lt;T&gt; Set&lt;TProperty&gt;(
+        Expression&lt;Func&lt;T, TProperty&gt;&gt; propertyExpression, 
+        TProperty value)
+    {
+        if (propertyExpression.Body is MemberExpression memberExpression)
+        {
+            if (memberExpression.Member is PropertyInfo propertyInfo)
+            {
+                propertyInfo.SetValue(_instance, value);
+            }
+        }
+        return this;
+    }
+
+    public GenericBuilder&lt;T&gt; Configure(Action&lt;T&gt; configuration)
+    {
+        configuration(_instance);
+        return this;
+    }
+
+    public T Build() =&gt; _instance;
+}
+
+// Usage with any class
+public class Employee
+{
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
+    public string Email { get; set; }
+    public string Department { get; set; }
+    public decimal Salary { get; set; }
+    public DateTime HireDate { get; set; }
+}
+
+var employee = new GenericBuilder&lt;Employee&gt;()
+    .Set(e =&gt; e.FirstName, &quot;John&quot;)
+    .Set(e =&gt; e.LastName, &quot;Doe&quot;)
+    .Set(e =&gt; e.Email, &quot;john.doe@company.com&quot;)
+    .Set(e =&gt; e.Department, &quot;Engineering&quot;)
+    .Set(e =&gt; e.Salary, 75000m)
+    .Configure(e =&gt; e.HireDate = DateTime.Now)
+    .Build();
+</code></pre>
+<h2 id="builder-with-validation-and-error-handling">5. Builder with Validation and Error Handling</h2>
+<h3 id="example-user-registration-builder">Example: User Registration Builder</h3>
+<pre><code class="language-csharp">public class User
+{
+    public string Username { get; set; }
+    public string Email { get; set; }
+    public string Password { get; set; }
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
+    public DateTime DateOfBirth { get; set; }
+    public List&lt;string&gt; Roles { get; set; } = new();
+    public bool IsActive { get; set; } = true;
+}
+
+public class UserBuilder
+{
+    private readonly User _user;
+    private readonly List&lt;string&gt; _validationErrors;
+
+    public UserBuilder()
+    {
+        _user = new User();
+        _validationErrors = new List&lt;string&gt;();
+    }
+
+    public UserBuilder WithUsername(string username)
+    {
+        if (string.IsNullOrWhiteSpace(username))
+            _validationErrors.Add(&quot;Username is required&quot;);
+        else if (username.Length &lt; 3)
+            _validationErrors.Add(&quot;Username must be at least 3 characters&quot;);
+        else if (!username.All(c =&gt; char.IsLetterOrDigit(c) || c == '_'))
+            _validationErrors.Add(&quot;Username can only contain letters, digits, and underscores&quot;);
+        else
+            _user.Username = username;
+
+        return this;
+    }
+
+    public UserBuilder WithEmail(string email)
+    {
+        if (string.IsNullOrWhiteSpace(email))
+            _validationErrors.Add(&quot;Email is required&quot;);
+        else if (!IsValidEmail(email))
+            _validationErrors.Add(&quot;Invalid email format&quot;);
+        else
+            _user.Email = email;
+
+        return this;
+    }
+
+    public UserBuilder WithPassword(string password)
+    {
+        if (string.IsNullOrWhiteSpace(password))
+            _validationErrors.Add(&quot;Password is required&quot;);
+        else if (password.Length &lt; 8)
+            _validationErrors.Add(&quot;Password must be at least 8 characters&quot;);
+        else if (!password.Any(char.IsUpper))
+            _validationErrors.Add(&quot;Password must contain at least one uppercase letter&quot;);
+        else if (!password.Any(char.IsLower))
+            _validationErrors.Add(&quot;Password must contain at least one lowercase letter&quot;);
+        else if (!password.Any(char.IsDigit))
+            _validationErrors.Add(&quot;Password must contain at least one digit&quot;);
+        else
+            _user.Password = password;
+
+        return this;
+    }
+
+    public UserBuilder WithName(string firstName, string lastName)
+    {
+        if (string.IsNullOrWhiteSpace(firstName))
+            _validationErrors.Add(&quot;First name is required&quot;);
+        else
+            _user.FirstName = firstName;
+
+        if (string.IsNullOrWhiteSpace(lastName))
+            _validationErrors.Add(&quot;Last name is required&quot;);
+        else
+            _user.LastName = lastName;
+
+        return this;
+    }
+
+    public UserBuilder WithDateOfBirth(DateTime dateOfBirth)
+    {
+        var age = DateTime.Now.Year - dateOfBirth.Year;
+        if (dateOfBirth &gt; DateTime.Now.AddYears(-age)) age--;
+
+        if (age &lt; 13)
+            _validationErrors.Add(&quot;User must be at least 13 years old&quot;);
+        else if (age &gt; 120)
+            _validationErrors.Add(&quot;Invalid date of birth&quot;);
+        else
+            _user.DateOfBirth = dateOfBirth;
+
+        return this;
+    }
+
+    public UserBuilder AddRole(string role)
+    {
+        if (!string.IsNullOrWhiteSpace(role) &amp;&amp; !_user.Roles.Contains(role))
+            _user.Roles.Add(role);
+        return this;
+    }
+
+    public UserBuilder SetActive(bool isActive)
+    {
+        _user.IsActive = isActive;
+        return this;
+    }
+
+    public User Build()
+    {
+        if (_validationErrors.Any())
+        {
+            throw new ValidationException($&quot;User validation failed:\n&quot; +
+                string.Join(&quot;\n&quot;, _validationErrors));
+        }
+
+        return _user;
+    }
+
+    public bool IsValid =&gt; !_validationErrors.Any();
+    
+    public IReadOnlyList&lt;string&gt; ValidationErrors =&gt; _validationErrors.AsReadOnly();
+
+    private static bool IsValidEmail(string email)
+    {
+        try
+        {
+            var addr = new System.Net.Mail.MailAddress(email);
+            return addr.Address == email;
+        }
+        catch
+        {
+            return false;
+        }
+    }
+}
+
+public class ValidationException : Exception
+{
+    public ValidationException(string message) : base(message) { }
+}
+
+// Usage
+try
+{
+    var user = new UserBuilder()
+        .WithUsername(&quot;john_doe&quot;)
+        .WithEmail(&quot;john.doe@example.com&quot;)
+        .WithPassword(&quot;SecurePass123&quot;)
+        .WithName(&quot;John&quot;, &quot;Doe&quot;)
+        .WithDateOfBirth(new DateTime(1990, 5, 15))
+        .AddRole(&quot;User&quot;)
+        .AddRole(&quot;Editor&quot;)
+        .Build();
+
+    Console.WriteLine($&quot;User created: {user.Username}&quot;);
+}
+catch (ValidationException ex)
+{
+    Console.WriteLine($&quot;Validation failed: {ex.Message}&quot;);
+}
+
+// Check validation without throwing
+var builder = new UserBuilder()
+    .WithUsername(&quot;jo&quot;) // Too short
+    .WithEmail(&quot;invalid-email&quot;)
+    .WithPassword(&quot;weak&quot;);
+
+if (!builder.IsValid)
+{
+    Console.WriteLine(&quot;Validation errors:&quot;);
+    foreach (var error in builder.ValidationErrors)
+    {
+        Console.WriteLine($&quot;- {error}&quot;);
+    }
+}
+</code></pre>
+<h2 id="builder-with-dependency-injection">6. Builder with Dependency Injection</h2>
+<h3 id="example-service-configuration-builder">Example: Service Configuration Builder</h3>
+<pre><code class="language-csharp">public interface IEmailService
+{
+    Task SendEmailAsync(string to, string subject, string body);
+}
+
+public interface ILoggerService
+{
+    void Log(string message);
+}
+
+public class EmailService : IEmailService
+{
+    public async Task SendEmailAsync(string to, string subject, string body)
+    {
+        await Task.Delay(100); // Simulate async operation
+        Console.WriteLine($&quot;Email sent to {to}: {subject}&quot;);
+    }
+}
+
+public class LoggerService : ILoggerService
+{
+    public void Log(string message)
+    {
+        Console.WriteLine($&quot;[LOG] {DateTime.Now}: {message}&quot;);
+    }
+}
+
+public class NotificationConfiguration
+{
+    public string DefaultSender { get; set; }
+    public string Subject { get; set; }
+    public string Body { get; set; }
+    public List&lt;string&gt; Recipients { get; set; } = new();
+    public bool LogNotifications { get; set; }
+}
+
+public class NotificationBuilder
+{
+    private readonly NotificationConfiguration _config;
+    private readonly IEmailService _emailService;
+    private readonly ILoggerService _loggerService;
+
+    public NotificationBuilder(IEmailService emailService, ILoggerService loggerService)
+    {
+        _config = new NotificationConfiguration();
+        _emailService = emailService;
+        _loggerService = loggerService;
+    }
+
+    public NotificationBuilder From(string sender)
+    {
+        _config.DefaultSender = sender;
+        return this;
+    }
+
+    public NotificationBuilder WithSubject(string subject)
+    {
+        _config.Subject = subject;
+        return this;
+    }
+
+    public NotificationBuilder WithBody(string body)
+    {
+        _config.Body = body;
+        return this;
+    }
+
+    public NotificationBuilder To(string recipient)
+    {
+        _config.Recipients.Add(recipient);
+        return this;
+    }
+
+    public NotificationBuilder To(params string[] recipients)
+    {
+        _config.Recipients.AddRange(recipients);
+        return this;
+    }
+
+    public NotificationBuilder EnableLogging()
+    {
+        _config.LogNotifications = true;
+        return this;
+    }
+
+    public async Task SendAsync()
+    {
+        if (_config.LogNotifications)
+        {
+            _loggerService.Log($&quot;Sending notification to {_config.Recipients.Count} recipients&quot;);
+        }
+
+        var tasks = _config.Recipients.Select(recipient =&gt;
+            _emailService.SendEmailAsync(recipient, _config.Subject, _config.Body));
+
+        await Task.WhenAll(tasks);
+
+        if (_config.LogNotifications)
+        {
+            _loggerService.Log(&quot;All notifications sent successfully&quot;);
+        }
+    }
+}
+
+// Registration in DI container
+public static void RegisterServices(IServiceCollection services)
+{
+    services.AddTransient&lt;IEmailService, EmailService&gt;();
+    services.AddTransient&lt;ILoggerService, LoggerService&gt;();
+    services.AddTransient&lt;NotificationBuilder&gt;();
+}
+
+// Usage in a service or controller
+public class NotificationService
+{
+    private readonly IServiceProvider _serviceProvider;
+
+    public NotificationService(IServiceProvider serviceProvider)
+    {
+        _serviceProvider = serviceProvider;
+    }
+
+    public async Task SendWelcomeEmailAsync(string userEmail, string userName)
+    {
+        var builder = _serviceProvider.GetRequiredService&lt;NotificationBuilder&gt;();
+        
+        await builder
+            .From(&quot;noreply@myapp.com&quot;)
+            .WithSubject(&quot;Welcome to MyApp!&quot;)
+            .WithBody($&quot;Welcome {userName}! Thanks for joining us.&quot;)
+            .To(userEmail)
+            .EnableLogging()
+            .SendAsync();
+    }
+}
+</code></pre>
+<h2 id="advanced-builder-patterns">7. Advanced Builder Patterns</h2>
+<h3 id="example-expression-builder-for-dynamic-queries">Example: Expression Builder for Dynamic Queries</h3>
+<pre><code class="language-csharp">public class ExpressionBuilder&lt;T&gt;
+{
+    private Expression&lt;Func&lt;T, bool&gt;&gt; _expression;
+
+    public ExpressionBuilder()
+    {
+        _expression = x =&gt; true; // Start with always true
+    }
+
+    public ExpressionBuilder&lt;T&gt; And(Expression&lt;Func&lt;T, bool&gt;&gt; condition)
+    {
+        _expression = CombineExpressions(_expression, condition, Expression.AndAlso);
+        return this;
+    }
+
+    public ExpressionBuilder&lt;T&gt; Or(Expression&lt;Func&lt;T, bool&gt;&gt; condition)
+    {
+        _expression = CombineExpressions(_expression, condition, Expression.OrElse);
+        return this;
+    }
+
+    public ExpressionBuilder&lt;T&gt; Where(string propertyName, object value, ComparisonType comparison = ComparisonType.Equal)
+    {
+        var condition = CreatePropertyComparison(propertyName, value, comparison);
+        return And(condition);
+    }
+
+    public Expression&lt;Func&lt;T, bool&gt;&gt; Build() =&gt; _expression;
+
+    private static Expression&lt;Func&lt;T, bool&gt;&gt; CombineExpressions(
+        Expression&lt;Func&lt;T, bool&gt;&gt; first,
+        Expression&lt;Func&lt;T, bool&gt;&gt; second,
+        Func&lt;Expression, Expression, BinaryExpression&gt; merge)
+    {
+        var parameter = Expression.Parameter(typeof(T));
+        var leftVisitor = new ReplaceExpressionVisitor(first.Parameters[0], parameter);
+        var left = leftVisitor.Visit(first.Body);
+        var rightVisitor = new ReplaceExpressionVisitor(second.Parameters[0], parameter);
+        var right = rightVisitor.Visit(second.Body);
+        return Expression.Lambda&lt;Func&lt;T, bool&gt;&gt;(merge(left, right), parameter);
+    }
+
+    private static Expression&lt;Func&lt;T, bool&gt;&gt; CreatePropertyComparison(
+        string propertyName, 
+        object value, 
+        ComparisonType comparison)
+    {
+        var parameter = Expression.Parameter(typeof(T));
+        var property = Expression.Property(parameter, propertyName);
+        var constant = Expression.Constant(value);
+
+        Expression comparisonExpression = comparison switch
+        {
+            ComparisonType.Equal =&gt; Expression.Equal(property, constant),
+            ComparisonType.NotEqual =&gt; Expression.NotEqual(property, constant),
+            ComparisonType.GreaterThan =&gt; Expression.GreaterThan(property, constant),
+            ComparisonType.GreaterThanOrEqual =&gt; Expression.GreaterThanOrEqual(property, constant),
+            ComparisonType.LessThan =&gt; Expression.LessThan(property, constant),
+            ComparisonType.LessThanOrEqual =&gt; Expression.LessThanOrEqual(property, constant),
+            _ =&gt; throw new ArgumentOutOfRangeException(nameof(comparison))
+        };
+
+        return Expression.Lambda&lt;Func&lt;T, bool&gt;&gt;(comparisonExpression, parameter);
+    }
+}
+
+public enum ComparisonType
+{
+    Equal,
+    NotEqual,
+    GreaterThan,
+    GreaterThanOrEqual,
+    LessThan,
+    LessThanOrEqual
+}
+
+internal class ReplaceExpressionVisitor : ExpressionVisitor
+{
+    private readonly Expression _oldValue;
+    private readonly Expression _newValue;
+
+    public ReplaceExpressionVisitor(Expression oldValue, Expression newValue)
+    {
+        _oldValue = oldValue;
+        _newValue = newValue;
+    }
+
+    public override Expression Visit(Expression node)
+    {
+        return node == _oldValue ? _newValue : base.Visit(node);
+    }
+}
+
+// Usage with Entity Framework or similar
+public class Product
+{
+    public int Id { get; set; }
+    public string Name { get; set; }
+    public decimal Price { get; set; }
+    public string Category { get; set; }
+    public bool IsActive { get; set; }
+}
+
+// Usage
+var filterExpression = new ExpressionBuilder&lt;Product&gt;()
+    .Where(nameof(Product.IsActive), true)
+    .And(p =&gt; p.Price &gt; 10m)
+    .Where(nameof(Product.Category), &quot;Electronics&quot;)
+    .Build();
+
+// Use with Entity Framework
+// var products = dbContext.Products.Where(filterExpression).ToList();
+</code></pre>
+<h2 id="best-practices-and-guidelines">Best Practices and Guidelines</h2>
+<h3 id="when-to-use-builder-pattern">1. When to Use Builder Pattern</h3>
+<p><strong>Use Builder when:</strong></p>
+<ul>
+<li>Creating objects with many optional parameters (more than 3-4)</li>
+<li>Object construction requires multiple steps</li>
+<li>You need different representations of the same object</li>
+<li>You want to enforce immutability</li>
+<li>Complex validation is required during construction</li>
+</ul>
+<p><strong>Avoid Builder when:</strong></p>
+<ul>
+<li>Simple objects with few required parameters</li>
+<li>Object construction is straightforward</li>
+<li>Performance is critical (builders add overhead)</li>
+</ul>
+<h3 id="design-considerations">2. Design Considerations</h3>
+<pre><code class="language-csharp">public class BestPracticesBuilder&lt;T&gt; where T : class
+{
+    private readonly List&lt;Action&lt;T&gt;&gt; _buildActions = new();
+
+    // Return the builder type for fluent chaining
+    public BestPracticesBuilder&lt;T&gt; Configure(Action&lt;T&gt; action)
+    {
+        _buildActions.Add(action);
+        return this;
+    }
+
+    // Provide both Build() and implicit conversion
+    public T Build()
+    {
+        var instance = Activator.CreateInstance&lt;T&gt;();
+        foreach (var action in _buildActions)
+        {
+            action(instance);
+        }
+        return instance;
+    }
+
+    public static implicit operator T(BestPracticesBuilder&lt;T&gt; builder) =&gt; builder.Build();
+
+    // Allow reset for reuse
+    public BestPracticesBuilder&lt;T&gt; Reset()
+    {
+        _buildActions.Clear();
+        return this;
+    }
+}
+</code></pre>
+<h3 id="error-handling">3. Error Handling</h3>
+<pre><code class="language-csharp">public class RobustBuilder
+{
+    private readonly List&lt;string&gt; _errors = new();
+    private bool _built = false;
+
+    protected void AddError(string error)
+    {
+        _errors.Add(error);
+    }
+
+    protected void ValidateNotBuilt()
+    {
+        if (_built)
+            throw new InvalidOperationException(&quot;Builder has already been used to build an object&quot;);
+    }
+
+    protected void ValidateBeforeBuild()
+    {
+        if (_errors.Any())
+            throw new InvalidOperationException($&quot;Cannot build object with errors: {string.Join(&quot;, &quot;, _errors)}&quot;);
+    }
+
+    protected void MarkAsBuilt()
+    {
+        _built = true;
+    }
+
+    public bool HasErrors =&gt; _errors.Any();
+    public IReadOnlyList&lt;string&gt; Errors =&gt; _errors.AsReadOnly();
+}
+</code></pre>
+<h2 id="testing-builder-patterns">Testing Builder Patterns</h2>
+<pre><code class="language-csharp">[Test]
+public void ComputerBuilder_BuildGamingPC_CreatesValidConfiguration()
+{
+    // Arrange
+    var builder = new ComputerBuilder();
+
+    // Act
+    var computer = builder
+        .SetCPU(&quot;Intel i9&quot;)
+        .SetRAM(&quot;32GB&quot;)
+        .SetGPU(&quot;RTX 4080&quot;)
+        .AddWiFi()
+        .Build();
+
+    // Assert
+    Assert.AreEqual(&quot;Intel i9&quot;, computer.CPU);
+    Assert.AreEqual(&quot;32GB&quot;, computer.RAM);
+    Assert.AreEqual(&quot;RTX 4080&quot;, computer.GPU);
+    Assert.IsTrue(computer.HasWiFi);
+    Assert.IsFalse(computer.HasBluetooth);
+}
+
+[Test]
+public void UserBuilder_InvalidEmail_ThrowsValidationException()
+{
+    // Arrange
+    var builder = new UserBuilder();
+
+    // Act &amp; Assert
+    Assert.Throws&lt;ValidationException&gt;(() =&gt;
+        builder
+            .WithUsername(&quot;testuser&quot;)
+            .WithEmail(&quot;invalid-email&quot;)
+            .WithPassword(&quot;ValidPass123&quot;)
+            .Build());
+}
+
+[Test]
+public void SqlQueryBuilder_ComplexQuery_GeneratesCorrectSql()
+{
+    // Arrange &amp; Act
+    var sql = new SqlQueryBuilder()
+        .Select(&quot;u.Name&quot;, &quot;COUNT(o.Id)&quot;)
+        .From(&quot;Users u&quot;)
+        .Where(&quot;u.IsActive = 1&quot;)
+        .GroupBy(&quot;u.Name&quot;)
+        .OrderBy(&quot;u.Name&quot;)
+        .ToSql();
+
+    // Assert
+    Assert.Contains(&quot;SELECT u.Name, COUNT(o.Id)&quot;, sql);
+    Assert.Contains(&quot;FROM Users u&quot;, sql);
+    Assert.Contains(&quot;WHERE u.IsActive = 1&quot;, sql);
+    Assert.Contains(&quot;GROUP BY u.Name&quot;, sql);
+    Assert.Contains(&quot;ORDER BY u.Name ASC&quot;, sql);
+}
+</code></pre>
+<h2 id="performance-considerations">Performance Considerations</h2>
+<h3 id="object-pooling-with-builders">1. Object Pooling with Builders</h3>
+<pre><code class="language-csharp">public class PooledBuilder&lt;T&gt; where T : class, new()
+{
+    private static readonly ObjectPool&lt;T&gt; Pool = new DefaultObjectPool&lt;T&gt;(new DefaultPooledObjectPolicy&lt;T&gt;());
+
+    public T Build()
+    {
+        var instance = Pool.Get();
+        try
+        {
+            ConfigureInstance(instance);
+            return instance;
+        }
+        finally
+        {
+            // Reset the instance before returning to pool
+            if (instance is IResettable resettable)
+                resettable.Reset();
+        }
+    }
+
+    protected virtual void ConfigureInstance(T instance) { }
+}
+
+public interface IResettable
+{
+    void Reset();
+}
+</code></pre>
+<h3 id="avoiding-reflection">2. Avoiding Reflection</h3>
+<pre><code class="language-csharp">// Instead of reflection-based property setting
+public class FastBuilder&lt;T&gt;
+{
+    private readonly Dictionary&lt;string, Action&lt;T, object&gt;&gt; _setters;
+
+    public FastBuilder()
+    {
+        // Pre-compile property setters
+        _setters = typeof(T).GetProperties()
+            .Where(p =&gt; p.CanWrite)
+            .ToDictionary(
+                p =&gt; p.Name,
+                p =&gt; CreateSetter(p));
+    }
+
+    private static Action&lt;T, object&gt; CreateSetter(PropertyInfo property)
+    {
+        var target = Expression.Parameter(typeof(T));
+        var value = Expression.Parameter(typeof(object));
+        var convertedValue = Expression.Convert(value, property.PropertyType);
+        var propertyAccess = Expression.Property(target, property);
+        var assign = Expression.Assign(propertyAccess, convertedValue);
+        
+        return Expression.Lambda&lt;Action&lt;T, object&gt;&gt;(assign, target, value).Compile();
+    }
+}
+</code></pre>
+<h2 id="common-pitfalls-to-avoid">Common Pitfalls to Avoid</h2>
+<ol>
+<li><strong>Mutable Builders</strong>: Don't reuse builder instances unless you have a Reset method</li>
+<li><strong>Over-Engineering</strong>: Don't use builders for simple objects</li>
+<li><strong>Missing Validation</strong>: Always validate required fields</li>
+<li><strong>Thread Safety</strong>: Builders are typically not thread-safe</li>
+<li><strong>Memory Leaks</strong>: Be careful with event handlers and references in builders</li>
+</ol>
+<h2 id="integration-with-modern-c-features">Integration with Modern C# Features</h2>
+<h3 id="example-using-records-and-init-only-properties">Example: Using Records and Init-Only Properties</h3>
+<pre><code class="language-csharp">public record DatabaseConfig
+{
+    public string ConnectionString { get; init; } = &quot;&quot;;
+    public int CommandTimeout { get; init; } = 30;
+    public bool EnableRetries { get; init; } = false;
+    public int MaxRetries { get; init; } = 3;
+}
+
+public class DatabaseConfigBuilder
+{
+    private string _connectionString = &quot;&quot;;
+    private int _commandTimeout = 30;
+    private bool _enableRetries = false;
+    private int _maxRetries = 3;
+
+    public DatabaseConfigBuilder WithConnectionString(string connectionString)
+    {
+        _connectionString = connectionString;
+        return this;
+    }
+
+    public DatabaseConfigBuilder WithTimeout(int seconds)
+    {
+        _commandTimeout = seconds;
+        return this;
+    }
+
+    public DatabaseConfigBuilder EnableRetries(int maxRetries = 3)
+    {
+        _enableRetries = true;
+        _maxRetries = maxRetries;
+        return this;
+    }
+
+    public DatabaseConfig Build() =&gt; new()
+    {
+        ConnectionString = _connectionString,
+        CommandTimeout = _commandTimeout,
+        EnableRetries = _enableRetries,
+        MaxRetries = _maxRetries
+    };
+}
+</code></pre>
+<h2 id="conclusion">Conclusion</h2>
+<p>The Builder design pattern is an invaluable tool for constructing complex objects in a readable, maintainable way. It shines particularly well in C# due to the language's excellent support for fluent interfaces, method chaining, and type safety.</p>
+<p><strong>Key takeaways:</strong></p>
+<ul>
+<li><strong>Use builders for complex objects</strong> with many optional parameters</li>
+<li><strong>Fluent interfaces</strong> make code more readable and intuitive</li>
+<li><strong>Validation during construction</strong> prevents invalid objects</li>
+<li><strong>Immutable objects</strong> can be built step by step safely</li>
+<li><strong>Integration with DI containers</strong> makes builders even more powerful</li>
+<li><strong>Performance considerations</strong> matter for high-frequency scenarios</li>
+</ul>
+<p>The Builder pattern promotes the creation of clean, testable, and maintainable code. Whether you're building configuration objects, complex domain entities, or fluent APIs, the Builder pattern provides the flexibility and clarity your applications need.</p>
+<p>Remember to choose the right level of complexity for your use case - sometimes a simple constructor with optional parameters is sufficient, but when you need the power and flexibility of step-by-step construction, the Builder pattern is your best friend.</p>

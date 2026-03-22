@@ -1,0 +1,584 @@
+<p>Dependency Injection (DI) is a fundamental design pattern in modern .NET applications. However, implementing it correctly requires understanding several critical concepts. This guide explores DI beyond the basics, covering lifetimes, composition root patterns, decorators, and the anti-patterns that can undermine your architecture.</p>
+<h2 id="what-is-dependency-injection">What is Dependency Injection?</h2>
+<p>Dependency Injection is a technique for achieving loose coupling between objects by externalizing the creation and management of dependencies. Instead of a class creating its dependencies, it receives them from an external container or factory.</p>
+<pre><code class="language-csharp">// Without DI - tightly coupled
+public class OrderService
+{
+    private readonly PaymentProcessor _paymentProcessor = new PaymentProcessor();
+    
+    public void ProcessOrder(Order order)
+    {
+        _paymentProcessor.Process(order);
+    }
+}
+
+// With DI - loosely coupled
+public class OrderService
+{
+    private readonly IPaymentProcessor _paymentProcessor;
+    
+    public OrderService(IPaymentProcessor paymentProcessor)
+    {
+        _paymentProcessor = paymentProcessor;
+    }
+    
+    public void ProcessOrder(Order order)
+    {
+        _paymentProcessor.Process(order);
+    }
+}
+</code></pre>
+<h2 id="understanding-lifetimes">Understanding Lifetimes</h2>
+<p>The lifetime of a dependency determines how long an instance lives and whether it's reused across requests. This is crucial for memory management, state isolation, and thread safety.</p>
+<h3 id="transient-lifetime">Transient Lifetime</h3>
+<p><strong>Transient</strong> dependencies are created fresh every time they're requested. A new instance is created for each injection point.</p>
+<pre><code class="language-csharp">services.AddTransient&lt;IOrderRepository, OrderRepository&gt;();
+
+// Usage
+var logger1 = serviceProvider.GetService&lt;IOrderRepository&gt;();
+var logger2 = serviceProvider.GetService&lt;IOrderRepository&gt;();
+// logger1 and logger2 are different instances
+</code></pre>
+<p><strong>Use Transient when:</strong></p>
+<ul>
+<li>The service is stateless or holds only request-specific state</li>
+<li>You need to ensure no state is shared between operations</li>
+<li>The service is lightweight to create</li>
+</ul>
+<p><strong>Example:</strong></p>
+<pre><code class="language-csharp">public interface ILogger { }
+
+public class OrderLogger : ILogger
+{
+    private Guid _instanceId = Guid.NewGuid();
+}
+
+// Registering as transient
+services.AddTransient&lt;ILogger, OrderLogger&gt;();
+</code></pre>
+<h3 id="scoped-lifetime">Scoped Lifetime</h3>
+<p><strong>Scoped</strong> dependencies are created once per scope (typically per HTTP request in web applications). The same instance is reused throughout the scope.</p>
+<pre><code class="language-csharp">services.AddScoped&lt;IOrderRepository, OrderRepository&gt;();
+
+// In an HTTP request, the same OrderRepository instance is used
+// for all operations within that request
+</code></pre>
+<p><strong>Use Scoped when:</strong></p>
+<ul>
+<li>The service maintains state specific to a unit of work (request, transaction, etc.)</li>
+<li>You need to optimize database connections or other resources per request</li>
+<li>The service implements the Unit of Work pattern</li>
+</ul>
+<p><strong>Example:</strong></p>
+<pre><code class="language-csharp">public interface IUnitOfWork : IDisposable
+{
+    IOrderRepository Orders { get; }
+    IProductRepository Products { get; }
+    Task SaveChangesAsync();
+}
+
+public class UnitOfWork : IUnitOfWork
+{
+    public IOrderRepository Orders { get; }
+    public IProductRepository Products { get; }
+    
+    // Registered as scoped - ensures transactions stay consistent
+}
+
+services.AddScoped&lt;IUnitOfWork, UnitOfWork&gt;();
+</code></pre>
+<h3 id="singleton-lifetime">Singleton Lifetime</h3>
+<p><strong>Singleton</strong> dependencies are created once and reused throughout the application lifetime. There's only one instance for the entire application.</p>
+<pre><code class="language-csharp">services.AddSingleton&lt;IApplicationConfiguration, ApplicationConfiguration&gt;();
+
+// The same instance is used everywhere
+var config1 = serviceProvider.GetService&lt;IApplicationConfiguration&gt;();
+var config2 = serviceProvider.GetService&lt;IApplicationConfiguration&gt;();
+// config1 and config2 are the same instance
+</code></pre>
+<p><strong>Use Singleton when:</strong></p>
+<ul>
+<li>The service is stateless and thread-safe</li>
+<li>The service holds expensive resources (connection pools, caches)</li>
+<li>Configuration and settings that never change</li>
+<li>Services that provide shared caching</li>
+</ul>
+<p><strong>Example:</strong></p>
+<pre><code class="language-csharp">public interface IMemoryCache
+{
+    void Set&lt;T&gt;(string key, T value);
+    bool TryGetValue&lt;T&gt;(string key, out T value);
+}
+
+public class InMemoryCache : IMemoryCache
+{
+    private readonly ConcurrentDictionary&lt;string, object&gt; _cache 
+        = new();
+    
+    // Thread-safe operations
+    public void Set&lt;T&gt;(string key, T value)
+    {
+        _cache[key] = value;
+    }
+    
+    public bool TryGetValue&lt;T&gt;(string key, out T value)
+    {
+        if (_cache.TryGetValue(key, out var obj) &amp;&amp; obj is T typedValue)
+        {
+            value = typedValue;
+            return true;
+        }
+        value = default;
+        return false;
+    }
+}
+
+services.AddSingleton&lt;IMemoryCache, InMemoryCache&gt;();
+</code></pre>
+<h3 id="lifetime-comparison-table">Lifetime Comparison Table</h3>
+<table>
+<thead>
+<tr>
+<th>Lifetime</th>
+<th>Instance Count</th>
+<th>Reuse</th>
+<th>Memory</th>
+<th>Use Case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Transient</strong></td>
+<td>Every request</td>
+<td>No</td>
+<td>Low</td>
+<td>Stateless services</td>
+</tr>
+<tr>
+<td><strong>Scoped</strong></td>
+<td>Per scope (request)</td>
+<td>Within scope</td>
+<td>Medium</td>
+<td>Unit of work, DbContext</td>
+</tr>
+<tr>
+<td><strong>Singleton</strong></td>
+<td>Once</td>
+<td>Always</td>
+<td>Variable</td>
+<td>Config, caches, pools</td>
+</tr>
+</tbody>
+</table>
+<h2 id="the-composition-root-pattern">The Composition Root Pattern</h2>
+<p>The Composition Root is the sole location in your application where dependencies are configured and the entire object graph is instantiated. This is typically your application's startup.</p>
+<h3 id="purpose-of-composition-root">Purpose of Composition Root</h3>
+<ul>
+<li><strong>Single Responsibility:</strong> All dependency configuration is in one place</li>
+<li><strong>Testability:</strong> Makes it easy to swap implementations for testing</li>
+<li><strong>Consistency:</strong> Ensures dependency configuration is applied uniformly</li>
+<li><strong>Clarity:</strong> New developers can see the entire dependency structure</li>
+</ul>
+<h3 id="example-web-api-composition-root">Example: Web API Composition Root</h3>
+<pre><code class="language-csharp">// Program.cs - The Composition Root
+public static void Main(string[] args)
+{
+    var builder = WebApplication.CreateBuilder(args);
+    
+    // Register infrastructure
+    builder.Services.AddScoped&lt;IOrderRepository&gt;(provider =&gt;
+    {
+        var connectionString = builder.Configuration.GetConnectionString(&quot;Default&quot;);
+        return new SqlOrderRepository(connectionString);
+    });
+    
+    // Register services
+    builder.Services.AddScoped&lt;IOrderService, OrderService&gt;();
+    builder.Services.AddScoped&lt;IPaymentService, PaymentService&gt;();
+    
+    // Register cross-cutting concerns
+    builder.Services.AddSingleton&lt;ILogger&gt;(new ConsoleLogger());
+    builder.Services.AddScoped&lt;IUnitOfWork, UnitOfWork&gt;();
+    
+    var app = builder.Build();
+    
+    app.MapControllers();
+    app.Run();
+}
+</code></pre>
+<h3 id="multi-environment-composition-root">Multi-Environment Composition Root</h3>
+<pre><code class="language-csharp">public static void ConfigureServices(IServiceCollection services, 
+    IConfiguration config, IHostEnvironment env)
+{
+    if (env.IsDevelopment())
+    {
+        services.AddScoped&lt;IOrderRepository, MockOrderRepository&gt;();
+        services.AddScoped&lt;IPaymentProcessor, MockPaymentProcessor&gt;();
+    }
+    else
+    {
+        services.AddScoped&lt;IOrderRepository, SqlOrderRepository&gt;();
+        services.AddScoped&lt;IPaymentProcessor, StripePaymentProcessor&gt;();
+    }
+    
+    // Shared services
+    services.AddSingleton&lt;IApplicationSettings, ApplicationSettings&gt;();
+    services.AddScoped&lt;IOrderService, OrderService&gt;();
+}
+</code></pre>
+<h2 id="the-decorator-pattern-with-di">The Decorator Pattern with DI</h2>
+<p>The Decorator Pattern allows you to dynamically extend object functionality without altering the original code. It's particularly powerful when combined with dependency injection.</p>
+<h3 id="basic-decorator-implementation">Basic Decorator Implementation</h3>
+<pre><code class="language-csharp">public interface IOrderService
+{
+    Task&lt;Order&gt; GetOrderAsync(int orderId);
+    Task ProcessOrderAsync(Order order);
+}
+
+public class OrderService : IOrderService
+{
+    private readonly IOrderRepository _repository;
+    
+    public OrderService(IOrderRepository repository)
+    {
+        _repository = repository;
+    }
+    
+    public async Task&lt;Order&gt; GetOrderAsync(int orderId)
+    {
+        return await _repository.GetOrderAsync(orderId);
+    }
+    
+    public async Task ProcessOrderAsync(Order order)
+    {
+        // Core business logic
+        order.Status = OrderStatus.Processing;
+        await _repository.UpdateOrderAsync(order);
+    }
+}
+
+// Decorator: Logging
+public class LoggingOrderServiceDecorator : IOrderService
+{
+    private readonly IOrderService _innerService;
+    private readonly ILogger _logger;
+    
+    public LoggingOrderServiceDecorator(IOrderService innerService, ILogger logger)
+    {
+        _innerService = innerService;
+        _logger = logger;
+    }
+    
+    public async Task&lt;Order&gt; GetOrderAsync(int orderId)
+    {
+        _logger.Log($&quot;Getting order {orderId}&quot;);
+        var result = await _innerService.GetOrderAsync(orderId);
+        _logger.Log($&quot;Retrieved order {orderId}&quot;);
+        return result;
+    }
+    
+    public async Task ProcessOrderAsync(Order order)
+    {
+        _logger.Log($&quot;Processing order {order.Id}&quot;);
+        await _innerService.ProcessOrderAsync(order);
+        _logger.Log($&quot;Order {order.Id} processed&quot;);
+    }
+}
+
+// Decorator: Caching
+public class CachingOrderServiceDecorator : IOrderService
+{
+    private readonly IOrderService _innerService;
+    private readonly IMemoryCache _cache;
+    
+    public CachingOrderServiceDecorator(IOrderService innerService, IMemoryCache cache)
+    {
+        _innerService = innerService;
+        _cache = cache;
+    }
+    
+    public async Task&lt;Order&gt; GetOrderAsync(int orderId)
+    {
+        var cacheKey = $&quot;order_{orderId}&quot;;
+        
+        if (_cache.TryGetValue(cacheKey, out Order cachedOrder))
+            return cachedOrder;
+        
+        var order = await _innerService.GetOrderAsync(orderId);
+        _cache.Set(cacheKey, order, TimeSpan.FromHours(1));
+        return order;
+    }
+    
+    public Task ProcessOrderAsync(Order order)
+    {
+        // Clear cache for this order
+        _cache.Remove($&quot;order_{order.Id}&quot;);
+        return _innerService.ProcessOrderAsync(order);
+    }
+}
+
+// Decorator: Audit/Validation
+public class ValidatingOrderServiceDecorator : IOrderService
+{
+    private readonly IOrderService _innerService;
+    private readonly IValidator&lt;Order&gt; _validator;
+    
+    public ValidatingOrderServiceDecorator(IOrderService innerService, 
+        IValidator&lt;Order&gt; validator)
+    {
+        _innerService = innerService;
+        _validator = validator;
+    }
+    
+    public async Task&lt;Order&gt; GetOrderAsync(int orderId)
+    {
+        if (orderId &lt;= 0)
+            throw new ArgumentException(&quot;Invalid order ID&quot;);
+        
+        return await _innerService.GetOrderAsync(orderId);
+    }
+    
+    public async Task ProcessOrderAsync(Order order)
+    {
+        var validationResult = await _validator.ValidateAsync(order);
+        if (!validationResult.IsValid)
+            throw new ValidationException(validationResult.Errors);
+        
+        await _innerService.ProcessOrderAsync(order);
+    }
+}
+</code></pre>
+<h3 id="stacking-decorators-in-di-container">Stacking Decorators in DI Container</h3>
+<pre><code class="language-csharp">// Register the core service
+services.AddScoped&lt;OrderService&gt;();
+
+// Register decorators
+services.AddScoped&lt;IOrderService&gt;(provider =&gt;
+{
+    var coreService = provider.GetRequiredService&lt;OrderService&gt;();
+    
+    // Apply decorators in order (innermost to outermost)
+    IOrderService decorated = coreService;
+    
+    // First decorator: validation
+    decorated = new ValidatingOrderServiceDecorator(
+        decorated, 
+        provider.GetRequiredService&lt;IValidator&lt;Order&gt;&gt;()
+    );
+    
+    // Second decorator: caching
+    decorated = new CachingOrderServiceDecorator(
+        decorated, 
+        provider.GetRequiredService&lt;IMemoryCache&gt;()
+    );
+    
+    // Third decorator: logging (outermost)
+    decorated = new LoggingOrderServiceDecorator(
+        decorated, 
+        provider.GetRequiredService&lt;ILogger&gt;()
+    );
+    
+    return decorated;
+});
+</code></pre>
+<h3 id="decorator-benefits">Decorator Benefits</h3>
+<ul>
+<li><strong>Separation of Concerns:</strong> Each decorator handles one responsibility</li>
+<li><strong>Composition Over Inheritance:</strong> Flexible combinations without deep hierarchies</li>
+<li><strong>Open/Closed Principle:</strong> Open for extension, closed for modification</li>
+<li><strong>Reusability:</strong> Decorators can wrap different implementations</li>
+</ul>
+<h2 id="common-anti-patterns">Common Anti-Patterns</h2>
+<h3 id="anti-pattern-1-service-locator">Anti-Pattern 1: Service Locator</h3>
+<p>The Service Locator pattern masks dependencies and makes them implicit. It's considered an anti-pattern because it hides what your class actually needs.</p>
+<pre><code class="language-csharp">// ❌ ANTI-PATTERN: Service Locator
+public class OrderService
+{
+    private readonly IServiceProvider _serviceProvider;
+    
+    public OrderService(IServiceProvider serviceProvider)
+    {
+        _serviceProvider = serviceProvider;
+    }
+    
+    public void ProcessOrder(Order order)
+    {
+        // Hidden dependencies!
+        var paymentProcessor = _serviceProvider.GetService&lt;IPaymentProcessor&gt;();
+        var emailService = _serviceProvider.GetService&lt;IEmailService&gt;();
+        var logger = _serviceProvider.GetService&lt;ILogger&gt;();
+        
+        // Use services...
+    }
+}
+
+// ✅ CORRECT: Explicit Dependencies
+public class OrderService
+{
+    private readonly IPaymentProcessor _paymentProcessor;
+    private readonly IEmailService _emailService;
+    private readonly ILogger _logger;
+    
+    public OrderService(IPaymentProcessor paymentProcessor, 
+        IEmailService emailService, ILogger logger)
+    {
+        _paymentProcessor = paymentProcessor;
+        _emailService = emailService;
+        _logger = logger;
+    }
+    
+    public void ProcessOrder(Order order)
+    {
+        _paymentProcessor.Process(order);
+        _emailService.SendConfirmation(order);
+        _logger.Log($&quot;Order {order.Id} processed&quot;);
+    }
+}
+</code></pre>
+<h3 id="anti-pattern-2-captive-dependency">Anti-Pattern 2: Captive Dependency</h3>
+<p>A captive dependency occurs when a longer-lived dependency holds a reference to a shorter-lived dependency. This can cause issues like leaked state or unexpected behavior.</p>
+<pre><code class="language-csharp">// ❌ ANTI-PATTERN: Captive Dependency
+services.AddSingleton&lt;IOrderRepository, OrderRepository&gt;();
+services.AddScoped&lt;DbContext&gt;();
+
+public class OrderRepository
+{
+    private readonly DbContext _dbContext; // Scoped, but held by Singleton!
+    
+    public OrderRepository(DbContext dbContext)
+    {
+        _dbContext = dbContext; // DbContext lives longer than intended
+    }
+}
+
+// ✅ CORRECT: Match Lifetimes
+services.AddScoped&lt;IOrderRepository, OrderRepository&gt;();
+services.AddScoped&lt;DbContext&gt;();
+
+// Or use a factory
+services.AddSingleton&lt;IOrderRepositoryFactory&gt;(provider =&gt;
+    new OrderRepositoryFactory(
+        () =&gt; provider.CreateScope().ServiceProvider.GetRequiredService&lt;DbContext&gt;()
+    )
+);
+</code></pre>
+<h3 id="anti-pattern-3-mutable-dependencies">Anti-Pattern 3: Mutable Dependencies</h3>
+<p>Passing mutable objects through the DI container can lead to unexpected state changes and race conditions.</p>
+<pre><code class="language-csharp">// ❌ ANTI-PATTERN: Mutable Singleton
+public class AppSettings
+{
+    public string ConnectionString { get; set; }
+    public int MaxConnections { get; set; }
+}
+
+services.AddSingleton(new AppSettings 
+{ 
+    ConnectionString = &quot;...&quot;, 
+    MaxConnections = 10 
+});
+
+// Anti-Pattern 4: Ambient Context / Static Service Locator
+
+// ❌ ANTI-PATTERN: Ambient Context
+public static class ServiceContext
+{
+    public static IOrderService OrderService { get; set; }
+    
+    public static void ProcessOrder(Order order)
+    {
+        OrderService.Process(order); // Where does this come from?
+    }
+}
+
+// ✅ CORRECT: Immutable Configuration
+public record AppSettings(string ConnectionString, int MaxConnections);
+
+services.AddSingleton&lt;AppSettings&gt;(
+    new AppSettings(config[&quot;ConnectionString&quot;], 10)
+);
+</code></pre>
+<h3 id="anti-pattern-4-creating-dependencies-inside-services">Anti-Pattern 4: Creating Dependencies Inside Services</h3>
+<p>Services should not create their own dependencies. This defeats the purpose of DI.</p>
+<pre><code class="language-csharp">// ❌ ANTI-PATTERN: Creating Dependencies
+public class OrderService
+{
+    public void ProcessOrder(Order order)
+    {
+        var paymentProcessor = new PaymentProcessor(); // Hard to test, tightly coupled
+        paymentProcessor.Process(order);
+    }
+}
+
+// ✅ CORRECT: Injected Dependencies
+public class OrderService
+{
+    private readonly IPaymentProcessor _paymentProcessor;
+    
+    public OrderService(IPaymentProcessor paymentProcessor)
+    {
+        _paymentProcessor = paymentProcessor;
+    }
+    
+    public void ProcessOrder(Order order)
+    {
+        _paymentProcessor.Process(order);
+    }
+}
+</code></pre>
+<h3 id="anti-pattern-5-dependency-hell-too-many-dependencies">Anti-Pattern 5: Dependency Hell (Too Many Dependencies)</h3>
+<p>When a class requires many dependencies, it's a sign of too many responsibilities.</p>
+<pre><code class="language-csharp">// ❌ ANTI-PATTERN: Too Many Dependencies
+public class OrderService
+{
+    public OrderService(
+        IOrderRepository orderRepository,
+        IPaymentProcessor paymentProcessor,
+        IEmailService emailService,
+        ILogger logger,
+        IInventoryService inventoryService,
+        ITaxCalculator taxCalculator,
+        IDiscountEngine discountEngine,
+        IAuditService auditService,
+        INotificationService notificationService,
+        ICacheService cacheService)
+    {
+        // Constructor becomes unwieldy
+    }
+}
+
+// ✅ CORRECT: Extract Composed/Aggregate Services
+public class OrderProcessingPipeline
+{
+    private readonly IPaymentProcessor _paymentProcessor;
+    private readonly IInventoryService _inventoryService;
+    private readonly ITaxCalculator _taxCalculator;
+    private readonly IDiscountEngine _discountEngine;
+    // ... composed behavior
+}
+
+public class OrderService
+{
+    private readonly IOrderRepository _orderRepository;
+    private readonly OrderProcessingPipeline _pipeline;
+    private readonly ILogger _logger;
+    
+    public OrderService(IOrderRepository orderRepository, 
+        OrderProcessingPipeline pipeline, ILogger logger)
+    {
+        // Much cleaner
+    }
+}
+</code></pre>
+<h2 id="best-practices">Best Practices</h2>
+<ol>
+<li><strong>Keep Composition Root Simple:</strong> Use extension methods for organized registration</li>
+<li><strong>Prefer Constructor Injection:</strong> It makes dependencies explicit and testable</li>
+<li><strong>Use Appropriate Lifetimes:</strong> Understand the implications of each lifetime</li>
+<li><strong>Avoid Circular Dependencies:</strong> Redesign your architecture if this occurs</li>
+<li><strong>Favor Composition Over Inheritance:</strong> Use decorators and composition for flexibility</li>
+<li><strong>Test Your DI Configuration:</strong> Ensure services are properly wired</li>
+<li><strong>Document Complex Decorators:</strong> Especially when stacking multiple decorators</li>
+<li><strong>Use Named Registrations Sparingly:</strong> Prefer clear interfaces instead</li>
+</ol>
+<h2 id="conclusion">Conclusion</h2>
+<p>Dependency Injection is powerful when implemented correctly. By understanding lifetimes, using composition root patterns, leveraging decorators, and avoiding common anti-patterns, you'll build maintainable, testable, and flexible applications. The key is thinking about dependencies as a first-class concern in your application architecture.</p>

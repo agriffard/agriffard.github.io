@@ -1,0 +1,30 @@
+<p>Orchard Core is available in <a href="https://github.com/OrchardCMS/OrchardCore/releases/tag/1.0.0-rc2">RC2</a>.</p>
+<h2 id="what-is-orchard-core">What is Orchard Core?</h2>
+<p>Orchard Core Framework is an application framework for building modular, multi-tenant applications on ASP.NET Core.</p>
+<p>Or you can use Orchard Core CMS, a Web Content Management System (CMS) built on top of the Orchard Core Framework, that allows you to build full websites, or headless websites using GraphQL.</p>
+<h2 id="getting-started">Getting Started</h2>
+<h3 id="installing-the-templates">Installing the templates</h3>
+<p>You can install the recommended templates by running:</p>
+<p><code>dotnet new -i OrchardCore.ProjectTemplates::1.0.0-*</code></p>
+<h3 id="creating-a-new-modular-application">Creating a new modular application</h3>
+<p>Using the templates, a modular MVC application can be created by running:</p>
+<p><code>dotnet new ocmvc -n MySite</code></p>
+<p>And a module is created by running:</p>
+<p><code>dotnet new ocmodulemvc -n MyModuledotnet add MySite reference MyModule</code></p>
+<h3 id="creating-a-cms-website">Creating a CMS website</h3>
+<p>If you want to create new site based on the Orchard Core CMS you only need to run this:</p>
+<p><code>dotnet new occms -n MySitedotnet run --project .\MySite\MySite.csproj</code></p>
+<p>After going through the setup form you get a working Blog.</p>
+<h2 id="whats-new">What's new</h2>
+<p>Orchard Core is the product of more than <strong>150 contributors</strong>, and has now <a href="https://github.com/orchardcms/orchardcore">4K stars on GitHub</a>.</p>
+<p>Some notable improvements include:</p>
+<ul>
+<li>Content localization support, and pre-configured localized Setup experience</li>
+<li>Improved block content management experience</li>
+<li>Sitemaps management</li>
+<li>Azure support improvements</li>
+</ul>
+<h2 id="resources">Resources</h2>
+<p>The Orchard Core source code is available on <a href="https://github.com/OrchardCMS/OrchardCore">GitHub</a>.</p>
+<p>There are still many important pieces to add and you might want to check our <a href="https://github.com/OrchardCMS/OrchardCore/wiki/Roadmap">roadmap</a>, but it's also the best time to jump into the project and start contributing new modules, themes, improvements, or just ideas.</p>
+<p>Feel free to drop on our dedicated <a href="https://gitter.im/OrchardCMS/OrchardCore">Gitter chat</a> and ask questions.</p>

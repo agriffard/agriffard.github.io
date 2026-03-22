@@ -1,0 +1,30 @@
+<p>JSON Web Tokens, commonly known as JWTs, are a compact and self-contained way for securely transmitting information between parties as a JSON object. This information can be verified and trusted because it is digitally signed. JWTs are often used for authentication and authorization in web applications and APIs.</p>
+<h2 id="how-jwt-authentication-works">How JWT Authentication Works</h2>
+<p>The process of authenticating a user and granting them access to a protected API endpoint using JWTs can be broken down into the following steps:</p>
+<ol>
+<li><strong>User Authentication:</strong> The user first authenticates with the server using their credentials (e.g., username and password).</li>
+<li><strong>Token Generation:</strong> If the credentials are valid, the server generates a JWT. This token contains a payload of information about the user, such as their user ID and roles, as well as an expiration time. The token is then signed with a secret key that is only known to the server.</li>
+<li><strong>Token Transmission:</strong> The server sends the JWT back to the client, which stores it locally (e.g., in local storage or a cookie).</li>
+<li><strong>Subsequent Requests:</strong> For every subsequent request to a protected API endpoint, the client includes the JWT in the <code>Authorization</code> header as a Bearer token.</li>
+<li><strong>Token Verification:</strong> The API server receives the request, extracts the JWT, and verifies its signature using the same secret key. It also checks if the token has expired.</li>
+<li><strong>Access Grant/Denial:</strong> If the token is valid and has not expired, the server trusts the information within the payload and grants access to the requested resource. If the token is invalid or has expired, access is denied.</li>
+</ol>
+<h2 id="structure-of-a-jwt">Structure of a JWT</h2>
+<p>A JWT consists of three parts, separated by dots (<code>.</code>):</p>
+<ul>
+<li><strong>Header:</strong> The header typically consists of two parts: the type of the token, which is JWT, and the signing algorithm being used, such as HMAC SHA256 or RSA.</li>
+<li><strong>Payload:</strong> The payload contains the claims. Claims are statements about an entity (typically, the user) and additional data. There are three types of claims: registered, public, and private.</li>
+<li><strong>Signature:</strong> The signature is used to verify that the sender of the JWT is who it says it is and to ensure that the message hasn't been changed along the way.</li>
+</ul>
+<p>Here is an example of a JWT:</p>
+<pre><code>eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
+</code></pre>
+<h2 id="benefits-of-using-jwts">Benefits of Using JWTs</h2>
+<p>There are several benefits to using JWTs for authentication and authorization:</p>
+<ul>
+<li><strong>Statelessness:</strong> The server does not need to store session information, which makes it highly scalable.</li>
+<li><strong>Decentralization:</strong> JWTs can be used across multiple services without the need for sharing session state.</li>
+<li><strong>Security:</strong> Signed tokens ensure the integrity and authenticity of the information they contain.</li>
+</ul>
+<h2 id="conclusion">Conclusion</h2>
+<p>JWTs are a powerful tool for authentication and authorization in web applications and APIs. They are a compact, self-contained, and secure way to transmit information between parties. By understanding how JWTs work, you can use them to build more secure and scalable applications.</p>

@@ -1,0 +1,149 @@
+<h2 id="overview">Overview</h2>
+<p>During the end-of-year holidays 2025, I embarked on an ambitious experiment: <strong>leverage AI agents to rapidly prototype and implement a suite of C# .NET libraries and application samples</strong>. This post shares my findings on how GitHub Copilot and Claude Opus can effectively co-work with a senior developer to validate ideas, build prototypes, and test new features at unprecedented speed.</p>
+<h2 id="the-experiment">The Experiment</h2>
+<p>As a Senior Developer, I wanted to test the hypothesis: <em>Can AI agents help bridge the gap between architecture and rapid implementation, enabling faster iteration and validation?</em></p>
+<p><strong>Methodology:</strong></p>
+<ol>
+<li>Define project requirements using PRD (Product Requirements Document) files</li>
+<li>Request GitHub Copilot/Claude Opus to implement the features</li>
+<li>Review and validate the generated code</li>
+<li>Iterate based on feedback and requirements</li>
+<li>Document learnings and best practices</li>
+</ol>
+<p>This approach allowed me to create <strong>multiple production-ready libraries and samples</strong> in weeks rather than months.</p>
+<h2 id="projects-created">Projects Created</h2>
+<p>All repositories are available at: <a href="https://github.com/agriffard?tab=repositories">github.com/agriffard?tab=repositories</a></p>
+<h3 id="core-libraries">Core Libraries</h3>
+<h4 id="aspnetcore.foundation"><strong>AspNetCore.Foundation</strong></h4>
+<p>A plug &amp; play middleware pack for ASP.NET Core applications including:</p>
+<ul>
+<li>Correlation ID tracking</li>
+<li>Exception handling</li>
+<li>Request timing</li>
+</ul>
+<h4 id="efcore.tagging"><strong>EFCore.Tagging</strong></h4>
+<p>A simple and standardized API to automatically apply <code>TagWith</code> to EF Core queries for improved debugging, observability, and SQL performance analysis.</p>
+<h4 id="efinsight"><strong>EFInsight</strong></h4>
+<p>A lightweight library for detecting, logging, and analyzing slow or problematic EF Core queries.</p>
+<h4 id="entitykit"><strong>EntityKit</strong></h4>
+<p>A standardized set of interfaces and base classes for structuring C# and EF Core entities.</p>
+<h4 id="entitymapper.generator"><strong>EntityMapper.Generator</strong></h4>
+<p>A high-performance C# Incremental Source Generator for .NET 10 that generates compile-time-safe mapping extension methods between Entity Framework Core entities and DTOs.</p>
+<h3 id="data-query-libraries">Data &amp; Query Libraries</h3>
+<h4 id="efsearch"><strong>EFSearch</strong></h4>
+<p>A dynamic, type-safe search library for .NET that transforms search requests into Expression Trees for <code>IQueryable</code>. Perfect for building APIs with filtering, sorting, and pagination capabilities.</p>
+<h4 id="querify"><strong>Querify</strong></h4>
+<p>A lightweight .NET library for building dynamic LINQ expressions and <code>IQueryable</code> extensions for filtering, sorting, and pagination.</p>
+<h4 id="dynamicviews"><strong>DynamicViews</strong></h4>
+<p>A .NET library for creating, organizing and saving dynamic views with customizable filters, sorting, and pagination. Compatible with EF Core and Blazor.</p>
+<h4 id="exprmap"><strong>ExprMap</strong></h4>
+<p>A source generator for EF Core that automatically generates DTOs and type-safe projection expressions from your entity models.</p>
+<h3 id="data-access-caching">Data Access &amp; Caching</h3>
+<h4 id="efprojectioncache"><strong>EFProjectionCache</strong></h4>
+<p>A strongly-typed projection cache for EF Core with automatic and transitive invalidation using FusionCache.</p>
+<h4 id="decoratory"><strong>Decoratory</strong></h4>
+<p>A .NET library providing composable, Scrutor-based decorators over generic repositories. It enables clean, extensible data-access pipelines for cross-cutting concerns such as logging, validation, caching, metrics, resilience, and security.</p>
+<h3 id="business-logic-tracking">Business Logic &amp; Tracking</h3>
+<h4 id="softtrack"><strong>SoftTrack</strong></h4>
+<p>A .NET library for managing entities with Soft Delete and Version Tracking support for Entity Framework Core.</p>
+<h4 id="audit"><strong>Audit</strong></h4>
+<p>A centralized mechanism for tracking and historizing all EF Core entity modifications, enabling audit, compliance, and change analysis.</p>
+<h4 id="reportengine"><strong>ReportEngine</strong></h4>
+<p>A .NET library for generating dynamic reports and exports from EF Core entities, with support for filtering, sorting, pagination, and multiple export formats (CSV, Excel, JSON).</p>
+<h3 id="permissions-workflows">Permissions &amp; Workflows</h3>
+<h4 id="permissionmatrix"><strong>PermissionMatrix</strong></h4>
+<p>A centralized .NET library for managing and applying dynamic permissions by role and resource, secure, typed and extensible.</p>
+<h4 id="statusflow"><strong>StatusFlow</strong></h4>
+<p>A lightweight .NET library for modeling, visualizing, and executing business status workflows based on enums, with actions, rules, and integrated Blazor UI components.</p>
+<h3 id="applications-tools">Applications &amp; Tools</h3>
+<h4 id="neat-admin"><strong>Neat Admin</strong></h4>
+<p>A Blazor Server admin panel for managing Countries, Contacts, and Addresses with RBAC features.</p>
+<h4 id="blazorchoices"><strong>BlazorChoices</strong></h4>
+<p>A Blazor component library that wraps Choices.js to provide enhanced select and input elements with search, tags, and more.
+See live demo: <a href="https://antoinegriffard.com/BlazorChoices/">antoinegriffard.com/BlazorChoices/</a></p>
+<h2 id="key-learnings-ai-assisted-development">Key Learnings: AI-Assisted Development</h2>
+<h3 id="what-worked-exceptionally-well">✅ What Worked Exceptionally Well</h3>
+<p><strong>1. PRD-Driven Development</strong>
+Creating detailed Product Requirements Documents before coding sessions yielded the best results. AI agents performed excellently when given:</p>
+<ul>
+<li>Clear use cases and examples</li>
+<li>Specific API design expectations</li>
+<li>Edge cases and validation rules</li>
+<li>Performance requirements</li>
+</ul>
+<p><strong>2. Rapid Iteration</strong>
+The feedback loop between human review and AI implementation was remarkably fast. Typical workflow:</p>
+<ul>
+<li>Request feature implementation: 2-5 minutes</li>
+<li>Review generated code: 10-15 minutes</li>
+<li>Request refinements: 5-10 minutes per iteration</li>
+<li>Ship to production: negligible</li>
+</ul>
+<p><strong>3. Boilerplate Reduction</strong>
+AI agents excelled at generating:</p>
+<ul>
+<li>Repetitive infrastructure code (configuration, DI setup)</li>
+<li>Test scaffolding and fixtures</li>
+<li>Documentation and XML comments</li>
+<li>Configuration files (csproj, launchSettings, etc.)</li>
+</ul>
+<p><strong>4. Architecture Validation</strong>
+AI agents helped validate architectural decisions by implementing them end-to-end, revealing issues early that might otherwise surface in production.</p>
+<p><strong>5. Cross-Cutting Concerns</strong>
+Pattern implementation for logging, validation, caching, and error handling was swift and consistent across projects.</p>
+<h3 id="challenges-limitations">⚠️ Challenges &amp; Limitations</h3>
+<p><strong>1. Deep Domain Logic</strong>
+Complex business logic involving multiple entities and state transitions required human oversight. AI agents sometimes oversimplified or missed edge cases.</p>
+<p><strong>2. Performance Optimization</strong>
+Initial implementations were functionally correct but not optimized. SQL query generation in LINQ providers needed refinement for production workloads.</p>
+<p><strong>3. Context Window Management</strong>
+Larger projects sometimes exceeded context limits, requiring strategic file breakdowns and focused sessions.</p>
+<p><strong>4. Dependency Management</strong>
+AI occasionally suggested packages without considering existing ecosystem compatibility or project constraints.</p>
+<h2 id="best-practices-for-ai-assisted-development">Best Practices for AI-Assisted Development</h2>
+<h3 id="write-comprehensive-prds">1. <strong>Write Comprehensive PRDs</strong></h3>
+<pre><code>- Problem statement
+- User stories with examples
+- API design expectations
+- Validation &amp; error handling rules
+- Performance requirements
+- Extensibility points
+</code></pre>
+<h3 id="start-with-interfaces">2. <strong>Start with Interfaces</strong></h3>
+<p>Define public APIs and contracts before requesting implementations. This guides AI agents toward better architecture.</p>
+<h3 id="review-unit-tests-first">3. <strong>Review Unit Tests First</strong></h3>
+<p>Always ask AI to implement tests alongside features. Good tests reveal implementation quality immediately.</p>
+<h3 id="maintain-human-oversight">4. <strong>Maintain Human Oversight</strong></h3>
+<p>AI agents should be co-workers, not replacements. Critical decisions about:</p>
+<ul>
+<li>Architecture patterns</li>
+<li>Dependency choices</li>
+<li>Performance trade-offs</li>
+<li>Security implications</li>
+</ul>
+<p>...should remain with experienced developers.</p>
+<h3 id="use-focused-sessions">5. <strong>Use Focused Sessions</strong></h3>
+<p>Break large projects into 30-60 minute focused sessions with specific scopes. This prevents context bloat and maintains quality.</p>
+<h3 id="version-control-everything">6. <strong>Version Control Everything</strong></h3>
+<p>Treat AI-generated code like any external contribution. Use branches, code review, and CI/CD pipelines.</p>
+<h2 id="tools-models-used">Tools &amp; Models Used</h2>
+<ul>
+<li><strong>GitHub Copilot</strong>: Quick implementation and code suggestions</li>
+<li><strong>Claude Opus</strong>: Strategic architecture guidance and complex logic</li>
+<li><strong>Visual Studio</strong>: IDE integration for seamless workflow</li>
+</ul>
+<h2 id="conclusion">Conclusion</h2>
+<p>AI agents have demonstrated exceptional value in <strong>rapid prototyping, boilerplate reduction, and productivity acceleration</strong>. However, they work best as <strong>co-workers alongside experienced developers</strong>, not as replacements.</p>
+<p>The projects created during this holiday break prove that:</p>
+<ul>
+<li>✅ Senior developers can leverage AI to validate and implement multiple ideas quickly</li>
+<li>✅ PRD-driven development + AI implementation = faster iteration</li>
+<li>✅ Code quality remains high when guided by human oversight</li>
+<li>✅ AI excels at well-defined, structured problems</li>
+</ul>
+<p>Whether you're prototyping new ideas, exploring architectural patterns, or building a library ecosystem, <strong>AI agents can be your most productive pair programmer</strong>.</p>
+<h2 id="next-steps">Next Steps</h2>
+<p>All projects are open-source and available on GitHub. Contributions and feedback are welcome!</p>
+<p>Looking forward to exploring more ways to collaborate with AI agents in 2026.</p>
+<hr />
+<p><strong>What's your experience with AI-assisted development? Share your thoughts in the comments!</strong></p>
