@@ -1,6 +1,23 @@
 {
-  "generatedAt": "2026-03-22T14:32:26.9113743Z",
+  "generatedAt": "2026-03-25T20:56:02.0000382Z",
   "posts": [
+    {
+      "slug": "sharpen-your-axe",
+      "title": "AI \u0026 Development: Sharpen your axe before coding",
+      "pubDatetime": "2026-03-25T12:00:00Z",
+      "author": "agriffard",
+      "category": "",
+      "tags": [
+        "AI",
+        "Agents"
+      ],
+      "description": "\u0022Give me six hours to chop down a tree and I will spend the first four sharpening the axe.\u0022 In the age of AI agents, the time spent thinking, framing and detailing what you actually want has become the real productivity lever.",
+      "cover": "og/sharpen-your-axe.svg",
+      "readingTime": 5,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2026/2026-03-25-sharpen-your-axe.md"
+    },
     {
       "slug": "suspension-of-disbelief",
       "title": "Developer and AI: The Willing Suspension of Disbelief",

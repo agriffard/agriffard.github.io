@@ -4,6 +4,13 @@
     <link>https://antoinegriffard.com</link>
     <atom:link href="https://antoinegriffard.com/rss.xml" rel="self" type="application/rss+xml"/>
           <item>
+        <title><![CDATA[AI & Development: Sharpen your axe before coding]]></title>
+        <link>https://antoinegriffard.com/posts/sharpen-your-axe</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/sharpen-your-axe</guid>
+        <pubDate>Wed, 25 Mar 2026 12:00:00 GMT</pubDate>
+        <description><![CDATA["Give me six hours to chop down a tree and I will spend the first four sharpening the axe." In the age of AI agents, the time spent thinking, framing and detailing what you actually want has become the real productivity lever.]]></description>
+        <category>AI</category><category>Agents</category>
+      </item>      <item>
         <title><![CDATA[Developer and AI: The Willing Suspension of Disbelief]]></title>
         <link>https://antoinegriffard.com/posts/suspension-of-disbelief</link>
         <guid isPermaLink="true">https://antoinegriffard.com/posts/suspension-of-disbelief</guid>

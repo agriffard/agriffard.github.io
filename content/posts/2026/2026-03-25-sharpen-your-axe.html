@@ -1,0 +1,175 @@
+<p><em>&quot;Give me six hours to chop down a tree and I will spend the first four sharpening the axe.&quot;</em></p>
+<p>This well-known proverb has never been more relevant than today, in the context of AI-assisted development.</p>
+<p>When working with an AI agent to write code, <strong>the natural instinct is to dive in</strong>: open the terminal, type a prompt, and wait for the agent to produce something. It's tempting. It's fast. And it's almost always a mistake.</p>
+<h2 id="the-trap-of-the-immediate-prompt">The trap of the immediate prompt</h2>
+<p>Say you need to build an email notification feature in an existing application. The reflex:</p>
+<pre><code>&gt; &quot;Create an email notification system&quot;
+</code></pre>
+<p>The agent will produce code. Probably functional. Probably generic. And probably not what you actually wanted. You'll then correct, re-specify, re-generate, correct again. After six iterations, you'll have spent more time course-correcting than it would have taken to frame the requirement properly from the start.</p>
+<p>That's chopping at the tree with a dull axe. You swing hard, you exhaust yourself, and the tree falls in the wrong direction.</p>
+<h2 id="sharpening-the-axe-the-invisible-work">Sharpening the axe: the invisible work</h2>
+<p>Sharpening the axe, in the AI context, is <strong>all the thinking that happens before the first prompt</strong>. It's the time you spend asking yourself the right questions before asking anything from the agent.</p>
+<h3 id="clarify-the-intent-the-why">1. Clarify the intent — The &quot;Why&quot;</h3>
+<p>Before describing <em>what you want</em>, you need to know <em>why you want it</em>. What problem are you solving? For whom? In what context?</p>
+<p>An AI agent doesn't know your business. It doesn't know that notifications must comply with GDPR, that your users are in Europe and emails should be sent in local time, or that the marketing team needs to track open rates.</p>
+<p><strong>This clarification work is human, and it is irreplaceable.</strong></p>
+<h3 id="define-the-expected-outcome-the-what">2. Define the expected outcome — The &quot;What&quot;</h3>
+<p>What do you expect concretely? Not in terms of code, but in terms of behavior:</p>
+<ul>
+<li>What types of notifications?</li>
+<li>What data is available for the template?</li>
+<li>What error cases should be handled?</li>
+<li>What are the success criteria?</li>
+</ul>
+<p>The more precise the expected outcome, the more likely the agent will hit the target on the first try. You don't sharpen the axe for fun — you sharpen it so that every swing counts.</p>
+<h3 id="provide-context-the-where-and-how">3. Provide context — The &quot;Where&quot; and &quot;How&quot;</h3>
+<p>The agent doesn't know your project. You need to provide:</p>
+<ul>
+<li><strong>The existing architecture</strong>: &quot;We use a layered architecture with a service layer and repository pattern.&quot;</li>
+<li><strong>The conventions</strong>: &quot;Services go in <code>/Services</code>, interfaces in <code>/Contracts</code>, configurations in <code>/Options</code>.&quot;</li>
+<li><strong>The technical constraints</strong>: &quot;.NET 10, no external NuGet dependency for SMTP.&quot;</li>
+<li><strong>The examples</strong>: &quot;Follow the same structure as <code>UserService.cs</code>.&quot;</li>
+</ul>
+<p>It's like giving a map of the forest to the lumberjack: they'll know where to strike and which way the tree should fall.</p>
+<h3 id="define-the-roles-the-who-does-what">4. Define the roles — The &quot;Who does what&quot;</h3>
+<p>Here's the often-overlooked key: <strong>decide in advance what you delegate and what you keep</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Decision</th>
+<th>Human</th>
+<th>Agent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Overall architecture</td>
+<td><strong>Yes</strong></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Implementation pattern</td>
+<td>Case by case</td>
+<td>Can suggest</td>
+</tr>
+<tr>
+<td>Class and method naming</td>
+<td><strong>Yes</strong> or validate</td>
+<td>Can suggest</td>
+</tr>
+<tr>
+<td>Writing the code</td>
+<td>Supervise</td>
+<td><strong>Yes</strong></td>
+</tr>
+<tr>
+<td>Unit tests</td>
+<td>Define the cases</td>
+<td><strong>Yes</strong></td>
+</tr>
+<tr>
+<td>Library choices</td>
+<td><strong>Yes</strong></td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p>If you have a clear vision of the result, guide the agent precisely. If you're exploring, let it suggest technical choices — but always define the boundaries.</p>
+<h2 id="a-good-prompt-is-a-creative-brief">A good prompt is a creative brief</h2>
+<p>In practice, a good prompt for an AI agent looks a lot like a <strong>creative brief</strong> you'd give to a skilled contractor who doesn't know your project:</p>
+<pre><code>Context:
+E-commerce application in .NET 10 with a service/repository architecture.
+Orders are managed through OrderService (see OrderService.cs).
+Emails are sent via an SmtpClient injected as IEmailSender.
+
+Need:
+When an order transitions to &quot;Shipped&quot; status, send a confirmation
+email to the customer with the tracking number.
+
+Constraints:
+- Follow the existing event handling pattern in the project.
+- Email template is HTML, stored in /Templates/Emails/.
+- Retry with exponential backoff (max 3 attempts).
+- Log every attempt and every failure.
+
+Expected output:
+- An event handler for the OrderShippedEvent.
+- An HTML template for the confirmation email.
+- Associated unit tests.
+
+Do not:
+- Do not modify the existing order flow.
+- Do not add any NuGet dependency.
+</code></pre>
+<p>This prompt takes five minutes to write. But it saves thirty minutes of corrections and back-and-forth. <strong>Four hours of sharpening, two hours of clean cutting.</strong></p>
+<h2 id="the-two-thirds-rule">The two-thirds rule</h2>
+<p>Through experience, I've arrived at a simple rule:</p>
+<blockquote>
+<p><strong>Spend at least two-thirds of your time preparing, one-third executing.</strong></p>
+</blockquote>
+<p>Concretely, for a one-hour feature:</p>
+<table>
+<thead>
+<tr>
+<th>Phase</th>
+<th>Time</th>
+<th>Activity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Thinking</strong></td>
+<td>20 min</td>
+<td>Understand the need, explore the existing code, identify impacts</td>
+</tr>
+<tr>
+<td><strong>Formulating</strong></td>
+<td>15 min</td>
+<td>Write the prompt with context, constraints, examples, expected output</td>
+</tr>
+<tr>
+<td><strong>Executing</strong></td>
+<td>15 min</td>
+<td>Run the agent, review the code, adjust if needed</td>
+</tr>
+<tr>
+<td><strong>Validating</strong></td>
+<td>10 min</td>
+<td>Verify tests, consistency, integrate</td>
+</tr>
+</tbody>
+</table>
+<p>The temptation is to jump straight to execution. But every minute invested upstream saves three downstream. The agent isn't smarter when you give it a good prompt — it's simply <strong>better directed</strong>.</p>
+<h2 id="how-ai-changes-the-equation">How AI changes the equation</h2>
+<p>Before AI agents, a developer's time breakdown looked something like this:</p>
+<pre><code>Thinking : 20%  |::::
+Writing  : 60%  |::::::::::::
+Debugging: 20%  |::::
+</code></pre>
+<p>With AI agents, it should look like this:</p>
+<pre><code>Thinking   : 50%  |::::::::::
+Formulating: 15%  |:::
+Supervising: 25%  |:::::
+Validating : 10%  |::
+</code></pre>
+<p>Pure writing time <strong>nearly disappears</strong>. It's absorbed by the agent. But this freed-up time shouldn't be wasted chaining sloppy prompts. It should be <strong>reinvested in thinking</strong>.</p>
+<p>This is a fundamental shift in posture. The developer who works with AI no longer types code — they <strong>think code</strong>. And like all thinking work, the quality of the result depends directly on the time you dedicate to it.</p>
+<h2 id="the-anti-pattern-the-dull-axe">The anti-pattern: the dull axe</h2>
+<p>You can spot a developer who doesn't sharpen their axe by these symptoms:</p>
+<ul>
+<li><strong>Vague prompts</strong>: &quot;Do something to manage users.&quot;</li>
+<li><strong>Correction loops</strong>: five iterations to arrive at what a single well-crafted prompt would have produced.</li>
+<li><strong>Frustration</strong>: &quot;The AI doesn't understand anything&quot; — when really, the brief is incomplete.</li>
+<li><strong>Loss of control</strong>: generated code piles up and nobody understands the whole picture.</li>
+<li><strong>Wasted time</strong>: paradoxically, you end up spending <em>more</em> time than coding it yourself.</li>
+</ul>
+<p>A dull axe is a sloppy prompt. And a sloppy prompt with a powerful agent is like a chainsaw in the hands of someone who doesn't know where to cut: it goes fast, but not necessarily in the right direction.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Preparation is not time lost — it's time <strong>invested</strong>. In a world where technical execution is increasingly delegated to AI agents, a developer's value shifts toward their ability to <strong>think clearly, formulate precisely, and decide wisely</strong>.</p>
+<p>Sharpening the axe means:</p>
+<ul>
+<li><strong>Understand</strong> before you ask.</li>
+<li><strong>Frame</strong> before you generate.</li>
+<li><strong>Think</strong> before you prompt.</li>
+</ul>
+<p>The tree will fall. The question is whether it falls where you wanted — or on the neighbor's house.</p>
