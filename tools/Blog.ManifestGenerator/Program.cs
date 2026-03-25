@@ -57,7 +57,11 @@ if (Directory.Exists(postsDir))
             Title       = title,
             PubDatetime = ParseDateTime(GetString(fm, "pubDatetime") ?? GetString(fm, "date") ?? string.Empty),
             Author      = GetString(fm, "author")      ?? string.Empty,
-            Category    = GetString(fm, "category")    ?? string.Empty,
+            Categories  = GetStringList(fm, "categories") is { Count: > 0 } cats
+                            ? cats
+                            : GetString(fm, "category") is { } cat && cat.Length > 0
+                                ? [cat]
+                                : [],
             Tags        = GetStringList(fm, "tags"),
             Description = GetString(fm, "description") ?? string.Empty,
             Cover       = GetString(fm, "cover") ?? $"og/{slug}.svg",
@@ -70,7 +74,8 @@ if (Directory.Exists(postsDir))
         posts.Add(meta);
 
         var html      = Markdown.ToHtml(body, mdPipeline);
-        var plainText = Regex.Replace(html, "<[^>]+>", " ").Replace("  ", " ").Trim();
+        var plainText = System.Net.WebUtility.HtmlDecode(
+            Regex.Replace(html, "<[^>]+>", " ")).Replace("  ", " ").Trim();
 
         searchIndex.Add(new SearchEntry
         {

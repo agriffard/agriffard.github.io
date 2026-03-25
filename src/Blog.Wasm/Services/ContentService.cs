@@ -27,7 +27,7 @@ public sealed class ContentService(
         var m     = await GetManifestAsync();
         var query = m.Posts.Where(p => !p.Draft);
         if (category is not null)
-            query = query.Where(p => p.Category.Equals(category, StringComparison.OrdinalIgnoreCase));
+            query = query.Where(p => p.Categories.Contains(category, StringComparer.OrdinalIgnoreCase));
         if (tag is not null)
             query = query.Where(p => p.Tags.Contains(tag, StringComparer.OrdinalIgnoreCase));
         var all   = query.ToList();
@@ -71,6 +71,16 @@ public sealed class ContentService(
         return m.Posts.Where(p => !p.Draft)
             .SelectMany(p => p.Tags)
             .GroupBy(t => t, StringComparer.OrdinalIgnoreCase)
+            .OrderByDescending(g => g.Count())
+            .ToDictionary(g => g.Key, g => g.Count());
+    }
+
+    public async Task<IReadOnlyDictionary<string, int>> GetCategoriesAsync()
+    {
+        var m = await GetManifestAsync();
+        return m.Posts.Where(p => !p.Draft)
+            .SelectMany(p => p.Categories)
+            .GroupBy(c => c, StringComparer.OrdinalIgnoreCase)
             .OrderByDescending(g => g.Count())
             .ToDictionary(g => g.Key, g => g.Count());
     }

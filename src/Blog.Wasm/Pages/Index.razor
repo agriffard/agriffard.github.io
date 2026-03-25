@@ -1,5 +1,6 @@
 @page "/"
 @page "/tags/{Tag}"
+@page "/categories/{Category}"
 @layout MainLayout
 @inject IContentService Content
 @inject IOptions<ContentSettings> ContentOptions
@@ -13,7 +14,7 @@
 
 <PageTitle>@GetPageTitle()</PageTitle>
 
-@if (string.IsNullOrEmpty(Tag) && _page == 1 && _featured is { Count: > 0 })
+@if (string.IsNullOrEmpty(Tag) && string.IsNullOrEmpty(Category) && _page == 1 && _featured is { Count: > 0 })
 {
     <section class="featured-section">
         <h2 class="section-title">Featured</h2>
@@ -27,7 +28,11 @@
 }
 
 <section class="posts-list" id="posts-list">
-    @if (!string.IsNullOrEmpty(Tag))
+    @if (!string.IsNullOrEmpty(Category))
+    {
+        <h1 class="page-title">Articles dans « @Category »</h1>
+    }
+    else if (!string.IsNullOrEmpty(Tag))
     {
         <h1 class="page-title">Articles tagués « @Tag »</h1>
     }
@@ -56,6 +61,7 @@
 
 @code {
     [Parameter] public string? Tag { get; set; }
+    [Parameter] public string? Category { get; set; }
     [SupplyParameterFromQuery] public int? Page { get; set; }
 
     private IReadOnlyList<PostMeta>? _posts;
@@ -71,11 +77,11 @@
         if (_page < 1) _page = 1;
         _scrollToList = previousPage != _page && _page > 1;
 
-        var (items, total) = await Content.GetPostsAsync(tag: Tag, page: _page);
+        var (items, total) = await Content.GetPostsAsync(category: Category, tag: Tag, page: _page);
         _posts = items;
         _total = total;
 
-        if (string.IsNullOrEmpty(Tag) && _page == 1)
+        if (string.IsNullOrEmpty(Tag) && string.IsNullOrEmpty(Category) && _page == 1)
         {
             _featured = await Content.GetFeaturedPostsAsync();
         }
@@ -96,6 +102,8 @@
 
     private string GetPageTitle()
     {
+        if (!string.IsNullOrEmpty(Category))
+            return $"{Category} — {SiteOptions.Value.Title}";
         if (!string.IsNullOrEmpty(Tag))
             return $"{Tag} — {SiteOptions.Value.Title}";
         return SiteOptions.Value.Title;
@@ -103,6 +111,8 @@
 
     private string GetBaseUrl()
     {
-        return !string.IsNullOrEmpty(Tag) ? $"/tags/{Tag}" : "/";
+        if (!string.IsNullOrEmpty(Category)) return $"/categories/{Category}";
+        if (!string.IsNullOrEmpty(Tag)) return $"/tags/{Tag}";
+        return "/";
     }
 }

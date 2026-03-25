@@ -10,5 +10,6 @@ public interface IContentService
     Task<Post?> GetPageAsync(string slug);
     Task<IReadOnlyDictionary<int, IReadOnlyList<PostMeta>>> GetArchivesAsync();
     Task<IReadOnlyDictionary<string, int>> GetTagsAsync();
+    Task<IReadOnlyDictionary<string, int>> GetCategoriesAsync();
     Task<IReadOnlyList<PostMeta>> GetFeaturedPostsAsync();
 }
