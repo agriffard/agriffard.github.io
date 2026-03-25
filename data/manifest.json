@@ -1,12 +1,14 @@
 {
-  "generatedAt": "2026-03-25T20:56:02.0000382Z",
+  "generatedAt": "2026-03-25T22:20:14.2614981Z",
   "posts": [
     {
       "slug": "sharpen-your-axe",
       "title": "AI \u0026 Development: Sharpen your axe before coding",
       "pubDatetime": "2026-03-25T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Development"
+      ],
       "tags": [
         "AI",
         "Agents"
@@ -23,7 +25,9 @@
       "title": "Developer and AI: The Willing Suspension of Disbelief",
       "pubDatetime": "2026-03-22T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Development"
+      ],
       "tags": [
         "AI",
         "Agents"
@@ -40,7 +44,9 @@
       "title": "D\u00E9veloppeur et IA : La suspension consentie d\u0027incr\u00E9dulit\u00E9",
       "pubDatetime": "2026-03-22T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Development"
+      ],
       "tags": [
         "AI",
         "Agents"
@@ -57,7 +63,9 @@
       "title": "D\u00E9veloppement : De la bo\u00EEte manuelle au pilote automatique",
       "pubDatetime": "2026-03-19T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Development"
+      ],
       "tags": [
         "AI",
         ".NET",
@@ -76,7 +84,10 @@
       "title": "Understanding IOptions\u003CT\u003E in .NET",
       "pubDatetime": "2026-02-14T10:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        ".NET",
+        "Architecture"
+      ],
       "tags": [
         "AI",
         "Configuration",
@@ -95,7 +106,10 @@
       "title": "Dependency Injection: Lifetimes, Composition Root, Decorators, and Anti-Patterns",
       "pubDatetime": "2026-02-09T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        ".NET",
+        "Architecture"
+      ],
       "tags": [
         "AI",
         "DependencyInjection",
@@ -114,7 +128,9 @@
       "title": "Pourquoi un cercle est-il divis\u00E9 en 360 degr\u00E9s ?",
       "pubDatetime": "2026-01-31T12:00:00Z",
       "author": "agriffard",
-      "category": "Math\u00E9matiques",
+      "categories": [
+        "Math\u00E9matiques"
+      ],
       "tags": [
         "AI",
         "Histoire",
@@ -133,7 +149,9 @@
       "title": "The Darwin Incident",
       "pubDatetime": "2026-01-08T00:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Anime"
+      ],
       "tags": [
         "Manga"
       ],
@@ -149,7 +167,10 @@
       "title": "Prototyping with AI Agents",
       "pubDatetime": "2025-12-31T10:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Development",
+        "Open Source"
+      ],
       "tags": [
         "AI",
         "Copilot",
@@ -169,7 +190,9 @@
       "title": "Orchard Harvest 2025",
       "pubDatetime": "2025-11-15T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "OrchardCore"
+      ],
       "tags": [
         "Harvest"
       ],
@@ -185,7 +208,9 @@
       "title": "JWT JSON Web Tokens: A Comprehensive Guide",
       "pubDatetime": "2025-10-21T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Web"
+      ],
       "tags": [
         "AI",
         "Jwt"
@@ -202,7 +227,9 @@
       "title": "Orchard Core 2.2.1 Release",
       "pubDatetime": "2025-10-10T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "OrchardCore"
+      ],
       "tags": [
         "Release"
       ],
@@ -218,7 +245,9 @@
       "title": "Organizing ASP.NET Configuration with WebApplicationBuilder Extensions",
       "pubDatetime": "2025-09-19T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "DotNet"
+      ],
       "tags": [
         "BestPractices",
         "ExtensionMethods"
@@ -235,7 +264,9 @@
       "title": "Good Practices in C# Web APIs: Avoiding Common Pitfalls",
       "pubDatetime": "2025-09-13T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Development"
+      ],
       "tags": [
         "AI",
         "CSharp",
@@ -254,7 +285,9 @@
       "title": "Mastering Mermaid.js: The Complete Guide to Creating Stunning Diagrams with Code",
       "pubDatetime": "2025-09-06T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Development"
+      ],
       "tags": [
         "AI",
         "Mermaid",
@@ -272,7 +305,9 @@
       "title": "Bootstrap",
       "pubDatetime": "2025-08-30T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Bootstrap"
+      ],
       "tags": [
         "AI"
       ],
@@ -288,7 +323,9 @@
       "title": "Mn\u00E9moniques",
       "pubDatetime": "2025-08-23T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Astuces"
+      ],
       "tags": [
         "AI",
         "M\u00E9moire"
@@ -305,7 +342,9 @@
       "title": "Orchard Core 2.2.0 Release",
       "pubDatetime": "2025-08-19T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "OrchardCore"
+      ],
       "tags": [
         "Release"
       ],
@@ -321,7 +360,9 @@
       "title": "Orchard Core 2.1.9 Release",
       "pubDatetime": "2025-08-19T11:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "OrchardCore"
+      ],
       "tags": [
         "Release"
       ],
@@ -337,7 +378,9 @@
       "title": "Orchard Core 2.1.8 Release",
       "pubDatetime": "2025-08-14T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "OrchardCore"
+      ],
       "tags": [
         "Release"
       ],
@@ -353,7 +396,9 @@
       "title": "Microsoft MVP 2025-2026",
       "pubDatetime": "2025-07-10T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Awards"
+      ],
       "tags": [
         "MVP"
       ],
@@ -369,7 +414,9 @@
       "title": "Orchard Core 2.1.7 Release",
       "pubDatetime": "2025-04-16T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "OrchardCore"
+      ],
       "tags": [
         "Release"
       ],
@@ -385,7 +432,9 @@
       "title": "Orchard Core 2.1.6 Release",
       "pubDatetime": "2025-02-19T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "OrchardCore"
+      ],
       "tags": [
         "Release"
       ],
@@ -401,7 +450,9 @@
       "title": "Orchard Core 2.1.5 Release",
       "pubDatetime": "2025-02-04T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "OrchardCore"
+      ],
       "tags": [
         "Release"
       ],
@@ -417,7 +468,9 @@
       "title": "Orchard Core 2.1.4 Release",
       "pubDatetime": "2025-01-17T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "OrchardCore"
+      ],
       "tags": [
         "Release"
       ],
@@ -433,7 +486,9 @@
       "title": "The Pitt",
       "pubDatetime": "2025-01-10T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Review"
+      ],
       "tags": [
         "Serie"
       ],
@@ -449,7 +504,9 @@
       "title": "Orchard Core 2.1.3 Release",
       "pubDatetime": "2024-12-12T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "OrchardCore"
+      ],
       "tags": [
         "Release"
       ],
@@ -465,7 +522,9 @@
       "title": "Orchard Core 2.1.2 Release",
       "pubDatetime": "2024-11-28T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "OrchardCore"
+      ],
       "tags": [
         "Release"
       ],
@@ -481,7 +540,9 @@
       "title": "Orchard Core 2.1.1 Release",
       "pubDatetime": "2024-11-25T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "OrchardCore"
+      ],
       "tags": [
         "Release"
       ],
@@ -497,7 +558,9 @@
       "title": "Orchard Core 2.1.0 Release",
       "pubDatetime": "2024-11-21T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "OrchardCore"
+      ],
       "tags": [
         "Release"
       ],
@@ -513,7 +576,9 @@
       "title": "Orchard Core 2.0.2 Release",
       "pubDatetime": "2024-09-26T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "OrchardCore"
+      ],
       "tags": [
         "Release"
       ],
@@ -529,7 +594,9 @@
       "title": "Orchard Core 2.0.1 Release",
       "pubDatetime": "2024-09-25T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "OrchardCore"
+      ],
       "tags": [
         "Release"
       ],
@@ -545,7 +612,9 @@
       "title": "Orchard Harvest 2024",
       "pubDatetime": "2024-09-12T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "OrchardCore"
+      ],
       "tags": [
         "Harvest"
       ],
@@ -561,7 +630,9 @@
       "title": "Orchard Core 2.0.0 Release",
       "pubDatetime": "2024-09-09T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "OrchardCore"
+      ],
       "tags": [
         "Release"
       ],
@@ -577,7 +648,9 @@
       "title": "Orchard Core 1.8.4 Release",
       "pubDatetime": "2024-09-04T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "OrchardCore"
+      ],
       "tags": [
         "Release"
       ],
@@ -593,7 +666,9 @@
       "title": "Orchard Core 1.8.3 Release",
       "pubDatetime": "2024-04-25T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "OrchardCore"
+      ],
       "tags": [
         "Release"
       ],
@@ -609,7 +684,9 @@
       "title": "Les approximations remarquables du nombre Pi",
       "pubDatetime": "2024-03-14T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Maths"
+      ],
       "tags": [
         "AI",
         "Pi"
@@ -626,7 +703,9 @@
       "title": "Orchard Core 1.8.2 Release",
       "pubDatetime": "2024-01-17T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "OrchardCore"
+      ],
       "tags": [
         "Release"
       ],
@@ -642,7 +721,9 @@
       "title": "Orchard Core 1.8.1 Release",
       "pubDatetime": "2024-01-09T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "OrchardCore"
+      ],
       "tags": [
         "Release"
       ],
@@ -658,7 +739,9 @@
       "title": "Orchard Core 1.8 Release",
       "pubDatetime": "2024-01-02T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "OrchardCore"
+      ],
       "tags": [
         "Release"
       ],
@@ -674,7 +757,9 @@
       "title": "Building Resilient C# Applications",
       "pubDatetime": "2023-12-19T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "DotNet"
+      ],
       "tags": [
         "AI",
         "Resilience"
@@ -691,7 +776,9 @@
       "title": "Blazor Server vs Blazor WebAssembly: How to Choose",
       "pubDatetime": "2023-11-19T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "DotNet"
+      ],
       "tags": [
         "AI",
         "Blazor",
@@ -709,7 +796,9 @@
       "title": "Orchard Core 1.7.2 Release",
       "pubDatetime": "2023-10-18T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "OrchardCore"
+      ],
       "tags": [
         "Release"
       ],
@@ -725,7 +814,9 @@
       "title": "Orchard Core 1.7.1 Release",
       "pubDatetime": "2023-10-13T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "OrchardCore"
+      ],
       "tags": [
         "Release"
       ],
@@ -741,7 +832,9 @@
       "title": "Orchard Core 1.7 Release",
       "pubDatetime": "2023-09-05T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "OrchardCore"
+      ],
       "tags": [
         "Release"
       ],
@@ -757,7 +850,9 @@
       "title": "Orchard Core 1.6 Release",
       "pubDatetime": "2023-04-13T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "OrchardCore"
+      ],
       "tags": [
         "Release"
       ],
@@ -773,7 +868,9 @@
       "title": "Orchard Core 1.5 Release",
       "pubDatetime": "2022-11-04T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "OrchardCore"
+      ],
       "tags": [
         "Release"
       ],
@@ -789,7 +886,9 @@
       "title": "MVP award 2022",
       "pubDatetime": "2022-08-01T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Picture"
+      ],
       "tags": [
         "MVP"
       ],
@@ -805,7 +904,9 @@
       "title": "Orchard Core 1.4 Release",
       "pubDatetime": "2022-06-01T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "OrchardCore"
+      ],
       "tags": [
         "Release"
       ],
@@ -821,7 +922,9 @@
       "title": "Learn Kana",
       "pubDatetime": "2022-04-23T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Learn"
+      ],
       "tags": [
         "Language",
         "Japanese"
@@ -838,7 +941,9 @@
       "title": "Orchard Core 1.3 Release",
       "pubDatetime": "2022-03-10T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "OrchardCore"
+      ],
       "tags": [
         "Release"
       ],
@@ -854,7 +959,9 @@
       "title": "Orchard Core 1.2 Release",
       "pubDatetime": "2022-01-06T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "OrchardCore"
+      ],
       "tags": [
         "Release"
       ],
@@ -870,7 +977,9 @@
       "title": "Orchard Core 1.1 Release",
       "pubDatetime": "2021-11-02T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "OrchardCore"
+      ],
       "tags": [
         "Release"
       ],
@@ -886,7 +995,9 @@
       "title": "MVP award 2021",
       "pubDatetime": "2021-08-01T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Picture"
+      ],
       "tags": [
         "MVP"
       ],
@@ -902,7 +1013,9 @@
       "title": "Orchard Core 1.0 Release",
       "pubDatetime": "2021-07-22T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "OrchardCore"
+      ],
       "tags": [
         "Release"
       ],
@@ -918,7 +1031,9 @@
       "title": "Morse",
       "pubDatetime": "2021-06-06T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Picture"
+      ],
       "tags": [
         "Language"
       ],
@@ -934,7 +1049,9 @@
       "title": "winget",
       "pubDatetime": "2021-03-14T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Microsoft"
+      ],
       "tags": [
         "Tool"
       ],
@@ -950,7 +1067,9 @@
       "title": "3d",
       "pubDatetime": "2021-01-31T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Picture"
+      ],
       "tags": [
         "3d"
       ],
@@ -966,7 +1085,9 @@
       "title": "Bonjour",
       "pubDatetime": "2020-10-31T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Hello"
+      ],
       "tags": [
         "Language"
       ],
@@ -982,7 +1103,9 @@
       "title": "MVP award 2020",
       "pubDatetime": "2020-08-01T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Picture"
+      ],
       "tags": [
         "MVP"
       ],
@@ -998,7 +1121,9 @@
       "title": "Orchard Core RC 2",
       "pubDatetime": "2020-06-13T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "OrchardCore"
+      ],
       "tags": [
         "Release"
       ],
@@ -1014,7 +1139,9 @@
       "title": "Fibonacci sequence",
       "pubDatetime": "2020-05-06T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Picture"
+      ],
       "tags": [
         "Maths"
       ],
@@ -1030,7 +1157,9 @@
       "title": "LINQ",
       "pubDatetime": "2020-03-14T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Picture"
+      ],
       "tags": [
         ".NET"
       ],
@@ -1046,7 +1175,9 @@
       "title": "How to fix a bug?",
       "pubDatetime": "2020-01-31T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Dev"
+      ],
       "tags": [
         "Howto"
       ],
@@ -1062,7 +1193,9 @@
       "title": "Orchard Core RC 1",
       "pubDatetime": "2019-09-24T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "OrchardCore"
+      ],
       "tags": [
         "Release"
       ],
@@ -1078,7 +1211,9 @@
       "title": "MVP award 2019",
       "pubDatetime": "2019-08-01T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Picture"
+      ],
       "tags": [
         "MVP"
       ],
@@ -1094,7 +1229,9 @@
       "title": "NATO phonetic alphabet",
       "pubDatetime": "2019-06-06T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Picture"
+      ],
       "tags": [
         "Alphabet"
       ],
@@ -1110,7 +1247,9 @@
       "title": "Orchard Core Beta 3",
       "pubDatetime": "2019-04-04T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "OrchardCore"
+      ],
       "tags": [
         "Release"
       ],
@@ -1126,7 +1265,9 @@
       "title": "Pi animation",
       "pubDatetime": "2019-03-14T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Maths"
+      ],
       "tags": [
         "Pi"
       ],
@@ -1142,7 +1283,9 @@
       "title": "Dunning-Kruger effect",
       "pubDatetime": "2019-01-31T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Concept"
+      ],
       "tags": [
         "Psychology"
       ],
@@ -1158,7 +1301,9 @@
       "title": "Strategy Design Pattern",
       "pubDatetime": "2018-12-21T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "DotNet"
+      ],
       "tags": [
         "AI",
         "DesignPatterns",
@@ -1176,7 +1321,9 @@
       "title": "Factory Design Pattern in C#: Complete Guide with Examples",
       "pubDatetime": "2018-10-19T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "DotNet"
+      ],
       "tags": [
         "AI",
         "DesignPatterns",
@@ -1194,7 +1341,9 @@
       "title": "MVP award 2018",
       "pubDatetime": "2018-08-01T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Picture"
+      ],
       "tags": [
         "MVP"
       ],
@@ -1210,7 +1359,9 @@
       "title": "Orchard Core Beta 2",
       "pubDatetime": "2018-06-23T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "OrchardCore"
+      ],
       "tags": [
         "Release"
       ],
@@ -1226,7 +1377,9 @@
       "title": "Pi",
       "pubDatetime": "2018-03-14T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Maths"
+      ],
       "tags": [
         "Pi"
       ],
@@ -1242,7 +1395,9 @@
       "title": "Four stages of competence",
       "pubDatetime": "2018-01-31T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Concept"
+      ],
       "tags": [
         "Psychology"
       ],
@@ -1258,7 +1413,9 @@
       "title": "Orchard Core Beta",
       "pubDatetime": "2017-11-21T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "OrchardCore"
+      ],
       "tags": [
         "Release"
       ],
@@ -1274,7 +1431,9 @@
       "title": "Builder Design Pattern in C#: Constructing Complex Objects Step by Step",
       "pubDatetime": "2017-09-19T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "DotNet"
+      ],
       "tags": [
         "AI",
         "DesignPatterns",
@@ -1293,7 +1452,9 @@
       "title": "Dots",
       "pubDatetime": "2017-06-06T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Picture"
+      ],
       "tags": [
         "Illusion"
       ],
@@ -1309,7 +1470,9 @@
       "title": "Je ne sais rien",
       "pubDatetime": "2017-03-31T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Concept"
+      ],
       "tags": [
         "Philosophie"
       ],
@@ -1325,7 +1488,9 @@
       "title": "Orchard Harvest in New York",
       "pubDatetime": "2017-02-28T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "OrchardCore"
+      ],
       "tags": [
         "Harvest"
       ],
@@ -1341,7 +1506,9 @@
       "title": "Singleton Design Pattern in C#: Thread-Safe Implementation and Modern Alternatives",
       "pubDatetime": "2017-01-19T16:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "DotNet"
+      ],
       "tags": [
         "AI",
         "DesignPatterns",
@@ -1359,7 +1526,9 @@
       "title": "Conf\u00E9rence Orchard Harvest 2017",
       "pubDatetime": "2016-12-28T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Orchard"
+      ],
       "tags": [
         "Harvest"
       ],
@@ -1375,7 +1544,9 @@
       "title": "Microsoft MVP Summit 2016",
       "pubDatetime": "2016-12-03T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Microsoft"
+      ],
       "tags": [
         "MVP"
       ],
@@ -1391,7 +1562,9 @@
       "title": "MVP award 2016",
       "pubDatetime": "2016-08-01T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Picture"
+      ],
       "tags": [
         "MVP"
       ],
@@ -1407,7 +1580,9 @@
       "title": "Less is more",
       "pubDatetime": "2016-06-06T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Picture"
+      ],
       "tags": [
         "Minimal"
       ],
@@ -1423,7 +1598,9 @@
       "title": "\u2E2E \u01A7IHT \uA4F7A\u018E\u042F UOY \u0418A\u0186",
       "pubDatetime": "2016-03-31T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Fun"
+      ],
       "tags": [
         "Language"
       ],
@@ -1439,7 +1616,9 @@
       "title": "SOLID",
       "pubDatetime": "2016-01-31T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Dev"
+      ],
       "tags": [
         "Acronym"
       ],
@@ -1455,7 +1634,9 @@
       "title": "Orchard Harvest 2015 summary",
       "pubDatetime": "2015-10-08T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Orchard"
+      ],
       "tags": [
         "Harvest"
       ],
@@ -1471,7 +1652,9 @@
       "title": "Orchard Harvest 2015",
       "pubDatetime": "2015-09-13T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Orchard"
+      ],
       "tags": [
         "Harvest"
       ],
@@ -1487,7 +1670,9 @@
       "title": "MVP award 2015",
       "pubDatetime": "2015-08-01T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Picture"
+      ],
       "tags": [
         "MVP"
       ],
@@ -1503,7 +1688,9 @@
       "title": "Look to your left",
       "pubDatetime": "2015-06-06T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Picture"
+      ],
       "tags": [
         "Fun"
       ],
@@ -1519,7 +1706,9 @@
       "title": "Pangrams - When Every Letter Counts",
       "pubDatetime": "2015-03-21T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Typography"
+      ],
       "tags": [
         "Language"
       ],
@@ -1535,7 +1724,9 @@
       "title": "R\u00E8gle d\u0027or",
       "pubDatetime": "2015-01-31T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Concept"
+      ],
       "tags": [
         "Philosophie"
       ],
@@ -1551,7 +1742,9 @@
       "title": "PEBKAC",
       "pubDatetime": "2014-12-06T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Picture"
+      ],
       "tags": [
         "Dev"
       ],
@@ -1567,7 +1760,9 @@
       "title": "MVP award 2014",
       "pubDatetime": "2014-08-01T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Picture"
+      ],
       "tags": [
         "MVP"
       ],
@@ -1583,7 +1778,9 @@
       "title": "Microsoft Most Valuable Professional ASP.NET/IIS",
       "pubDatetime": "2014-07-01T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Microsoft"
+      ],
       "tags": [
         "MVP"
       ],
@@ -1599,7 +1796,9 @@
       "title": "R\u00E9capitulatif conf\u00E9rence Orchard Harvest 2014",
       "pubDatetime": "2014-06-17T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Orchard"
+      ],
       "tags": [
         "Harvest"
       ],
@@ -1615,7 +1814,9 @@
       "title": "Orchard Harvest 2014",
       "pubDatetime": "2014-05-09T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Orchard"
+      ],
       "tags": [
         "Harvest"
       ],
@@ -1631,7 +1832,9 @@
       "title": "KISS",
       "pubDatetime": "2014-01-31T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Dev"
+      ],
       "tags": [
         "Acronym"
       ],
@@ -1647,7 +1850,9 @@
       "title": "The Principles of Software Craftsmanship - Building Excellence in Code",
       "pubDatetime": "2013-11-21T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Dev"
+      ],
       "tags": [
         "SoftwareCraftsmanship"
       ],
@@ -1663,7 +1868,9 @@
       "title": "Orchard community member",
       "pubDatetime": "2013-09-11T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Orchard"
+      ],
       "tags": [
         "Community"
       ],
@@ -1679,7 +1886,9 @@
       "title": "Orchard Harvest 2013 Keynote Jour 2",
       "pubDatetime": "2013-06-19T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Orchard"
+      ],
       "tags": [
         "Harvest"
       ],
@@ -1695,7 +1904,9 @@
       "title": "Conf\u00E9rence Orchard Harvest 2013 \u00E0 Amsterdam Jour 1",
       "pubDatetime": "2013-06-18T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Orchard"
+      ],
       "tags": [
         "Harvest"
       ],
@@ -1711,7 +1922,9 @@
       "title": "Les trois filtres de Socrate",
       "pubDatetime": "2013-03-06T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Concept"
+      ],
       "tags": [
         "Philosophie"
       ],
@@ -1727,7 +1940,9 @@
       "title": "RTFM",
       "pubDatetime": "2013-01-31T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Dev"
+      ],
       "tags": [
         "Acronym"
       ],
@@ -1743,7 +1958,9 @@
       "title": "Orchard Harvest 2012 Sessions Day 2",
       "pubDatetime": "2012-09-26T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Orchard"
+      ],
       "tags": [
         "Harvest"
       ],
@@ -1759,7 +1976,9 @@
       "title": "Orchard Harvest 2012 Performance",
       "pubDatetime": "2012-09-21T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Orchard"
+      ],
       "tags": [
         "Harvest"
       ],
@@ -1775,7 +1994,9 @@
       "title": "Orchard Harvest 2012 Theming",
       "pubDatetime": "2012-09-19T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Orchard"
+      ],
       "tags": [
         "Harvest"
       ],
@@ -1791,7 +2012,9 @@
       "title": "Orchard Harvest 2012 Managing a community",
       "pubDatetime": "2012-09-18T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Orchard"
+      ],
       "tags": [
         "Harvest"
       ],
@@ -1807,7 +2030,9 @@
       "title": "Orchard Harvest 2012 Sessions Day 1",
       "pubDatetime": "2012-09-17T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Orchard"
+      ],
       "tags": [
         "Harvest"
       ],
@@ -1823,7 +2048,9 @@
       "title": "Orchard Harvest 2012 Sessions Ecommerce",
       "pubDatetime": "2012-09-16T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Orchard"
+      ],
       "tags": [
         "Harvest"
       ],
@@ -1839,7 +2066,9 @@
       "title": "Orchard Harvest 2012 Sessions The future of Orchard",
       "pubDatetime": "2012-09-15T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Orchard"
+      ],
       "tags": [
         "Harvest"
       ],
@@ -1855,7 +2084,9 @@
       "title": "Orchard Harvest 2012 Keynote",
       "pubDatetime": "2012-09-09T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Orchard"
+      ],
       "tags": [
         "Harvest"
       ],
@@ -1871,7 +2102,9 @@
       "title": "The IT Crowd",
       "pubDatetime": "2012-06-06T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Picture"
+      ],
       "tags": [
         "Meme"
       ],
@@ -1887,7 +2120,9 @@
       "title": "Hello World!",
       "pubDatetime": "2012-01-31T12:00:00Z",
       "author": "agriffard",
-      "category": "",
+      "categories": [
+        "Dev"
+      ],
       "tags": [
         "Hello"
       ],
