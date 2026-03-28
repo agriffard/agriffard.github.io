@@ -46,11 +46,6 @@
     <Exec Command="sed -i 's|&lt;base href=&quot;/&quot;|&lt;base href=&quot;$(GHPagesBase)/&quot;|g' &quot;$(_IndexHtml)&quot;" Condition="!$([MSBuild]::IsOSPlatform('Windows'))" />
     <Exec Command="powershell -NoProfile -Command &quot;(Get-Content '$(_IndexHtml)') -replace '&lt;base href=&quot;/&quot;', '&lt;base href=&quot;$(GHPagesBase)/&quot;' | Set-Content '$(_IndexHtml)'&quot;" Condition=" $([MSBuild]::IsOSPlatform('Windows'))" />
   </Target>
-  <ItemGroup>
-    <Content Update="wwwroot\content\posts\2026\2026-03-22-suspension-d-incredulite.html">
-      <DependentUpon>2026-03-22-suspension-d-incredulite.md</DependentUpon>
-    </Content>
-  </ItemGroup>
 
   <ItemGroup>
     <None Update="wwwroot\data\manifest.json" CopyToOutputDirectory="PreserveNewest" />
