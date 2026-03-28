@@ -1,6 +1,25 @@
 {
-  "generatedAt": "2026-03-25T22:20:14.2614981Z",
+  "generatedAt": "2026-03-28T11:09:22.1530689Z",
   "posts": [
+    {
+      "slug": "stages-of-ai-grief",
+      "title": "The 7 Stages of AI Grief: A Developer\u0027s Journey from Denial to Integration",
+      "pubDatetime": "2026-03-28T12:00:00Z",
+      "author": "agriffard",
+      "categories": [
+        "Development"
+      ],
+      "tags": [
+        "AI",
+        "Agents"
+      ],
+      "description": "From shock to acceptance \u2014 every developer goes through a grieving process when AI agents enter their workflow. Here are the 7 stages, what you gain, what you risk losing, and what remains irreplaceable.",
+      "cover": "og/stages-of-ai-grief.svg",
+      "readingTime": 12,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2026/2026-03-28-stages-of-ai-grief.md"
+    },
     {
       "slug": "sharpen-your-axe",
       "title": "AI \u0026 Development: Sharpen your axe before coding",

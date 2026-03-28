@@ -1,0 +1,214 @@
+<p>In 1969, psychiatrist Elisabeth Kubler-Ross described the stages of grief — the emotional path humans travel when confronted with irreversible loss. The model was later expanded to seven stages: shock, denial, anger, bargaining, depression, experimentation, and acceptance.</p>
+<p>For developers in 2026, something <em>is</em> being lost. Not code itself — there will be more code than ever. What is dying is <strong>the centrality of writing code by hand as the primary expression of a developer's skill</strong>. The workflow where your value was measured keystroke by keystroke, where mastery meant typing faster, remembering more APIs, and writing more elegant one-liners — that world is fading.</p>
+<p>I have watched colleagues, juniors, and myself go through every one of these stages. Some are still stuck at stage two. Others jumped to stage seven months ago. Most are somewhere in between, looping back and forth depending on the task, the tool, or the day.</p>
+<p>What you grieve is not the code itself. It is <strong>the identity of being the one who writes it</strong>. What you gain — eventually — is a new identity: the one who <em>thinks</em> it, <em>directs</em> it, and <em>answers for</em> it.</p>
+<h2 id="stage-1-shock-wait-it-can-do-that">Stage 1: Shock — &quot;Wait, it can do <em>that</em>?&quot;</h2>
+<p>It starts with a demo, or a colleague's screen, or a late-night experiment you did not plan.</p>
+<p>Someone types a natural language prompt into a terminal. Thirty seconds later, a complete service class appears — with dependency injection, error handling, logging, and tests. The code compiles. The tests pass.</p>
+<p>You stare. You think: <em>&quot;I spent three days writing something similar last month.&quot;</em></p>
+<p>This is not like IntelliSense completing a method name. This is not autocomplete. This is a step change, and it hits like one. A mix of awe and vertigo.</p>
+<p><strong>What is gained:</strong> Nothing yet. Shock is a pause, not a gain. But it is the necessary trigger — nothing changes without it.</p>
+<p><strong>What you risk losing:</strong> Time. The industry does not wait for you to process your surprise.</p>
+<p><strong>What remains relevant:</strong> Your ability to <em>recognize</em> that the generated code is correct. That judgment required years to build. The agent cannot evaluate itself.</p>
+<h2 id="stage-2-denial-its-just-fancy-autocomplete">Stage 2: Denial — &quot;It's just fancy autocomplete&quot;</h2>
+<p>After the shock fades, the immune system kicks in.</p>
+<p>You try a prompt yourself. The output is mediocre — wrong naming conventions, missing project context, a pattern you would never use. You lean back and declare: <em>&quot;See? It doesn't understand anything. This is Stack Overflow with extra steps.&quot;</em></p>
+<p>You return to writing everything by hand. It feels good. Familiar. Typing code is meditative, controlled, satisfying. You know exactly what is happening at every line. You share sarcastic posts about AI-generated bugs. You point to every hallucination as proof.</p>
+<p><strong>The denial bingo:</strong></p>
+<ul>
+<li>&quot;It only works for trivial examples.&quot;</li>
+<li>&quot;Try it on a <em>real</em> codebase.&quot;</li>
+<li>&quot;It will never replace understanding.&quot;</li>
+<li>&quot;I can write it faster myself.&quot;</li>
+</ul>
+<p>The insidious thing about denial is that <strong>some of these are partially true</strong>. Early AI tools <em>were</em> rough. The skepticism is not entirely unfounded. But confusing &quot;the tool is imperfect&quot; with &quot;the tool is useless&quot; is the trap.</p>
+<p><strong>What is gained:</strong> A healthy critical reflex. Developers who pass through denial thoroughly tend to become the best at spotting AI mistakes later, because they trained their skepticism muscle.</p>
+<p><strong>What you risk losing:</strong> Competitive relevance. While you deny, others are learning to prompt effectively. The gap grows quietly.</p>
+<p><strong>What remains relevant:</strong> Deep language and framework knowledge. The ability to spot incorrect patterns. Code review skills. These are <strong>amplified</strong>, not replaced, by AI agents.</p>
+<h2 id="stage-3-anger-this-is-going-to-ruin-everything">Stage 3: Anger — &quot;This is going to ruin everything&quot;</h2>
+<p>The anger comes from two directions at once.</p>
+<p><strong>From below:</strong> a junior developer on your team ships a feature in two hours using an AI agent. It would have taken them two days manually. The code is decent. The junior cannot explain every design decision in depth, but the feature works and the tests pass. You feel both threatened and genuinely concerned about their growth.</p>
+<p><strong>From above:</strong> management announces the team will adopt AI agents and expects productivity to increase by 30%. No training budget. No process change. Just &quot;use AI now.&quot;</p>
+<p>The anger is real and <strong>much of it is legitimate</strong>. AI tools <em>are</em> being used to justify unrealistic deadlines, team downsizing, and the commodification of skills that took years to build. The &quot;AI will replace developers&quot; headlines are fuel on a fire that was already burning.</p>
+<p>But underneath the anger is a quieter question: <em>&quot;If a machine can do 80% of what I do, what am I worth?&quot;</em></p>
+<p><strong>What is gained:</strong> Energy. Anger, channeled properly, becomes motivation — to learn, to set boundaries, to demand proper adoption processes instead of top-down mandates.</p>
+<p><strong>What you risk losing:</strong> Relationships and influence. The developer who refuses to engage becomes the one excluded from decisions about how the team adopts AI. They lose their seat at the table precisely when their perspective is needed most.</p>
+<p><strong>What remains relevant:</strong> Mentorship. The ability to teach <em>why</em> code works, not just <em>what</em> code to write. The senior developer's anger often comes from a genuine place of caring about quality and growth — and <strong>that care is the most valuable thing they bring</strong>.</p>
+<h2 id="stage-4-bargaining-ok-but-only-for-the-boring-stuff">Stage 4: Bargaining — &quot;OK, but only for the boring stuff&quot;</h2>
+<p>This is where the negotiation begins — mostly with yourself.</p>
+<p>You start using AI agents, but only for specific tasks you consider &quot;beneath&quot; your skill level: generating boilerplate DTOs, writing repetitive unit tests, scaffolding configuration classes. You maintain a mental wall: <em>&quot;AI handles the mechanical parts. I handle the real work.&quot;</em></p>
+<p>Then the wall starts moving.</p>
+<table>
+<thead>
+<tr>
+<th>Month 1</th>
+<th>Month 3</th>
+<th>Month 6</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&quot;Only boilerplate&quot;</td>
+<td>&quot;OK, also service implementations&quot;</td>
+<td>&quot;Let me try architecture exploration&quot;</td>
+</tr>
+<tr>
+<td>&quot;I review every line&quot;</td>
+<td>&quot;I review the diff&quot;</td>
+<td>&quot;I review the intent and the tests&quot;</td>
+</tr>
+<tr>
+<td>&quot;Never for production&quot;</td>
+<td>&quot;For non-critical paths&quot;</td>
+<td>&quot;With proper guardrails, yes&quot;</td>
+</tr>
+</tbody>
+</table>
+<p>This is actually <strong>the most productive stage</strong>. It is where a real workflow forms. You start learning what good context looks like, what constraints to provide, how to <a href="/posts/sharpen-your-axe">sharpen the axe</a> before swinging. The deals you make with yourself are not weakness — they are calibration.</p>
+<p><strong>What is gained:</strong> First real productivity gains. The beginning of prompt craft as a genuine skill. A working collaboration model.</p>
+<p><strong>What you risk losing:</strong> Growth, if the boundaries stay too rigid. The developer who only uses AI for boilerplate misses the bigger gains in architecture exploration, debugging, and learning new technologies.</p>
+<p><strong>What remains relevant:</strong> The ability to define what to delegate and what to own. Judgment about where the line should be. This is a uniquely human skill.</p>
+<h2 id="stage-5-depression-nothing-i-learned-matters-anymore">Stage 5: Depression — &quot;Nothing I learned matters anymore&quot;</h2>
+<p>A developer with twenty years of experience watches a bootcamp graduate use an AI agent to build in a weekend what would have been a month-long project. The generated code follows patterns the senior developer spent years mastering. The feeling arrives unbidden: <em>&quot;Why did I spend two decades learning all this if a machine can replicate it in minutes?&quot;</em></p>
+<p>The identity crisis is real: <strong>&quot;If I'm not the person who writes elegant code, who am I?&quot;</strong></p>
+<p>Some skills genuinely <em>are</em> less valuable now. Memorizing API surfaces, writing boilerplate from scratch, manual repetitive refactoring — these are legitimately being automated away. Acknowledging this is not weakness. It is honesty, and pretending otherwise only prolongs the pain.</p>
+<p>This is the stage where burnout happens. Where career-exit decisions are made — not from lack of skill, but from <strong>loss of purpose</strong>.</p>
+<p>But if you sit with the discomfort long enough, something clarifies. You start to see what <em>actually</em> differentiates you from the machine: judgment, context, relationships, domain knowledge. The ability to say &quot;no&quot; to a technically correct but strategically wrong solution. <strong>The ability to know what should be built, not just what can be built.</strong></p>
+<p><strong>What is gained:</strong> Clarity. This is the valley before the climb. The developer who makes it through sees their own value more clearly than ever.</p>
+<p><strong>What you risk losing:</strong> Motivation. This is where people leave the industry entirely — not because they cannot do the work, but because they lost the reason to.</p>
+<p><strong>What remains relevant:</strong> Understanding <em>why</em> code works. Domain expertise. Trade-off evaluation. Communication with stakeholders. Mentoring others through this same journey. And taste — the aesthetic judgment of what &quot;good&quot; looks like in a specific context.</p>
+<h2 id="stage-6-experimentation-what-if-i-actually-lean-into-this">Stage 6: Experimentation — &quot;What if I actually lean into this?&quot;</h2>
+<p>The fog lifts. You stop treating AI as a threat or a toy and start running real experiments.</p>
+<p>You pair-program with an agent on a complex refactoring. You use it to explore an unfamiliar framework. You let it write the first draft of an architecture and then you critique it. You start keeping notes on what works and what fails.</p>
+<p>The shift is subtle but profound: from <strong>passive consumption</strong> to <strong>active experimentation</strong>. You discover the feedback loop — better input produces dramatically better output. You find the agent's real limits through deliberate testing, not accidental frustration.</p>
+<p>The &quot;aha&quot; moments start stacking:</p>
+<ul>
+<li><em>&quot;It can't design the architecture, but it can stress-test mine by generating edge cases.&quot;</em></li>
+<li><em>&quot;It can't write the domain model, but it can scaffold the infrastructure around it.&quot;</em></li>
+<li><em>&quot;It doesn't replace my thinking, but it accelerates it.&quot;</em></li>
+</ul>
+<p><strong>Try these experiments yourself:</strong></p>
+<ul>
+<li>Ask the agent to review your own code and evaluate whether its critique is valid.</li>
+<li>Give it a bug report and observe how it approaches debugging.</li>
+<li>Describe an architecture decision you made last month; ask for alternatives and evaluate them.</li>
+<li>Use the agent to learn a technology you have never touched before.</li>
+</ul>
+<p><strong>What is gained:</strong> A new skillset that did not exist two years ago. Prompt engineering, AI-assisted architecture validation, rapid prototyping. The developer who experiments seriously becomes <strong>more capable, not less</strong>.</p>
+<p><strong>What you risk losing:</strong> Quality, if experimentation lacks discipline. Speed without guardrails leads to technical debt at machine speed.</p>
+<p><strong>What remains relevant:</strong> The scientific method. Hypothesis, experiment, evaluate, iterate. This is what developers have always done. The tool changed. The method did not.</p>
+<h2 id="stage-7-acceptance-this-is-how-i-work-now">Stage 7: Acceptance — &quot;This is how I work now&quot;</h2>
+<p>Six months later. You open your terminal, start a session with an AI agent, and it feels as natural as opening an IDE. You have a mental model of what to delegate and what to own. You prompt with precision. You review with confidence. You ship faster, but more importantly, you <strong>think at a higher level</strong>.</p>
+<p>Acceptance is not surrender. It is the most active stage. It requires <strong>continuous calibration</strong> — because the tools evolve, the projects change, and the boundaries shift.</p>
+<p>Your identity has evolved. You are no longer &quot;the person who writes code.&quot; You are <strong>the person who designs systems, directs implementation, and ensures quality</strong>. Like the <a href="/posts/pilotage-automatique">driver who remains responsible</a> even as the car becomes autonomous — the steering wheel is different, but the destination is still yours to choose.</p>
+<h3 id="what-you-gain">What you gain</h3>
+<ul>
+<li><strong>Productivity</strong> — the obvious one, but real.</li>
+<li><strong>Broader scope</strong> — you can take on larger projects because the implementation bottleneck is reduced.</li>
+<li><strong>Learning speed</strong> — exploring unfamiliar territory with an AI partner is dramatically faster.</li>
+<li><strong>Focus</strong> — more time on architecture, domain modeling, and mentoring. Less time on mechanical tasks.</li>
+<li><strong>A new career trajectory</strong> — the developer who masters AI collaboration becomes more valuable, not less.</li>
+</ul>
+<h3 id="what-you-risk-losing-if-you-dont-pay-attention">What you risk losing if you don't pay attention</h3>
+<ul>
+<li><strong>Code understanding</strong> — if you stop reading the generated code carefully.</li>
+<li><strong>Deep debugging skills</strong> — if you always ask the agent to fix things instead of investigating yourself.</li>
+<li><strong>Fundamental knowledge</strong> — if juniors skip learning the basics because &quot;the AI handles it.&quot;</li>
+<li><strong>Security awareness</strong> — AI does not think adversarially. It does not imagine the attacker.</li>
+<li><strong>The craft satisfaction</strong> — the meditative joy of writing code from scratch. This is a real loss worth acknowledging.</li>
+</ul>
+<h3 id="what-you-will-have-to-accept">What you will have to accept</h3>
+<ul>
+<li>Your role has changed permanently.</li>
+<li>Some of your hard-won skills are now commodity knowledge.</li>
+<li>The speed of change will not slow down.</li>
+<li>Junior developers will learn differently than you did — and that is OK.</li>
+<li>You will need to keep learning, not just technology, but how to collaborate with AI effectively.</li>
+</ul>
+<h3 id="what-is-still-relevant-and-always-will-be">What is still relevant — and always will be</h3>
+<ul>
+<li>Architecture and system design.</li>
+<li>Domain expertise and business understanding.</li>
+<li>Code review and quality judgment.</li>
+<li>Security thinking.</li>
+<li>Communication and stakeholder management.</li>
+<li>Mentorship and knowledge transfer.</li>
+<li>Ethical judgment: knowing what <em>should</em> be built, not just what <em>can</em> be built.</li>
+<li>Taste: the ability to distinguish &quot;correct&quot; from &quot;good.&quot;</li>
+</ul>
+<h2 id="the-map">The map</h2>
+<table>
+<thead>
+<tr>
+<th>Stage</th>
+<th>Grief</th>
+<th>Developer reality</th>
+<th>Gained</th>
+<th>At risk</th>
+<th>Still relevant</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Shock</td>
+<td>Disbelief</td>
+<td>&quot;It wrote my service in 30 seconds&quot;</td>
+<td>Awareness</td>
+<td>Time, if you freeze</td>
+<td>Judgment to evaluate output</td>
+</tr>
+<tr>
+<td>2. Denial</td>
+<td>&quot;This isn't real&quot;</td>
+<td>&quot;It's just fancy autocomplete&quot;</td>
+<td>Critical reflex</td>
+<td>Competitive relevance</td>
+<td>Deep technical knowledge</td>
+</tr>
+<tr>
+<td>3. Anger</td>
+<td>Frustration</td>
+<td>&quot;This ruins craftsmanship&quot;</td>
+<td>Energy and motivation</td>
+<td>Influence and relationships</td>
+<td>Mentorship, care for quality</td>
+</tr>
+<tr>
+<td>4. Bargaining</td>
+<td>Negotiation</td>
+<td>&quot;Only for boilerplate&quot;</td>
+<td>First productivity gains</td>
+<td>Growth ceiling</td>
+<td>Delegation judgment</td>
+</tr>
+<tr>
+<td>5. Depression</td>
+<td>Despair</td>
+<td>&quot;My skills are worthless&quot;</td>
+<td>Clarity about true value</td>
+<td>Motivation, career commitment</td>
+<td>Domain expertise, taste</td>
+</tr>
+<tr>
+<td>6. Experimentation</td>
+<td>Exploration</td>
+<td>&quot;Let me really try this&quot;</td>
+<td>New skillset, prompt craft</td>
+<td>Quality if undisciplined</td>
+<td>Scientific method</td>
+</tr>
+<tr>
+<td>7. Acceptance</td>
+<td>Integration</td>
+<td>&quot;This is how I work now&quot;</td>
+<td>Full collaboration</td>
+<td>Deep skills if careless</td>
+<td>Architecture, ethics, responsibility</td>
+</tr>
+</tbody>
+</table>
+<h2 id="conclusion">Conclusion</h2>
+<p>The seven stages are not linear. You will loop back. You may be at stage six for backend work and stage three for AI-generated frontend code. You may have reached acceptance on Monday and wake up angry on Tuesday after reading another &quot;AI replaces developers&quot; headline. That is normal. That is human.</p>
+<p>The grief is real because <strong>the loss is real</strong>. The way developers worked for decades is changing fundamentally. Pretending otherwise is denial. Raging against it is anger. Negotiating boundaries is bargaining. Feeling lost is depression. And all of these are necessary stops on the way to something new.</p>
+<p>What &quot;dies&quot; is a certain <em>way</em> of being a developer. What is born is something different — a developer who thinks more, types less, and remains the human in the loop who decides what gets built, why it gets built, and whether it is good enough.</p>
+<p><strong>The code is no longer yours. The responsibility still is.</strong></p>
