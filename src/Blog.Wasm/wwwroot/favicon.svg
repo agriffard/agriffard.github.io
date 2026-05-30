@@ -10,5 +10,5 @@
       fill: #000;
     }
   </style>
-  <text x="0" y="50%" dominant-baseline="central">/AG</text>
+  <text x="1" y="50%" dominant-baseline="central">/AG</text>
 </svg>
