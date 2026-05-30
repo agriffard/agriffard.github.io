@@ -9,7 +9,7 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\src\Blog.Shared\Blog.Shared.csproj" />
-    <PackageReference Include="YamlDotNet" Version="16.*" />
-    <PackageReference Include="Markdig"    Version="0.40.*" />
+    <PackageReference Include="YamlDotNet" Version="18.0.0" />
+    <PackageReference Include="Markdig" Version="1.2.0" />
   </ItemGroup>
 </Project>
