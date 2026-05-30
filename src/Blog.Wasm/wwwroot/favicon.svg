@@ -1,5 +1,12 @@
-<svg width="32px" height="32px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-<style>
-@media (prefers-color-scheme:dark){:root{filter:invert(100%)}}
-</style>
-<path d="M 4.0625 6.40625 L 2.4375 7.59375 L 8.75 16 L 2.4375 24.40625 L 4.0625 25.59375 L 10.8125 16.59375 L 11.25 16 L 10.8125 15.40625 Z M 24 5 L 18 27 L 20 27 L 26 5 Z"/></svg>
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="> /AG">
+  <style>
+    @media (prefers-color-scheme: dark) {
+      :root { filter: invert(100%); }
+    }
+    text {
+      font: 700 11px ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      fill: #000;
+    }
+  </style>
+  <text x="2" y="20">&gt; /AG</text>
+</svg>
