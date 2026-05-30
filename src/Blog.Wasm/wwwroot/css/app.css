@@ -365,6 +365,45 @@ mark { background: var(--mark-bg); padding: 0 0.15rem; border-radius: 2px; }
     .skill-grid-flat { grid-template-columns: repeat(12, 1fr); }
 }
 
+/* ── Projects Page ───────────────────────────────────────────────── */
+.projects-page .page-title { text-align: center; margin-bottom: 2rem; }
+.project-group { margin-bottom: 2.5rem; }
+.project-group-title {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--border, #e0e0e0);
+}
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+}
+.project-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 0.9rem 1rem;
+    border: 1px solid var(--border, #e0e0e0);
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--text);
+    transition: transform 0.15s, box-shadow 0.15s;
+}
+.project-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.project-card-name { font-weight: 600; }
+.project-card-desc { font-size: 0.85rem; color: var(--text-muted, #666); }
+
+@media (min-width: 600px) {
+    .project-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 900px) {
+    .project-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
 /* ── Custom Page ─────────────────────────────────────────────────── */
 .custom-page .prose { max-width: 100%; }
 

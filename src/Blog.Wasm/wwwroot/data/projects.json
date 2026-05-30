@@ -1,0 +1,21 @@
+{
+  "repos": [
+    { "name": "DocKit", "description": "GitHub Pages Blazor wasm docs app.", "url": "https://github.com/agriffard/DocKit" }
+  ],
+  "nuget": [
+    { "name": "ClaimsPolicyBuilder", "description": "Fluent claims authorization policy builder.", "url": "https://www.nuget.org/packages/ClaimsPolicyBuilder" },
+    { "name": "FormKit", "description": "Dynamic form rendering toolkit.", "url": "https://www.nuget.org/packages/FormKit" },
+    { "name": "PermissionGate", "description": "Permission-based authorization.", "url": "https://github.com/agriffard/PermissionGate" },
+    { "name": "CookieConsent.OrchardCore", "description": "Cookie consent module for Orchard Core.", "url": "https://www.nuget.org/packages/CookieConsent.OrchardCore" },
+    { "name": "Disqus.OrchardCore", "description": "Disqus comments module for Orchard Core.", "url": "https://www.nuget.org/packages/Disqus.OrchardCore" },
+    { "name": "TheResumeTheme", "description": "Resume theme for Orchard Core.", "url": "https://www.nuget.org/packages/TheResumeTheme" },
+    { "name": "TheBootstrapTheme", "description": "Bootstrap theme for Orchard Core.", "url": "https://www.nuget.org/packages/TheBootstrapTheme" },
+    { "name": "TheClassLessTheme", "description": "Classless theme for Orchard Core.", "url": "https://www.nuget.org/packages/TheClassLessTheme" },
+    { "name": "Prism.OrchardCore", "description": "Prism syntax highlighting for Orchard Core.", "url": "https://www.nuget.org/packages/Prism.OrchardCore" },
+    { "name": "SEO.OrchardCore", "description": "SEO module for Orchard Core.", "url": "https://www.nuget.org/packages/SEO.OrchardCore" },
+    { "name": "StringSlugify", "description": "String slugify helper.", "url": "https://www.nuget.org/packages/StringSlugify" }
+  ],
+  "samples": [
+    { "name": "Blistro Demo", "description": "Blazor Wasm restaurant site sample.", "url": "https://github.com/agriffard/Blistro" }
+  ]
+}

@@ -1,0 +1,97 @@
+@page "/projects"
+@layout MainLayout
+@inject IOptions<SiteSettings> SiteOptions
+@inject HttpClient Http
+
+<OgMeta Title="Projects"
+        Description="GitHub repos, NuGet packages et samples"
+        Url="/projects" />
+
+<PageTitle>Projects — @SiteOptions.Value.Title</PageTitle>
+
+<section class="projects-page">
+    <h1 class="page-title">Projects</h1>
+
+    @if (_projects is null)
+    {
+        <p class="loading">Chargement…</p>
+    }
+    else
+    {
+        @RenderGroup("GitHub Repos", _projects.Repos)
+        @RenderGroup("NuGet Packages", _projects.Nuget)
+        @RenderGroup("Samples", _projects.Samples)
+    }
+</section>
+
+@code {
+    private ProjectData? _projects;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            _projects = await Http.GetFromJsonAsync<ProjectData>("data/projects.json");
+        }
+        catch
+        {
+            _projects = new ProjectData();
+        }
+    }
+
+    private RenderFragment RenderGroup(string title, List<ProjectItem>? items) => builder =>
+    {
+        if (items is null || items.Count == 0) return;
+
+        builder.OpenElement(0, "div");
+        builder.AddAttribute(1, "class", "project-group");
+
+        builder.OpenElement(2, "h2");
+        builder.AddAttribute(3, "class", "project-group-title");
+        builder.AddContent(4, title);
+        builder.CloseElement();
+
+        builder.OpenElement(5, "div");
+        builder.AddAttribute(6, "class", "project-grid");
+        foreach (var item in items)
+        {
+            builder.OpenElement(7, "a");
+            builder.AddAttribute(8, "class", "project-card");
+            builder.AddAttribute(9, "href", item.Url);
+            builder.AddAttribute(10, "target", "_blank");
+            builder.AddAttribute(11, "rel", "noopener noreferrer");
+
+            builder.OpenElement(12, "span");
+            builder.AddAttribute(13, "class", "project-card-name");
+            builder.AddContent(14, item.Name);
+            builder.CloseElement();
+
+            if (!string.IsNullOrEmpty(item.Description))
+            {
+                builder.OpenElement(15, "span");
+                builder.AddAttribute(16, "class", "project-card-desc");
+                builder.AddContent(17, item.Description);
+                builder.CloseElement();
+            }
+
+            builder.CloseElement();
+        }
+        builder.CloseElement();
+
+        builder.CloseElement();
+    };
+
+    private class ProjectData
+    {
+        public List<ProjectItem> Repos { get; set; } = [];
+        public List<ProjectItem> Nuget { get; set; } = [];
+        public List<ProjectItem> Samples { get; set; } = [];
+    }
+
+    private class ProjectItem
+    {
+        public string Name { get; set; } = string.Empty;
+        public string? Description { get; set; }
+        public string Url { get; set; } = string.Empty;
+    }
+}
