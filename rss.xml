@@ -4,6 +4,13 @@
     <link>https://antoinegriffard.com</link>
     <atom:link href="https://antoinegriffard.com/rss.xml" rel="self" type="application/rss+xml"/>
           <item>
+        <title><![CDATA[Understanding Shapes in Orchard Core]]></title>
+        <link>https://antoinegriffard.com/posts/orchard-core-shapes</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/orchard-core-shapes</guid>
+        <pubDate>Thu, 04 Jun 2026 12:00:00 GMT</pubDate>
+        <description><![CDATA[Shapes are the dynamic building blocks of every Orchard Core page. Here is what they are, how the rendering pipeline turns them into HTML, and why alternates and placement give you so much control without touching code.]]></description>
+        <category>OrchardCore</category><category>DotNet</category>
+      </item>      <item>
         <title><![CDATA[The 7 Stages of AI Grief: A Developer's Journey from Denial to Integration]]></title>
         <link>https://antoinegriffard.com/posts/stages-of-ai-grief</link>
         <guid isPermaLink="true">https://antoinegriffard.com/posts/stages-of-ai-grief</guid>

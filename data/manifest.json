@@ -1,6 +1,25 @@
 {
-  "generatedAt": "2026-06-04T10:48:13.1939282Z",
+  "generatedAt": "2026-06-04T15:58:07.4615263Z",
   "posts": [
+    {
+      "slug": "orchard-core-shapes",
+      "title": "Understanding Shapes in Orchard Core",
+      "pubDatetime": "2026-06-04T12:00:00Z",
+      "author": "agriffard",
+      "categories": [
+        "OrchardCore"
+      ],
+      "tags": [
+        "OrchardCore",
+        "DotNet"
+      ],
+      "description": "Shapes are the dynamic building blocks of every Orchard Core page. Here is what they are, how the rendering pipeline turns them into HTML, and why alternates and placement give you so much control without touching code.",
+      "cover": "og/orchard-core-shapes.svg",
+      "readingTime": 6,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2026/2026-06-04-orchard-core-shapes.md"
+    },
     {
       "slug": "stages-of-ai-grief",
       "title": "The 7 Stages of AI Grief: A Developer\u0027s Journey from Denial to Integration",

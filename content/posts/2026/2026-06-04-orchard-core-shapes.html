@@ -1,0 +1,117 @@
+<p>If you come to Orchard Core from classic ASP.NET MVC, the first thing that confuses you is that there are almost no fixed view models. A page is not a single strongly-typed <code>Model</code> rendered by a single <code>.cshtml</code>. Instead, the page is a <strong>tree of Shapes</strong> — small, dynamic objects that each know how they want to be displayed, assembled at runtime and rendered into HTML.</p>
+<p>Shapes are the single most important concept in Orchard Core's UI layer. Once they click, the whole theming and customization story makes sense. Until they click, everything feels like magic. This post is about removing the magic.</p>
+<h2 id="what-a-shape-actually-is">What a Shape actually is</h2>
+<p>A Shape is a <strong>dynamic object</strong>. Technically it is an instance built on top of <code>Composite</code> / <code>IShape</code>, and you interact with it like an <code>ExpandoObject</code>: you can add any property to it at runtime without declaring a class.</p>
+<pre><code class="language-csharp">dynamic shape = await _shapeFactory.CreateAsync(&quot;Product&quot;);
+shape.Title = &quot;Keyboard&quot;;
+shape.Price = 49.90m;
+</code></pre>
+<p>There is no <code>ProductShape</code> class with a <code>Title</code> property. You invented <code>Title</code> and <code>Price</code> on the spot. That is the point: a Shape carries <strong>data</strong> plus <strong>metadata about how to render it</strong>, and nothing more rigid than that.</p>
+<p>Every Shape has a <code>Metadata</code> object that holds the important rendering information:</p>
+<ul>
+<li><strong>Type</strong> — the logical name, e.g. <code>Product</code>. This drives template selection.</li>
+<li><strong>Alternates</strong> — an ordered list of candidate template names (more on this below).</li>
+<li><strong>DisplayType</strong> — <code>Detail</code>, <code>Summary</code>, <code>SummaryAdmin</code>, etc.</li>
+<li><strong>Wrappers</strong>, <strong>Position</strong>, and a few other hints.</li>
+</ul>
+<p>The mental shift: a Shape does not <em>know</em> its HTML. It only knows its <strong>type and data</strong>. Turning it into markup is the job of the rendering pipeline.</p>
+<h2 id="the-rendering-pipeline">The rendering pipeline</h2>
+<p>When Orchard Core needs to render a Shape, the <strong><code>IDisplayHelper</code></strong> asks the <strong>shape table</strong> which template matches. Resolution walks the candidate names from <strong>most specific to least specific</strong> and picks the first template that exists:</p>
+<pre><code>Product-Keyboard.Detail.cshtml   ← most specific (alternate)
+Product.Detail.cshtml
+Product.cshtml                    ← least specific (fallback)
+</code></pre>
+<p>The first file found wins. If none exist, Orchard falls back to a default rendering. This is why you can drop a single <code>.cshtml</code> into your theme and override exactly one Shape in one display type without recompiling anything — the resolver simply finds your more specific template first.</p>
+<p>Templates can live in <strong>modules</strong> or <strong>themes</strong>, and the theme always wins over the module. That is the entire override mechanism: ship a default in the module, let the theme replace it by providing a file with a matching name.</p>
+<h2 id="alternates-targeted-overrides-without-code">Alternates: targeted overrides without code</h2>
+<p>Alternates are the killer feature. They are extra, more specific candidate template names added to a Shape's metadata so you can override rendering in a narrow context — without touching the module that produced the Shape.</p>
+<p>Orchard Core adds many alternates automatically. For a content item you get alternates by content type, by display type, by id, and so on:</p>
+<pre><code>Content-Article.Detail.cshtml     ← only Article, only Detail view
+Content-Article.cshtml            ← only Article
+Content__42.cshtml                ← only the item with id 42
+Content.Detail.cshtml
+Content.cshtml
+</code></pre>
+<p>You can also add your own alternates from a template or a driver. Want a special layout for the homepage article only? Add an alternate and create that one file. <strong>Nothing else changes.</strong> No conditionals scattered through a shared view, no flags — just one more template the resolver can find.</p>
+<h2 id="placement-moving-shapes-without-templates">Placement: moving Shapes without templates</h2>
+<p>If alternates control <em>how</em> a Shape renders, <strong><code>placement.json</code></strong> controls <em>where</em> it renders and <em>whether</em> it renders at all. Placement is a JSON file in a module or theme that targets Shapes by type and moves them into zones, reorders them, or hides them:</p>
+<pre><code class="language-json">{
+  &quot;Parts_Title&quot;: [
+    { &quot;place&quot;: &quot;Header:1&quot; }
+  ],
+  &quot;TextField&quot;: [
+    {
+      &quot;place&quot;: &quot;Content:5&quot;,
+      &quot;displayType&quot;: &quot;Detail&quot;
+    }
+  ]
+}
+</code></pre>
+<p>Here <code>Parts_Title</code> is pushed into the <code>Header</code> zone at position 1, and the text field is placed in the <code>Content</code> zone at position 5, but only in the <code>Detail</code> display type. Setting <code>&quot;place&quot;: &quot;-&quot;</code> hides a Shape entirely.</p>
+<p>This is the part that surprises newcomers: <strong>you can completely rearrange a content item's display by editing JSON</strong>, no Razor involved. Drivers produce Shapes; placement decides their destination.</p>
+<h2 id="where-shapes-come-from-drivers">Where Shapes come from: drivers</h2>
+<p>Most Shapes you see on a page are produced by <strong>display drivers</strong>. A content part or field has a driver whose <code>Display</code> method returns one or more Shapes:</p>
+<pre><code class="language-csharp">public override IDisplayResult Display(ProductPart part, BuildPartDisplayContext context)
+{
+    return Initialize&lt;ProductViewModel&gt;(&quot;ProductPart&quot;, model =&gt;
+    {
+        model.Title = part.Title;
+        model.Price = part.Price;
+    })
+    .Location(&quot;Detail&quot;, &quot;Content:5&quot;)
+    .Location(&quot;Summary&quot;, &quot;Content:1&quot;);
+}
+</code></pre>
+<p><code>Initialize&lt;T&gt;</code> creates a Shape named <code>ProductPart</code> backed by a typed view model — so inside the template you actually get IntelliSense. <code>.Location(...)</code> sets the default placement, which <code>placement.json</code> can then override. The driver never decides the final HTML or the final position; it only <strong>offers a Shape and a suggestion</strong>.</p>
+<h2 id="zones-and-the-layout-tree">Zones and the layout tree</h2>
+<p>Shapes nest. The top-level Shape is the <strong>Layout</strong>, which exposes named <strong>zones</strong> — <code>Header</code>, <code>Navigation</code>, <code>Content</code>, <code>Footer</code>, and any you define. Rendering a zone renders the ordered Shapes placed into it, each of which may itself contain more zones.</p>
+<pre><code>Layout
+├── Header  → [ Branding, Menu ]
+├── Content → [ Article (→ Title, Body, Tags) ]
+└── Footer  → [ Copyright ]
+</code></pre>
+<p>The page is this whole tree flattened depth-first into HTML. Every node is a Shape; every Shape was resolved to a template independently. That uniformity is what makes the system so composable — there is no special case for &quot;the page&quot; versus &quot;a widget&quot; versus &quot;a field.&quot; It is Shapes all the way down.</p>
+<h2 id="creating-ad-hoc-shapes-in-a-view">Creating ad-hoc Shapes in a view</h2>
+<p>You are not limited to driver Shapes. From any Razor template you can mint a Shape on the fly with the <code>New</code> helper and render it:</p>
+<pre><code class="language-cshtml">@{
+    var card = await New.ProductCard(Title: &quot;Mouse&quot;, Price: 19.90m);
+}
+@await DisplayAsync(card)
+</code></pre>
+<p>Orchard looks for <code>ProductCard.cshtml</code>, passes your properties as the model, and renders it. This is how you build reusable UI fragments that still benefit from alternates and theme overrides.</p>
+<h2 id="why-this-design-is-worth-the-learning-curve">Why this design is worth the learning curve</h2>
+<table>
+<thead>
+<tr>
+<th>Without Shapes</th>
+<th>With Shapes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>One view model per view</td>
+<td>Dynamic objects, no class needed</td>
+</tr>
+<tr>
+<td>Override = edit or fork the view</td>
+<td>Override = add a more specific template</td>
+</tr>
+<tr>
+<td>Reorder UI = change Razor</td>
+<td>Reorder UI = edit <code>placement.json</code></td>
+</tr>
+<tr>
+<td>Conditional rendering scattered in views</td>
+<td>Alternates pick the right template automatically</td>
+</tr>
+<tr>
+<td>Modules and themes tightly coupled</td>
+<td>Theme overrides module by file name</td>
+</tr>
+</tbody>
+</table>
+<p>The cost is real: the indirection is hard at first, debugging &quot;which template rendered this?&quot; takes practice (the <strong>Shape tracing</strong> / placement info tools help), and dynamic objects mean fewer compile-time guarantees.</p>
+<p>But what you buy is a UI that is <strong>endlessly customizable without forking code</strong>. A module author ships sensible defaults. A theme author overrides exactly what they need — one field, one content type, one display type — by adding files and JSON. Neither has to know about the other. That decoupling is the whole reason Orchard Core themes are as powerful as they are.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Shapes are dynamic view models that carry data plus rendering metadata. The pipeline resolves each Shape to a template by walking its alternates from most to least specific, drivers produce the Shapes, and <code>placement.json</code> decides where they land. Master those four ideas — <strong>Shape, alternate, driver, placement</strong> — and the rest of Orchard Core's UI stops being magic and starts being a tool you can bend to your will.</p>
+<p>Start small: open the placement info on a page, find a single Shape, and override it with one template. Once you have done it once, you will see Shapes everywhere — because in Orchard Core, that is all there is.</p>
