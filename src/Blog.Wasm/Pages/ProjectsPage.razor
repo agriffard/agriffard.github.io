@@ -20,6 +20,7 @@
     {
         @RenderGroup("GitHub Repos", _projects.Repos)
         @RenderGroup("NuGet Packages", _projects.Nuget)
+        @RenderGroup("Orchard Core", _projects.Orchardcore)
         @RenderGroup("Samples", _projects.Samples)
     }
 </section>
@@ -85,6 +86,7 @@
     {
         public List<ProjectItem> Repos { get; set; } = [];
         public List<ProjectItem> Nuget { get; set; } = [];
+        public List<ProjectItem> Orchardcore { get; set; } = [];
         public List<ProjectItem> Samples { get; set; } = [];
     }
 
