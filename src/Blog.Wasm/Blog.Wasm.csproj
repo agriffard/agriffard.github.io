@@ -47,6 +47,9 @@
     <Exec Command="powershell -NoProfile -Command &quot;(Get-Content '$(_IndexHtml)') -replace '&lt;base href=&quot;/&quot;', '&lt;base href=&quot;$(GHPagesBase)/&quot;' | Set-Content '$(_IndexHtml)'&quot;" Condition=" $([MSBuild]::IsOSPlatform('Windows'))" />
   </Target>
   <ItemGroup>
+    <Content Update="wwwroot\content\posts\2026\2026-06-07-from-code-to-prompt-en.html">
+      <DependentUpon>2026-06-07-from-code-to-prompt-en.md</DependentUpon>
+    </Content>
     <Content Update="wwwroot\content\posts\2026\2026-06-07-from-code-to-prompt.html">
       <DependentUpon>2026-06-07-from-code-to-prompt.md</DependentUpon>
     </Content>
