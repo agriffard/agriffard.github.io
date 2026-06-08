@@ -53,6 +53,9 @@
     <Content Update="wwwroot\content\posts\2026\2026-06-07-from-code-to-prompt.html">
       <DependentUpon>2026-06-07-from-code-to-prompt.md</DependentUpon>
     </Content>
+    <Content Update="wwwroot\content\posts\2026\2026-06-08-too-busy-to-try.html">
+      <DependentUpon>2026-06-08-too-busy-to-try.md</DependentUpon>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
