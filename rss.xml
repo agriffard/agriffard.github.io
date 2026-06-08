@@ -4,6 +4,13 @@
     <link>https://antoinegriffard.com</link>
     <atom:link href="https://antoinegriffard.com/rss.xml" rel="self" type="application/rss+xml"/>
           <item>
+        <title><![CDATA[Too busy to try]]></title>
+        <link>https://antoinegriffard.com/posts/too-busy-to-try</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/too-busy-to-try</guid>
+        <pubDate>Mon, 08 Jun 2026 12:00:00 GMT</pubDate>
+        <description><![CDATA[A cartoon about cavemen too busy dragging a square box to try the wheel — and what it tells us about how teams adopt (or refuse) AI.]]></description>
+        <category>AI</category>
+      </item>      <item>
         <title><![CDATA[Understanding Shapes in Orchard Core]]></title>
         <link>https://antoinegriffard.com/posts/orchard-core-shapes</link>
         <guid isPermaLink="true">https://antoinegriffard.com/posts/orchard-core-shapes</guid>

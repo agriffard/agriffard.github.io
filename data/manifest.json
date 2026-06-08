@@ -1,6 +1,24 @@
 {
-  "generatedAt": "2026-06-07T16:41:47.7831489Z",
+  "generatedAt": "2026-06-08T11:56:30.2254822Z",
   "posts": [
+    {
+      "slug": "too-busy-to-try",
+      "title": "Too busy to try",
+      "pubDatetime": "2026-06-08T12:00:00Z",
+      "author": "agriffard",
+      "categories": [
+        "AI"
+      ],
+      "tags": [
+        "AI"
+      ],
+      "description": "A cartoon about cavemen too busy dragging a square box to try the wheel \u2014 and what it tells us about how teams adopt (or refuse) AI.",
+      "cover": "og/too-busy-to-try.svg",
+      "readingTime": 3,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2026/2026-06-08-too-busy-to-try.md"
+    },
     {
       "slug": "orchard-core-shapes",
       "title": "Understanding Shapes in Orchard Core",
