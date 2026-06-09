@@ -6,7 +6,7 @@ pubDatetime: 2025-12-31T10:00:00Z
 categories: [Development, Open Source]
 tags: [AI, Copilot, CSharp, DotNet, GitHub]
 description: Exploring how AI agents like GitHub Copilot can accelerate development - creating multiple C# .NET libraries and samples during holiday break.
-featured: true
+featured: false
 ---
 
 ## Overview
