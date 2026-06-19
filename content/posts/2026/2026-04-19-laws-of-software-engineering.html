@@ -1,0 +1,43 @@
+<p>I discovered <a href="https://lawsofsoftwareengineering.com/">lawsofsoftwareengineering.com</a>, a curated collection of software engineering principles grouped by themes like architecture, quality, planning, teams, and decisions.</p>
+<p>What I like is that the site gives us practical reminders we can apply during design reviews, sprint planning, and incident retrospectives.</p>
+<p>Here are a few laws I keep coming back to.</p>
+<h2 id="conways-law">1. Conway's Law</h2>
+<blockquote>
+<p>Organizations design systems that mirror their own communication structure.</p>
+</blockquote>
+<p>If your teams are separated by domain, your architecture will likely reflect those boundaries. This is not good or bad by itself, but it is predictable.</p>
+<p><strong>Practical takeaway:</strong> when architecture is messy, look at org structure and communication paths before blaming code alone.</p>
+<h2 id="hyrums-law">2. Hyrum's Law</h2>
+<blockquote>
+<p>With enough users, every observable behavior of your system will be depended on by somebody.</p>
+</blockquote>
+<p>Even undocumented behavior becomes a contract once clients rely on it.</p>
+<p><strong>Practical takeaway:</strong> treat API changes with humility. Version intentionally, communicate clearly, and assume consumers depend on more than you documented.</p>
+<h2 id="galls-law">3. Gall's Law</h2>
+<blockquote>
+<p>A complex system that works is usually evolved from a simple system that worked.</p>
+</blockquote>
+<p>Big-bang designs look elegant in diagrams, but reliable systems tend to grow in iterations.</p>
+<p><strong>Practical takeaway:</strong> start with the smallest solution that can work in production, then evolve based on real constraints.</p>
+<h2 id="brookss-law">4. Brooks's Law</h2>
+<blockquote>
+<p>Adding manpower to a late software project makes it later.</p>
+</blockquote>
+<p>More people can increase coordination overhead, onboarding time, and communication costs.</p>
+<p><strong>Practical takeaway:</strong> when timelines slip, fix scope and sequencing first. Adding engineers late is often the most expensive move.</p>
+<h2 id="goodharts-law">5. Goodhart's Law</h2>
+<blockquote>
+<p>When a measure becomes a target, it stops being a good measure.</p>
+</blockquote>
+<p>Metrics are useful until teams optimize the metric instead of the outcome.</p>
+<p><strong>Practical takeaway:</strong> use a balanced set of indicators (quality, delivery, reliability, user impact), and review behaviors created by each metric.</p>
+<h2 id="why-this-collection-is-useful">Why this collection is useful</h2>
+<p>The value of these laws is not in memorizing one-liners. It is in using them as <strong>decision prompts</strong>:</p>
+<ul>
+<li>Are we designing around our org chart? (Conway)</li>
+<li>Are we breaking hidden contracts? (Hyrum)</li>
+<li>Are we overengineering too early? (Gall)</li>
+<li>Are we solving delay with headcount instead of clarity? (Brooks)</li>
+<li>Are we gaming our own dashboard? (Goodhart)</li>
+</ul>
+<p>That is why this site is worth bookmarking: it helps turn experience into better defaults.</p>

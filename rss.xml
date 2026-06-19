@@ -25,6 +25,13 @@
         <description><![CDATA[A cartoon about cavemen too busy dragging a square box to try the wheel — and what it tells us about how teams adopt (or refuse) AI.]]></description>
         <category>AI</category>
       </item>      <item>
+        <title><![CDATA[Laws of Software Engineering]]></title>
+        <link>https://antoinegriffard.com/posts/laws-of-software-engineering</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/laws-of-software-engineering</guid>
+        <pubDate>Sun, 19 Apr 2026 12:00:00 GMT</pubDate>
+        <description><![CDATA[A quick tour of lawsofsoftwareengineering.com and five laws that help teams make better technical and product decisions.]]></description>
+        <category>software-engineering</category><category>architecture</category><category>teams</category>
+      </item>      <item>
         <title><![CDATA[The 7 Stages of AI Grief: A Developer's Journey from Denial to Integration]]></title>
         <link>https://antoinegriffard.com/posts/stages-of-ai-grief</link>
         <guid isPermaLink="true">https://antoinegriffard.com/posts/stages-of-ai-grief</guid>

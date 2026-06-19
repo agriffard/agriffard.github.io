@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T08:32:44.844901Z",
+  "generatedAt": "2026-06-19T15:25:43.179782Z",
   "posts": [
     {
       "slug": "orchard-core-3.0.0",
@@ -55,6 +55,26 @@
       "draft": false,
       "featured": false,
       "path": "content/posts/2026/2026-05-18-too-busy-to-try.md"
+    },
+    {
+      "slug": "laws-of-software-engineering",
+      "title": "Laws of Software Engineering",
+      "pubDatetime": "2026-04-19T12:00:00Z",
+      "author": "agriffard",
+      "categories": [
+        "Engineering"
+      ],
+      "tags": [
+        "software-engineering",
+        "architecture",
+        "teams"
+      ],
+      "description": "A quick tour of lawsofsoftwareengineering.com and five laws that help teams make better technical and product decisions.",
+      "cover": "og/laws-of-software-engineering.svg",
+      "readingTime": 2,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2026/2026-04-19-laws-of-software-engineering.md"
     },
     {
       "slug": "stages-of-ai-grief",
