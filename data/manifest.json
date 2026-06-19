@@ -1,6 +1,24 @@
 {
-  "generatedAt": "2026-06-09T11:58:46.1473126Z",
+  "generatedAt": "2026-06-19T08:30:25.0852872Z",
   "posts": [
+    {
+      "slug": "orchard-core-3.0.0",
+      "title": "Orchard Core 3.0.0 Release",
+      "pubDatetime": "2026-06-18T12:00:00Z",
+      "author": "agriffard",
+      "categories": [
+        "OrchardCore"
+      ],
+      "tags": [
+        "Release"
+      ],
+      "description": "Orchard Core 3.0.0 Release is available.",
+      "cover": "og/orchard-core-3.0.0.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2026/2026-06-18-orchard-core-3.0.0.md"
+    },
     {
       "slug": "too-busy-to-try",
       "title": "Too busy to try",
