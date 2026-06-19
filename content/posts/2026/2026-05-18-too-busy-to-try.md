@@ -2,7 +2,7 @@
 title: Too busy to try
 slug: too-busy-to-try
 author: agriffard
-pubDatetime: 2026-06-08T12:00:00Z
+pubDatetime: 2026-05-18T12:00:00Z
 categories: [AI]
 tags: [AI]
 description: A cartoon about cavemen too busy dragging a square box to try the wheel — and what it tells us about how teams adopt (or refuse) AI.
