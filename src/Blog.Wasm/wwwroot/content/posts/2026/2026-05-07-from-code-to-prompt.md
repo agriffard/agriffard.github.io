@@ -2,7 +2,7 @@
 title: From <.../> to >/...
 slug: from-code-to-prompt
 author: agriffard
-pubDatetime: 2026-06-07T12:00:00Z
+pubDatetime: 2026-05-07T12:00:00Z
 categories: [AI]
 tags: [AI]
 description: Comment mon métier de développeur, après 20 ans d'expérience, est passé de l'écriture de code au pilotage d'agents IA qui le génèrent.
