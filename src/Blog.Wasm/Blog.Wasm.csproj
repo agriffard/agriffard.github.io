@@ -50,6 +50,9 @@
     <Content Update="wwwroot\content\posts\2025\2025-12-31-prototyping-with-ai-agents.html">
       <DependentUpon>2025-12-31-prototyping-with-ai-agents.md</DependentUpon>
     </Content>
+    <Content Update="wwwroot\content\posts\2026\2026-04-19-laws-of-software-engineering.html">
+      <DependentUpon>2026-04-19-laws-of-software-engineering.md</DependentUpon>
+    </Content>
     <Content Update="wwwroot\content\posts\2026\2026-06-07-from-code-to-prompt-en.html">
       <DependentUpon>2026-06-07-from-code-to-prompt-en.md</DependentUpon>
     </Content>
