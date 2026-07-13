@@ -1,6 +1,42 @@
 {
-  "generatedAt": "2026-06-19T15:25:43.179782Z",
+  "generatedAt": "2026-07-13T08:51:31.7676014Z",
   "posts": [
+    {
+      "slug": "vendeurs-de-pelles",
+      "title": "Les vendeurs de pelles",
+      "pubDatetime": "2026-07-13T12:00:00Z",
+      "author": "agriffard",
+      "categories": [
+        "AI"
+      ],
+      "tags": [
+        "Opinion"
+      ],
+      "description": "Vous creusez \u00E0 la pioche depuis des ann\u00E9es ? Bonne nouvelle : voici une machine r\u00E9volutionnaire. Il suffit de la louer, de payer l\u0027\u00E9nergie, la formation... Toute ressemblance avec une technologie existante serait purement fortuite.",
+      "cover": "og/vendeurs-de-pelles.svg",
+      "readingTime": 3,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2026/2026-07-13-vendeurs-de-pelles.md"
+    },
+    {
+      "slug": "orchard-core-3.0.1",
+      "title": "Orchard Core 3.0.1 Release",
+      "pubDatetime": "2026-07-09T12:00:00Z",
+      "author": "agriffard",
+      "categories": [
+        "OrchardCore"
+      ],
+      "tags": [
+        "Release"
+      ],
+      "description": "Orchard Core 3.0.1 Release is available.",
+      "cover": "og/orchard-core-3.0.1.svg",
+      "readingTime": 1,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2026/2026-07-09-orchard-core-3.0.1.md"
+    },
     {
       "slug": "orchard-core-3.0.0",
       "title": "Orchard Core 3.0.0 Release",
