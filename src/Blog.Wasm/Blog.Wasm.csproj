@@ -47,6 +47,9 @@
     <Exec Command="powershell -NoProfile -Command &quot;(Get-Content '$(_IndexHtml)') -replace '&lt;base href=&quot;/&quot;', '&lt;base href=&quot;$(GHPagesBase)/&quot;' | Set-Content '$(_IndexHtml)'&quot;" Condition=" $([MSBuild]::IsOSPlatform('Windows'))" />
   </Target>
   <ItemGroup>
+    <Content Update="wwwroot\content\posts\2025\2025-09-19-webapplicationbuilder-extensions.html">
+      <DependentUpon>2025-09-19-webapplicationbuilder-extensions.md</DependentUpon>
+    </Content>
     <Content Update="wwwroot\content\posts\2025\2025-12-31-prototyping-with-ai-agents.html">
       <DependentUpon>2025-12-31-prototyping-with-ai-agents.md</DependentUpon>
     </Content>

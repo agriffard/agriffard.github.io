@@ -59,10 +59,12 @@ Mais avant de signer l'abonnement, la formation et le contrat d'énergie, posez-
 
 - **Qu'est-ce que je creuse, au juste ?** Un trou plus vite creusé n'a d'intérêt que si le trou sert à quelque chose.
 - **Est-ce que je sais encore creuser sans la machine ?** Le jour où elle tombe en panne, où le tarif triple, ou où le fournisseur ferme boutique, vos bras seront votre seul recours.
-- **Suis-je le client, ou le produit d'appel ?** Chaque trou que vous creusez avec la machine apprend à la machine à creuser. Un jour, on vendra peut-être des trous directement, sans creuseur.
+- **Suis-je le client, ou le produit d'appel ?** Chaque trou que vous creusez avec la machine apprend à la machine à creuser. Un jour, on vendra des trous directement, sans personne pour les creuser.
 
 ## Conclusion
 
 Les nouveaux outils sont impressionnants, et il serait stupide de ne pas s'en servir. Mais gardez votre vieille pelle au fond de l'atelier, entretenez vos bras, et souvenez-vous de la seule loi qui n'a jamais changé depuis la ruée vers l'or :
 
 **Quand tout le monde creuse, vendez des pelles.**
+
+NB: Ce post a été écrit avec une pelle.

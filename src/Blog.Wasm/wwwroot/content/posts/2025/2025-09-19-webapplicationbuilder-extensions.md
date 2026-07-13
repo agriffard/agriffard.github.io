@@ -6,7 +6,6 @@ pubDatetime: 2025-09-19T12:00:00Z
 categories: [DotNet]
 tags: [BestPractices, ExtensionMethods]
 description: Learn how to organize your ASP.NET application configuration using extension methods for better maintainability and separation of concerns.
-featured: true
 ---
 
 When building ASP.NET Core applications, the `Program.cs` file can quickly become overwhelming as your application grows. Service registrations, middleware configuration, authentication setup, and database connections all pile up, making the main entry point difficult to read and maintain.
