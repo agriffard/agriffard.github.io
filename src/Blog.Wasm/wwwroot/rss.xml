@@ -4,12 +4,12 @@
     <link>https://antoinegriffard.com</link>
     <atom:link href="https://antoinegriffard.com/rss.xml" rel="self" type="application/rss+xml"/>
           <item>
-        <title><![CDATA[Laws of Software Engineering]]></title>
-        <link>https://antoinegriffard.com/posts/laws-of-software-engineering</link>
-        <guid isPermaLink="true">https://antoinegriffard.com/posts/laws-of-software-engineering</guid>
-        <pubDate>Fri, 19 Jun 2026 12:00:00 GMT</pubDate>
-        <description><![CDATA[A quick tour of lawsofsoftwareengineering.com and five laws that help teams make better technical and product decisions.]]></description>
-        <category>software-engineering</category><category>architecture</category><category>teams</category>
+        <title><![CDATA[Orchard Core 3.0.1 Release]]></title>
+        <link>https://antoinegriffard.com/posts/orchard-core-3.0.1</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/orchard-core-3.0.1</guid>
+        <pubDate>Thu, 09 Jul 2026 12:00:00 GMT</pubDate>
+        <description><![CDATA[Orchard Core 3.0.1 Release is available.]]></description>
+        <category>Release</category>
       </item>      <item>
         <title><![CDATA[Orchard Core 3.0.0 Release]]></title>
         <link>https://antoinegriffard.com/posts/orchard-core-3.0.0</link>
@@ -31,6 +31,13 @@
         <pubDate>Mon, 18 May 2026 12:00:00 GMT</pubDate>
         <description><![CDATA[A cartoon about cavemen too busy dragging a square box to try the wheel — and what it tells us about how teams adopt (or refuse) AI.]]></description>
         <category>AI</category>
+      </item>      <item>
+        <title><![CDATA[Laws of Software Engineering]]></title>
+        <link>https://antoinegriffard.com/posts/laws-of-software-engineering</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/laws-of-software-engineering</guid>
+        <pubDate>Sun, 19 Apr 2026 12:00:00 GMT</pubDate>
+        <description><![CDATA[A quick tour of lawsofsoftwareengineering.com and five laws that help teams make better technical and product decisions.]]></description>
+        <category>software-engineering</category><category>architecture</category><category>teams</category>
       </item>      <item>
         <title><![CDATA[The 7 Stages of AI Grief: A Developer's Journey from Denial to Integration]]></title>
         <link>https://antoinegriffard.com/posts/stages-of-ai-grief</link>
