@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-13T08:51:31.7676014Z",
+  "generatedAt": "2026-07-13T09:05:04.6061279Z",
   "posts": [
     {
       "slug": "vendeurs-de-pelles",
@@ -18,6 +18,24 @@
       "draft": false,
       "featured": false,
       "path": "content/posts/2026/2026-07-13-vendeurs-de-pelles.md"
+    },
+    {
+      "slug": "shovel-sellers",
+      "title": "The Shovel Sellers",
+      "pubDatetime": "2026-07-13T12:00:00Z",
+      "author": "agriffard",
+      "categories": [
+        "AI"
+      ],
+      "tags": [
+        "Opinion"
+      ],
+      "description": "You\u0027ve been digging with a pickaxe for years? Good news: here comes a revolutionary machine. You just need to rent it, pay for the energy, the training... Any resemblance to an existing technology would be purely coincidental.",
+      "cover": "og/shovel-sellers.svg",
+      "readingTime": 3,
+      "draft": false,
+      "featured": true,
+      "path": "content/posts/2026/2026-07-13-shovel-sellers.md"
     },
     {
       "slug": "orchard-core-3.0.1",
@@ -386,7 +404,7 @@
       "cover": "og/webapplicationbuilder-extensions.svg",
       "readingTime": 3,
       "draft": false,
-      "featured": true,
+      "featured": false,
       "path": "content/posts/2025/2025-09-19-webapplicationbuilder-extensions.md"
     },
     {
