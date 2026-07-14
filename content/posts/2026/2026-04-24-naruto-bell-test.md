@@ -6,7 +6,6 @@ pubDatetime: 2026-04-24T12:00:00Z
 categories: [Anime]
 tags: [Naruto, Teamwork, Management]
 description: "Two bells, three genin, one trap. Kakashi's bell test from Naruto volume 1 is a masterclass in team 7 — and it maps surprisingly well onto software development teams."
-featured: false
 ---
 
 The founding arcs of *Naruto* are genuine lessons in team 7 test. Let's look at what it teaches, then map it onto a software development team.

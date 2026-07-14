@@ -6,7 +6,6 @@ pubDatetime: 2026-05-02T12:30:00Z
 categories: [Anime]
 tags: [Naruto, Teamwork, Management]
 description: "A C-rank escort mission that turns out to be S-rank with a rogue jōnin. The Zabuza arc from Naruto volume 2 teaches scope creep, bus factor, and why fundamentals beat flashy techniques."
-featured: false
 ---
 
 After [the bell test](/posts/naruto-bell-test), Team 7 gets its first mission outside the village — and *Naruto* volume 2 delivers its second lesson in team 7. A mission announced as C-rank (routine escort) turns out to be S-rank with a rogue jōnin, Zabuza. The team is under-resourced for the actual problem. Sound familiar?
