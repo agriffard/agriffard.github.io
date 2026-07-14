@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-13T09:05:04.6061279Z",
+  "generatedAt": "2026-07-14T17:47:13.5736384Z",
   "posts": [
     {
       "slug": "vendeurs-de-pelles",
@@ -109,6 +109,46 @@
       "draft": false,
       "featured": false,
       "path": "content/posts/2026/2026-05-18-too-busy-to-try.md"
+    },
+    {
+      "slug": "naruto-land-of-waves",
+      "title": "The Land of Waves: Naruto\u0027s First Real Production Experience",
+      "pubDatetime": "2026-05-02T12:30:00Z",
+      "author": "agriffard",
+      "categories": [
+        "Anime"
+      ],
+      "tags": [
+        "Naruto",
+        "Teamwork",
+        "Management"
+      ],
+      "description": "A C-rank escort mission that turns out to be S-rank with a rogue j\u014Dnin. The Zabuza arc from Naruto volume 2 teaches scope creep, bus factor, and why fundamentals beat flashy techniques.",
+      "cover": "og/naruto-land-of-waves.svg",
+      "readingTime": 2,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2026/2026-05-02-naruto-land-of-waves.md"
+    },
+    {
+      "slug": "naruto-bell-test",
+      "title": "The Bell Test: Naruto\u0027s First Lesson in teamwork",
+      "pubDatetime": "2026-04-24T12:00:00Z",
+      "author": "agriffard",
+      "categories": [
+        "Anime"
+      ],
+      "tags": [
+        "Naruto",
+        "Teamwork",
+        "Management"
+      ],
+      "description": "Two bells, three genin, one trap. Kakashi\u0027s bell test from Naruto volume 1 is a masterclass in team 7 \u2014 and it maps surprisingly well onto software development teams.",
+      "cover": "og/naruto-bell-test.svg",
+      "readingTime": 2,
+      "draft": false,
+      "featured": false,
+      "path": "content/posts/2026/2026-04-24-naruto-bell-test.md"
     },
     {
       "slug": "laws-of-software-engineering",
