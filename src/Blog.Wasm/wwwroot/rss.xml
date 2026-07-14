@@ -4,6 +4,20 @@
     <link>https://antoinegriffard.com</link>
     <atom:link href="https://antoinegriffard.com/rss.xml" rel="self" type="application/rss+xml"/>
           <item>
+        <title><![CDATA[Les vendeurs de pelles]]></title>
+        <link>https://antoinegriffard.com/posts/vendeurs-de-pelles</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/vendeurs-de-pelles</guid>
+        <pubDate>Mon, 13 Jul 2026 12:00:00 GMT</pubDate>
+        <description><![CDATA[Vous creusez à la pioche depuis des années ? Bonne nouvelle : voici une machine révolutionnaire. Il suffit de la louer, de payer l'énergie, la formation... Toute ressemblance avec une technologie existante serait purement fortuite.]]></description>
+        <category>Opinion</category>
+      </item>      <item>
+        <title><![CDATA[The Shovel Sellers]]></title>
+        <link>https://antoinegriffard.com/posts/shovel-sellers</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/shovel-sellers</guid>
+        <pubDate>Mon, 13 Jul 2026 12:00:00 GMT</pubDate>
+        <description><![CDATA[You've been digging with a pickaxe for years? Good news: here comes a revolutionary machine. You just need to rent it, pay for the energy, the training... Any resemblance to an existing technology would be purely coincidental.]]></description>
+        <category>Opinion</category>
+      </item>      <item>
         <title><![CDATA[Orchard Core 3.0.1 Release]]></title>
         <link>https://antoinegriffard.com/posts/orchard-core-3.0.1</link>
         <guid isPermaLink="true">https://antoinegriffard.com/posts/orchard-core-3.0.1</guid>
@@ -31,6 +45,20 @@
         <pubDate>Mon, 18 May 2026 12:00:00 GMT</pubDate>
         <description><![CDATA[A cartoon about cavemen too busy dragging a square box to try the wheel — and what it tells us about how teams adopt (or refuse) AI.]]></description>
         <category>AI</category>
+      </item>      <item>
+        <title><![CDATA[The Land of Waves: Naruto's First Real Production Experience]]></title>
+        <link>https://antoinegriffard.com/posts/naruto-land-of-waves</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/naruto-land-of-waves</guid>
+        <pubDate>Sat, 02 May 2026 12:30:00 GMT</pubDate>
+        <description><![CDATA[A C-rank escort mission that turns out to be S-rank with a rogue jōnin. The Zabuza arc from Naruto volume 2 teaches scope creep, bus factor, and why fundamentals beat flashy techniques.]]></description>
+        <category>Naruto</category><category>Teamwork</category><category>Management</category>
+      </item>      <item>
+        <title><![CDATA[The Bell Test: Naruto's First Lesson in teamwork]]></title>
+        <link>https://antoinegriffard.com/posts/naruto-bell-test</link>
+        <guid isPermaLink="true">https://antoinegriffard.com/posts/naruto-bell-test</guid>
+        <pubDate>Fri, 24 Apr 2026 12:00:00 GMT</pubDate>
+        <description><![CDATA[Two bells, three genin, one trap. Kakashi's bell test from Naruto volume 1 is a masterclass in team 7 — and it maps surprisingly well onto software development teams.]]></description>
+        <category>Naruto</category><category>Teamwork</category><category>Management</category>
       </item>      <item>
         <title><![CDATA[Laws of Software Engineering]]></title>
         <link>https://antoinegriffard.com/posts/laws-of-software-engineering</link>

@@ -68,6 +68,12 @@
     <Content Update="wwwroot\content\posts\2026\2026-06-18-orchard-core-3.0.0.html">
       <DependentUpon>2026-06-18-orchard-core-3.0.0.md</DependentUpon>
     </Content>
+    <Content Update="wwwroot\content\posts\2026\2026-04-24-naruto-bell-test.html">
+      <DependentUpon>2026-04-24-naruto-bell-test.md</DependentUpon>
+    </Content>
+    <Content Update="wwwroot\content\posts\2026\2026-05-02-naruto-land-of-waves.html">
+      <DependentUpon>2026-05-02-naruto-land-of-waves.md</DependentUpon>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
